@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "BoltKubernetesTest": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

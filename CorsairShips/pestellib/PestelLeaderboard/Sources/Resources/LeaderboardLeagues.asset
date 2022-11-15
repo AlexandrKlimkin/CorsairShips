@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2762df2e65f5ff40a42feca36b88e72, type: 3}
+  m_Name: LeaderboardLeagues
+  m_EditorClassIdentifier: 
+  Leagues:
+  - HonorPoints: 300
+    Name: 1
+    Coeff: 30
+    RevenueId: league_1
+  - HonorPoints: 600
+    Name: 2
+    Coeff: 25
+    RevenueId: league_2
+  - HonorPoints: 1000
+    Name: 3
+    Coeff: 25
+    RevenueId: league_3
+  - HonorPoints: 2000
+    Name: 4
+    Coeff: 25
+    RevenueId: league_4
+  - HonorPoints: 4000
+    Name: 5
+    Coeff: 25
+    RevenueId: league_5
+  - HonorPoints: 7000
+    Name: 6
+    Coeff: 20
+    RevenueId: league_6
+  - HonorPoints: 12000
+    Name: 7
+    Coeff: 20
+    RevenueId: league_7
+  - HonorPoints: 20000
+    Name: 8
+    Coeff: 15
+    RevenueId: league_8
+  - HonorPoints: 35000
+    Name: 9
+    Coeff: 15
+    RevenueId: league_9
+  - HonorPoints: 2147483647
+    Name: 10
+    Coeff: 10
+    RevenueId: league_10

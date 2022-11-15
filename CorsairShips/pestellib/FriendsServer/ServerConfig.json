@@ -1,0 +1,20 @@
+{
+  "Port": 9001,
+  "MaxFriends": 30,
+  "MaxInvites": 30,
+  "MaxRoomParty": 5,
+  "InviteTTL": "7.00:00:00",
+  "RoomInviteTTL": "00:00:10",
+  "ConnectionString": "mongodb://localhost/friends",
+  "GiftCooldown": "0.00:00:10",
+  "UnlockGiftsAtMidnight": false,
+  "ProfileServiceUrl": "",
+  "ProfileServiceEnabled": false,
+  "MadIdMixed": false,
+  "GiftsStackSize": 1,
+  "RoomUpdatesForInvited": false,
+  "DontCloseRoomOnBattleStart": false,
+  "ProfileUpdateFrequency": "0.00:01:00",
+  "StartBattleDelay": "0.00:00:15",
+  "MessageQueueConnectionString":  "rabbitmq,localhost" 
+}

@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "BoltBotNet": {
+      "commandName": "Project",
+      "commandLineArgs": "-instances 7 -path D:\\Projects\\PhotonBoltTest\\BuildsMono\\PhotonBoltTest.exe -master 192.168.88.110",
+      "workingDirectory": "D:\\Projects\\PhotonBoltTest\\BuildsMono"
+    }
+  }
+}

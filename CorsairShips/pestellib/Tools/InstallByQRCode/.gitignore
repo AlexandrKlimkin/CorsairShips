@@ -1,0 +1,96 @@
+PlanetCommanderConfig.asset*
+config.development.a.json
+config.development.b.json
+
+# =============== #
+# Unity generated #
+# =============== #
+Temp/
+Obj/
+UnityGenerated/
+Library/
+Assets/Assemblies/*.dll.mdb
+Assets/Assemblies/*.dll.mdb.meta
+Assets/Assemblies/*.pdb
+Assets/Assemblies/*.pdb.meta
+Assets/Assemblies/Editor/*.dll.mdb
+Assets/Assemblies/Editor/*.dll.mdb.meta
+Assets/Assemblies/Editor/*.pdb
+Assets/Assemblies/Editor/*.pdb.meta
+
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+ExportedObj/
+*.svd
+*.userprefs
+/*.csproj
+*.pidb
+*.suo
+*.user
+*.unityproj
+*.booproj
+/Backup/
+/obj/
+/PestelLib/Server/bin
+
+
+# ===================================== #
+# Visual Studio Code generated #
+# ===================================== #
+.vscode
+Assets/VSCode/
+Assets/VSCode.meta
+
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Thumbs.db.meta
+
+# ===================================== #
+# Local #
+# ===================================== #
+Assets/External/UnityVS/
+Assets/External/UnityVS.meta
+Assets/UnityVS/
+Assets/UnityVS.meta
+Builds/
+Export/
+/Art/
+/Source/
+*.sublime*
+Assets/Resources/config.json*
+PestelLib/FencingServer/bin/
+PestelLib/FencingServer/Log.txt
+Assets/Resources/config*.json.meta
+ProjectLib/NitroMXSharedLogic/bin
+ProjectLib/ConcreteSerialization/bin/
+ProjectLib/ConcreteServer/bin/
+ProjectLib/ConcreteSharedLogic/bin/
+ProjectLib/**/*.meta
+Protobuff/FencingPotocol/*.dll
+Protobuff/FencingPotocol/*.pdb
+ProjectLib/*/bin
+ProjectLib/*/obj
+
+AssetBundles/*
+
+Tools/mrgs_integration/unity_project/Library/
+Tools/mrgs_integration/unity_project/*apk
+todo.txt
+Assets/Resources/Replays
+
+*.lnk
+
+PlanetCommanderU5.sln
+
+*.idea/
+.vs/PlanetCommanderU5/v15/Server/sqlite3/
+.vs

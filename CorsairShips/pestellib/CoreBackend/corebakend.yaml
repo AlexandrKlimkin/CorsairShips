@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: backend
+spec:
+  hostNetwork: true
+  containers:
+  - name: backend
+    image: gdcompany.azurecr.io/corebackend:20201012034424
+  nodeName: ns3089886
+  imagePullSecrets:
+  - name: azurecred

@@ -1,0 +1,9 @@
+{
+  "PlayerId": "e75f7a1e-188a-495b-8d92-15279820f1e7",
+  "Autostart": false,
+  "AuthData": "",
+  "UpdatePeriod": "00:00:00.0160000",
+  "DebugEvents": true,
+  "StartUpdateOnConnect": false,
+  "HotReload": false
+}

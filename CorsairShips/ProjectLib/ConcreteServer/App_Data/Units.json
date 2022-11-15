@@ -1,0 +1,12 @@
+[
+  {
+    "Id": "Spider",
+    "Damage": 10.0,
+    "Health": 15.0
+  },
+  {
+    "Id": "Skeleton",
+    "Damage": 15.0,
+    "Health": 20.0
+  }
+]

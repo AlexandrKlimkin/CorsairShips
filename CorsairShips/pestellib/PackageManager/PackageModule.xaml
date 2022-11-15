@@ -1,0 +1,9 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="PackageModule">
+  <CheckBox Name="Toggle" Margin="5">
+    <Expander Name="Header" Header="PlanetCommanderPlugin" FontWeight="Normal">
+      <StackPanel Name="Dependencies" VerticalAlignment="Top">
+      </StackPanel>
+    </Expander>
+  </CheckBox>
+</UserControl>

@@ -1,0 +1,12 @@
+Library/
+Packages/
+ProjectSettings/
+src/UnityAndroidPermissions/.gradle/
+src/UnityAndroidPermissions/build/
+Temp/
+UnityPackageManager/
+*.meta
+*.csproj
+*.sln
+.vs/
+.idea/

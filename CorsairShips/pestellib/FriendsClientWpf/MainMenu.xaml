@@ -1,0 +1,35 @@
+﻿<Window x:Class="FriendsClientWpf.MainWindow"
+        x:Name="MainMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FriendsClientWpf"
+        xmlns:p="clr-namespace:FriendsClientWpf.Properties"
+        mc:Ignorable="d"
+        Title="MainMenu" Height="450" Width="800" Closing="Window_Closing">
+    <Grid>
+        <Button x:Name="btnFriendList" Content="Open FrendList {0}..." HorizontalAlignment="Left" Margin="170,85,0,0" VerticalAlignment="Top" Width="110" IsEnabled="False" Click="btnFriendList_Click"/>
+        <Button x:Name="btnCreateRoom" Content="Create Room..." HorizontalAlignment="Left" Margin="285,85,0,0" VerticalAlignment="Top" Width="106" IsEnabled="False" Click="btnCreateRoom_Click"/>
+        <Label Content="Log" HorizontalAlignment="Left" Margin="10,105,0,0" VerticalAlignment="Top" Width="53"/>
+        <TextBox x:Name="tbLog" Margin="10,131,10,10" TextWrapping="Wrap" AllowDrop="False" IsReadOnlyCaretVisible="True" IsReadOnly="True"/>
+        <Button x:Name="btnConnect" Content="Connect" HorizontalAlignment="Left" Margin="10,85,0,0" VerticalAlignment="Top" Width="75" Click="btnConnect_Click"/>
+        <Button x:Name="btnDisconnect" Content="Disconnect" HorizontalAlignment="Left" Margin="90,85,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False" Click="btnDisconnect_Click"/>
+        <Label Content="PlayerId:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbPlayerId" HorizontalAlignment="Left" Height="23" Margin="70,14,0,0" TextWrapping="Wrap" Text="{Binding Source={x:Static local:ConfigLoader.Instance},Path=PlayerId}" VerticalAlignment="Top" Width="242" TextChanged="TbPlayerId_TextChanged">
+        </TextBox>
+        <Button x:Name="bntNewPlayerId" Content="Random" HorizontalAlignment="Left" Margin="317,16,0,0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="-0.635,0.3" Click="bntNewPlayerId_Click"/>
+        <CheckBox x:Name="cbAutoconnect" Content="Connect on start" HorizontalAlignment="Left" Margin="10,45,0,0" VerticalAlignment="Top" IsChecked="{Binding Source={x:Static local:ConfigLoader.Instance},Path=Autostart}"/>
+        <Label Content="Step:" HorizontalAlignment="Left" Margin="129,39,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbUpdatePeriod" HorizontalAlignment="Left" Height="23" Margin="170,42,0,0" TextWrapping="Wrap" Text="{Binding Source={x:Static local:ConfigLoader.Instance},Path=UpdatePeriod}" VerticalAlignment="Top" Width="120" TextChanged="tbUpdatePeriod_TextChanged"/>
+        <Label Content="Update #" HorizontalAlignment="Left" Margin="582,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblUpdateNo" Content="0" HorizontalAlignment="Left" Margin="641,10,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnStartStopUpdate" Content="▶" HorizontalAlignment="Left" Margin="562,13,0,0" VerticalAlignment="Top" Width="20" Click="btpStartStopUpdate_Click"/>
+        <Button x:Name="btnStepUpdate" Content="❚▶" HorizontalAlignment="Left" Margin="537,13,0,0" VerticalAlignment="Top" Width="20" Click="btnStepUpdate_Click"/>
+        <CheckBox Content="Start update on connect" HorizontalAlignment="Left" Margin="537,38,0,0" VerticalAlignment="Top" IsChecked="{Binding Source={x:Static local:ConfigLoader.Instance},Path=StartUpdateOnConnect}"/>
+        <CheckBox Content="Mute battle invitations" HorizontalAlignment="Left" Margin="10,65,0,0" VerticalAlignment="Top" IsChecked="{Binding ElementName=MainMenu,Path=MuteBattleInvitations}"/>
+        <TextBox x:Name="tbInstanceCount" HorizontalAlignment="Left" Height="23" Margin="396,85,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="30"/>
+        <Button x:Name="btnStartNewInst" Content="Start new instance" HorizontalAlignment="Left" Margin="431,85,0,0" VerticalAlignment="Top" Width="112" Click="Button_Click"/>
+
+    </Grid>
+</Window>

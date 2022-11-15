@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "BoltLoadBalancing": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

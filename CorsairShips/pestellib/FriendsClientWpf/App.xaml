@@ -1,0 +1,13 @@
+﻿<Application x:Class="FriendsClientWpf.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:FriendsClientWpf"
+             xmlns:properties="clr-namespace:FriendsClientWpf.Properties"
+             StartupUri="MainMenu.xaml"
+             Startup="_startup">
+    <Application.Resources>
+        <properties:Settings x:Key="Settings" />
+        <Image x:Key="CopyIcon" Source="images/copy.png" />
+        <Image x:Key="DeleteIcon" Source="images/delete.png"/>
+    </Application.Resources>
+</Application>

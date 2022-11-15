@@ -1,0 +1,1649 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1845624611954946}
+  m_IsPrefabParent: 1
+--- !u!1 &1845624611954946
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4255567524365198}
+  - component: {fileID: 114949536741044584}
+  m_Layer: 0
+  m_Name: RouletteDefinitionsContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4255567524365198
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1845624611954946}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114949536741044584
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1845624611954946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33ed7263315c9f244ba6457aa08d7260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SharedLogicDefs:
+    ChestsRewardDefs:
+    - Id: test_reward_soft_currency
+      Description: 
+      ItemType: soft_currency
+      Amount: 1000
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+    - Id: test_reward_hard_currency
+      Description: 
+      ItemType: hard_currency
+      Amount: 10
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+    - Id: test_reward_item
+      Description: 
+      ItemType: item
+      Amount: 1
+      ItemId: AdditionalMissiles
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+    - Id: test_reward_ship
+      Description: 
+      ItemType: ship
+      Amount: 1
+      ItemId: ArbitrCruiser
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+    - Id: test_reward_random_item
+      Description: 
+      ItemType: item
+      Amount: 1
+      ItemId: 
+      UseRarityAndTier: 1
+      Rarity: 7
+      Tier: 2
+      UseMaxPlayerTier: 1
+    - Id: test_reward_random_ship
+      Description: 
+      ItemType: ship
+      Amount: 1
+      ItemId: 
+      UseRarityAndTier: 1
+      Rarity: 7
+      Tier: 2
+      UseMaxPlayerTier: 1
+    ChestsRewardPoolDefs:
+    - Tag: league_chest_1_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 1
+    - Tag: league_chest_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 1
+    - Tag: league_chest_2_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 1
+    - Tag: league_chest_2_pool_2
+      RewardId: test_reward_hard_currency
+      RewardWeight: 1
+    - Tag: league_chest_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 1
+    - Tag: league_chest_3_pool_2
+      RewardId: test_reward_ship
+      RewardWeight: 1
+    - Tag: league_chest_4_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 1
+    - Tag: league_chest_4_pool_2
+      RewardId: test_reward_random_item
+      RewardWeight: 1
+    - Tag: league_chest_4_pool_3
+      RewardId: test_reward_random_ship
+      RewardWeight: 1
+    - Tag: pirate_box_common_1_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 10000
+    - Tag: pirate_box_common_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 144
+    - Tag: pirate_box_common_1_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 144
+    - Tag: pirate_box_common_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 144
+    - Tag: pirate_box_common_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 200
+    - Tag: pirate_box_common_1_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 10
+    - Tag: pirate_box_common_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 5
+    - Tag: pirate_box_common_1_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 5
+    - Tag: pirate_box_common_1_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 5
+    - Tag: pirate_box_common_1_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 5
+    - Tag: pirate_box_common_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 5
+    - Tag: pirate_box_common_1_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 5
+    - Tag: pirate_box_common_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 5
+    - Tag: pirate_box_common_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 5
+    - Tag: pirate_box_common_1_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 5
+    - Tag: pirate_box_common_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 5
+    - Tag: pirate_box_common_1_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 40
+    - Tag: pirate_box_common_1_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 60
+    - Tag: pirate_box_common_1_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 200
+    - Tag: pirate_box_common_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 187
+    - Tag: pirate_box_common_2_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 187
+    - Tag: pirate_box_common_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 187
+    - Tag: pirate_box_common_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 250
+    - Tag: pirate_box_common_2_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 5
+    - Tag: pirate_box_common_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 2
+    - Tag: pirate_box_common_2_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 2
+    - Tag: pirate_box_common_2_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 2
+    - Tag: pirate_box_common_2_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 2
+    - Tag: pirate_box_common_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 2
+    - Tag: pirate_box_common_2_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 2
+    - Tag: pirate_box_common_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 2
+    - Tag: pirate_box_common_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 2
+    - Tag: pirate_box_common_2_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 2
+    - Tag: pirate_box_common_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 2
+    - Tag: pirate_box_common_2_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 2
+    - Tag: pirate_box_common_2_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 2
+    - Tag: pirate_box_common_2_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 2
+    - Tag: pirate_box_common_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 2
+    - Tag: pirate_box_common_2_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 2
+    - Tag: pirate_box_common_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 2
+    - Tag: pirate_box_common_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 2
+    - Tag: pirate_box_common_2_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 2
+    - Tag: pirate_box_common_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 2
+    - Tag: pirate_box_common_2_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 2
+    - Tag: pirate_box_common_2_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 2
+    - Tag: pirate_box_common_2_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 2
+    - Tag: pirate_box_common_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 40
+    - Tag: pirate_box_common_2_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 60
+    - Tag: pirate_box_common_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 40
+    - Tag: pirate_box_common_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 187
+    - Tag: pirate_box_common_3_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 187
+    - Tag: pirate_box_common_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 187
+    - Tag: pirate_box_common_3_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 250
+    - Tag: pirate_box_common_3_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 3
+    - Tag: pirate_box_common_3_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 2
+    - Tag: pirate_box_common_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 2
+    - Tag: pirate_box_common_3_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 2
+    - Tag: pirate_box_common_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 2
+    - Tag: pirate_box_common_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 2
+    - Tag: pirate_box_common_3_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 2
+    - Tag: pirate_box_common_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 2
+    - Tag: pirate_box_common_3_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 2
+    - Tag: pirate_box_common_3_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 2
+    - Tag: pirate_box_common_3_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 2
+    - Tag: pirate_box_common_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 2
+    - Tag: pirate_box_common_3_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 2
+    - Tag: pirate_box_common_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 2
+    - Tag: pirate_box_common_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 2
+    - Tag: pirate_box_common_3_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 2
+    - Tag: pirate_box_common_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 2
+    - Tag: pirate_box_common_3_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 2
+    - Tag: pirate_box_common_3_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 2
+    - Tag: pirate_box_common_3_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 2
+    - Tag: pirate_box_common_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 2
+    - Tag: pirate_box_common_3_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 2
+    - Tag: pirate_box_common_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 2
+    - Tag: pirate_box_common_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 40
+    - Tag: pirate_box_common_3_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 60
+    - Tag: pirate_box_common_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 40
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 90
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 90
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 90
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 240
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 150
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 11
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 11
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 11
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 11
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 11
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 11
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 11
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 11
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 11
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 11
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 11
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 11
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 11
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 11
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 11
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 11
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 11
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 11
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 11
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 11
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 11
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 11
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 20
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 50
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 30
+    - Tag: pirate_box_advanced_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 100
+    - Tag: pirate_box_advanced_2_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 100
+    - Tag: pirate_box_advanced_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 100
+    - Tag: pirate_box_advanced_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 260
+    - Tag: pirate_box_advanced_2_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 40
+    - Tag: pirate_box_advanced_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 25
+    - Tag: pirate_box_advanced_2_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 25
+    - Tag: pirate_box_advanced_2_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 25
+    - Tag: pirate_box_advanced_2_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 25
+    - Tag: pirate_box_advanced_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 25
+    - Tag: pirate_box_advanced_2_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 25
+    - Tag: pirate_box_advanced_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 25
+    - Tag: pirate_box_advanced_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 25
+    - Tag: pirate_box_advanced_2_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 25
+    - Tag: pirate_box_advanced_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 25
+    - Tag: pirate_box_advanced_2_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 25
+    - Tag: pirate_box_advanced_2_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 25
+    - Tag: pirate_box_advanced_2_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 20
+    - Tag: pirate_box_advanced_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 50
+    - Tag: pirate_box_advanced_2_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 30
+    - Tag: pirate_box_advanced_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 100
+    - Tag: pirate_box_advanced_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 100
+    - Tag: pirate_box_advanced_3_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 100
+    - Tag: pirate_box_advanced_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 270
+    - Tag: pirate_box_advanced_3_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 30
+    - Tag: pirate_box_advanced_3_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 25
+    - Tag: pirate_box_advanced_3_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 25
+    - Tag: pirate_box_advanced_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 25
+    - Tag: pirate_box_advanced_3_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 25
+    - Tag: pirate_box_advanced_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 25
+    - Tag: pirate_box_advanced_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 25
+    - Tag: pirate_box_advanced_3_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 25
+    - Tag: pirate_box_advanced_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 25
+    - Tag: pirate_box_advanced_3_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 25
+    - Tag: pirate_box_advanced_3_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 25
+    - Tag: pirate_box_advanced_3_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 25
+    - Tag: pirate_box_advanced_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 25
+    - Tag: pirate_box_advanced_3_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 20
+    - Tag: pirate_box_advanced_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 50
+    - Tag: pirate_box_advanced_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 30
+    - Tag: pirate_box_epic_1_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 67
+    - Tag: pirate_box_epic_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 67
+    - Tag: pirate_box_epic_1_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 67
+    - Tag: pirate_box_epic_1_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 200
+    - Tag: pirate_box_epic_1_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 300
+    - Tag: pirate_box_epic_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 30
+    - Tag: pirate_box_epic_1_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 30
+    - Tag: pirate_box_epic_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 30
+    - Tag: pirate_box_epic_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 30
+    - Tag: pirate_box_epic_1_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 30
+    - Tag: pirate_box_epic_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 30
+    - Tag: pirate_box_epic_1_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 30
+    - Tag: pirate_box_epic_1_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 30
+    - Tag: pirate_box_epic_1_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 30
+    - Tag: pirate_box_epic_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 30
+    - Tag: pirate_box_epic_2_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 67
+    - Tag: pirate_box_epic_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 67
+    - Tag: pirate_box_epic_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 67
+    - Tag: pirate_box_epic_2_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 200
+    - Tag: pirate_box_epic_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 150
+    - Tag: pirate_box_epic_2_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 150
+    - Tag: pirate_box_epic_2_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 33
+    - Tag: pirate_box_epic_2_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 33
+    - Tag: pirate_box_epic_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 33
+    - Tag: pirate_box_epic_2_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 33
+    - Tag: pirate_box_epic_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 33
+    - Tag: pirate_box_epic_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 33
+    - Tag: pirate_box_epic_2_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 33
+    - Tag: pirate_box_epic_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 33
+    - Tag: pirate_box_epic_2_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 33
+    - Tag: pirate_box_epic_3_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 67
+    - Tag: pirate_box_epic_3_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 67
+    - Tag: pirate_box_epic_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 67
+    - Tag: pirate_box_epic_3_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 200
+    - Tag: pirate_box_epic_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 150
+    - Tag: pirate_box_epic_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 150
+    - Tag: pirate_box_epic_3_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 33
+    - Tag: pirate_box_epic_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 33
+    - Tag: pirate_box_epic_3_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 33
+    - Tag: pirate_box_epic_3_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 33
+    - Tag: pirate_box_epic_3_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 33
+    - Tag: pirate_box_epic_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 33
+    - Tag: pirate_box_epic_3_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 33
+    - Tag: pirate_box_epic_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 33
+    - Tag: pirate_box_epic_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 33
+    - Tag: pirate_box_ultimate_1_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 333
+    - Tag: pirate_box_ultimate_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 333
+    - Tag: pirate_box_ultimate_1_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 333
+    - Tag: pirate_box_ultimate_1_pool_2
+      RewardId: test_reward_random_ship
+      RewardWeight: 500
+    - Tag: pirate_box_ultimate_1_pool_2
+      RewardId: test_reward_soft_currency
+      RewardWeight: 500
+    - Tag: pirate_box_ultimate_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 333
+    - Tag: pirate_box_ultimate_2_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 333
+    - Tag: pirate_box_ultimate_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 333
+    - Tag: pirate_box_ultimate_2_pool_2
+      RewardId: test_reward_hard_currency
+      RewardWeight: 250
+    - Tag: pirate_box_ultimate_2_pool_2
+      RewardId: test_reward_ship
+      RewardWeight: 250
+    - Tag: pirate_box_ultimate_2_pool_2
+      RewardId: test_reward_hard_currency
+      RewardWeight: 250
+    - Tag: pirate_box_ultimate_2_pool_2
+      RewardId: test_reward_random_item
+      RewardWeight: 250
+    - Tag: pirate_box_ultimate_3_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 333
+    - Tag: pirate_box_ultimate_3_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 333
+    - Tag: pirate_box_ultimate_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 333
+    - Tag: pirate_box_ultimate_3_pool_2
+      RewardId: test_reward_item
+      RewardWeight: 250
+    - Tag: pirate_box_ultimate_3_pool_2
+      RewardId: test_reward_hard_currency
+      RewardWeight: 250
+    - Tag: pirate_box_ultimate_3_pool_2
+      RewardId: test_reward_hard_currency
+      RewardWeight: 250
+    - Tag: pirate_box_ultimate_3_pool_2
+      RewardId: test_reward_ship
+      RewardWeight: 250
+    - Tag: pirate_box_premium_common_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 0
+    - Tag: pirate_box_premium_common_1_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 0
+    - Tag: pirate_box_premium_common_1_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 0
+    - Tag: pirate_box_premium_common_1_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 0
+    - Tag: pirate_box_premium_common_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 20
+    - Tag: pirate_box_premium_common_1_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 8
+    - Tag: pirate_box_premium_common_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 8
+    - Tag: pirate_box_premium_common_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 8
+    - Tag: pirate_box_premium_common_1_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 8
+    - Tag: pirate_box_premium_common_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 8
+    - Tag: pirate_box_premium_common_1_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 8
+    - Tag: pirate_box_premium_common_1_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 8
+    - Tag: pirate_box_premium_common_1_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 8
+    - Tag: pirate_box_premium_common_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 8
+    - Tag: pirate_box_premium_common_1_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 8
+    - Tag: pirate_box_premium_common_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 0
+    - Tag: pirate_box_premium_common_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 0
+    - Tag: pirate_box_premium_common_2_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 0
+    - Tag: pirate_box_premium_common_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 0
+    - Tag: pirate_box_premium_common_2_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 15
+    - Tag: pirate_box_premium_common_2_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 4
+    - Tag: pirate_box_premium_common_2_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 4
+    - Tag: pirate_box_premium_common_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 4
+    - Tag: pirate_box_premium_common_2_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 4
+    - Tag: pirate_box_premium_common_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 4
+    - Tag: pirate_box_premium_common_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 4
+    - Tag: pirate_box_premium_common_2_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 4
+    - Tag: pirate_box_premium_common_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 4
+    - Tag: pirate_box_premium_common_2_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 4
+    - Tag: pirate_box_premium_common_2_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 4
+    - Tag: pirate_box_premium_common_2_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 4
+    - Tag: pirate_box_premium_common_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 4
+    - Tag: pirate_box_premium_common_2_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 4
+    - Tag: pirate_box_premium_common_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 4
+    - Tag: pirate_box_premium_common_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 4
+    - Tag: pirate_box_premium_common_2_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 4
+    - Tag: pirate_box_premium_common_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 4
+    - Tag: pirate_box_premium_common_2_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 4
+    - Tag: pirate_box_premium_common_2_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 4
+    - Tag: pirate_box_premium_common_2_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 3
+    - Tag: pirate_box_premium_common_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 3
+    - Tag: pirate_box_premium_common_2_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 3
+    - Tag: pirate_box_premium_common_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 0
+    - Tag: pirate_box_premium_common_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 0
+    - Tag: pirate_box_premium_common_3_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 0
+    - Tag: pirate_box_premium_common_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 0
+    - Tag: pirate_box_premium_common_3_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 15
+    - Tag: pirate_box_premium_common_3_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 4
+    - Tag: pirate_box_premium_common_3_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 4
+    - Tag: pirate_box_premium_common_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 4
+    - Tag: pirate_box_premium_common_3_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 4
+    - Tag: pirate_box_premium_common_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 4
+    - Tag: pirate_box_premium_common_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 4
+    - Tag: pirate_box_premium_common_3_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 4
+    - Tag: pirate_box_premium_common_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 4
+    - Tag: pirate_box_premium_common_3_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 4
+    - Tag: pirate_box_premium_common_3_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 4
+    - Tag: pirate_box_premium_common_3_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 4
+    - Tag: pirate_box_premium_common_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 4
+    - Tag: pirate_box_premium_common_3_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 4
+    - Tag: pirate_box_premium_common_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 4
+    - Tag: pirate_box_premium_common_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 4
+    - Tag: pirate_box_premium_common_3_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 4
+    - Tag: pirate_box_premium_common_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 4
+    - Tag: pirate_box_premium_common_3_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 4
+    - Tag: pirate_box_premium_common_3_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 4
+    - Tag: pirate_box_premium_common_3_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 3
+    - Tag: pirate_box_premium_common_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 3
+    - Tag: pirate_box_premium_common_3_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 3
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 0
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 0
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 0
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 0
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 30
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 4
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 4
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 4
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 4
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 4
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 4
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 4
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 4
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 4
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 4
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 4
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 4
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 4
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 4
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 4
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 4
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 4
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 4
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 4
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 4
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 3
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 3
+    - Tag: pirate_box_premium_advanced_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 0
+    - Tag: pirate_box_premium_advanced_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 0
+    - Tag: pirate_box_premium_advanced_2_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 0
+    - Tag: pirate_box_premium_advanced_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 0
+    - Tag: pirate_box_premium_advanced_2_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 30
+    - Tag: pirate_box_premium_advanced_2_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 6
+    - Tag: pirate_box_premium_advanced_2_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 6
+    - Tag: pirate_box_premium_advanced_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 6
+    - Tag: pirate_box_premium_advanced_2_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 6
+    - Tag: pirate_box_premium_advanced_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 6
+    - Tag: pirate_box_premium_advanced_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 6
+    - Tag: pirate_box_premium_advanced_2_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 6
+    - Tag: pirate_box_premium_advanced_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 6
+    - Tag: pirate_box_premium_advanced_2_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 6
+    - Tag: pirate_box_premium_advanced_2_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 6
+    - Tag: pirate_box_premium_advanced_2_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 5
+    - Tag: pirate_box_premium_advanced_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 5
+    - Tag: pirate_box_premium_advanced_3_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 0
+    - Tag: pirate_box_premium_advanced_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 0
+    - Tag: pirate_box_premium_advanced_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 0
+    - Tag: pirate_box_premium_advanced_3_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 0
+    - Tag: pirate_box_premium_advanced_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 30
+    - Tag: pirate_box_premium_advanced_3_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 6
+    - Tag: pirate_box_premium_advanced_3_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 6
+    - Tag: pirate_box_premium_advanced_3_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 6
+    - Tag: pirate_box_premium_advanced_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 6
+    - Tag: pirate_box_premium_advanced_3_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 6
+    - Tag: pirate_box_premium_advanced_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 6
+    - Tag: pirate_box_premium_advanced_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 6
+    - Tag: pirate_box_premium_advanced_3_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 6
+    - Tag: pirate_box_premium_advanced_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 6
+    - Tag: pirate_box_premium_advanced_3_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 6
+    - Tag: pirate_box_premium_advanced_3_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 5
+    - Tag: pirate_box_premium_advanced_3_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 5
+    - Tag: pirate_box_premium_epic_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 0
+    - Tag: pirate_box_premium_epic_1_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 0
+    - Tag: pirate_box_premium_epic_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 0
+    - Tag: pirate_box_premium_epic_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 0
+    - Tag: pirate_box_premium_epic_1_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 50
+    - Tag: pirate_box_premium_epic_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 5
+    - Tag: pirate_box_premium_epic_1_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 5
+    - Tag: pirate_box_premium_epic_1_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 5
+    - Tag: pirate_box_premium_epic_1_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 5
+    - Tag: pirate_box_premium_epic_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 5
+    - Tag: pirate_box_premium_epic_1_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 5
+    - Tag: pirate_box_premium_epic_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 5
+    - Tag: pirate_box_premium_epic_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 5
+    - Tag: pirate_box_premium_epic_1_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 5
+    - Tag: pirate_box_premium_epic_1_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 5
+    - Tag: pirate_box_premium_epic_2_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 0
+    - Tag: pirate_box_premium_epic_2_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 0
+    - Tag: pirate_box_premium_epic_2_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 0
+    - Tag: pirate_box_premium_epic_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 0
+    - Tag: pirate_box_premium_epic_2_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 50
+    - Tag: pirate_box_premium_epic_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 5
+    - Tag: pirate_box_premium_epic_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 5
+    - Tag: pirate_box_premium_epic_2_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 5
+    - Tag: pirate_box_premium_epic_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 5
+    - Tag: pirate_box_premium_epic_2_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 5
+    - Tag: pirate_box_premium_epic_2_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 5
+    - Tag: pirate_box_premium_epic_2_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 5
+    - Tag: pirate_box_premium_epic_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 5
+    - Tag: pirate_box_premium_epic_2_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 5
+    - Tag: pirate_box_premium_epic_2_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 5
+    - Tag: pirate_box_premium_epic_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 0
+    - Tag: pirate_box_premium_epic_3_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 0
+    - Tag: pirate_box_premium_epic_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 0
+    - Tag: pirate_box_premium_epic_3_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 0
+    - Tag: pirate_box_premium_epic_3_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 25
+    - Tag: pirate_box_premium_epic_3_pool_1
+      RewardId: test_reward_soft_currency
+      RewardWeight: 25
+    - Tag: pirate_box_premium_epic_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 6
+    - Tag: pirate_box_premium_epic_3_pool_1
+      RewardId: test_reward_item
+      RewardWeight: 6
+    - Tag: pirate_box_premium_epic_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 6
+    - Tag: pirate_box_premium_epic_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 6
+    - Tag: pirate_box_premium_epic_3_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 6
+    - Tag: pirate_box_premium_epic_3_pool_1
+      RewardId: test_reward_hard_currency
+      RewardWeight: 5
+    - Tag: pirate_box_premium_epic_3_pool_1
+      RewardId: test_reward_random_item
+      RewardWeight: 5
+    - Tag: pirate_box_premium_epic_3_pool_1
+      RewardId: test_reward_random_ship
+      RewardWeight: 5
+    - Tag: pirate_box_premium_epic_3_pool_1
+      RewardId: test_reward_ship
+      RewardWeight: 5
+    ChestDefs:
+    - Id: league_chest_1
+      Tag: 
+      Name: chest_carbon
+      PoolListId: league_chest_1_pool
+      ChestRandomWeight: 1
+      ChestRarity: 0
+      OpenTimeSeconds: 0
+      Level: 0
+      ImmediatelyOpenCost: 0
+    - Id: league_chest_2
+      Tag: 
+      Name: chest_adamantin
+      PoolListId: league_chest_2_pool
+      ChestRandomWeight: 1
+      ChestRarity: 1
+      OpenTimeSeconds: 0
+      Level: 0
+      ImmediatelyOpenCost: 0
+    - Id: league_chest_3
+      Tag: 
+      Name: chest_gold
+      PoolListId: league_chest_3_pool
+      ChestRandomWeight: 1
+      ChestRarity: 2
+      OpenTimeSeconds: 0
+      Level: 0
+      ImmediatelyOpenCost: 0
+    - Id: league_chest_4
+      Tag: 
+      Name: chest_diamond
+      PoolListId: league_chest_4_pool
+      ChestRandomWeight: 1
+      ChestRarity: 3
+      OpenTimeSeconds: 0
+      Level: 0
+      ImmediatelyOpenCost: 0
+    ChestsRewardPoolListDefs:
+    - Tag: league_chest_1_pool
+      RewardPoolId: league_chest_1_pool_1
+    - Tag: league_chest_2_pool
+      RewardPoolId: league_chest_2_pool_1
+    - Tag: league_chest_2_pool
+      RewardPoolId: league_chest_2_pool_2
+    - Tag: league_chest_3_pool
+      RewardPoolId: league_chest_3_pool_1
+    - Tag: league_chest_3_pool
+      RewardPoolId: league_chest_3_pool_2
+    - Tag: league_chest_4_pool
+      RewardPoolId: league_chest_4_pool_1
+    - Tag: league_chest_4_pool
+      RewardPoolId: league_chest_4_pool_2
+    - Tag: league_chest_4_pool
+      RewardPoolId: league_chest_4_pool_3
+    - Tag: pirate_box_common_1_pool
+      RewardPoolId: pirate_box_common_1_pool_1
+    - Tag: pirate_box_common_2_pool
+      RewardPoolId: pirate_box_common_2_pool_1
+    - Tag: pirate_box_common_3_pool
+      RewardPoolId: pirate_box_common_3_pool_1
+    - Tag: pirate_box_advanced_1_pool
+      RewardPoolId: pirate_box_advanced_1_pool_1
+    - Tag: pirate_box_advanced_2_pool
+      RewardPoolId: pirate_box_advanced_2_pool_1
+    - Tag: pirate_box_advanced_3_pool
+      RewardPoolId: pirate_box_advanced_3_pool_1
+    - Tag: pirate_box_epic_1_pool
+      RewardPoolId: pirate_box_epic_1_pool_1
+    - Tag: pirate_box_epic_2_pool
+      RewardPoolId: pirate_box_epic_2_pool_1
+    - Tag: pirate_box_epic_3_pool
+      RewardPoolId: pirate_box_epic_3_pool_1
+    - Tag: pirate_box_ultimate_1_pool
+      RewardPoolId: pirate_box_ultimate_1_pool_1
+    - Tag: pirate_box_ultimate_1_pool
+      RewardPoolId: pirate_box_ultimate_1_pool_2
+    - Tag: pirate_box_ultimate_2_pool
+      RewardPoolId: pirate_box_ultimate_2_pool_1
+    - Tag: pirate_box_ultimate_2_pool
+      RewardPoolId: pirate_box_ultimate_2_pool_2
+    - Tag: pirate_box_ultimate_3_pool
+      RewardPoolId: pirate_box_ultimate_3_pool_1
+    - Tag: pirate_box_ultimate_3_pool
+      RewardPoolId: pirate_box_ultimate_3_pool_2
+    - Tag: pirate_box_premium_common_1_pool
+      RewardPoolId: pirate_box_premium_common_1_pool_1
+    - Tag: pirate_box_premium_common_2_pool
+      RewardPoolId: pirate_box_premium_common_2_pool_1
+    - Tag: pirate_box_premium_common_3_pool
+      RewardPoolId: pirate_box_premium_common_3_pool_1
+    - Tag: pirate_box_premium_advanced_1_pool
+      RewardPoolId: pirate_box_premium_advanced_1_pool_1
+    - Tag: pirate_box_premium_advanced_2_pool
+      RewardPoolId: pirate_box_premium_advanced_2_pool_1
+    - Tag: pirate_box_premium_advanced_3_pool
+      RewardPoolId: pirate_box_premium_advanced_3_pool_1
+    - Tag: pirate_box_premium_epic_1_pool
+      RewardPoolId: pirate_box_premium_epic_1_pool_1
+    - Tag: pirate_box_premium_epic_2_pool
+      RewardPoolId: pirate_box_premium_epic_2_pool_1
+    - Tag: pirate_box_premium_epic_3_pool
+      RewardPoolId: pirate_box_premium_epic_3_pool_1
+    PirateBoxDefs:
+    - Id: pirate_box_common_1
+      Name: chest_carbon
+      PoolListId: pirate_box_common_1_pool
+      Rarity: 0
+      LockerId: level_1
+      BaitChance: 0.2
+      BaitRarity: 8
+      BaitShipChance: 0.3
+      IsSpecialBox: 0
+    - Id: pirate_box_common_2
+      Name: chest_carbon
+      PoolListId: pirate_box_common_2_pool
+      Rarity: 0
+      LockerId: level_16
+      BaitChance: 0.2
+      BaitRarity: 8
+      BaitShipChance: 0.3
+      IsSpecialBox: 0
+    - Id: pirate_box_common_3
+      Name: chest_carbon
+      PoolListId: pirate_box_common_3_pool
+      Rarity: 0
+      LockerId: level_31
+      BaitChance: 0.2
+      BaitRarity: 8
+      BaitShipChance: 0.3
+      IsSpecialBox: 0
+    - Id: pirate_box_advanced_1
+      Name: chest_adamantin
+      PoolListId: pirate_box_advanced_1_pool
+      Rarity: 1
+      LockerId: level_1
+      BaitChance: 0.4
+      BaitRarity: 7
+      BaitShipChance: 0.3
+      IsSpecialBox: 0
+    - Id: pirate_box_advanced_2
+      Name: chest_adamantin
+      PoolListId: pirate_box_advanced_2_pool
+      Rarity: 1
+      LockerId: level_16
+      BaitChance: 0.4
+      BaitRarity: 7
+      BaitShipChance: 0.3
+      IsSpecialBox: 0
+    - Id: pirate_box_advanced_3
+      Name: chest_adamantin
+      PoolListId: pirate_box_advanced_3_pool
+      Rarity: 1
+      LockerId: level_31
+      BaitChance: 0.4
+      BaitRarity: 7
+      BaitShipChance: 0.3
+      IsSpecialBox: 0
+    - Id: pirate_box_epic_1
+      Name: chest_gold
+      PoolListId: pirate_box_epic_1_pool
+      Rarity: 2
+      LockerId: level_1
+      BaitChance: 0.6
+      BaitRarity: 5
+      BaitShipChance: 0.3
+      IsSpecialBox: 0
+    - Id: pirate_box_epic_2
+      Name: chest_gold
+      PoolListId: pirate_box_epic_2_pool
+      Rarity: 2
+      LockerId: level_16
+      BaitChance: 0.6
+      BaitRarity: 5
+      BaitShipChance: 0.3
+      IsSpecialBox: 0
+    - Id: pirate_box_epic_3
+      Name: chest_gold
+      PoolListId: pirate_box_epic_3_pool
+      Rarity: 2
+      LockerId: level_31
+      BaitChance: 0.6
+      BaitRarity: 5
+      BaitShipChance: 0.3
+      IsSpecialBox: 0
+    - Id: pirate_box_ultimate_1
+      Name: chest_diamond
+      PoolListId: pirate_box_ultimate_1_pool
+      Rarity: 3
+      LockerId: level_1
+      BaitChance: 1
+      BaitRarity: -1
+      BaitShipChance: 1
+      IsSpecialBox: 0
+    - Id: pirate_box_ultimate_2
+      Name: chest_diamond
+      PoolListId: pirate_box_ultimate_2_pool
+      Rarity: 3
+      LockerId: level_16
+      BaitChance: 1
+      BaitRarity: -1
+      BaitShipChance: 1
+      IsSpecialBox: 0
+    - Id: pirate_box_ultimate_3
+      Name: chest_diamond
+      PoolListId: pirate_box_ultimate_3_pool
+      Rarity: 3
+      LockerId: level_31
+      BaitChance: 1
+      BaitRarity: -1
+      BaitShipChance: 1
+      IsSpecialBox: 0
+    - Id: pirate_box_premium_common_1
+      Name: chest_carbon
+      PoolListId: pirate_box_premium_common_1_pool
+      Rarity: 0
+      LockerId: level_1
+      BaitChance: 0.2
+      BaitRarity: 8
+      BaitShipChance: 0.3
+      IsSpecialBox: 1
+    - Id: pirate_box_premium_common_2
+      Name: chest_carbon
+      PoolListId: pirate_box_premium_common_2_pool
+      Rarity: 0
+      LockerId: level_16
+      BaitChance: 0.2
+      BaitRarity: 8
+      BaitShipChance: 0.3
+      IsSpecialBox: 1
+    - Id: pirate_box_premium_common_3
+      Name: chest_carbon
+      PoolListId: pirate_box_premium_common_3_pool
+      Rarity: 0
+      LockerId: level_31
+      BaitChance: 0.2
+      BaitRarity: 8
+      BaitShipChance: 0.3
+      IsSpecialBox: 1
+    - Id: pirate_box_premium_advanced_1
+      Name: chest_adamantin
+      PoolListId: pirate_box_premium_advanced_1_pool
+      Rarity: 1
+      LockerId: level_1
+      BaitChance: 0.4
+      BaitRarity: 7
+      BaitShipChance: 0.3
+      IsSpecialBox: 1
+    - Id: pirate_box_premium_advanced_2
+      Name: chest_adamantin
+      PoolListId: pirate_box_premium_advanced_2_pool
+      Rarity: 1
+      LockerId: level_16
+      BaitChance: 0.4
+      BaitRarity: 7
+      BaitShipChance: 0.3
+      IsSpecialBox: 1
+    - Id: pirate_box_premium_advanced_3
+      Name: chest_adamantin
+      PoolListId: pirate_box_premium_advanced_3_pool
+      Rarity: 1
+      LockerId: level_31
+      BaitChance: 0.4
+      BaitRarity: 7
+      BaitShipChance: 0.3
+      IsSpecialBox: 1
+    - Id: pirate_box_premium_epic_1
+      Name: chest_gold
+      PoolListId: pirate_box_premium_epic_1_pool
+      Rarity: 2
+      LockerId: level_1
+      BaitChance: 0.6
+      BaitRarity: 5
+      BaitShipChance: 0.3
+      IsSpecialBox: 1
+    - Id: pirate_box_premium_epic_2
+      Name: chest_gold
+      PoolListId: pirate_box_premium_epic_2_pool
+      Rarity: 2
+      LockerId: level_16
+      BaitChance: 0.6
+      BaitRarity: 5
+      BaitShipChance: 0.3
+      IsSpecialBox: 1
+    - Id: pirate_box_premium_epic_3
+      Name: chest_gold
+      PoolListId: pirate_box_premium_epic_3_pool
+      Rarity: 2
+      LockerId: level_31
+      BaitChance: 0.6
+      BaitRarity: 5
+      BaitShipChance: 0.3
+      IsSpecialBox: 1
+    PirateBoxChestDefs:
+    - Id: piratebox_common
+      Name: PirateBox_Common
+      Rarity: 0
+      ForFree: 1
+      ProgressNormalized: 0.1
+      CostKeys: 30
+      BonusSoftMin: 0
+      BonusSoftMax: 0
+    - Id: piratebox_advanced
+      Name: PirateBox_Advanced
+      Rarity: 1
+      ForFree: 0
+      ProgressNormalized: 0.3
+      CostKeys: 300
+      BonusSoftMin: 0
+      BonusSoftMax: 0
+    - Id: piratebox_epic
+      Name: PirateBox_Epic
+      Rarity: 2
+      ForFree: 0
+      ProgressNormalized: 0.5
+      CostKeys: 3000
+      BonusSoftMin: 0
+      BonusSoftMax: 0
+    - Id: piratebox_ultra
+      Name: PirateBox_Ultra
+      Rarity: 3
+      ForFree: 0
+      ProgressNormalized: -1
+      CostKeys: 0
+      BonusSoftMin: 0
+      BonusSoftMax: 0
+    SettingDefs:
+    - Id: MaxHangarSlots
+      Value: 6
+    - Id: MaxFatigueLevel
+      Value: 5
+    - Id: FatigueLvlDownTime
+      Value: 0.00:00:20
+    - Id: HardToSoftMoney
+      Value: 10
+    - Id: KeysToSoftMoney
+      Value: 15
+    - Id: TorpedoSlotsCount
+      Value: 2
+    - Id: EmblemSlotsCount
+      Value: 1
+    - Id: EmblemSlotLimit
+      Value: 1
+    - Id: ConsumableMaxSlots
+      Value: 3
+    - Id: PirateBoxSeasonPeriodDays
+      Value: 7
+    - Id: BoxAdsCooldownHours
+      Value: 4

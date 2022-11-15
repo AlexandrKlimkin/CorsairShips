@@ -1,0 +1,31 @@
+﻿<Window x:Class="FriendsClientWpf.CreateRoom"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FriendsClientWpf"
+        mc:Ignorable="d"
+        Title="CreateRoom" Height="430" Width="800" ResizeMode="NoResize">
+    <StackPanel Margin="0">
+        <StackPanel Orientation="Horizontal" x:Name="GameModeSelector">
+            <RadioButton Content="GameMode1" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" GroupName="GameMode" IsChecked="True" Checked="RadioButton_Checked"/>
+            <RadioButton Content="GameMode2" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" GroupName="GameMode" Checked="RadioButton_Checked"/>
+            <CheckBox x:Name="cbStartAfterCountdown" VerticalAlignment="Bottom" Margin="50,0,0,0" IsChecked="True">Start battle after countdown (normal behaviour)</CheckBox>
+        </StackPanel>
+        <Label HorizontalAlignment="Center" FontSize="20">Game start countdown:</Label>
+        <Label x:Name="lblCountdown" HorizontalAlignment="Center" FontSize="20">1:59</Label>
+        <Label>In room:</Label>
+        <ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Visible">
+            <StackPanel x:Name="InRoomListView" Orientation="Horizontal" HorizontalAlignment="Left">
+            </StackPanel>
+        </ScrollViewer>
+        <Label>Can invite:</Label>
+        <ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Visible">
+            <StackPanel x:Name="CanInviteListView" Orientation="Horizontal" HorizontalAlignment="Left">
+            </StackPanel>
+        </ScrollViewer>
+        <StackPanel Orientation="Horizontal" Margin="10" HorizontalAlignment="Right">
+            <Button x:Name="btnStartBattle" Content="Start battle" Click="btnStartBattle_Click"></Button>
+        </StackPanel>
+    </StackPanel>
+</Window>

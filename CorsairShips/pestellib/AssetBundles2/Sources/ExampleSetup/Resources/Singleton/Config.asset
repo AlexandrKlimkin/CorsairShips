@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a52e822458e0ce6439cae5e65fec9d25, type: 3}
+  m_Name: Config
+  m_EditorClassIdentifier: 
+  UseLocalState: 1
+  DebugWriteRequestsOnDisk: 0
+  DontPackMultipleCommands: 0
+  CommandsBatchSize: 1
+  CommandsSyncTimeout: 0
+  EnableOfflineSharedLogic: 0
+  DontCheckDefinitionsEquality: 0
+  EnableMultiInstance: 0
+  DynamicURL: http://localhost:50626/api
+  IapValidatorUrl: http://localhost/validateReceipt
+  ConfigOverrideBaseURL: http://localhost/config
+  UseMatchmaker: 0
+  MatchmakerURL: localhost:8500
+  PhotonServerVersion: pc_1.10.107dev
+  PhotonPluginVersion: v0.29.4
+  PhotonServers:
+  - Name: EU
+    Uri: mm.planetcommander.ru
+    Port: 5055
+  - Name: US
+    Uri: mmphotonus.southcentralus.cloudapp.azure.com
+    Port: 5055
+  BuildSignature: 23:AA:19:D5:2F:F0:D4:CF:4D:05:DE:9F:D0:35:FA:52:ED:97:C9:B5
+  UseIntegrityCheck: 1
+  LogServerEnabled: 0
+  LogServer: 
+  LogCollectUnityErrors: 0
+  AssetBundleUrl: http://192.168.88.58:3000/unityBundles/
+  LoadBundlesFromFileSystem: 0

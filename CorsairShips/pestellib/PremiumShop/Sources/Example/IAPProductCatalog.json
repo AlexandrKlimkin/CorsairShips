@@ -1,0 +1,173 @@
+{
+	"appleSKU": "com.gdcompany.spaceconflict",
+	"products": [{
+			"id": "gcpack_1",
+			"type": 0,
+			"storeIDs": [{
+					"store": "AppleAppStore",
+					"id": "com.gdcompany.spaceconflict.gcpack_1"
+				}
+			],
+			"defaultDescription": {
+				"googleLocale": 4,
+				"title": "Small Crystals Pack",
+				"description": "Several crystals inside"
+			},
+			"screenshotPath": "gcpack_1.png",
+			"applePriceTier": 6,
+			"googlePrice": {
+				"data": [599, 0, 0, 131072],
+				"num": 5.99
+			},
+			"pricingTemplateID": "",
+			"descriptions": []
+		}, {
+			"id": "gcpack_2",
+			"type": 0,
+			"storeIDs": [{
+					"store": "AppleAppStore",
+					"id": "com.gdcompany.spaceconflict.gcpack_2"
+				}
+			],
+			"defaultDescription": {
+				"googleLocale": 4,
+				"title": "Medium Crystals Pack",
+				"description": "Some crystals inside"
+			},
+			"screenshotPath": "gcpack_2.png",
+			"applePriceTier": 10,
+			"googlePrice": {
+				"data": [0, 0, 0, 0],
+				"num": 0.0
+			},
+			"pricingTemplateID": "",
+			"descriptions": []
+		}, {
+			"id": "gcpack_3",
+			"type": 0,
+			"storeIDs": [{
+					"store": "AppleAppStore",
+					"id": "com.gdcompany.spaceconflict.gcpack_3"
+				}
+			],
+			"defaultDescription": {
+				"googleLocale": 4,
+				"title": "Big Crystals Pack",
+				"description": "Plenty of crystals inside"
+			},
+			"screenshotPath": "gcpack_3.png",
+			"applePriceTier": 18,
+			"googlePrice": {
+				"data": [0, 0, 0, 0],
+				"num": 0.0
+			},
+			"pricingTemplateID": "",
+			"descriptions": []
+		}, {
+			"id": "gcpack_4",
+			"type": 0,
+			"storeIDs": [{
+					"store": "AppleAppStore",
+					"id": "com.gdcompany.spaceconflict.gcpack_4"
+				}
+			],
+			"defaultDescription": {
+				"googleLocale": 4,
+				"title": "Very Big Crystal Pack",
+				"description": "Whole bunch of crystals inside"
+			},
+			"screenshotPath": "gcpack_4.png",
+			"applePriceTier": 46,
+			"googlePrice": {
+				"data": [0, 0, 0, 0],
+				"num": 0.0
+			},
+			"pricingTemplateID": "",
+			"descriptions": []
+		}, {
+			"id": "ccpack_1",
+			"type": 0,
+			"storeIDs": [{
+					"store": "AppleAppStore",
+					"id": "com.gdcompany.spaceconflict.ccpack_1"
+				}
+			],
+			"defaultDescription": {
+				"googleLocale": 4,
+				"title": "Small Gold Pack",
+				"description": "Several gold coins inside"
+			},
+			"screenshotPath": "ccpack_1.png",
+			"applePriceTier": 6,
+			"googlePrice": {
+				"data": [0, 0, 0, 0],
+				"num": 0.0
+			},
+			"pricingTemplateID": "",
+			"descriptions": []
+		}, {
+			"id": "ccpack_2",
+			"type": 0,
+			"storeIDs": [{
+					"store": "AppleAppStore",
+					"id": "com.gdcompany.spaceconflict.ccpack_2"
+				}
+			],
+			"defaultDescription": {
+				"googleLocale": 4,
+				"title": "Medium Gold Pack",
+				"description": "Some gold inside"
+			},
+			"screenshotPath": "ccpack_2.png",
+			"applePriceTier": 10,
+			"googlePrice": {
+				"data": [0, 0, 0, 0],
+				"num": 0.0
+			},
+			"pricingTemplateID": "",
+			"descriptions": []
+		}, {
+			"id": "ccpack_3",
+			"type": 0,
+			"storeIDs": [{
+					"store": "AppleAppStore",
+					"id": "com.gdcompany.spaceconflict.ccpack_3"
+				}
+			],
+			"defaultDescription": {
+				"googleLocale": 4,
+				"title": "Big Gold Pack",
+				"description": "Plenty of gold inside"
+			},
+			"screenshotPath": "ccpack_3.png",
+			"applePriceTier": 18,
+			"googlePrice": {
+				"data": [0, 0, 0, 0],
+				"num": 0.0
+			},
+			"pricingTemplateID": "",
+			"descriptions": []
+		}, {
+			"id": "ccpack_4",
+			"type": 0,
+			"storeIDs": [{
+					"store": "AppleAppStore",
+					"id": "com.gdcompany.spaceconflict.ccpack_4"
+				}
+			],
+			"defaultDescription": {
+				"googleLocale": 4,
+				"title": "Very Big Gold Pack",
+				"description": "Whole bunch of gold inside"
+			},
+			"screenshotPath": "ccpack_4.png",
+			"applePriceTier": 46,
+			"googlePrice": {
+				"data": [0, 0, 0, 0],
+				"num": 0.0
+			},
+			"pricingTemplateID": "",
+			"descriptions": []
+		}
+	]
+}

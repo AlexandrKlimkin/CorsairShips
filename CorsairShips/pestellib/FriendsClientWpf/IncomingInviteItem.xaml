@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="FriendsClientWpf.IncomingInviteItem"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FriendsClientWpf"
+             mc:Ignorable="d" d:DesignWidth="180" Height="116.211">
+    <Grid>
+        <Label x:Name="lblLevel" Content="10" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblName" Content="Name" HorizontalAlignment="Left" Margin="56,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblStatus" Content="Status" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnAccept" Background="ForestGreen" HorizontalAlignment="Left" Margin="10,88,0,0" VerticalAlignment="Top" Width="77" Height="25" HorizontalContentAlignment="Center" ToolTip="" Content="Accept" Click="btnAccept_Click"/>
+        <Button x:Name="btnReject" Background="IndianRed" HorizontalAlignment="Left" Margin="92,88,0,0" VerticalAlignment="Top" Width="77" Height="25" HorizontalContentAlignment="Center" ToolTip="" Content="Reject" Click="btnReject_Click"/>
+        <Label x:Name="lblExpire" Content="Will expire in" HorizontalAlignment="Left" Margin="10,62,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</UserControl>

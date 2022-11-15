@@ -1,0 +1,12 @@
+﻿version: '3.4'
+# https://github.com/Microsoft/DockerTools/issues/9#issuecomment-528126722
+# для передачи аргументов в запущенный мастер сервр приходится использовать этот файл
+# и com.microsoft.visualstudio.debuggee.arguments
+
+services:
+  boltmasterserver:
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages --additionalProbingPath /root/.nuget/fallbackpackages  \"bin/Debug/netcoreapp3.0/BoltMasterServer.dll\" -path UnityGameBuild/build.x86_64 -loadbalancingIp 192.168.88.243 -address 192.168.88.243"
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""

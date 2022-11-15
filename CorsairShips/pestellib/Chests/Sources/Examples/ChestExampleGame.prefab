@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1182169319204648}
+  m_IsPrefabParent: 1
+--- !u!1 &1182169319204648
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4346211721390660}
+  - component: {fileID: 114657699830411784}
+  m_Layer: 0
+  m_Name: ChestExampleGame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4346211721390660
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1182169319204648}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 354.25565, y: 273.5914, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114657699830411784
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1182169319204648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f970b894c7e39ba42997697ce2c34ccc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _testItemSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  _softIcon: {fileID: 21300000, guid: 1e9de177ba54aff4089dde4eadf1cfc3, type: 3}
+  _hardIcon: {fileID: 21300000, guid: f18e80ab6bbe37644961eb80a9ea3889, type: 3}
+  _ships:
+  - {fileID: 21300000, guid: 26c6004626e5b304fb41fff63ebce30a, type: 3}
+  - {fileID: 21300000, guid: 76e503fed6a18854598bd4b0080b2348, type: 3}
+  _items:
+  - {fileID: 21300000, guid: a77bf2213a946ac44a8e60925bd26ffb, type: 3}
+  - {fileID: 21300000, guid: 30195af8723c2bc408c988ba3bc3e58a, type: 3}

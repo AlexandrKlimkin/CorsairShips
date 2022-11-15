@@ -1,0 +1,45 @@
+﻿#based on https://kubernetes.io/docs/concepts/services-networking/connect-applications-service/
+apiVersion: v1
+kind: Service
+metadata:
+  name: loadbalancing
+  labels:
+    run: loadbalancing
+spec:
+  type: LoadBalancer
+  externalIPs:
+  - 51.178.78.126 #в kubernetes по-умолчанию нет реализации лоадбалансинга, поэтому назначается внешний адрес руками https://stackoverflow.com/a/51901825/9936606 
+  ports:
+  - port: 9998
+#    targetPort: 9998
+    protocol: TCP
+    name: players
+  - port: 9999
+#    targetPort: 9999
+    protocol: TCP
+    name: masters
+  selector:
+    run: loadbalancing
+---
+apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
+kind: Deployment
+metadata:
+  name: loadbalancing
+spec:
+  selector:
+    matchLabels:
+      run: loadbalancing
+  replicas: 1 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        run: loadbalancing
+    spec:
+      containers:
+      - name: loadbalancing
+        image: gdcompany.azurecr.io/boltloadbalancing:20200805041809
+#        ports:
+#        - containerPort: 9998
+#        - containerPort: 9999
+      imagePullSecrets:
+      - name: azurecred

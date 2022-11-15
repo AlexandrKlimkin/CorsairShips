@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "BoltMasterServer": {
+      "commandName": "Project",
+      "commandLineArgs": "-path PhotonBoltTest.exe -loadbalancingIp 192.168.88.26 -address 192.168.88.26 -noagones",
+      "workingDirectory": "D:\\Projects\\PhotonBoltTest\\BuildsMono"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

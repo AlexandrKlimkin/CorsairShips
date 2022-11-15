@@ -1,0 +1,50 @@
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+packages/
+ExportedObj/
+*.svd
+*.userprefs
+/*.csproj
+*.pidb
+*.suo
+*.user
+*.unityproj
+*.booproj
+.idea/*
+Debug
+Release
+DeployAndroid
+DeployIOS
+.vs
+*/obj
+*/logs
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# ===================================== #
+# Local #
+# ===================================== #
+FatData.dll
+FatData.pdb
+FatDataPrecompiled.dll
+
+ConcreteServerTemplate/bin
+ServerLog/bin/
+Tools/WinMerge/Data/Temp/
+Tools/WinMerge/Data/settings/WinMergePortableSettings.ini
+Tools/WinMerge/Data/settings/WinMerge.reg
+Tools/WinMerge/Data/PortableApps.comLauncherRuntimeData-WinMergePortable.ini
+Tools/SQLiteDatabaseBrowserPortable/Data/settings/sqlitebrowser.reg
+Tools/SQLiteDatabaseBrowserPortable/Data/settings/SQLiteDatabaseBrowserPortableSettings.ini
+obj/Docker
+CoreBackend/App_Data/

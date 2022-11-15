@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1216417860388592}
+  m_IsPrefabParent: 1
+--- !u!1 &1216417860388592
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4168441737145676}
+  - component: {fileID: 114215691812058404}
+  m_Layer: 0
+  m_Name: RouletteExampleGame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4168441737145676
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1216417860388592}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114215691812058404
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1216417860388592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10fc21516197db64c82ca415e0ad479b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _testItemSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  _softIcon: {fileID: 21300000, guid: 7743d346cc45f054fad7a38cd29ff6d7, type: 3}
+  _hardIcon: {fileID: 21300000, guid: b26238e1d6e038a45a781e878ba0484e, type: 3}
+  _keyIcon: {fileID: 21300000, guid: 766f2a40b7f83d449ae802e3ae565a72, type: 3}
+  _ships:
+  - {fileID: 21300000, guid: c9451fc75487be2428678f3009349d31, type: 3}
+  - {fileID: 21300000, guid: 492a65b8baed1cc41a822299805dcae8, type: 3}
+  _items:
+  - {fileID: 21300000, guid: 376a57018bef65c4abb47b5a37f5d354, type: 3}
+  - {fileID: 21300000, guid: 129c84f2d537e9443a6cdf504f4bc52d, type: 3}
+  _pirateBoxes:
+  - {fileID: 21300000, guid: d0415262023ec604c83c105411b6cb4e, type: 3}
+  - {fileID: 21300000, guid: 61a0fcae381b43b42be43017bad109e8, type: 3}
+  - {fileID: 21300000, guid: 6edd1056145e6e24b8de4dfe13f848bc, type: 3}

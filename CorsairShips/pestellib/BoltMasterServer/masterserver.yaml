@@ -1,0 +1,31 @@
+apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
+kind: Deployment
+metadata:
+  name: boltmasterserver-deployment
+spec:
+  selector:
+    matchLabels:
+      app: boltmasterserver
+  replicas: 1 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: boltmasterserver
+    spec:
+      containers:
+      - name: sidecar
+        image: gdcompany.azurecr.io/kubectlsidecar:61c197b1bc7e
+      - name: boltmasterserver
+        image: gdcompany.azurecr.io/boltmasterserver:20200805035557
+        env:
+        - name: NODE_EXTERNAL_IP
+          valueFrom:
+            fieldRef:
+              fieldPath: status.podIP
+              #fieldPath: status.hostIP
+        command: ["dotnet"]
+        args: ["BoltMasterServer.dll", "-path", "UnityGameBuild/build.x86_64",  "-loadbalancingIp", "51.178.78.126", "-address", "51.178.78.126"]
+      imagePullSecrets:
+      - name: azurecred
+      serviceAccount: fleet-allocator
+

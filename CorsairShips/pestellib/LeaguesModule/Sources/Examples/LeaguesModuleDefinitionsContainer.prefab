@@ -1,0 +1,2127 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1421034309582784}
+  m_IsPrefabParent: 1
+--- !u!1 &1421034309582784
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4764491438437708}
+  - component: {fileID: 114657315453853272}
+  m_Layer: 0
+  m_Name: LeaguesModuleDefinitionsContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4764491438437708
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1421034309582784}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 665.05194, y: 341.18622, z: 28.75}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114657315453853272
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1421034309582784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c53e0beceba640340b08de79a7618aba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SharedLogicDefs:
+    LeagueDefs:
+    - Id: bronze_1
+      Level: 0
+      Name: BronzeLeague
+      UpCoeff: 0.1
+      DownCoeff: 0
+    - Id: bronze_2
+      Level: 1
+      Name: BronzeLeague
+      UpCoeff: 0.1
+      DownCoeff: 0.1
+    - Id: bronze_3
+      Level: 2
+      Name: BronzeLeague
+      UpCoeff: 0.1
+      DownCoeff: 0.1
+    - Id: bronze_4
+      Level: 3
+      Name: BronzeLeague
+      UpCoeff: 0.1
+      DownCoeff: 0.1
+    - Id: bronze_5
+      Level: 4
+      Name: BronzeLeague
+      UpCoeff: 0.1
+      DownCoeff: 0.1
+    - Id: silver_1
+      Level: 5
+      Name: SilverLeague
+      UpCoeff: 0.1
+      DownCoeff: 0.1
+    - Id: silver_2
+      Level: 6
+      Name: SilverLeague
+      UpCoeff: 0.1
+      DownCoeff: 0.1
+    - Id: silver_3
+      Level: 7
+      Name: SilverLeague
+      UpCoeff: 0.1
+      DownCoeff: 0.1
+    - Id: silver_4
+      Level: 8
+      Name: SilverLeague
+      UpCoeff: 0.1
+      DownCoeff: 0.1
+    - Id: silver_5
+      Level: 9
+      Name: SilverLeague
+      UpCoeff: 0.1
+      DownCoeff: 0.1
+    - Id: gold_1
+      Level: 10
+      Name: GoldLeague
+      UpCoeff: 0.1
+      DownCoeff: 0.1
+    - Id: gold_2
+      Level: 11
+      Name: GoldLeague
+      UpCoeff: 0.1
+      DownCoeff: 0.1
+    - Id: gold_3
+      Level: 12
+      Name: GoldLeague
+      UpCoeff: 0.1
+      DownCoeff: 0.1
+    - Id: gold_4
+      Level: 13
+      Name: GoldLeague
+      UpCoeff: 0.1
+      DownCoeff: 0.1
+    - Id: gold_5
+      Level: 14
+      Name: GoldLeague
+      UpCoeff: 0.1
+      DownCoeff: 0.1
+    - Id: platinum_1
+      Level: 15
+      Name: PlatinumLeague
+      UpCoeff: 0.1
+      DownCoeff: 0.1
+    - Id: platinum_2
+      Level: 16
+      Name: PlatinumLeague
+      UpCoeff: 0.1
+      DownCoeff: 0.1
+    - Id: platinum_3
+      Level: 17
+      Name: PlatinumLeague
+      UpCoeff: 0.1
+      DownCoeff: 0.1
+    - Id: platinum_4
+      Level: 18
+      Name: PlatinumLeague
+      UpCoeff: 0.1
+      DownCoeff: 0.1
+    - Id: platinum_5
+      Level: 19
+      Name: PlatinumLeague
+      UpCoeff: 0.1
+      DownCoeff: 0.1
+    - Id: diamond_1
+      Level: 20
+      Name: DiamondLeague
+      UpCoeff: 0.1
+      DownCoeff: 0.1
+    - Id: diamond_2
+      Level: 21
+      Name: DiamondLeague
+      UpCoeff: 0.1
+      DownCoeff: 0.1
+    - Id: diamond_3
+      Level: 22
+      Name: DiamondLeague
+      UpCoeff: 0.1
+      DownCoeff: 0.1
+    - Id: diamond_4
+      Level: 23
+      Name: DiamondLeague
+      UpCoeff: 0.1
+      DownCoeff: 0.1
+    - Id: diamond_5
+      Level: 24
+      Name: DiamondLeague
+      UpCoeff: 0.1
+      DownCoeff: 0.1
+    - Id: champion_1
+      Level: 25
+      Name: ChampionLeague
+      UpCoeff: 0.1
+      DownCoeff: 0.1
+    - Id: champion_2
+      Level: 26
+      Name: ChampionLeague
+      UpCoeff: 0.1
+      DownCoeff: 0.1
+    - Id: champion_3
+      Level: 27
+      Name: ChampionLeague
+      UpCoeff: 0.1
+      DownCoeff: 0.1
+    - Id: champion_4
+      Level: 28
+      Name: ChampionLeague
+      UpCoeff: 0.1
+      DownCoeff: 0.1
+    - Id: champion_5
+      Level: 29
+      Name: ChampionLeague
+      UpCoeff: 0.1
+      DownCoeff: 0.1
+    LeagueRewardDefs:
+    - Id: bronze_1_rew_top1
+      LeagueId: bronze_1
+      Top: 1
+      ChestId: league_bronze_1_epic
+    - Id: bronze_1_rew_top5
+      LeagueId: bronze_1
+      Top: 5
+      ChestId: league_bronze_1_advanced
+    - Id: bronze_1_rew_top20
+      LeagueId: bronze_1
+      Top: 20
+      ChestId: league_bronze_1_common
+    - Id: bronze_2_rew_top1
+      LeagueId: bronze_2
+      Top: 1
+      ChestId: league_bronze_2_epic
+    - Id: bronze_2_rew_top5
+      LeagueId: bronze_2
+      Top: 5
+      ChestId: league_bronze_2_advanced
+    - Id: bronze_2_rew_top20
+      LeagueId: bronze_2
+      Top: 20
+      ChestId: league_bronze_2_common
+    - Id: bronze_3_rew_top1
+      LeagueId: bronze_3
+      Top: 1
+      ChestId: league_bronze_3_epic
+    - Id: bronze_3_rew_top5
+      LeagueId: bronze_3
+      Top: 5
+      ChestId: league_bronze_3_advanced
+    - Id: bronze_3_rew_top20
+      LeagueId: bronze_3
+      Top: 20
+      ChestId: league_bronze_3_common
+    - Id: bronze_4_rew_top1
+      LeagueId: bronze_4
+      Top: 1
+      ChestId: league_bronze_4_epic
+    - Id: bronze_4_rew_top5
+      LeagueId: bronze_4
+      Top: 5
+      ChestId: league_bronze_4_advanced
+    - Id: bronze_4_rew_top20
+      LeagueId: bronze_4
+      Top: 20
+      ChestId: league_bronze_4_common
+    - Id: bronze_5_rew_top1
+      LeagueId: bronze_5
+      Top: 1
+      ChestId: league_bronze_5_epic
+    - Id: bronze_5_rew_top5
+      LeagueId: bronze_5
+      Top: 5
+      ChestId: league_bronze_5_advanced
+    - Id: bronze_5_rew_top20
+      LeagueId: bronze_5
+      Top: 20
+      ChestId: league_bronze_5_common
+    RewardDefs:
+    - Id: soft_com_1
+      Description: 
+      ItemType: soft_currency
+      Amount: 100
+      ItemId: MoneyTypeIngame
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: soft_com_1
+    - Id: soft_com_2
+      Description: 
+      ItemType: soft_currency
+      Amount: 150
+      ItemId: MoneyTypeIngame
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: soft_com_2
+    - Id: soft_com_3
+      Description: 
+      ItemType: soft_currency
+      Amount: 200
+      ItemId: MoneyTypeIngame
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: soft_com_3
+    - Id: soft_rar_1
+      Description: 
+      ItemType: soft_currency
+      Amount: 400
+      ItemId: MoneyTypeIngame
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: soft_rar_1
+    - Id: soft_rar_2
+      Description: 
+      ItemType: soft_currency
+      Amount: 500
+      ItemId: MoneyTypeIngame
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: soft_rar_2
+    - Id: soft_rar_3
+      Description: 
+      ItemType: soft_currency
+      Amount: 600
+      ItemId: MoneyTypeIngame
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: soft_rar_3
+    - Id: soft_leg_1
+      Description: 
+      ItemType: soft_currency
+      Amount: 1000
+      ItemId: MoneyTypeIngame
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: soft_leg_1
+    - Id: soft_leg_2
+      Description: 
+      ItemType: soft_currency
+      Amount: 1500
+      ItemId: MoneyTypeIngame
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: soft_leg_2
+    - Id: soft_leg_3
+      Description: 
+      ItemType: soft_currency
+      Amount: 2000
+      ItemId: MoneyTypeIngame
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: soft_leg_3
+    - Id: hard_com_1
+      Description: 
+      ItemType: hard_currency
+      Amount: 2
+      ItemId: MoneyTypeReal
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: hard_com_1
+    - Id: hard_com_2
+      Description: 
+      ItemType: hard_currency
+      Amount: 4
+      ItemId: MoneyTypeReal
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: hard_com_2
+    - Id: hard_com_3
+      Description: 
+      ItemType: hard_currency
+      Amount: 6
+      ItemId: MoneyTypeReal
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: hard_com_3
+    - Id: hard_rar_1
+      Description: 
+      ItemType: hard_currency
+      Amount: 10
+      ItemId: MoneyTypeReal
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: hard_rar_1
+    - Id: hard_rar_2
+      Description: 
+      ItemType: hard_currency
+      Amount: 12
+      ItemId: MoneyTypeReal
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: hard_rar_2
+    - Id: hard_rar_3
+      Description: 
+      ItemType: hard_currency
+      Amount: 15
+      ItemId: MoneyTypeReal
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: hard_rar_3
+    - Id: hard_leg_1
+      Description: 
+      ItemType: hard_currency
+      Amount: 15
+      ItemId: MoneyTypeReal
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: hard_leg_1
+    - Id: hard_leg_2
+      Description: 
+      ItemType: hard_currency
+      Amount: 20
+      ItemId: MoneyTypeReal
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: hard_leg_2
+    - Id: hard_leg_3
+      Description: 
+      ItemType: hard_currency
+      Amount: 25
+      ItemId: MoneyTypeReal
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: hard_leg_3
+    - Id: keys_com_1
+      Description: 
+      ItemType: key_currency
+      Amount: 10
+      ItemId: KeyItem
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: keys_com_1
+    - Id: keys_com_2
+      Description: 
+      ItemType: key_currency
+      Amount: 20
+      ItemId: KeyItem
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: keys_com_2
+    - Id: keys_com_3
+      Description: 
+      ItemType: key_currency
+      Amount: 30
+      ItemId: KeyItem
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: keys_com_3
+    - Id: keys_rar_1
+      Description: 
+      ItemType: key_currency
+      Amount: 100
+      ItemId: KeyItem
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: keys_rar_1
+    - Id: keys_rar_2
+      Description: 
+      ItemType: key_currency
+      Amount: 200
+      ItemId: KeyItem
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: keys_rar_2
+    - Id: keys_rar_3
+      Description: 
+      ItemType: key_currency
+      Amount: 300
+      ItemId: KeyItem
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: keys_rar_3
+    - Id: keys_leg_1
+      Description: 
+      ItemType: key_currency
+      Amount: 300
+      ItemId: KeyItem
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: keys_leg_1
+    - Id: keys_leg_2
+      Description: 
+      ItemType: key_currency
+      Amount: 600
+      ItemId: KeyItem
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: keys_leg_2
+    - Id: keys_leg_3
+      Description: 
+      ItemType: key_currency
+      Amount: 900
+      ItemId: KeyItem
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: keys_leg_3
+    - Id: bp_com_1
+      Description: 
+      ItemType: bp
+      Amount: 2
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: bp_com_1
+    - Id: bp_com_2
+      Description: 
+      ItemType: bp
+      Amount: 3
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: bp_com_2
+    - Id: bp_com_3
+      Description: 
+      ItemType: bp
+      Amount: 4
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: bp_com_3
+    - Id: bp_rar_1
+      Description: 
+      ItemType: bp
+      Amount: 4
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: bp_rar_1
+    - Id: bp_rar_2
+      Description: 
+      ItemType: bp
+      Amount: 5
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: bp_rar_2
+    - Id: bp_rar_3
+      Description: 
+      ItemType: bp
+      Amount: 6
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: bp_rar_3
+    - Id: bp_leg_1
+      Description: 
+      ItemType: bp
+      Amount: 10
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: bp_leg_1
+    - Id: bp_leg_2
+      Description: 
+      ItemType: bp
+      Amount: 12
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: bp_leg_2
+    - Id: bp_leg_3
+      Description: 
+      ItemType: bp
+      Amount: 15
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: bp_leg_3
+    - Id: module_com_1
+      Description: 
+      ItemType: module
+      Amount: 2
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: module_com_1
+    - Id: module_com_2
+      Description: 
+      ItemType: module
+      Amount: 3
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: module_com_2
+    - Id: module_com_3
+      Description: 
+      ItemType: module
+      Amount: 5
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: module_com_3
+    - Id: module_rar_1
+      Description: 
+      ItemType: module
+      Amount: 5
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: module_rar_1
+    - Id: module_rar_2
+      Description: 
+      ItemType: module
+      Amount: 7
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: module_rar_2
+    - Id: module_rar_3
+      Description: 
+      ItemType: module
+      Amount: 10
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: module_rar_3
+    - Id: module_leg_1
+      Description: 
+      ItemType: module
+      Amount: 10
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: module_leg_1
+    - Id: module_leg_2
+      Description: 
+      ItemType: module
+      Amount: 15
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: module_leg_2
+    - Id: module_leg_3
+      Description: 
+      ItemType: module
+      Amount: 20
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: module_leg_3
+    - Id: torpedo_com_1
+      Description: 
+      ItemType: torpedo
+      Amount: 3
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: torpedo_com_1
+    - Id: torpedo_com_2
+      Description: 
+      ItemType: torpedo
+      Amount: 4
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: torpedo_com_2
+    - Id: torpedo_com_3
+      Description: 
+      ItemType: torpedo
+      Amount: 5
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: torpedo_com_3
+    - Id: torpedo_rar_1
+      Description: 
+      ItemType: torpedo
+      Amount: 7
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: torpedo_rar_1
+    - Id: torpedo_rar_2
+      Description: 
+      ItemType: torpedo
+      Amount: 10
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: torpedo_rar_2
+    - Id: torpedo_rar_3
+      Description: 
+      ItemType: torpedo
+      Amount: 12
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: torpedo_rar_3
+    - Id: torpedo_leg_1
+      Description: 
+      ItemType: torpedo
+      Amount: 15
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: torpedo_leg_1
+    - Id: torpedo_leg_2
+      Description: 
+      ItemType: torpedo
+      Amount: 20
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: torpedo_leg_2
+    - Id: torpedo_leg_3
+      Description: 
+      ItemType: torpedo
+      Amount: 30
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: torpedo_leg_3
+    - Id: emblem_com_1
+      Description: 
+      ItemType: emblem
+      Amount: 1
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: emblem_com_1
+    - Id: emblem_com_2
+      Description: 
+      ItemType: emblem
+      Amount: 2
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: emblem_com_2
+    - Id: emblem_com_3
+      Description: 
+      ItemType: emblem
+      Amount: 3
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: emblem_com_3
+    - Id: emblem_rar_1
+      Description: 
+      ItemType: emblem
+      Amount: 5
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: emblem_rar_1
+    - Id: emblem_rar_2
+      Description: 
+      ItemType: emblem
+      Amount: 6
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: emblem_rar_2
+    - Id: emblem_rar_3
+      Description: 
+      ItemType: emblem
+      Amount: 7
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: emblem_rar_3
+    - Id: emblem_leg_1
+      Description: 
+      ItemType: emblem
+      Amount: 10
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: emblem_leg_1
+    - Id: emblem_leg_2
+      Description: 
+      ItemType: emblem
+      Amount: 15
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: emblem_leg_2
+    - Id: emblem_leg_3
+      Description: 
+      ItemType: emblem
+      Amount: 20
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: emblem_leg_3
+    - Id: emblem_pack_1
+      Description: 
+      ItemType: emblem
+      Amount: 10
+      ItemId: whale_emblem_1
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: emblem_pack_1
+    - Id: small_soft_pack
+      Description: 
+      ItemType: soft_currency
+      Amount: 3000
+      ItemId: MoneyTypeIngame
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: small_soft_pack
+    - Id: medium_soft_pack
+      Description: 
+      ItemType: soft_currency
+      Amount: 10000
+      ItemId: MoneyTypeIngame
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: medium_soft_pack
+    - Id: big_soft_pack
+      Description: 
+      ItemType: soft_currency
+      Amount: 30000
+      ItemId: MoneyTypeIngame
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: big_soft_pack
+    - Id: small_hard_pack
+      Description: 
+      ItemType: hard_currency
+      Amount: 500
+      ItemId: MoneyTypeReal
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: small_hard_pack
+    - Id: medium_hard_pack
+      Description: 
+      ItemType: hard_currency
+      Amount: 2000
+      ItemId: MoneyTypeReal
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: medium_hard_pack
+    - Id: big_hard_pack
+      Description: 
+      ItemType: hard_currency
+      Amount: 5000
+      ItemId: MoneyTypeReal
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: big_hard_pack
+    - Id: premium_15
+      Description: 
+      ItemType: premium
+      Amount: 15
+      ItemId: premium_15
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: premium_15
+    - Id: premium_30
+      Description: 
+      ItemType: premium
+      Amount: 30
+      ItemId: premium_30
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: premium_30
+    - Id: daily_soft_1
+      Description: 
+      ItemType: soft_currency
+      Amount: 300
+      ItemId: MoneyTypeIngame
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: daily_soft_1
+    - Id: daily_soft_2
+      Description: 
+      ItemType: soft_currency
+      Amount: 600
+      ItemId: MoneyTypeIngame
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: daily_soft_2
+    - Id: daily_soft_3
+      Description: 
+      ItemType: soft_currency
+      Amount: 1000
+      ItemId: MoneyTypeIngame
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: daily_soft_3
+    - Id: daily_hard_1
+      Description: 
+      ItemType: hard_currency
+      Amount: 10
+      ItemId: MoneyTypeReal
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: daily_hard_1
+    - Id: daily_hard_2
+      Description: 
+      ItemType: hard_currency
+      Amount: 25
+      ItemId: MoneyTypeReal
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: daily_hard_2
+    - Id: daily_hard_3
+      Description: 
+      ItemType: hard_currency
+      Amount: 50
+      ItemId: MoneyTypeReal
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: daily_hard_3
+    - Id: daily_bp_1
+      Description: 
+      ItemType: bp
+      Amount: 10
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: daily_bp_1
+    - Id: daily_bp_2
+      Description: 
+      ItemType: bp
+      Amount: 15
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: daily_bp_2
+    - Id: daily_bp_3
+      Description: 
+      ItemType: bp
+      Amount: 20
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: daily_bp_3
+    - Id: daily_keys_1
+      Description: 
+      ItemType: key_currency
+      Amount: 30
+      ItemId: KeyItem
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: daily_keys_1
+    - Id: daily_keys_2
+      Description: 
+      ItemType: key_currency
+      Amount: 60
+      ItemId: KeyItem
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: daily_keys_2
+    - Id: daily_keys_3
+      Description: 
+      ItemType: key_currency
+      Amount: 90
+      ItemId: KeyItem
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: daily_keys_3
+    - Id: daily_modules_1
+      Description: 
+      ItemType: module
+      Amount: 10
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: daily_modules_1
+    - Id: daily_modules_2
+      Description: 
+      ItemType: module
+      Amount: 20
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: daily_modules_2
+    - Id: daily_modules_3
+      Description: 
+      ItemType: module
+      Amount: 30
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: daily_modules_3
+    - Id: daily_torpedoes_1
+      Description: 
+      ItemType: torpedo
+      Amount: 10
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: daily_torpedoes_1
+    - Id: daily_torpedoes_2
+      Description: 
+      ItemType: torpedo
+      Amount: 20
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: daily_torpedoes_2
+    - Id: daily_torpedoes_3
+      Description: 
+      ItemType: torpedo
+      Amount: 30
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: daily_torpedoes_3
+    - Id: daily_emblems_1
+      Description: 
+      ItemType: emblem
+      Amount: 10
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: daily_emblems_1
+    - Id: daily_emblems_2
+      Description: 
+      ItemType: emblem
+      Amount: 25
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: daily_emblems_2
+    - Id: daily_boat_1
+      Description: 
+      ItemType: emblem
+      Amount: 20
+      ItemId: 
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: daily_boat_1
+    - Id: league_bronze_1_top_1
+      Description: 
+      ItemType: emblem
+      Amount: 10
+      ItemId: shark_emblem_1
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: 
+    - Id: league_bronze_1_top_5
+      Description: 
+      ItemType: emblem
+      Amount: 5
+      ItemId: shark_emblem_1
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: 
+    - Id: league_bronze_1_top_20
+      Description: 
+      ItemType: emblem
+      Amount: 2
+      ItemId: shark_emblem_1
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: 
+    - Id: league_bronze_2_top_1
+      Description: 
+      ItemType: emblem
+      Amount: 10
+      ItemId: shark_emblem_2
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: 
+    - Id: league_bronze_2_top_5
+      Description: 
+      ItemType: emblem
+      Amount: 5
+      ItemId: shark_emblem_2
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: 
+    - Id: league_bronze_2_top_20
+      Description: 
+      ItemType: emblem
+      Amount: 2
+      ItemId: shark_emblem_2
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: 
+    - Id: league_bronze_3_top_1
+      Description: 
+      ItemType: emblem
+      Amount: 10
+      ItemId: shark_emblem_3
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: 
+    - Id: league_bronze_3_top_5
+      Description: 
+      ItemType: emblem
+      Amount: 5
+      ItemId: shark_emblem_3
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: 
+    - Id: league_bronze_3_top_20
+      Description: 
+      ItemType: emblem
+      Amount: 2
+      ItemId: shark_emblem_3
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: 
+    - Id: league_bronze_4_top_1
+      Description: 
+      ItemType: emblem
+      Amount: 10
+      ItemId: shark_emblem_4
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: 
+    - Id: league_bronze_4_top_5
+      Description: 
+      ItemType: emblem
+      Amount: 5
+      ItemId: shark_emblem_4
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: 
+    - Id: league_bronze_4_top_20
+      Description: 
+      ItemType: emblem
+      Amount: 2
+      ItemId: shark_emblem_4
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: 
+    - Id: league_bronze_5_top_1
+      Description: 
+      ItemType: emblem
+      Amount: 10
+      ItemId: shark_emblem_5
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: 
+    - Id: league_bronze_5_top_5
+      Description: 
+      ItemType: emblem
+      Amount: 5
+      ItemId: shark_emblem_5
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: 
+    - Id: league_bronze_5_top_20
+      Description: 
+      ItemType: emblem
+      Amount: 2
+      ItemId: shark_emblem_5
+      UseRarityAndTier: 0
+      Rarity: 0
+      Tier: 0
+      UseMaxPlayerTier: 0
+      Tag: 
+    RewardPoolDefs:
+    - Tag: league_chest_1_pool_1
+      RewardId: soft_com_1
+      RewardWeight: 1
+    - Tag: league_chest_1_pool_1
+      RewardId: hard_com_1
+      RewardWeight: 1
+    - Tag: league_chest_2_pool_1
+      RewardId: hard_com_1
+      RewardWeight: 1
+    - Tag: league_chest_2_pool_2
+      RewardId: hard_com_1
+      RewardWeight: 1
+    - Tag: league_chest_3_pool_1
+      RewardId: hard_com_1
+      RewardWeight: 1
+    - Tag: league_chest_3_pool_2
+      RewardId: hard_com_1
+      RewardWeight: 1
+    - Tag: league_chest_4_pool_1
+      RewardId: bp_com_1
+      RewardWeight: 1
+    - Tag: league_chest_4_pool_2
+      RewardId: module_leg_1
+      RewardWeight: 1
+    - Tag: league_chest_4_pool_3
+      RewardId: emblem_rar_1
+      RewardWeight: 1
+    - Tag: pirate_box_common_1_pool_1
+      RewardId: soft_com_1
+      RewardWeight: 10
+    - Tag: pirate_box_common_1_pool_1
+      RewardId: soft_com_2
+      RewardWeight: 5
+    - Tag: pirate_box_common_1_pool_1
+      RewardId: soft_com_3
+      RewardWeight: 1
+    - Tag: pirate_box_common_1_pool_1
+      RewardId: hard_com_1
+      RewardWeight: 10
+    - Tag: pirate_box_common_1_pool_1
+      RewardId: hard_com_2
+      RewardWeight: 5
+    - Tag: pirate_box_common_1_pool_1
+      RewardId: hard_com_3
+      RewardWeight: 1
+    - Tag: pirate_box_common_1_pool_1
+      RewardId: keys_com_1
+      RewardWeight: 20
+    - Tag: pirate_box_common_1_pool_1
+      RewardId: keys_com_2
+      RewardWeight: 8
+    - Tag: pirate_box_common_1_pool_1
+      RewardId: keys_com_3
+      RewardWeight: 3
+    - Tag: pirate_box_common_1_pool_1
+      RewardId: bp_com_1
+      RewardWeight: 75
+    - Tag: pirate_box_common_1_pool_1
+      RewardId: bp_com_2
+      RewardWeight: 10
+    - Tag: pirate_box_common_1_pool_1
+      RewardId: bp_com_3
+      RewardWeight: 5
+    - Tag: pirate_box_common_1_pool_1
+      RewardId: module_com_1
+      RewardWeight: 75
+    - Tag: pirate_box_common_1_pool_1
+      RewardId: module_com_2
+      RewardWeight: 10
+    - Tag: pirate_box_common_1_pool_1
+      RewardId: module_com_3
+      RewardWeight: 5
+    - Tag: pirate_box_common_1_pool_1
+      RewardId: torpedo_com_1
+      RewardWeight: 75
+    - Tag: pirate_box_common_1_pool_1
+      RewardId: torpedo_com_2
+      RewardWeight: 10
+    - Tag: pirate_box_common_1_pool_1
+      RewardId: torpedo_com_3
+      RewardWeight: 5
+    - Tag: pirate_box_common_1_pool_1
+      RewardId: emblem_com_1
+      RewardWeight: 25
+    - Tag: pirate_box_common_1_pool_1
+      RewardId: emblem_com_2
+      RewardWeight: 8
+    - Tag: pirate_box_common_1_pool_1
+      RewardId: emblem_com_3
+      RewardWeight: 2
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: soft_rar_1
+      RewardWeight: 10
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: soft_rar_2
+      RewardWeight: 5
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: soft_rar_3
+      RewardWeight: 1
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: hard_rar_1
+      RewardWeight: 10
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: hard_rar_2
+      RewardWeight: 5
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: hard_rar_3
+      RewardWeight: 1
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: keys_rar_1
+      RewardWeight: 20
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: keys_rar_2
+      RewardWeight: 8
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: keys_rar_3
+      RewardWeight: 3
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: bp_rar_1
+      RewardWeight: 75
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: bp_rar_2
+      RewardWeight: 10
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: bp_rar_3
+      RewardWeight: 5
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: module_rar_1
+      RewardWeight: 75
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: module_rar_2
+      RewardWeight: 10
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: module_rar_3
+      RewardWeight: 5
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: torpedo_rar_1
+      RewardWeight: 75
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: torpedo_rar_2
+      RewardWeight: 10
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: torpedo_rar_3
+      RewardWeight: 5
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: emblem_rar_1
+      RewardWeight: 25
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: emblem_rar_2
+      RewardWeight: 8
+    - Tag: pirate_box_advanced_1_pool_1
+      RewardId: emblem_rar_3
+      RewardWeight: 2
+    - Tag: pirate_box_epic_1_pool_1
+      RewardId: soft_leg_1
+      RewardWeight: 10
+    - Tag: pirate_box_epic_1_pool_1
+      RewardId: soft_leg_2
+      RewardWeight: 5
+    - Tag: pirate_box_epic_1_pool_1
+      RewardId: soft_leg_3
+      RewardWeight: 1
+    - Tag: pirate_box_epic_1_pool_1
+      RewardId: hard_leg_1
+      RewardWeight: 10
+    - Tag: pirate_box_epic_1_pool_1
+      RewardId: hard_leg_2
+      RewardWeight: 5
+    - Tag: pirate_box_epic_1_pool_1
+      RewardId: hard_leg_3
+      RewardWeight: 1
+    - Tag: pirate_box_epic_1_pool_1
+      RewardId: keys_leg_1
+      RewardWeight: 20
+    - Tag: pirate_box_epic_1_pool_1
+      RewardId: keys_leg_2
+      RewardWeight: 8
+    - Tag: pirate_box_epic_1_pool_1
+      RewardId: keys_leg_3
+      RewardWeight: 3
+    - Tag: pirate_box_epic_1_pool_1
+      RewardId: bp_leg_1
+      RewardWeight: 75
+    - Tag: pirate_box_epic_1_pool_1
+      RewardId: bp_leg_2
+      RewardWeight: 10
+    - Tag: pirate_box_epic_1_pool_1
+      RewardId: bp_leg_3
+      RewardWeight: 5
+    - Tag: pirate_box_epic_1_pool_1
+      RewardId: module_leg_1
+      RewardWeight: 75
+    - Tag: pirate_box_epic_1_pool_1
+      RewardId: module_leg_2
+      RewardWeight: 10
+    - Tag: pirate_box_epic_1_pool_1
+      RewardId: module_leg_3
+      RewardWeight: 5
+    - Tag: pirate_box_epic_1_pool_1
+      RewardId: torpedo_leg_1
+      RewardWeight: 75
+    - Tag: pirate_box_epic_1_pool_1
+      RewardId: torpedo_leg_2
+      RewardWeight: 10
+    - Tag: pirate_box_epic_1_pool_1
+      RewardId: torpedo_leg_3
+      RewardWeight: 5
+    - Tag: pirate_box_epic_1_pool_1
+      RewardId: emblem_leg_1
+      RewardWeight: 25
+    - Tag: pirate_box_epic_1_pool_1
+      RewardId: emblem_leg_2
+      RewardWeight: 8
+    - Tag: pirate_box_epic_1_pool_1
+      RewardId: emblem_leg_3
+      RewardWeight: 2
+    - Tag: pirate_box_ultimate_2_pool_1
+      RewardId: module_rar_1
+      RewardWeight: 333
+    - Tag: pirate_box_ultimate_2_pool_1
+      RewardId: torpedo_rar_1
+      RewardWeight: 333
+    - Tag: pirate_box_ultimate_2_pool_2
+      RewardId: emblem_com_1
+      RewardWeight: 250
+    - Tag: pirate_box_ultimate_2_pool_2
+      RewardId: bp_rar_1
+      RewardWeight: 250
+    - Tag: pirate_box_ultimate_2_pool_2
+      RewardId: module_rar_1
+      RewardWeight: 250
+    - Tag: pirate_box_ultimate_2_pool_2
+      RewardId: torpedo_rar_1
+      RewardWeight: 250
+    - Tag: pirate_box_ultimate_3_pool_1
+      RewardId: emblem_com_1
+      RewardWeight: 333
+    - Tag: pirate_box_ultimate_3_pool_1
+      RewardId: bp_leg_1
+      RewardWeight: 333
+    - Tag: pirate_box_ultimate_3_pool_1
+      RewardId: torpedo_rar_1
+      RewardWeight: 333
+    - Tag: pirate_box_ultimate_3_pool_2
+      RewardId: soft_leg_1
+      RewardWeight: 250
+    - Tag: pirate_box_ultimate_3_pool_2
+      RewardId: soft_leg_1
+      RewardWeight: 250
+    - Tag: pirate_box_ultimate_3_pool_2
+      RewardId: soft_leg_1
+      RewardWeight: 250
+    - Tag: pirate_box_ultimate_3_pool_2
+      RewardId: soft_leg_1
+      RewardWeight: 250
+    - Tag: pirate_box_premium_common_1_pool_1
+      RewardId: soft_com_1
+      RewardWeight: 0
+    - Tag: pirate_box_premium_common_1_pool_1
+      RewardId: soft_com_2
+      RewardWeight: 0
+    - Tag: pirate_box_premium_common_1_pool_1
+      RewardId: soft_com_3
+      RewardWeight: 0
+    - Tag: pirate_box_premium_common_1_pool_1
+      RewardId: hard_com_1
+      RewardWeight: 0
+    - Tag: pirate_box_premium_common_1_pool_1
+      RewardId: hard_com_2
+      RewardWeight: 20
+    - Tag: pirate_box_premium_common_1_pool_1
+      RewardId: hard_com_3
+      RewardWeight: 8
+    - Tag: pirate_box_premium_common_1_pool_1
+      RewardId: keys_com_1
+      RewardWeight: 8
+    - Tag: pirate_box_premium_common_1_pool_1
+      RewardId: keys_com_2
+      RewardWeight: 8
+    - Tag: pirate_box_premium_common_1_pool_1
+      RewardId: keys_com_3
+      RewardWeight: 8
+    - Tag: pirate_box_premium_common_1_pool_1
+      RewardId: bp_com_1
+      RewardWeight: 8
+    - Tag: pirate_box_premium_common_1_pool_1
+      RewardId: bp_com_2
+      RewardWeight: 8
+    - Tag: pirate_box_premium_common_1_pool_1
+      RewardId: bp_com_3
+      RewardWeight: 8
+    - Tag: pirate_box_premium_common_1_pool_1
+      RewardId: module_com_1
+      RewardWeight: 8
+    - Tag: pirate_box_premium_common_1_pool_1
+      RewardId: module_com_2
+      RewardWeight: 8
+    - Tag: pirate_box_premium_common_1_pool_1
+      RewardId: module_com_3
+      RewardWeight: 8
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: torpedo_com_1
+      RewardWeight: 0
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: torpedo_com_2
+      RewardWeight: 0
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: torpedo_com_3
+      RewardWeight: 0
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: emblem_com_1
+      RewardWeight: 0
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: emblem_com_2
+      RewardWeight: 30
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: emblem_com_3
+      RewardWeight: 4
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: soft_com_1
+      RewardWeight: 4
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: soft_com_2
+      RewardWeight: 4
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: soft_com_3
+      RewardWeight: 4
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: hard_com_1
+      RewardWeight: 4
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: hard_com_2
+      RewardWeight: 4
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: hard_com_3
+      RewardWeight: 4
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: keys_com_1
+      RewardWeight: 4
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: keys_com_2
+      RewardWeight: 4
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: keys_com_3
+      RewardWeight: 4
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: bp_com_1
+      RewardWeight: 4
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: bp_com_2
+      RewardWeight: 4
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: bp_com_3
+      RewardWeight: 4
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: module_com_1
+      RewardWeight: 4
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: module_com_2
+      RewardWeight: 4
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: module_com_3
+      RewardWeight: 4
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: torpedo_com_1
+      RewardWeight: 4
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: torpedo_com_2
+      RewardWeight: 4
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: torpedo_com_3
+      RewardWeight: 4
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: emblem_com_1
+      RewardWeight: 4
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: emblem_com_2
+      RewardWeight: 3
+    - Tag: pirate_box_premium_advanced_1_pool_1
+      RewardId: emblem_com_3
+      RewardWeight: 3
+    - Tag: pirate_box_premium_epic_1_pool_1
+      RewardId: soft_com_1
+      RewardWeight: 0
+    - Tag: pirate_box_premium_epic_1_pool_1
+      RewardId: soft_com_2
+      RewardWeight: 0
+    - Tag: pirate_box_premium_epic_1_pool_1
+      RewardId: soft_com_3
+      RewardWeight: 0
+    - Tag: pirate_box_premium_epic_1_pool_1
+      RewardId: hard_com_1
+      RewardWeight: 0
+    - Tag: pirate_box_premium_epic_1_pool_1
+      RewardId: hard_com_2
+      RewardWeight: 50
+    - Tag: pirate_box_premium_epic_1_pool_1
+      RewardId: hard_com_3
+      RewardWeight: 5
+    - Tag: pirate_box_premium_epic_1_pool_1
+      RewardId: keys_com_1
+      RewardWeight: 5
+    - Tag: pirate_box_premium_epic_1_pool_1
+      RewardId: keys_com_2
+      RewardWeight: 5
+    - Tag: pirate_box_premium_epic_1_pool_1
+      RewardId: keys_com_3
+      RewardWeight: 5
+    - Tag: pirate_box_premium_epic_1_pool_1
+      RewardId: bp_com_1
+      RewardWeight: 5
+    - Tag: pirate_box_premium_epic_1_pool_1
+      RewardId: bp_com_2
+      RewardWeight: 5
+    - Tag: pirate_box_premium_epic_1_pool_1
+      RewardId: bp_com_3
+      RewardWeight: 5
+    - Tag: pirate_box_premium_epic_1_pool_1
+      RewardId: module_com_1
+      RewardWeight: 5
+    - Tag: pirate_box_premium_epic_1_pool_1
+      RewardId: module_com_2
+      RewardWeight: 5
+    - Tag: pirate_box_premium_epic_1_pool_1
+      RewardId: module_com_3
+      RewardWeight: 5
+    - Tag: league_bronze_1_top_1_pool
+      RewardId: league_bronze_1_top_1
+      RewardWeight: 1
+    - Tag: league_bronze_1_top_5_pool
+      RewardId: league_bronze_1_top_5
+      RewardWeight: 1
+    - Tag: league_bronze_1_top_20_pool
+      RewardId: league_bronze_1_top_20
+      RewardWeight: 1
+    - Tag: league_bronze_2_top_1_pool
+      RewardId: league_bronze_2_top_1
+      RewardWeight: 1
+    - Tag: league_bronze_2_top_5_pool
+      RewardId: league_bronze_2_top_5
+      RewardWeight: 1
+    - Tag: league_bronze_2_top_20_pool
+      RewardId: league_bronze_2_top_20
+      RewardWeight: 1
+    - Tag: league_bronze_3_top_1_pool
+      RewardId: league_bronze_3_top_1
+      RewardWeight: 1
+    - Tag: league_bronze_3_top_5_pool
+      RewardId: league_bronze_3_top_5
+      RewardWeight: 1
+    - Tag: league_bronze_3_top_20_pool
+      RewardId: league_bronze_3_top_20
+      RewardWeight: 1
+    - Tag: league_bronze_4_top_1_pool
+      RewardId: league_bronze_4_top_1
+      RewardWeight: 1
+    - Tag: league_bronze_4_top_5_pool
+      RewardId: league_bronze_4_top_5
+      RewardWeight: 1
+    - Tag: league_bronze_4_top_20_pool
+      RewardId: league_bronze_4_top_20
+      RewardWeight: 1
+    - Tag: league_bronze_5_top_1_pool
+      RewardId: league_bronze_5_top_1
+      RewardWeight: 1
+    - Tag: league_bronze_5_top_5_pool
+      RewardId: league_bronze_5_top_5
+      RewardWeight: 1
+    - Tag: league_bronze_5_top_20_pool
+      RewardId: league_bronze_5_top_20
+      RewardWeight: 1
+    ChestDefs:
+    - Id: league_chest_1
+      Tag: 
+      Name: chest_carbon
+      PoolListId: league_chest_1_pool
+      ChestRandomWeight: 1
+      ChestRarity: 0
+      OpenTimeSeconds: 0
+      Level: 0
+      ImmediatelyOpenCost: 0
+    - Id: league_chest_2
+      Tag: 
+      Name: chest_adamantin
+      PoolListId: league_chest_2_pool
+      ChestRandomWeight: 1
+      ChestRarity: 1
+      OpenTimeSeconds: 0
+      Level: 0
+      ImmediatelyOpenCost: 0
+    - Id: league_chest_3
+      Tag: 
+      Name: chest_gold
+      PoolListId: league_chest_3_pool
+      ChestRandomWeight: 1
+      ChestRarity: 2
+      OpenTimeSeconds: 0
+      Level: 0
+      ImmediatelyOpenCost: 0
+    - Id: league_chest_4
+      Tag: 
+      Name: chest_diamond
+      PoolListId: league_chest_4_pool
+      ChestRandomWeight: 1
+      ChestRarity: 3
+      OpenTimeSeconds: 0
+      Level: 0
+      ImmediatelyOpenCost: 0
+    - Id: league_bronze_1_epic
+      Tag: 
+      Name: 
+      PoolListId: league_bronze_1_epic_pool
+      ChestRandomWeight: 1
+      ChestRarity: 0
+      OpenTimeSeconds: 0
+      Level: 0
+      ImmediatelyOpenCost: 0
+    - Id: league_bronze_1_advanced
+      Tag: 
+      Name: 
+      PoolListId: league_bronze_1_advanced_pool
+      ChestRandomWeight: 1
+      ChestRarity: 0
+      OpenTimeSeconds: 0
+      Level: 0
+      ImmediatelyOpenCost: 0
+    - Id: league_bronze_1_common
+      Tag: 
+      Name: 
+      PoolListId: league_bronze_1_common_pool
+      ChestRandomWeight: 1
+      ChestRarity: 0
+      OpenTimeSeconds: 0
+      Level: 0
+      ImmediatelyOpenCost: 0
+    - Id: league_bronze_2_epic
+      Tag: 
+      Name: 
+      PoolListId: league_bronze_2_epic_pool
+      ChestRandomWeight: 1
+      ChestRarity: 0
+      OpenTimeSeconds: 0
+      Level: 0
+      ImmediatelyOpenCost: 0
+    - Id: league_bronze_2_advanced
+      Tag: 
+      Name: 
+      PoolListId: league_bronze_2_advanced_pool
+      ChestRandomWeight: 1
+      ChestRarity: 0
+      OpenTimeSeconds: 0
+      Level: 0
+      ImmediatelyOpenCost: 0
+    - Id: league_bronze_2_common
+      Tag: 
+      Name: 
+      PoolListId: league_bronze_2_common_pool
+      ChestRandomWeight: 1
+      ChestRarity: 0
+      OpenTimeSeconds: 0
+      Level: 0
+      ImmediatelyOpenCost: 0
+    - Id: league_bronze_3_epic
+      Tag: 
+      Name: 
+      PoolListId: league_bronze_3_epic_pool
+      ChestRandomWeight: 1
+      ChestRarity: 0
+      OpenTimeSeconds: 0
+      Level: 0
+      ImmediatelyOpenCost: 0
+    - Id: league_bronze_3_advanced
+      Tag: 
+      Name: 
+      PoolListId: league_bronze_3_advanced_pool
+      ChestRandomWeight: 1
+      ChestRarity: 0
+      OpenTimeSeconds: 0
+      Level: 0
+      ImmediatelyOpenCost: 0
+    - Id: league_bronze_3_common
+      Tag: 
+      Name: 
+      PoolListId: league_bronze_3_common_pool
+      ChestRandomWeight: 1
+      ChestRarity: 0
+      OpenTimeSeconds: 0
+      Level: 0
+      ImmediatelyOpenCost: 0
+    - Id: league_bronze_4_epic
+      Tag: 
+      Name: 
+      PoolListId: league_bronze_4_epic_pool
+      ChestRandomWeight: 1
+      ChestRarity: 0
+      OpenTimeSeconds: 0
+      Level: 0
+      ImmediatelyOpenCost: 0
+    - Id: league_bronze_4_advanced
+      Tag: 
+      Name: 
+      PoolListId: league_bronze_4_advanced_pool
+      ChestRandomWeight: 1
+      ChestRarity: 0
+      OpenTimeSeconds: 0
+      Level: 0
+      ImmediatelyOpenCost: 0
+    - Id: league_bronze_4_common
+      Tag: 
+      Name: 
+      PoolListId: league_bronze_4_common_pool
+      ChestRandomWeight: 1
+      ChestRarity: 0
+      OpenTimeSeconds: 0
+      Level: 0
+      ImmediatelyOpenCost: 0
+    - Id: league_bronze_5_epic
+      Tag: 
+      Name: 
+      PoolListId: league_bronze_5_epic_pool
+      ChestRandomWeight: 1
+      ChestRarity: 0
+      OpenTimeSeconds: 0
+      Level: 0
+      ImmediatelyOpenCost: 0
+    - Id: league_bronze_5_advanced
+      Tag: 
+      Name: 
+      PoolListId: league_bronze_5_advanced_pool
+      ChestRandomWeight: 1
+      ChestRarity: 0
+      OpenTimeSeconds: 0
+      Level: 0
+      ImmediatelyOpenCost: 0
+    - Id: league_bronze_5_common
+      Tag: 
+      Name: 
+      PoolListId: league_bronze_5_common_pool
+      ChestRandomWeight: 1
+      ChestRarity: 0
+      OpenTimeSeconds: 0
+      Level: 0
+      ImmediatelyOpenCost: 0
+    RewardPoolListDefs:
+    - Tag: league_chest_1_pool
+      RewardPoolId: league_chest_1_pool_1
+    - Tag: league_chest_2_pool
+      RewardPoolId: league_chest_2_pool_1
+    - Tag: league_chest_2_pool
+      RewardPoolId: league_chest_2_pool_2
+    - Tag: league_chest_3_pool
+      RewardPoolId: league_chest_3_pool_1
+    - Tag: league_chest_3_pool
+      RewardPoolId: league_chest_3_pool_2
+    - Tag: league_chest_4_pool
+      RewardPoolId: league_chest_4_pool_1
+    - Tag: league_chest_4_pool
+      RewardPoolId: league_chest_4_pool_2
+    - Tag: league_chest_4_pool
+      RewardPoolId: league_chest_4_pool_3
+    - Tag: pirate_box_common_1_pool
+      RewardPoolId: pirate_box_common_1_pool_1
+    - Tag: pirate_box_advanced_1_pool
+      RewardPoolId: pirate_box_advanced_1_pool_1
+    - Tag: pirate_box_epic_1_pool
+      RewardPoolId: pirate_box_epic_1_pool_1
+    - Tag: pirate_box_ultimate_1_pool
+      RewardPoolId: pirate_box_ultimate_1_pool_1
+    - Tag: pirate_box_ultimate_2_pool
+      RewardPoolId: pirate_box_ultimate_2_pool_1
+    - Tag: pirate_box_ultimate_3_pool
+      RewardPoolId: pirate_box_ultimate_3_pool_1
+    - Tag: pirate_box_premium_common_1_pool
+      RewardPoolId: pirate_box_premium_common_1_pool_1
+    - Tag: pirate_box_premium_advanced_1_pool
+      RewardPoolId: pirate_box_premium_advanced_1_pool_1
+    - Tag: pirate_box_premium_epic_1_pool
+      RewardPoolId: pirate_box_premium_epic_1_pool_1
+    - Tag: league_bronze_1_epic_pool
+      RewardPoolId: pirate_box_epic_1_pool_1
+    - Tag: league_bronze_1_epic_pool
+      RewardPoolId: league_bronze_1_top_1_pool
+    - Tag: league_bronze_1_advanced_pool
+      RewardPoolId: pirate_box_advanced_1_pool_1
+    - Tag: league_bronze_1_advanced_pool
+      RewardPoolId: league_bronze_1_top_5_pool
+    - Tag: league_bronze_1_common_pool
+      RewardPoolId: pirate_box_common_1_pool_1
+    - Tag: league_bronze_1_common_pool
+      RewardPoolId: league_bronze_1_top_20_pool
+    - Tag: league_bronze_2_epic_pool
+      RewardPoolId: pirate_box_epic_1_pool_1
+    - Tag: league_bronze_2_epic_pool
+      RewardPoolId: league_bronze_2_top_1_pool
+    - Tag: league_bronze_2_advanced_pool
+      RewardPoolId: pirate_box_advanced_1_pool_1
+    - Tag: league_bronze_2_advanced_pool
+      RewardPoolId: league_bronze_2_top_5_pool
+    - Tag: league_bronze_2_common_pool
+      RewardPoolId: pirate_box_common_1_pool_1
+    - Tag: league_bronze_2_common_pool
+      RewardPoolId: league_bronze_2_top_20_pool
+    - Tag: league_bronze_3_epic_pool
+      RewardPoolId: pirate_box_epic_1_pool_1
+    - Tag: league_bronze_3_epic_pool
+      RewardPoolId: league_bronze_3_top_1_pool
+    - Tag: league_bronze_3_advanced_pool
+      RewardPoolId: pirate_box_advanced_1_pool_1
+    - Tag: league_bronze_3_advanced_pool
+      RewardPoolId: league_bronze_3_top_5_pool
+    - Tag: league_bronze_3_common_pool
+      RewardPoolId: pirate_box_common_1_pool_1
+    - Tag: league_bronze_3_common_pool
+      RewardPoolId: league_bronze_3_top_20_pool
+    - Tag: league_bronze_4_epic_pool
+      RewardPoolId: pirate_box_epic_1_pool_1
+    - Tag: league_bronze_4_epic_pool
+      RewardPoolId: league_bronze_4_top_1_pool
+    - Tag: league_bronze_4_advanced_pool
+      RewardPoolId: pirate_box_advanced_1_pool_1
+    - Tag: league_bronze_4_advanced_pool
+      RewardPoolId: league_bronze_4_top_5_pool
+    - Tag: league_bronze_4_common_pool
+      RewardPoolId: pirate_box_common_1_pool_1
+    - Tag: league_bronze_4_common_pool
+      RewardPoolId: league_bronze_4_top_20_pool
+    - Tag: league_bronze_5_epic_pool
+      RewardPoolId: pirate_box_epic_1_pool_1
+    - Tag: league_bronze_5_epic_pool
+      RewardPoolId: league_bronze_5_top_1_pool
+    - Tag: league_bronze_5_advanced_pool
+      RewardPoolId: pirate_box_advanced_1_pool_1
+    - Tag: league_bronze_5_advanced_pool
+      RewardPoolId: league_bronze_5_top_5_pool
+    - Tag: league_bronze_5_common_pool
+      RewardPoolId: pirate_box_common_1_pool_1
+    - Tag: league_bronze_5_common_pool
+      RewardPoolId: league_bronze_5_top_20_pool
+    SettingDefs:
+    - Id: MaxHangarSlots
+      Value: 6
+    - Id: MaxFatigueLevel
+      Value: 5
+    - Id: FatigueLvlDownTime
+      Value: 0.00:00:20
+    - Id: HardToSoftMoney
+      Value: 10
+    - Id: KeysToSoftMoney
+      Value: 15
+    - Id: TorpedoSlotsCount
+      Value: 2
+    - Id: EmblemSlotsCount
+      Value: 1
+    - Id: EmblemSlotLimit
+      Value: 1
+    - Id: ConsumableMaxSlots
+      Value: 3
+    - Id: PirateBoxSeasonPeriodDays
+      Value: 7
+    - Id: BoxAdsCooldownHours
+      Value: 4
+    - Id: PremiumExpKoef
+      Value: 3
+    - Id: PremiumMoneyKoef
+      Value: 2
+    - Id: PremiumLeagueKoef
+      Value: 2
+    - Id: PremiumDailyKoef
+      Value: 2
+    - Id: PremiumTrophyKoef
+      Value: 2
+    - Id: LeagueDivisionSize
+      Value: 100
+    - Id: LeaguePreClosureTimeFactor
+      Value: 0.5
+    - Id: LeagueDivisionReserveSlots
+      Value: 0.2
+    - Id: LeagueCycleTime
+      Value: 48

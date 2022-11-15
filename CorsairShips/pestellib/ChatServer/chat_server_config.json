@@ -1,0 +1,18 @@
+{
+  "GraphiteHost": "pestelcrew.com",
+  "GraphitePort": 2003,
+  "ChatServerName": "dummy",
+  "MultiChannel": true,
+  "Secret": "pestel_chat_Udm7Kzhj30iH",
+  "ChatChannelHistorySize": 20,
+  "BadWordCount": 3,
+  "BadWordBanTime": 600,
+  "BadMessageLimit": 4,
+  "HotReload": true,
+  "MongoConnectionString": "mongodb://localhost/chat",
+  "Port": 8001,
+  "UseMessageEncryption": false,
+  "TokenStorageConnectionString": "",
+  "TokenIpCheck": false,
+  "ChatServerMessageProvider": "Lidgren"
+}

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7208133e9df8b2478fdb11d91247387, type: 3}
+  m_Name: CommandGeneratorSettings
+  m_EditorClassIdentifier: 
+  ProtocolFilePath: ProjectLib/ConcreteSharedLogic/Sources/UserProfile.cs
+  SharedLogicCorePath: ProjectLib/ConcreteSharedLogic/Sources/SharedLogicCore.cs
+  WrapperFilePath: Assets/CommandHelper.cs
+  AutoCommandsNamespace: S

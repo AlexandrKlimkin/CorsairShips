@@ -1,0 +1,25 @@
+version: '3.4'
+
+services:
+  boltloadbalancing:
+    image: ${DOCKER_REGISTRY-}boltloadbalancing
+    build:
+      context: .
+      dockerfile: BoltLoadBalancing/Dockerfile
+    ports:
+      - "9998-9999:9998-9999"
+    
+  boltmasterserver:
+    image: ${DOCKER_REGISTRY-}boltmasterserver
+    build:
+      context: .
+      dockerfile: BoltMasterServer/Dockerfile
+    ports:
+      - "25000-25100:25000-25100/udp"
+    working_dir: /app
+    command: ["dotnet", "BoltMasterServer.dll", "-path", "UnityGameBuild/build.x86_64",  "-loadbalancingIp", "192.168.88.243", "-address", "192.168.88.243"]
+     
+    
+
+
+
