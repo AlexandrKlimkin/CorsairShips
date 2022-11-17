@@ -44,17 +44,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b76adeac7f626f47aa277a7f1155af8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Definitions:
-    UnitDefs:
-    - Id: Spider
-      Damage: 10
-      Health: 15
-    - Id: Skeleton
-      Damage: 15
-      Health: 20
   LocalizationDefContainer:
     LocalizationDef:
-    - Id: Test
+    - Id: 
       en_US: 
       ru_RU: 
       fr_FR: 
