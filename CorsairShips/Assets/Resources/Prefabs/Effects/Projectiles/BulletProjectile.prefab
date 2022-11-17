@@ -169,6 +169,6 @@ MonoBehaviour:
     - WaterSplash
   - LayerName: Ship
     EffectNames:
-    - PoofEffect
+    - Explosion2
   TrailTransformOverride: {fileID: 6336075432148655755}
   TrailName: BulletTrail

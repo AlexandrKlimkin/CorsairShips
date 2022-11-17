@@ -14,6 +14,8 @@ namespace Game.SeaGameplay {
         [SerializeField]
         private string _FireEffectName;
         [SerializeField]
+        private float _ProjectileDamage;
+        [SerializeField]
         private float _ProjectileSpeed;
         [SerializeField]
         private float _ProjectileLifetime;
@@ -48,7 +50,7 @@ namespace Game.SeaGameplay {
                 BirthTime = Time.time,
                 Speed = _ProjectileSpeed,
                 Gravity = _ProjectileGravity,
-                Damage = new Damage(null, 0f),
+                Damage = new Damage(null, _ProjectileDamage),
             };
             projectile.Setup(data);
             projectile.Play();

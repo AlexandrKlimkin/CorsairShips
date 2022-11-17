@@ -131,6 +131,7 @@ MonoBehaviour:
   _FirePoint: {fileID: 4689729598875204088}
   _ProjectileName: BulletProjectile
   _FireEffectName: ShotEffect
+  _ProjectileDamage: 10
   _ProjectileSpeed: 40
   _ProjectileLifetime: 10
   _ProjectileGravity: 10
