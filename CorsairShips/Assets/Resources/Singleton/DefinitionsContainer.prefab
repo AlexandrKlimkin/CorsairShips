@@ -44,11 +44,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b76adeac7f626f47aa277a7f1155af8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Definitions:
+    ShipDefs:
+    - Id: Sloop
+      ModelId: Sloop
+      Health: 
+      Speed: 
   LocalizationDefContainer:
     LocalizationDef:
-    - Id: 
-      en_US: 
-      ru_RU: 
+    - Id: Test
+      en_US: egr
+      ru_RU: "\u044B\u0432\u0436\u0434\u0430"
       fr_FR: 
       it_IT: 
       de_DE: 

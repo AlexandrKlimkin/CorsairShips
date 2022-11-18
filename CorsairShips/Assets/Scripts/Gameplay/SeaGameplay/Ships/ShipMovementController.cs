@@ -34,6 +34,10 @@ namespace Game.SeaGameplay {
             ProcessMove(VertAxis);
         }
 
+        public void Setup() {
+            
+        }
+        
         private void ProcessMove(float vertAxis) {
             var currentVelocityDir = Rigidbody.velocity.sqrMagnitude > 0.01 ? Rigidbody.velocity.normalized : transform.forward;
             var speedDelta = 0f;

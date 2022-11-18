@@ -8,10 +8,15 @@ using Random = UnityEngine.Random;
 
 namespace Game.SeaGameplay {
     public class Ship : MonoBehaviour, IDamageable {
+
+        [SerializeField]
+        private Transform _ModelContainer;
+        
         public ShipMovementController MovementController { get; private set; }
         public ShipWeaponController WeaponController { get; private set; }
         public ShipModelController ShipModel { get; private set; }
-
+        public Transform ModelContainer => _ModelContainer;
+        
         public float MaxHp;
         public float DieImpulse;
         public float DrownDelay;
@@ -23,14 +28,13 @@ namespace Game.SeaGameplay {
             Collider = GetComponent<Collider>();
         }
 
-        private void Start() {
-            ShipModel = GetComponentInChildren<ShipModelController>();
-            Initialize();
-        }
-
-        public void Initialize() {
+        public void Setup(ShipModelController model) {
+            ShipModel = model;
             MaxHealth = MaxHp;
             Health = MaxHealth;
+            
+            MovementController.Setup();
+            WeaponController.Setup();
         }
         
         #region IDamageable

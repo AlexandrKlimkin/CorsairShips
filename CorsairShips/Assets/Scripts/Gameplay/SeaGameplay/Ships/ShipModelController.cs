@@ -16,6 +16,9 @@ namespace Game.SeaGameplay {
     
     public class ShipModelController : MonoBehaviour {
         [SerializeField]
+        private Transform _WeaponsContainer;
+        
+        [SerializeField]
         private List<RandomEffectInfo> _DieExplosionEffects;
         [SerializeField]
         private List<Transform> _DieExplosionTransforms;
@@ -26,7 +29,8 @@ namespace Game.SeaGameplay {
 
         [SerializeField]
         private List<GameObject> _Trails;
-
+        
+        public Transform WeaponsContainer => _WeaponsContainer;
 
         #region Explosions
         [Button]
