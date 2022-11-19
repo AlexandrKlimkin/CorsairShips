@@ -3,6 +3,7 @@ using Core.Initialization.Base;
 using Game.Initialization.Base;
 using Game.Initialization.GameTasks;
 using Game.SeaGameplay;
+using Game.SeaGameplay.Spawn;
 using PestelLib.TaskQueueLib;
 using UI.Markers;
 using UTPLib.Services.ResourceLoader;
@@ -32,11 +33,14 @@ namespace Game.Initialization {
             new GameCameraSpawnTask(),
             new RegisterAndLoadServiceTask<ShipCreationService>(),
             new GUISetupTask(),
+
             new WaitForAwakesTask(),
-            
+
+            new RegisterAndLoadServiceTask<ShipsSpawnService>(),
         };
 
         public static List<Task> UnloadingGameTasks => new List<Task>() {
+            new UnregisterAndUnloadServiceTask<ShipsSpawnService>(),
             new UnregisterAndUnloadServiceTask<ShipCreationService>(),
         };
     }

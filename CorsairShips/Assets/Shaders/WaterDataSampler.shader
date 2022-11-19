@@ -5,14 +5,15 @@
 		_MainTex ("Texture", 2D) = "white" {}
 		_Intensity ("Intensity", Range(0, 1)) = 1
 	}
+	
 	SubShader
 	{
-//		Tags { "RenderType"="Transparent" "Queue" = "Transparent" }
+		Tags { "RenderType"="Transparent" "IgnoreProjector"="True" "Queue" = "Transparent" }
 		LOD 100
 		ZWrite Off
-		ZTest Always
+//		ZTest Always
 		Blend SrcAlpha OneMinusSrcAlpha
-
+		
 		Pass
 		{
 			CGPROGRAM
@@ -59,14 +60,14 @@
 			{
 				float4 result = tex2D(_MainTex, i.uv);
 
-				float3 normal = float3((result.rg - 0.5) * 2, 1);
+				//float3 normal = float3((result.rg - 0.5) * 2, 1);
 
-				float3x3 local2WorldTranspose = float3x3(
-					i.tangentWorld,
-					i.binormalWorld,
-					i.normalWorld);
+				// float3x3 local2WorldTranspose = float3x3(
+				// 	i.tangentWorld,
+				// 	i.binormalWorld,
+				// 	i.normalWorld);
 
-				normal = mul(normal, local2WorldTranspose);	
+				//normal = mul(normal, local2WorldTranspose);	
 				//
 				// result.rg = (normal.rb + 1) / 2;
 				result.a *= i.color.a * _Intensity;

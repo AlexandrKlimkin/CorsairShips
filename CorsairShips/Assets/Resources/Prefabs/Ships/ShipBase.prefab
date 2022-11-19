@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 7200085531011633427}
   - component: {fileID: 2676406765823777851}
   - component: {fileID: 5371496402392828815}
+  - component: {fileID: 9009541631804396158}
   - component: {fileID: 4702410015736258025}
   - component: {fileID: 2428600356516597026}
   - component: {fileID: 8942298989003418226}
@@ -94,10 +95,24 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.75
-  m_Height: 4.93
+  m_Radius: 1
+  m_Height: 5.2
   m_Direction: 2
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.3, z: 0}
+--- !u!136 &9009541631804396158
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6741497723405367045}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.8
+  m_Height: 4
+  m_Direction: 2
+  m_Center: {x: 0, y: 2.1, z: 0}
 --- !u!114 &4702410015736258025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,7 +127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _ModelContainer: {fileID: 6501367231581796354}
   MaxHp: 50
-  DieImpulse: 0.2
+  DieImpulse: 0.05
   DrownDelay: 0
   DestroyTime: 5
 --- !u!114 &2428600356516597026
@@ -147,4 +162,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Weapons: []
-  ImpulseForce: 0

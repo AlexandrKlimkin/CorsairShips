@@ -19,37 +19,32 @@ namespace Game.SeaGameplay {
         private readonly SignalBus _SignalBus;
         
         private Ship _ShipBasePrefab;
-        
-        public class ShipCreationData {
-            public string Id;
-            public Vector3 Position;
-            public Quaternion Rotation;
-            public bool IsPlayer = false;
-        }
-        
+
         public void Load() {
             _ShipBasePrefab = _ResourceLoader.LoadResource<Ship>(ResourcePath.Ships.ShipBasePrefabPath);
 
-            var data = new ShipCreationData {
-                Id = "Sloop",
-                Position = Vector3.zero,
-                Rotation = Quaternion.identity,
-                IsPlayer = true,
-            };
-            CreateShip(data);
+            // var data = new ShipCreationData {
+            //     Id = "Sloop",
+            //     Position = Vector3.zero,
+            //     Rotation = Quaternion.identity,
+            //     IsPlayer = true,
+            // };
+            // CreateShip(data);
         }
 
         public void Unload() {
             
         }
 
-        public void CreateShip(ShipCreationData data) {
-            var shipDef = _Defs.ShipDefs.FirstOrDefault(_ => _.Id == data.Id);
+        public void CreateShip(ShipCreationData creationData) {
+            var shipData = creationData.ShipData;
+            if(shipData == null)
+                return;
+            var shipDef = _Defs.ShipDefs.FirstOrDefault(_ => _.Id == shipData.ShipId);
             if (shipDef == null) {
-                Debug.LogError($"Ship with id {data.Id} doesnt exist");
                 return;
             }
-            var ship = Object.Instantiate(_ShipBasePrefab, data.Position, data.Rotation);
+            var ship = Object.Instantiate(_ShipBasePrefab, creationData.Position, creationData.Rotation);
 
             var modelPath = ResourcePath.Ships.GetModelPath(shipDef.ModelId);
             var model = _ResourceLoader.LoadResourceOnScene<ShipModelController>(modelPath, ship.ModelContainer);
@@ -58,17 +53,28 @@ namespace Game.SeaGameplay {
 
             ship.gameObject.name = $"ship_{shipDef.Id}";
             
-            if(data.IsPlayer)
+            if(shipData.IsPlayer)
                 AddPlayerComponents(ship);
             
             _SignalBus.FireSignal(new ShipCreatedSignal(ship));
             
-            if(data.IsPlayer)
+            if(shipData.IsPlayer)
                 _SignalBus.FireSignal(new LocalPlayerShipCreatedSignal(ship));
         }
 
         private void AddPlayerComponents(Ship ship) {
             ship.gameObject.AddComponent<ShipPlayerController>();
         }
+    }
+
+    public class ShipData {
+        public string ShipId;
+        public bool IsPlayer = false;
+    }
+    
+    public class ShipCreationData {
+        public ShipData ShipData;
+        public Vector3 Position;
+        public Quaternion Rotation;
     }
 }

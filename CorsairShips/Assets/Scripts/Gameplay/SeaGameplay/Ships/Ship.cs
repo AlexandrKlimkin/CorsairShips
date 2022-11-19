@@ -46,7 +46,7 @@ namespace Game.SeaGameplay {
         public void ApplyDamage(Damage damage) {
             Health -= damage.Amount;
             Health = Mathf.Clamp(Health, 0, MaxHealth);
-            Debug.LogError("Taking damage");
+            // Debug.LogError("Taking damage");
             if(Health == 0)
                 Die();
         }
