@@ -13,7 +13,7 @@ namespace Game.Shooting {
         [Serializable]
         public class LayerEffectsPair {
             public string LayerName;
-            public List<string> EffectNames;
+            public List<VisualEffectInfo> EffectInfos;
         }
         
         public List<LayerEffectsPair> HitEffects;
@@ -73,10 +73,10 @@ namespace Game.Shooting {
             var pair = HitEffects?.FirstOrDefault(_ => _.LayerName == layerName);
             if (pair == null)
                 return;
-            if(pair.EffectNames.Count == 0)
+            if(pair.EffectInfos.Count == 0)
                 return;
-            var randIndex = Random.Range(0, pair.EffectNames.Count);
-            var effect = GetEffect<ParticleEffect>(pair.EffectNames[randIndex]);
+            var randIndex = Random.Range(0, pair.EffectInfos.Count);
+            var effect = GetEffect<ParticleEffect>(pair.EffectInfos[randIndex]);
             effect.transform.position = pos;
             effect.transform.up = upwards;// Quaternion.Euler(0, 0, Random.Range(0, 360f));
             effect.Play();

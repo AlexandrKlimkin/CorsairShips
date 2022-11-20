@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ModelContainer: {fileID: 6501367231581796354}
-  MaxHp: 50
+  MaxHp: 500
   DieImpulse: 0.05
   DrownDelay: 0
   DestroyTime: 5

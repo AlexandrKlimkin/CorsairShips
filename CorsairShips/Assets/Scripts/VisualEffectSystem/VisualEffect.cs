@@ -56,6 +56,22 @@ namespace Tools.VisualEffects {
             return result;
         }
 
+        public static T GetEffect<T>(VisualEffectInfo effectInfo) where T : VisualEffect {
+            var effect = GetEffect<T>(effectInfo.EffectName);
+            if (effect != null) {
+                Vector3 scale;
+                if (effectInfo.RandomScale) {
+                    var scaleVal = Random.Range(effectInfo.ScaleMin, effectInfo.ScaleMax);
+                    scale = new Vector3(scaleVal, scaleVal, scaleVal);
+                }
+                else {
+                    scale = effectInfo.Scale;
+                }
+                effect.transform.localScale = scale;
+            }
+            return effect;
+        }
+        
         public static void PrewarmSystem() {
             LoadEffectResources();
             foreach (var resource in _ExistingResources) {
