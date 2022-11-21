@@ -23,7 +23,7 @@ namespace Game.Shooting {
             
             //var targetPos = transform.position + transform.forward * Data.Speed * time;
             if (Physics.Linecast(transform.position, targetPosition, out var hit)) {
-                PerformHit(hit.transform.GetComponent<IDamageable>(), hit);
+                PerformHit(hit.transform.GetComponentInParent<IDamageable>(), hit);
             }
             if (targetPosition.y < 0) {
                 PerformHit(null, default);

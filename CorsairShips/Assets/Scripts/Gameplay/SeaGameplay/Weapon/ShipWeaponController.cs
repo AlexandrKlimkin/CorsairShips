@@ -6,6 +6,8 @@ using UnityEngine;
 namespace Game.SeaGameplay {
     public class ShipWeaponController : MonoBehaviour {
         [SerializeField]
+        private float WeaponsAngle;
+        [SerializeField]
         private List<ShipWeapon> _Weapons;
         // public float ImpulseForce;
         
@@ -20,6 +22,8 @@ namespace Game.SeaGameplay {
 
         public void Setup() {
             Ship.ShipModel.WeaponsContainer.GetComponentsInChildren(_Weapons);
+            var weaponsRot = Quaternion.Euler(0, 0, WeaponsAngle);
+            _Weapons.ForEach(_ => _.transform.localRotation = weaponsRot);
         }
 
         public void Fire() {

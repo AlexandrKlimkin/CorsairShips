@@ -41,8 +41,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7200085531011633427}
   - component: {fileID: 2676406765823777851}
-  - component: {fileID: 5371496402392828815}
-  - component: {fileID: 9009541631804396158}
   - component: {fileID: 4702410015736258025}
   - component: {fileID: 2428600356516597026}
   - component: {fileID: 8942298989003418226}
@@ -85,34 +83,6 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 84
   m_CollisionDetection: 1
---- !u!136 &5371496402392828815
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6741497723405367045}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 1
-  m_Height: 5.2
-  m_Direction: 2
-  m_Center: {x: 0, y: 0.3, z: 0}
---- !u!136 &9009541631804396158
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6741497723405367045}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.8
-  m_Height: 4
-  m_Direction: 2
-  m_Center: {x: 0, y: 2.1, z: 0}
 --- !u!114 &4702410015736258025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,4 +131,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88b7db75e4f635249aba2397c8d46ed4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponsAngle: 4.5
   _Weapons: []

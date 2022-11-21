@@ -49,7 +49,7 @@ namespace Game.SeaGameplay {
             var modelPath = ResourcePath.Ships.GetModelPath(shipDef.ModelId);
             var model = _ResourceLoader.LoadResourceOnScene<ShipModelController>(modelPath, ship.ModelContainer);
             
-            ship.Setup(model);
+            ship.Setup(shipData, shipDef, model);
 
             ship.gameObject.name = $"ship_{shipDef.Id}";
             

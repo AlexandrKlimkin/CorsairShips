@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Game.Health;
+using PestelLib.SharedLogic.Modules;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -17,6 +18,9 @@ namespace Game.SeaGameplay {
         public ShipModelController ShipModel { get; private set; }
         public Transform ModelContainer => _ModelContainer;
         
+        public ShipData ShipData { get; private set; }
+        public ShipDef ShipDef { get; private set; }
+        
         public float MaxHp;
         public float DieImpulse;
         public float DrownDelay;
@@ -28,11 +32,12 @@ namespace Game.SeaGameplay {
             Collider = GetComponent<Collider>();
         }
 
-        public void Setup(ShipModelController model) {
+        public void Setup(ShipData shipData, ShipDef shipDef, ShipModelController model) {
+            ShipData = shipData;
+            ShipDef = shipDef;
             ShipModel = model;
             MaxHealth = MaxHp;
             Health = MaxHealth;
-            
             MovementController.Setup();
             WeaponController.Setup();
         }
