@@ -1444,6 +1444,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88b7db75e4f635249aba2397c8d46ed4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponsAngle: 0
   _Weapons:
   - {fileID: 154488895}
   - {fileID: 1911381685}
@@ -2325,6 +2326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88b7db75e4f635249aba2397c8d46ed4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponsAngle: 0
   _Weapons:
   - {fileID: 393848626}
   - {fileID: 926048179}

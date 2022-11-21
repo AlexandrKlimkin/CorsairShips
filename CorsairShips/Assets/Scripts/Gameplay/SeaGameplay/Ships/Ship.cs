@@ -29,7 +29,6 @@ namespace Game.SeaGameplay {
         private void Awake() {
             MovementController = GetComponent<ShipMovementController>();
             WeaponController = GetComponent<ShipWeaponController>();
-            Collider = GetComponent<Collider>();
         }
 
         public void Setup(ShipData shipData, ShipDef shipDef, ShipModelController model) {
@@ -38,6 +37,9 @@ namespace Game.SeaGameplay {
             ShipModel = model;
             MaxHealth = MaxHp;
             Health = MaxHealth;
+            
+            Collider = ShipModel.GetComponentInChildren<Collider>();
+            
             MovementController.Setup();
             WeaponController.Setup();
         }
