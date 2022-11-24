@@ -5,6 +5,7 @@ using Game.Initialization.GameTasks;
 using Game.SeaGameplay;
 using Game.SeaGameplay.Spawn;
 using PestelLib.TaskQueueLib;
+using Game.Quality;
 using UI.Markers;
 using UTPLib.Services.ResourceLoader;
 using UTPLib.Services.SceneManagement;
@@ -27,6 +28,7 @@ namespace Game.Initialization {
             
             new RegisterAndLoadServiceTask<MarkerService>(),
             new GUIInitilizationTask(),
+            new RegisterAndLoadServiceTask<QualityService>(),
         };
         
         public static List<Task> LoadingGameTasks => new List<Task>() {

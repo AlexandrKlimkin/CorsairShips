@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UTPLib.Core.Utils;
 
 namespace Game.SeaGameplay {
     public class ShipMovementController : MonoBehaviour {
@@ -13,14 +14,19 @@ namespace Game.SeaGameplay {
         public float MaxRotateSpeed;
         public float RotateAcceleration;
         public float RotateDeceleration;
+        public float RotateSlowAngle;
+        public float RotationSmoothness;
         
         public float Speed { get; private set; }
         public float RotateSpeed { get; private set; }
         
         public Rigidbody Rigidbody { get; private set; }
 
-        public float HorAxis { get; set; }
-        public float VertAxis { get; set; }
+        public Vector2 Direction { get; set; }
+        public float Gaz { get; set; }
+        
+        // public float HorAxis { get; set; }
+        // public float VertAxis { get; set; }
         
         private void Awake() {
             Rigidbody = GetComponent<Rigidbody>();
@@ -30,8 +36,8 @@ namespace Game.SeaGameplay {
             // var vertAxis = Input.GetAxis("Vertical");
             // var horAxis = Input.GetAxis("Horizontal");
             //
-            ProcessRotate(HorAxis);
-            ProcessMove(VertAxis);
+            ProcessRotate(Direction);
+            ProcessMove(Gaz);
         }
 
         public void Setup() {
@@ -63,15 +69,24 @@ namespace Game.SeaGameplay {
  
         }
 
-        private void ProcessRotate(float horAxis) {
+        private void ProcessRotate(Vector2 targetDir) {
 
+            var currentDir = transform.forward.ToVector2XZ();
+            
             var absRotSpeed = Mathf.Abs(RotateSpeed);
             
             var rotateDelta = 0f;
 
-            if (Mathf.Abs(horAxis) > 0.1) {
-                if (absRotSpeed < MaxRotateSpeed) {
-                    rotateDelta = RotateAcceleration * Time.fixedDeltaTime * horAxis;
+            var angle = Vector2.SignedAngle(currentDir, targetDir);
+
+            //Debug.LogError(angle);
+
+            var t = Mathf.InverseLerp(0, RotateSlowAngle * Mathf.Sign(angle), angle);
+            var maxRotateSpeed = Mathf.Lerp(0, MaxRotateSpeed, t);
+            
+            if (Mathf.Abs(angle) > 1) {
+                if (absRotSpeed < maxRotateSpeed) {
+                    rotateDelta = RotateAcceleration * Time.fixedDeltaTime * -Mathf.Sign(angle);
                 }
             }
             else {
@@ -83,14 +98,42 @@ namespace Game.SeaGameplay {
                     rotateDelta = -RotateSpeed;
                 }
             }
+            
             RotateSpeed += rotateDelta;
-            RotateSpeed = Mathf.Clamp(RotateSpeed, -MaxRotateSpeed, MaxRotateSpeed);
-
+            RotateSpeed = Mathf.Clamp(RotateSpeed, -maxRotateSpeed, maxRotateSpeed);
+                
             var yDeltaDeg = RotateSpeed * Time.fixedDeltaTime;
             if (Mathf.Abs(yDeltaDeg) > 0.1) {
                 var newRot = Rigidbody.rotation * Quaternion.Euler(0, yDeltaDeg, 0);
                 Rigidbody.MoveRotation(newRot);
             }
+            
+            
+            // if (Mathf.Abs(angle) > 0.1) {
+            //     if (absRotSpeed < MaxRotateSpeed) {
+            //         rotateDelta = RotateAcceleration * Time.fixedDeltaTime * -Mathf.Sign(angle);
+            //     }
+            // }
+            // else {
+            //     if (absRotSpeed > 1f) {
+            //         var sign = RotateSpeed > 0 ? -1f : 1f;
+            //         rotateDelta = sign * RotateDeceleration * Time.fixedDeltaTime;
+            //     }
+            //     else {
+            //         rotateDelta = -RotateSpeed;
+            //     }
+            // }
+            // RotateSpeed += rotateDelta;
+            // RotateSpeed = Mathf.Clamp(RotateSpeed, -MaxRotateSpeed, MaxRotateSpeed);
+            //
+            // var yDeltaDeg = RotateSpeed * Time.fixedDeltaTime;
+            // if (Mathf.Abs(yDeltaDeg) > 0.1) {
+            //     var newRot = Rigidbody.rotation * Quaternion.Euler(0, yDeltaDeg, 0);
+            //     Rigidbody.MoveRotation(newRot);
+            // }
+            
+            
+            
         }
 
         private void OnDrawGizmos() {
@@ -104,7 +147,7 @@ namespace Game.SeaGameplay {
             }
         }
 
-        public void ApllyImpulse(Vector3 impulse) {
+        public void ApplyImpulse(Vector3 impulse) {
             Rigidbody.AddForce(impulse, ForceMode.Impulse);
         }
     }

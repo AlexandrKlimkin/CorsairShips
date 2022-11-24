@@ -20,6 +20,12 @@ namespace Game.SeaGameplay {
             _InputControls = new InputControls();
             _MoveAction = _InputControls.ShipControlls.Move;
             _FireAction = _InputControls.ShipControlls.Fire;
+            
+            _FireAction.started += FireActionOnStarted;
+        }
+
+        private void FireActionOnStarted(InputAction.CallbackContext obj) {
+            _WeaponController.Fire();
         }
 
         private void OnEnable() {
@@ -38,11 +44,9 @@ namespace Game.SeaGameplay {
             
             var vertAxis = moveVector.y;
             var horAxis = moveVector.x;
-            _MovementController.HorAxis = horAxis;
-            _MovementController.VertAxis = vertAxis;
-            if (Input.GetKeyDown(KeyCode.Space)) {
-                _WeaponController.Fire();
-            }
+            _MovementController.Gaz = moveVector.magnitude;
+            _MovementController.Direction = moveVector;
+            
         }
     }
 }

@@ -1415,6 +1415,8 @@ MonoBehaviour:
   MaxRotateSpeed: 40
   RotateAcceleration: 50
   RotateDeceleration: 50
+  RotateSlowAngle: 0
+  RotationSmoothness: 0
 --- !u!114 &944249881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2355,6 +2357,8 @@ MonoBehaviour:
   MaxRotateSpeed: 40
   RotateAcceleration: 50
   RotateDeceleration: 50
+  RotateSlowAngle: 0
+  RotationSmoothness: 0
 --- !u!114 &1578027915
 MonoBehaviour:
   m_ObjectHideFlags: 0
