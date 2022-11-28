@@ -35,6 +35,7 @@ namespace Game.SeaGameplay {
         public event Action<Ship> OnDie;
         
         private void Awake() {
+            ContainerHolder.Container.BuildUp(this);
             MovementController = GetComponent<ShipMovementController>();
             WeaponController = GetComponent<ShipWeaponController>();
         }
