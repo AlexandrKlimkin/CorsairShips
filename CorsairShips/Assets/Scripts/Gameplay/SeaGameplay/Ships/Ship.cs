@@ -2,14 +2,20 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Game.Health;
+using Game.SeaGameplay.Data;
 using PestelLib.SharedLogic.Modules;
 using Sirenix.OdinInspector;
+using UnityDI;
 using UnityEngine;
+using UTPLib.SignalBus;
 using Random = UnityEngine.Random;
 
 namespace Game.SeaGameplay {
     public class Ship : MonoBehaviour, IDamageable {
 
+        [Dependency]
+        private readonly SignalBus _SignalBus;
+        
         [SerializeField]
         private Transform _ModelContainer;
         
@@ -25,6 +31,8 @@ namespace Game.SeaGameplay {
         public float DieImpulse;
         public float DrownDelay;
         public float DestroyTime;
+
+        public event Action<Ship> OnDie;
         
         private void Awake() {
             MovementController = GetComponent<ShipMovementController>();
@@ -69,6 +77,10 @@ namespace Game.SeaGameplay {
             StartCoroutine(DrownRoutine());
             ShipModel.PlayDieExplosions();
             StartCoroutine(DestroyRoutine());
+            _SignalBus.FireSignal(new ShipDieSignal {
+                Ship = this,
+            });
+            OnDie?.Invoke(this);
         }
 
         private IEnumerator DrownRoutine() {

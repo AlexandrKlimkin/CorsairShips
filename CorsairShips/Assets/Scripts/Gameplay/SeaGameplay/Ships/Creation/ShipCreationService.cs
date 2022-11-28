@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Game.SeaGameplay.Data;
 using PestelLib.SharedLogic;
 using UnityDI;
 using UnityEngine;
@@ -67,11 +68,6 @@ namespace Game.SeaGameplay {
         }
     }
 
-    public class ShipData {
-        public string ShipId;
-        public bool IsPlayer = false;
-    }
-    
     public class ShipCreationData {
         public ShipData ShipData;
         public Vector3 Position;

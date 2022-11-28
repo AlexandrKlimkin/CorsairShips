@@ -10,11 +10,11 @@ namespace Game.Quality {
         private readonly IResourceLoaderService _ResourceLoader;
         public void Load() {
             Application.targetFrameRate = 1000;
-// #if UNITY_ANDROID
-//             if (Debug.isDebugBuild) {
+#if UNITY_ANDROID
+            if (Debug.isDebugBuild) {
                 _ResourceLoader.LoadResourceOnScene<GraphyManager>("Prefabs/Debug/Graphy_Variant");
-//             }
-// #endif
+            }
+#endif
         }
 
         public void Unload() {
