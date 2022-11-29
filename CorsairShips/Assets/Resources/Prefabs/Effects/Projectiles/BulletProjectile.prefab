@@ -189,3 +189,6 @@ MonoBehaviour:
       ScaleMax: 0.8
   TrailTransformOverride: {fileID: 6336075432148655755}
   TrailName: BulletTrail
+  CollisionMask:
+    serializedVersion: 2
+    m_Bits: 375

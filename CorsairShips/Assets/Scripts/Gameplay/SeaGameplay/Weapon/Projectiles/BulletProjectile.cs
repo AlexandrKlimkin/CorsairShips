@@ -9,7 +9,7 @@ namespace Game.Shooting {
         //public List<string> HitEffectNames;
         public Transform TrailTransformOverride;
         public string TrailName;
-        
+        public LayerMask CollisionMask;
 
         protected TrailEffect _Trail;
 
@@ -22,7 +22,7 @@ namespace Game.Shooting {
             var targetPosition = transform.position + delta;
             
             //var targetPos = transform.position + transform.forward * Data.Speed * time;
-            if (Physics.Linecast(transform.position, targetPosition, out var hit)) {
+            if (Physics.Linecast(transform.position, targetPosition, out var hit, CollisionMask)) {
                 PerformHit(hit.transform.GetComponentInParent<IDamageable>(), hit);
             }
             if (targetPosition.y < 0) {
@@ -42,7 +42,8 @@ namespace Game.Shooting {
         }
 
         protected override void PerformHit(IDamageable damageable, RaycastHit hit, bool killProjectile = true) {
-            damageable?.Collider?.attachedRigidbody?.AddForceAtPosition(new Vector2(transform.forward.x, transform.forward.y) * Data.Force, transform.position);
+            if(Data.Force != 0)
+                damageable?.Collider?.attachedRigidbody?.AddForceAtPosition(new Vector2(transform.forward.x, transform.forward.y) * Data.Force, transform.position);
             base.PerformHit(damageable, hit, killProjectile);
         }
 
