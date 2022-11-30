@@ -11,11 +11,18 @@ namespace Game.SeaGameplay {
         public float Acceleration;
         public float Deceleration;
         public float RotateToForwardFactor;
-        public float MaxRotateSpeed;
-        public float RotateAcceleration;
-        public float RotateDeceleration;
-        public float RotateSlowAngle;
-        public float RotationSmoothness;
+        [Space]
+        public float MaxRotateYSpeed;
+        public float RotateYAcceleration;
+        public float RotateYDeceleration;
+        public float RotateYSlowAngle;
+
+        // [Space]
+        // public float MaxZAngle;
+        // public float MaxRotateZSpeed;
+        // public float RotateZAcceleration;
+        // public float RotateZDeceleration;
+        // public float RotateZSlowAngle;
         
         public float Speed { get; private set; }
         public float RotateSpeed { get; private set; }
@@ -47,19 +54,21 @@ namespace Game.SeaGameplay {
         private void ProcessMove(float vertAxis) {
             var currentVelocityDir = Rigidbody.velocity.sqrMagnitude > 0.01 ? Rigidbody.velocity.normalized : transform.forward;
             var speedDelta = 0f;
+
+            var targetSpeed = Mathf.Lerp(0, MaxSpeed, Gaz);
             
-            if (Mathf.Abs(vertAxis) > 0.1) {
-                if (Speed < MaxSpeed) {
+            // if (Mathf.Abs(vertAxis) > 0.1) {
+                if (Speed < targetSpeed) {
                     speedDelta = Acceleration * Time.fixedDeltaTime * vertAxis;
                 }
-            }
+            // }
             else {
                 if (Speed > 0.01f) {
                     speedDelta = -Deceleration * Time.fixedDeltaTime;
                 }
             }
             Speed += speedDelta;
-            Speed = Mathf.Clamp(Speed, -MaxSpeed, MaxSpeed);
+            Speed = Mathf.Clamp(Speed, -targetSpeed, targetSpeed);
 
             var targetVelocity = transform.forward * Speed;
             var velocityDelta = currentVelocityDir * speedDelta;
@@ -81,18 +90,18 @@ namespace Game.SeaGameplay {
 
             //Debug.LogError(angle);
 
-            var t = Mathf.InverseLerp(0, RotateSlowAngle * Mathf.Sign(angle), angle);
-            var maxRotateSpeed = Mathf.Lerp(0, MaxRotateSpeed, t);
+            var t = Mathf.InverseLerp(0, RotateYSlowAngle * Mathf.Sign(angle), angle);
+            var maxRotateSpeed = Mathf.Lerp(0, MaxRotateYSpeed, t);
             
             if (Mathf.Abs(angle) > 1) {
                 if (absRotSpeed < maxRotateSpeed) {
-                    rotateDelta = RotateAcceleration * Time.fixedDeltaTime * -Mathf.Sign(angle);
+                    rotateDelta = RotateYAcceleration * Time.fixedDeltaTime * -Mathf.Sign(angle);
                 }
             }
             else {
                 if (absRotSpeed > 1f) {
                     var sign = RotateSpeed > 0 ? -1f : 1f;
-                    rotateDelta = sign * RotateDeceleration * Time.fixedDeltaTime;
+                    rotateDelta = sign * RotateYDeceleration * Time.fixedDeltaTime;
                 }
                 else {
                     rotateDelta = -RotateSpeed;
@@ -107,6 +116,8 @@ namespace Game.SeaGameplay {
                 var newRot = Rigidbody.rotation * Quaternion.Euler(0, yDeltaDeg, 0);
                 Rigidbody.MoveRotation(newRot);
             }
+            
+            
             
             
             // if (Mathf.Abs(angle) > 0.1) {

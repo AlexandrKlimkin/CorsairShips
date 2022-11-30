@@ -86,8 +86,8 @@ Material:
     - _Scale_: 0.7
     - _Shading: 0
     - _Shadow: 0.6
-    - _ShoreDistance: 0.7
-    - _ShoreIntensity: 0.75
+    - _ShoreDistance: 0.5
+    - _ShoreIntensity: 0.65
     - _Specular: 77
     - _Speed: 1
     - _Speed_: 0.7

@@ -12,7 +12,7 @@ namespace Game.Quality {
         private bool _SpawnFPSMonitor = false;
         
         public void Load() {
-            Application.targetFrameRate = 1000;
+            Application.targetFrameRate = 60;
 #if UNITY_ANDROID
             if (Debug.isDebugBuild && _SpawnFPSMonitor) {
                 _ResourceLoader.LoadResourceOnScene<GraphyManager>("Prefabs/Debug/Graphy_Variant");

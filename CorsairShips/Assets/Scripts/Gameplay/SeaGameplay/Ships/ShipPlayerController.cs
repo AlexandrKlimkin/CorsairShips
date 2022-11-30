@@ -42,6 +42,8 @@ namespace Game.SeaGameplay {
 
             var moveVector = _MoveAction.ReadValue<Vector2>();
             
+            //Debug.LogError(moveVector);
+            
             var vertAxis = moveVector.y;
             var horAxis = moveVector.x;
             _MovementController.Gaz = moveVector.magnitude;

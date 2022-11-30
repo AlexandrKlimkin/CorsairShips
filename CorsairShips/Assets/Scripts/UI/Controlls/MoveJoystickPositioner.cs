@@ -19,6 +19,8 @@ public class MoveJoystickPositioner : OnScreenControl
     [SerializeField] private PointerAnimations joystickPointerAnimation;
     [SerializeField] private bool stickToFirstTouch;
 
+    [SerializeField] private OnScreenStick stick;
+    
     [Dependency] private Gui _gui;
 
     private Vector2 baseJoystickPosition;
@@ -27,8 +29,6 @@ public class MoveJoystickPositioner : OnScreenControl
     private RectTransform rectTransform;
     private CanvasScaler canvasScaler;
     private int joysticFingerId = -1;
-
-    private readonly float joystickSize = 50;
 
     [InputControl(layout = "Vector2")]
     [SerializeField] private string m_ControlPath;
@@ -85,10 +85,10 @@ public class MoveJoystickPositioner : OnScreenControl
             }
         }
 
-        if (joysticFingerId == -1)
-        {
-            joystickCircleBig.anchoredPosition = Vector2.MoveTowards(joystickCircleBig.anchoredPosition, joystickCircleSmall.anchoredPosition, 8 * joystickSize * Time.deltaTime);
-        }
+        // if (joysticFingerId == -1)
+        // {
+        //     joystickCircleBig.anchoredPosition = Vector2.MoveTowards(joystickCircleBig.anchoredPosition, joystickCircleSmall.anchoredPosition, 8 * joystickSize * Time.deltaTime);
+        // }
 
     }
 
@@ -129,10 +129,10 @@ public class MoveJoystickPositioner : OnScreenControl
             var canvasHeight = canvasScaler.referenceResolution.x / aspect;
             touchPositionInCanvas.y *= canvasHeight / Screen.height;
 
-            var deltaClamped = Vector2.ClampMagnitude(touchPositionInCanvas - (stickToFirstTouch ? joysticStartingPosition : baseJoystickPosition), joystickSize);
+            var deltaClamped = Vector2.ClampMagnitude(touchPositionInCanvas - (stickToFirstTouch ? joysticStartingPosition : baseJoystickPosition), stick.movementRange);
             joystickCircleSmall.anchoredPosition = deltaClamped;
 
-            var input = deltaClamped / joystickSize;
+            var input = deltaClamped / stick.movementRange;
 
             SendValueToControl(input);
         }
