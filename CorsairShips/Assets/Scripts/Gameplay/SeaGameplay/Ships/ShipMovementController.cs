@@ -112,8 +112,11 @@ namespace Game.SeaGameplay {
             RotateSpeed = Mathf.Clamp(RotateSpeed, -maxRotateSpeed, maxRotateSpeed);
                 
             var yDeltaDeg = RotateSpeed * Time.fixedDeltaTime;
+
+            var currentRotEuler = Rigidbody.rotation.eulerAngles;
+            
             if (Mathf.Abs(yDeltaDeg) > 0.1) {
-                var newRot = Rigidbody.rotation * Quaternion.Euler(0, yDeltaDeg, 0);
+                var newRot = Rigidbody.rotation * Quaternion.Euler(-currentRotEuler.x, yDeltaDeg, -currentRotEuler.z);
                 Rigidbody.MoveRotation(newRot);
             }
             
