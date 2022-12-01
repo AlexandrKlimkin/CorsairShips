@@ -120,11 +120,6 @@ MonoBehaviour:
   RotateYAcceleration: 30
   RotateYDeceleration: 20
   RotateYSlowAngle: 60
-  MaxZAngle: 0
-  MaxRotateZSpeed: 0
-  RotateZAcceleration: 0
-  RotateZDeceleration: 0
-  RotateZSlowAngle: 0
 --- !u!114 &8942298989003418226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,4 +133,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WeaponsAngle: 4.5
+  Cooldown: 3
   _Weapons: []

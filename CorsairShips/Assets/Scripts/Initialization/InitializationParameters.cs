@@ -37,7 +37,7 @@ namespace Game.Initialization {
             new RegisterAndLoadServiceTask<AIService>(),
             new RegisterAndLoadServiceTask<ShipCreationService>(),
             new GUISetupTask(),
-
+            
             new WaitForAwakesTask(),
 
             new RegisterAndLoadServiceTask<ShipsSpawnService>(),

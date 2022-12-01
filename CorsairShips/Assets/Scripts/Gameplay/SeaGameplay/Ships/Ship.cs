@@ -34,7 +34,8 @@ namespace Game.SeaGameplay {
         public float DestroyTime;
 
         public event Action<Ship> OnDie;
-        
+        public event Action<Ship> OnDestroy; 
+
         private void Awake() {
             ContainerHolder.Container.BuildUp(this);
             MovementController = GetComponent<ShipMovementController>();
@@ -109,6 +110,7 @@ namespace Game.SeaGameplay {
         private IEnumerator DestroyRoutine() {
             yield return new WaitForSeconds(DestroyTime);
             Destroy(gameObject);
+            OnDestroy?.Invoke(this);
         }
         #endregion
     }

@@ -25,7 +25,7 @@ namespace Game.SeaGameplay {
         }
 
         private void FireActionOnStarted(InputAction.CallbackContext obj) {
-            _WeaponController.Fire();
+            _WeaponController.TryFire();
         }
 
         private void OnEnable() {

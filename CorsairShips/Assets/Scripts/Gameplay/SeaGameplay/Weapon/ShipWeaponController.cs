@@ -8,16 +8,18 @@ namespace Game.SeaGameplay {
         [SerializeField]
         private float WeaponsAngle;
         [SerializeField]
+        private float Cooldown;
+        [SerializeField]
         private List<ShipWeapon> _Weapons;
-        // public float ImpulseForce;
-        
-        // private ShipMovementController _ShipMovementController;
-        
+
         public Ship Ship { get; private set; }
+
+        private float _LastShotTime = float.NegativeInfinity;
+
+        public float NormilizedCD => Mathf.Clamp01((Time.time - _LastShotTime) / Cooldown);
         
         private void Awake() {
             Ship = GetComponent<Ship>();
-            // _ShipMovementController = GetComponent<ShipMovementController>();
         }
 
         public void Setup() {
@@ -26,9 +28,14 @@ namespace Game.SeaGameplay {
             _Weapons.ForEach(_ => _.transform.localRotation = weaponsRot);
         }
 
-        public void Fire() {
+        public void TryFire() {
+            if(NormilizedCD >= 1)
+                Fire();
+        }
+
+        private void Fire() {
             _Weapons.ForEach(_ => _.Fire());
-            // _ShipMovementController.ApllyImpulse(-transform.right * ImpulseForce);
+            _LastShotTime = Time.time;
         }
     }
 }

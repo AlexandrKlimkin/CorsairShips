@@ -11,7 +11,7 @@ using UTPLib.Services.ResourceLoader;
 using UTPLib.SignalBus;
 
 namespace Game.SeaGameplay {
-    public class ShipCreationService : ILoadableService, IUnloadableService {
+    public class ShipCreationService : ILoadableService, IUnloadableService, ILocalShipProvider {
         [Dependency]
         private readonly Definitions _Defs;
         [Dependency]
@@ -22,17 +22,12 @@ namespace Game.SeaGameplay {
         private readonly AIService _AIService;
         
         private Ship _ShipBasePrefab;
-
+        
+        public Ship LocalShip { get; private set; }
+        
         public void Load() {
+            ContainerHolder.Container.RegisterInstance<ILocalShipProvider>(this);
             _ShipBasePrefab = _ResourceLoader.LoadResource<Ship>(ResourcePath.Ships.ShipBasePrefabPath);
-
-            // var data = new ShipCreationData {
-            //     Id = "Sloop",
-            //     Position = Vector3.zero,
-            //     Rotation = Quaternion.identity,
-            //     IsPlayer = true,
-            // };
-            // CreateShip(data);
         }
 
         public void Unload() {
@@ -55,9 +50,12 @@ namespace Game.SeaGameplay {
             ship.Setup(shipData, shipDef, model);
 
             ship.gameObject.name = $"ship_{shipDef.Id}";
-            
-            if(shipData.IsPlayer)
+
+            if (shipData.IsPlayer) {
                 AddPlayerComponents(ship);
+                LocalShip = ship;
+                LocalShip.OnDestroy += OnLocalShipDestroy;
+            }
             else {
                 AddBotComponents(ship);
             }
@@ -75,6 +73,14 @@ namespace Game.SeaGameplay {
         private void AddBotComponents(Ship ship) {
             var aiPrefab = _ResourceLoader.LoadResource<BotAIController>(ResourcePath.Ships.GetAIPath("ShipBotAI"));
             _AIService.MakeShipAI(ship, aiPrefab);
+        }
+
+
+        private void OnLocalShipDestroy(Ship ship) {
+            if(LocalShip != ship)
+                return;
+            LocalShip.OnDestroy -= OnLocalShipDestroy;
+            LocalShip = null;
         }
     }
 
