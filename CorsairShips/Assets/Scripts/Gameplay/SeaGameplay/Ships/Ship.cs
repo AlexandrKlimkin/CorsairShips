@@ -26,6 +26,7 @@ namespace Game.SeaGameplay {
         
         public ShipData ShipData { get; private set; }
         public ShipDef ShipDef { get; private set; }
+        public Vector3 Position => transform.position;
         
         public float MaxHp;
         public float DieImpulse;
@@ -51,6 +52,7 @@ namespace Game.SeaGameplay {
             
             MovementController.Setup();
             WeaponController.Setup();
+            ShipModel.BatchView();
         }
         
         #region IDamageable

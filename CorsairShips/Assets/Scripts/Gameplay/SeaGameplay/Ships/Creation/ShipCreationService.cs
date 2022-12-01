@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Game.SeaGameplay.AI;
 using Game.SeaGameplay.Data;
 using PestelLib.SharedLogic;
 using UnityDI;
@@ -11,13 +12,14 @@ using UTPLib.SignalBus;
 
 namespace Game.SeaGameplay {
     public class ShipCreationService : ILoadableService, IUnloadableService {
-
         [Dependency]
         private readonly Definitions _Defs;
         [Dependency]
         private readonly IResourceLoaderService _ResourceLoader;
         [Dependency]
         private readonly SignalBus _SignalBus;
+        [Dependency]
+        private readonly AIService _AIService;
         
         private Ship _ShipBasePrefab;
 
@@ -56,6 +58,9 @@ namespace Game.SeaGameplay {
             
             if(shipData.IsPlayer)
                 AddPlayerComponents(ship);
+            else {
+                AddBotComponents(ship);
+            }
             
             _SignalBus.FireSignal(new ShipCreatedSignal(ship));
             
@@ -65,6 +70,11 @@ namespace Game.SeaGameplay {
 
         private void AddPlayerComponents(Ship ship) {
             ship.gameObject.AddComponent<ShipPlayerController>();
+        }
+        
+        private void AddBotComponents(Ship ship) {
+            var aiPrefab = _ResourceLoader.LoadResource<BotAIController>(ResourcePath.Ships.GetAIPath("ShipBotAI"));
+            _AIService.MakeShipAI(ship, aiPrefab);
         }
     }
 

@@ -32,7 +32,15 @@ namespace Game.SeaGameplay {
         
         public Transform WeaponsContainer => _WeaponsContainer;
 
-        #region Explosions
+        // private void Awake() {
+        //     BatchView();
+        // }
+
+        public void BatchView() {
+            StaticBatchingUtility.Combine(gameObject);
+        }
+
+        #region Explosion
         [Button]
         public void PlayDieExplosions() {
             var effectsCount = _DieExplosionEffects.Count;

@@ -6,6 +6,7 @@ using Game.SeaGameplay;
 using Game.SeaGameplay.Spawn;
 using PestelLib.TaskQueueLib;
 using Game.Quality;
+using Game.SeaGameplay.AI;
 using UI.Markers;
 using UTPLib.Services.ResourceLoader;
 using UTPLib.Services.SceneManagement;
@@ -33,6 +34,7 @@ namespace Game.Initialization {
         
         public static List<Task> LoadingGameTasks => new List<Task>() {
             new GameCameraSpawnTask(),
+            new RegisterAndLoadServiceTask<AIService>(),
             new RegisterAndLoadServiceTask<ShipCreationService>(),
             new GUISetupTask(),
 
@@ -42,6 +44,7 @@ namespace Game.Initialization {
         };
 
         public static List<Task> UnloadingGameTasks => new List<Task>() {
+            new UnregisterAndUnloadServiceTask<AIService>(),
             new UnregisterAndUnloadServiceTask<ShipsSpawnService>(),
             new UnregisterAndUnloadServiceTask<ShipCreationService>(),
         };
