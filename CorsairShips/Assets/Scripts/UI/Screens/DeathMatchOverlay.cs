@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Game.SeaGameplay;
 using Game.SeaGameplay.GameModes;
+using Game.SeaGameplay.Statistics;
 using TMPro;
 using UnityDI;
 using UnityEngine;
@@ -15,9 +16,14 @@ namespace UI.Battle {
         private readonly SignalBus _SignalBus;
         [Dependency]
         private readonly DeathMatchService _DeathMatchService;
+        [Dependency]
+        private readonly BattleStatisticsService _Statistics;
         
         [SerializeField]
         private TextMeshProUGUI _ShipsCountText;
+        [SerializeField]
+        private TextMeshProUGUI _KillsText;
+        
         private void Awake() {
             ContainerHolder.Container.BuildUp(this);
         }
@@ -25,11 +31,14 @@ namespace UI.Battle {
         private void Start() {
             _SignalBus.Subscribe<ShipCreatedSignal>(OnShipCreated, this);
             _SignalBus.Subscribe<ShipDieSignal>(OnShipDead, this);
+            _Statistics.KillsChanged += OnKillsChanged;
             RefreshShipsCount();
+            RefreshKills();
         }
 
         private void OnDestroy() {
             _SignalBus.UnSubscribeFromAll(this);
+            _Statistics.KillsChanged -= OnKillsChanged;
         }
 
         private void RefreshShipsCount() {
@@ -43,6 +52,14 @@ namespace UI.Battle {
 
         private void OnShipDead(ShipDieSignal signal) {
             RefreshShipsCount();
+        }
+
+        private void OnKillsChanged(int kills) {
+            RefreshKills();
+        }
+
+        private void RefreshKills() {
+            _KillsText.text = _Statistics.Kills.ToString();
         }
     }
 }

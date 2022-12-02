@@ -7,7 +7,7 @@ using UTPLib.Services;
 using UTPLib.SignalBus;
 
 namespace Game.SeaGameplay.Spawn {
-    public class ShipsSpawnService : ILoadableService, IUnloadableService, ILocalShipProvider, IListStorage<Ship> {
+    public class ShipsSpawnService : ILoadableService, IUnloadableService {
         [Dependency]
         private readonly SpawnPointsContainer _SpawnPointsContainer;
         [Dependency]
@@ -17,13 +17,7 @@ namespace Game.SeaGameplay.Spawn {
         
         private List<SpawnPoint> _FreeSpawnPoints;
 
-        public Ship LocalShip { get; private set; }
-
-        public List<Ship> Storage { get; private set; } = new List<Ship>();
-        
         public void Load() {
-            ContainerHolder.Container.RegisterInstance<ILocalShipProvider>(this);
-            ContainerHolder.Container.RegisterInstance<IListStorage<Ship>>(this);
             _FreeSpawnPoints = _SpawnPointsContainer.SpawnPoints.ToList();
         }
 
@@ -59,21 +53,11 @@ namespace Game.SeaGameplay.Spawn {
                 Rotation = spawnPoint.transform.rotation,
             };
             var ship = _ShipCreationService.CreateShip(creationData);
-            if (ship.ShipData.IsPlayer) {
-                LocalShip = ship;
-                LocalShip.OnDestroy += OnLocalShipDestroy;
-            }
+            
             _SignalBus.FireSignal(new ShipCreatedSignal(ship));
             
             if(shipData.IsPlayer)
                 _SignalBus.FireSignal(new LocalPlayerShipCreatedSignal(ship));
-        }
-        
-        private void OnLocalShipDestroy(Ship ship) {
-            if(LocalShip != ship)
-                return;
-            LocalShip.OnDestroy -= OnLocalShipDestroy;
-            LocalShip = null;
         }
 
         private byte _CurrentAllocatedId;

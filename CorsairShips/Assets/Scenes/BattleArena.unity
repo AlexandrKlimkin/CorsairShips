@@ -178,13 +178,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (4)
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalPosition.x
@@ -225,50 +229,6 @@ PrefabInstance:
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LOD
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sun
-      value: 
-      objectReference: {fileID: 367429676}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeX
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeZ
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LODPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: gridType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: receiveShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: displayProgress
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableReflection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableRefraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: reflection.disablePixelLights
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
@@ -481,13 +441,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (31)
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalPosition.x
@@ -528,50 +492,6 @@ PrefabInstance:
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LOD
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sun
-      value: 
-      objectReference: {fileID: 367429676}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeX
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeZ
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LODPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: gridType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: receiveShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: displayProgress
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableReflection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableRefraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: reflection.disablePixelLights
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
@@ -762,13 +682,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (22)
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalPosition.x
@@ -810,50 +734,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LOD
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sun
-      value: 
-      objectReference: {fileID: 367429676}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeX
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeZ
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LODPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: gridType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: receiveShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: displayProgress
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableReflection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableRefraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: reflection.disablePixelLights
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
 --- !u!4 &198610037 stripped
@@ -877,13 +757,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalPosition.x
@@ -924,50 +808,6 @@ PrefabInstance:
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LOD
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sun
-      value: 
-      objectReference: {fileID: 367429676}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeX
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeZ
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LODPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: gridType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: receiveShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: displayProgress
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableReflection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableRefraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: reflection.disablePixelLights
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
@@ -1149,13 +989,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (21)
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1196,50 +1040,6 @@ PrefabInstance:
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LOD
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sun
-      value: 
-      objectReference: {fileID: 367429676}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeX
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeZ
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LODPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: gridType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: receiveShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: displayProgress
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableReflection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableRefraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: reflection.disablePixelLights
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
@@ -1493,13 +1293,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1540,50 +1344,6 @@ PrefabInstance:
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LOD
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sun
-      value: 
-      objectReference: {fileID: 367429676}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeX
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeZ
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LODPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: gridType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: receiveShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: displayProgress
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableReflection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableRefraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: reflection.disablePixelLights
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
@@ -1697,13 +1457,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (16)
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1744,50 +1508,6 @@ PrefabInstance:
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LOD
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sun
-      value: 
-      objectReference: {fileID: 367429676}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeX
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeZ
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LODPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: gridType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: receiveShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: displayProgress
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableReflection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableRefraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: reflection.disablePixelLights
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
@@ -2039,13 +1759,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (13)
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2087,50 +1811,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LOD
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sun
-      value: 
-      objectReference: {fileID: 367429676}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeX
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeZ
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LODPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: gridType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: receiveShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: displayProgress
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableReflection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableRefraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: reflection.disablePixelLights
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
 --- !u!4 &404843354 stripped
@@ -2149,13 +1829,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (26)
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2197,50 +1881,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LOD
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sun
-      value: 
-      objectReference: {fileID: 367429676}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeX
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeZ
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LODPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: gridType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: receiveShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: displayProgress
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableReflection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableRefraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: reflection.disablePixelLights
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
 --- !u!4 &413414235 stripped
@@ -2259,13 +1899,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (32)
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2306,50 +1950,6 @@ PrefabInstance:
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LOD
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sun
-      value: 
-      objectReference: {fileID: 367429676}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeX
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeZ
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LODPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: gridType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: receiveShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: displayProgress
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableReflection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableRefraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: reflection.disablePixelLights
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
@@ -2436,13 +2036,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (35)
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2483,50 +2087,6 @@ PrefabInstance:
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LOD
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sun
-      value: 
-      objectReference: {fileID: 367429676}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeX
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeZ
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LODPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: gridType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: receiveShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: displayProgress
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableReflection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableRefraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: reflection.disablePixelLights
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
@@ -2804,13 +2364,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (10)
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2852,50 +2416,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LOD
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sun
-      value: 
-      objectReference: {fileID: 367429676}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeX
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeZ
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LODPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: gridType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: receiveShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: displayProgress
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableReflection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableRefraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: reflection.disablePixelLights
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
 --- !u!4 &700630020 stripped
@@ -2914,13 +2434,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (34)
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2961,50 +2485,6 @@ PrefabInstance:
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LOD
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sun
-      value: 
-      objectReference: {fileID: 367429676}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeX
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeZ
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LODPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: gridType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: receiveShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: displayProgress
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableReflection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableRefraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: reflection.disablePixelLights
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
@@ -3488,13 +2968,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (23)
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3535,50 +3019,6 @@ PrefabInstance:
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LOD
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sun
-      value: 
-      objectReference: {fileID: 367429676}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeX
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeZ
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LODPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: gridType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: receiveShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: displayProgress
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableReflection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableRefraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: reflection.disablePixelLights
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
@@ -3960,6 +3400,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WeaponsAngle: 0
+  Cooldown: 0
   _Weapons:
   - {fileID: 154488895}
   - {fileID: 1911381685}
@@ -8913,13 +8354,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (9)
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8961,50 +8406,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LOD
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sun
-      value: 
-      objectReference: {fileID: 367429676}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeX
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeZ
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LODPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: gridType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: receiveShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: displayProgress
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableReflection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableRefraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: reflection.disablePixelLights
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
 --- !u!4 &984226242 stripped
@@ -9023,13 +8424,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.51
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9041,7 +8446,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -45
+      value: -45.1
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9072,48 +8477,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LOD
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: sun
       value: 
       objectReference: {fileID: 367429676}
     - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeX
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeZ
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LODPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: gridType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: receiveShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: displayProgress
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableReflection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableRefraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: reflection.disablePixelLights
-      value: 1
+      propertyPath: noise
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
@@ -9128,13 +8497,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (5)
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9175,50 +8548,6 @@ PrefabInstance:
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LOD
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sun
-      value: 
-      objectReference: {fileID: 367429676}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeX
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeZ
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LODPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: gridType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: receiveShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: displayProgress
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableReflection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableRefraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: reflection.disablePixelLights
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
@@ -9619,13 +8948,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (30)
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9666,50 +8999,6 @@ PrefabInstance:
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LOD
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sun
-      value: 
-      objectReference: {fileID: 367429676}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeX
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeZ
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LODPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: gridType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: receiveShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: displayProgress
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableReflection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableRefraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: reflection.disablePixelLights
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
@@ -9813,13 +9102,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (27)
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9861,50 +9154,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LOD
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sun
-      value: 
-      objectReference: {fileID: 367429676}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeX
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeZ
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LODPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: gridType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: receiveShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: displayProgress
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableReflection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableRefraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: reflection.disablePixelLights
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
 --- !u!4 &1188059888 stripped
@@ -9923,13 +9172,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (25)
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9971,50 +9224,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LOD
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sun
-      value: 
-      objectReference: {fileID: 367429676}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeX
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeZ
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LODPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: gridType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: receiveShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: displayProgress
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableReflection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableRefraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: reflection.disablePixelLights
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
 --- !u!4 &1198029104 stripped
@@ -10033,13 +9242,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (28)
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10080,50 +9293,6 @@ PrefabInstance:
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LOD
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sun
-      value: 
-      objectReference: {fileID: 367429676}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeX
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeZ
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LODPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: gridType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: receiveShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: displayProgress
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableReflection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableRefraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: reflection.disablePixelLights
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
@@ -10606,13 +9775,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (6)
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10653,50 +9826,6 @@ PrefabInstance:
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LOD
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sun
-      value: 
-      objectReference: {fileID: 367429676}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeX
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeZ
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LODPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: gridType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: receiveShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: displayProgress
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableReflection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableRefraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: reflection.disablePixelLights
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
@@ -15624,13 +14753,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (19)
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15672,50 +14805,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LOD
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sun
-      value: 
-      objectReference: {fileID: 367429676}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeX
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeZ
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LODPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: gridType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: receiveShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: displayProgress
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableReflection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableRefraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: reflection.disablePixelLights
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
 --- !u!4 &1387620831 stripped
@@ -15734,13 +14823,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15781,50 +14874,6 @@ PrefabInstance:
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LOD
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sun
-      value: 
-      objectReference: {fileID: 367429676}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeX
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeZ
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LODPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: gridType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: receiveShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: displayProgress
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableReflection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableRefraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: reflection.disablePixelLights
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
@@ -16094,6 +15143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WeaponsAngle: 0
+  Cooldown: 0
   _Weapons:
   - {fileID: 393848626}
   - {fileID: 926048179}
@@ -16572,13 +15622,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (12)
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16619,50 +15673,6 @@ PrefabInstance:
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LOD
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sun
-      value: 
-      objectReference: {fileID: 367429676}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeX
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeZ
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LODPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: gridType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: receiveShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: displayProgress
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableReflection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableRefraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: reflection.disablePixelLights
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
@@ -16876,13 +15886,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (20)
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16924,50 +15938,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LOD
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sun
-      value: 
-      objectReference: {fileID: 367429676}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeX
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeZ
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LODPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: gridType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: receiveShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: displayProgress
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableReflection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableRefraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: reflection.disablePixelLights
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
 --- !u!4 &1793128043 stripped
@@ -16986,13 +15956,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (29)
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17033,50 +16007,6 @@ PrefabInstance:
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LOD
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sun
-      value: 
-      objectReference: {fileID: 367429676}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeX
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeZ
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LODPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: gridType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: receiveShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: displayProgress
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableReflection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableRefraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: reflection.disablePixelLights
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
@@ -17173,13 +16103,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (18)
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17221,50 +16155,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LOD
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sun
-      value: 
-      objectReference: {fileID: 367429676}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeX
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeZ
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LODPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: gridType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: receiveShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: displayProgress
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableReflection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableRefraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: reflection.disablePixelLights
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
 --- !u!4 &1832909521 stripped
@@ -17283,13 +16173,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (7)
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17331,50 +16225,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LOD
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sun
-      value: 
-      objectReference: {fileID: 367429676}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeX
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeZ
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LODPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: gridType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: receiveShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: displayProgress
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableReflection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableRefraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: reflection.disablePixelLights
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
 --- !u!4 &1861015847 stripped
@@ -17393,17 +16243,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (15)
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 100.600006
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalPosition.y
@@ -17441,50 +16295,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LOD
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sun
-      value: 
-      objectReference: {fileID: 367429676}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeX
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeZ
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LODPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: gridType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: receiveShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: displayProgress
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableReflection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableRefraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: reflection.disablePixelLights
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
 --- !u!4 &1863277143 stripped
@@ -17517,13 +16327,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (33)
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 33
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17564,50 +16378,6 @@ PrefabInstance:
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LOD
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sun
-      value: 
-      objectReference: {fileID: 367429676}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeX
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeZ
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LODPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: gridType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: receiveShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: displayProgress
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableReflection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableRefraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: reflection.disablePixelLights
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
@@ -17810,13 +16580,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (11)
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17858,50 +16632,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LOD
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sun
-      value: 
-      objectReference: {fileID: 367429676}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeX
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeZ
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LODPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: gridType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: receiveShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: displayProgress
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableReflection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableRefraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: reflection.disablePixelLights
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
 --- !u!4 &1926050428 stripped
@@ -17920,13 +16650,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (8)
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17968,50 +16702,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LOD
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sun
-      value: 
-      objectReference: {fileID: 367429676}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeX
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeZ
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LODPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: gridType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: receiveShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: displayProgress
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableReflection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableRefraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: reflection.disablePixelLights
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
 --- !u!4 &1965646611 stripped
@@ -18030,13 +16720,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (24)
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18077,50 +16771,6 @@ PrefabInstance:
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LOD
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sun
-      value: 
-      objectReference: {fileID: 367429676}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeX
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeZ
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LODPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: gridType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: receiveShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: displayProgress
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableReflection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableRefraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: reflection.disablePixelLights
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
@@ -23221,13 +21871,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (17)
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23268,50 +21922,6 @@ PrefabInstance:
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LOD
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sun
-      value: 
-      objectReference: {fileID: 367429676}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeX
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeZ
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LODPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: gridType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: receiveShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: displayProgress
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableReflection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableRefraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: reflection.disablePixelLights
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
@@ -23375,13 +21985,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (36)
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23423,50 +22037,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LOD
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sun
-      value: 
-      objectReference: {fileID: 367429676}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeX
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeZ
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LODPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: gridType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: receiveShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: displayProgress
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableReflection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableRefraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: reflection.disablePixelLights
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
 --- !u!4 &2081569389 stripped
@@ -23490,13 +22060,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (14)
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23537,50 +22111,6 @@ PrefabInstance:
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LOD
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sun
-      value: 
-      objectReference: {fileID: 367429676}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeX
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: sizeZ
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: LODPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: gridType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: receiveShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: displayProgress
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableReflection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: enableRefraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
-      propertyPath: reflection.disablePixelLights
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}

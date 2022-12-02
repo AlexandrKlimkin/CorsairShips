@@ -16,7 +16,9 @@ namespace Game.SeaGameplay {
         private readonly SignalBus _SignalBus;
         [Dependency]
         private readonly DamageService _DamageService;
-        
+        [Dependency]
+        private readonly ILocalShipProvider _LocalShipProvider;
+
         [SerializeField]
         private Transform _ModelContainer;
         
@@ -24,7 +26,6 @@ namespace Game.SeaGameplay {
         public ShipWeaponController WeaponController { get; private set; }
         public ShipModelController ShipModel { get; private set; }
         public Transform ModelContainer => _ModelContainer;
-        
         public ShipData ShipData { get; private set; }
         public ShipDef ShipDef { get; private set; }
         public Vector3 Position => transform.position;
@@ -39,7 +40,8 @@ namespace Game.SeaGameplay {
 
         private static List<Ship> _Ships = new List<Ship>();
         public static IReadOnlyList<Ship> Ships => _Ships;
-
+        public bool IsLocalPlayerShip => this == _LocalShipProvider.LocalShip;
+        
         private void Awake() {
             ContainerHolder.Container.BuildUp(this);
             MovementController = GetComponent<ShipMovementController>();
@@ -77,13 +79,18 @@ namespace Game.SeaGameplay {
             Health = Mathf.Clamp(Health, 0, MaxHealth);
             // Debug.LogError("Taking damage");
             if(Health == 0)
-                Die();
+                Die(damage);
         }
         #endregion
 
         #region Dying
+
         [Button]
-        private void Die() {
+        private void DieForce() {
+            Die(new ClientDamage());
+        }
+        
+        private void Die(ClientDamage damage) {
             if(Dead)
                 return;
             Dead = true;
@@ -93,6 +100,7 @@ namespace Game.SeaGameplay {
             StartCoroutine(DestroyRoutine());
             _SignalBus.FireSignal(new ShipDieSignal {
                 Ship = this,
+                Damage = damage,
             });
             OnDie?.Invoke(this);
         }

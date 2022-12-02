@@ -8,7 +8,7 @@ using UTPLib.Services;
 using UTPLib.Services.ResourceLoader;
 
 namespace Game.SeaGameplay {
-    public class ShipCreationService : ILoadableService, IUnloadableService {
+    public class ShipCreationService : ILoadableService, IUnloadableService, ILocalShipProvider {
         [Dependency]
         private readonly Definitions _Defs;
         [Dependency]
@@ -18,7 +18,10 @@ namespace Game.SeaGameplay {
         
         private Ship _ShipBasePrefab;
 
+        public Ship LocalShip { get; private set; }
+        
         public void Load() {
+            ContainerHolder.Container.RegisterInstance<ILocalShipProvider>(this);
             _ShipBasePrefab = _ResourceLoader.LoadResource<Ship>(ResourcePath.Ships.ShipBasePrefabPath);
         }
 
@@ -45,8 +48,8 @@ namespace Game.SeaGameplay {
 
             if (shipData.IsPlayer) {
                 AddPlayerComponents(ship);
-                // LocalShip = ship;
-                // LocalShip.OnDestroy += OnLocalShipDestroy;
+                LocalShip = ship;
+                LocalShip.OnDestroy += OnLocalShipDestroy;
             }
             else {
                 AddBotComponents(ship);
@@ -61,6 +64,13 @@ namespace Game.SeaGameplay {
         private void AddBotComponents(Ship ship) {
             var aiPrefab = _ResourceLoader.LoadResource<BotAIController>(ResourcePath.Ships.GetAIPath("ShipBotAI"));
             _AIService.MakeShipAI(ship, aiPrefab);
+        }
+        
+        private void OnLocalShipDestroy(Ship ship) {
+            if(LocalShip != ship)
+                return;
+            LocalShip.OnDestroy -= OnLocalShipDestroy;
+            LocalShip = null;
         }
     }
 

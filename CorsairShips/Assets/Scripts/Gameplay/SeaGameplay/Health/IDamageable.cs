@@ -11,6 +11,5 @@ namespace Game.Dmg {
         bool Dead { get; }
         Collider Collider { get; }
         void ApplyDamage(ClientDamage damage);
-        // void Kill(Damage damage);
     }
 }
