@@ -2,13 +2,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using Game.Health;
+using Game.Dmg;
 using Tools.VisualEffects;
+using UnityDI;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 namespace Game.Shooting {
     public abstract class Projectile<D> : VisualEffect where D : ProjectileDataBase {
+        [Dependency]
+        protected readonly DamageService _DamageService;
         
         [Serializable]
         public class LayerEffectsPair {
@@ -26,6 +29,7 @@ namespace Game.Shooting {
         protected bool _Hit;
 
         public virtual void Setup(D data) {
+            ContainerHolder.Container.BuildUp(GetType(),this);
             Data = data;
             transform.position = data.Position;
             transform.rotation = data.Rotation;
@@ -58,16 +62,12 @@ namespace Game.Shooting {
             if (killProjectile)
                 KillProjectile();
             _Hit = true;
-            Data.Damage.Receiver = damageable;
-            ApplyDamage(damageable, Data.Damage);
+            Data.Damage.ReceiverId = damageable?.DamageableId;
+            _DamageService.ApplyDamage(Data.Damage);
             if(hit.collider != null)
                 PlayHitEffect(hit.collider.gameObject.layer, hit.point, hit.normal);
         }
 
-        // protected void PlayHitEffect(int layer, Vector3 pos, Vector3 upwards) {
-        //     PlayHitEffect(layer, pos, Quaternion.LookRotation(forward, upwards));
-        // }
-        
         protected virtual void PlayHitEffect(int layer, Vector3 pos, Vector3 upwards) {
             var layerName = LayerMask.LayerToName(layer);
             var pair = HitEffects?.FirstOrDefault(_ => _.LayerName == layerName);
@@ -82,8 +82,8 @@ namespace Game.Shooting {
             effect.Play();
         }
 
-        protected virtual void ApplyDamage(IDamageable damageable, Damage dmg) {
-            damageable?.ApplyDamage(Data.Damage);
-        }
+        // protected virtual void ApplyDamage(IDamageable damageable, Damage dmg) {
+        //     _DamageService.ApplyDamage(Data.Damage);
+        // }
     }
 }

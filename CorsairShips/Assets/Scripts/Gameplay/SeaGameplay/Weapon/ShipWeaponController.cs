@@ -1,10 +1,15 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Game.Dmg;
+using UnityDI;
 using UnityEngine;
 
 namespace Game.SeaGameplay {
-    public class ShipWeaponController : MonoBehaviour {
+    public class ShipWeaponController : MonoBehaviour, IDamageCaster {
+        [Dependency]
+        private readonly DamageService _DamageService;
+        
         [SerializeField]
         private float WeaponsAngle;
         [SerializeField]
@@ -19,13 +24,19 @@ namespace Game.SeaGameplay {
         public float NormilizedCD => Mathf.Clamp01((Time.time - _LastShotTime) / Cooldown);
         
         private void Awake() {
+            ContainerHolder.Container.BuildUp(this);
             Ship = GetComponent<Ship>();
         }
 
         public void Setup() {
             Ship.ShipModel.WeaponsContainer.GetComponentsInChildren(_Weapons);
+            
             var weaponsRot = Quaternion.Euler(0, 0, WeaponsAngle);
-            _Weapons.ForEach(_ => _.transform.localRotation = weaponsRot);
+            _Weapons.ForEach(_ => {
+                _.Setup(this);
+                _.transform.localRotation = weaponsRot;
+            });
+            _DamageService.RegisterCaster(this);
         }
 
         public void TryFire() {
@@ -37,5 +48,6 @@ namespace Game.SeaGameplay {
             _Weapons.ForEach(_ => _.Fire());
             _LastShotTime = Time.time;
         }
+        public byte DamageCasterId => Ship.ShipData.ShipId;
     }
 }

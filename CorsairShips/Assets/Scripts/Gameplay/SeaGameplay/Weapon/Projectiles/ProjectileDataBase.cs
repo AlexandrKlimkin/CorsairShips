@@ -1,4 +1,4 @@
-﻿using Game.Health;
+﻿using Game.Dmg;
 using UnityEngine;
 
 namespace Game.Shooting

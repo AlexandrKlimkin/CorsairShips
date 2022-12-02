@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using Game.Health;
+using Game.Dmg;
 using Game.Shooting;
 using Tools.VisualEffects;
 using UnityEngine;
@@ -28,6 +28,12 @@ namespace Game.SeaGameplay {
         [SerializeField]
         private Vector2 _RandomShotDelay;
 
+        public ShipWeaponController Owner { get; private set; }
+        
+        public void Setup(ShipWeaponController owner) {
+            Owner = owner;
+        }
+        
         public void Fire() {
             StartCoroutine(FireRoutine());
         }
@@ -43,14 +49,18 @@ namespace Game.SeaGameplay {
             rotationEuler = new Vector3(rotationEuler.x + GetDispersionAngle(_ProjectileXDispersionAngle),
                 rotationEuler.y + GetDispersionAngle(_ProjectileYDispersionAngle), rotationEuler.z);
             
-            var data = new BulletProjectileData() {
+            var data = new BulletProjectileData {
                 Position = _FirePoint.position,
                 Rotation = Quaternion.Euler(rotationEuler),
                 LifeTime = _ProjectileLifetime,
                 BirthTime = Time.time,
                 Speed = _ProjectileSpeed,
                 Gravity = _ProjectileGravity,
-                Damage = new Damage(null, _ProjectileDamage),
+                Damage = new Damage {
+                    ReceiverId = null,
+                    CasterId = Owner.DamageCasterId,
+                    Amount = _ProjectileDamage, 
+                },
             };
             projectile.Setup(data);
             projectile.Play();

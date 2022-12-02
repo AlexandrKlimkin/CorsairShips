@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Game.Health {
+namespace Game.Dmg {
     public interface IDamageable {
-        // byte? OwnerId { get; }
+        byte DamageableId { get; }
         float MaxHealth { get; }
         float Health { get; }
         float NormalizedHealth { get; }
         bool Dead { get; }
         Collider Collider { get; }
-        void ApplyDamage(Damage damage);
+        void ApplyDamage(ClientDamage damage);
         // void Kill(Damage damage);
     }
 }

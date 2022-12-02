@@ -10,7 +10,7 @@ namespace Core.Initialization.Base
         protected override void AutoCompletedRun() 
         {
             var gui = ContainerHolder.Container.Resolve<Gui>();
-            gui.Show<BattleScreen>();
+            gui.Show<ControllsOverlay>(GuiScreenType.Overlay);
         }
     }
 }

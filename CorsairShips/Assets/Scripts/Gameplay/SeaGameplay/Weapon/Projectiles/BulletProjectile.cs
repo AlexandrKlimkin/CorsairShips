@@ -2,7 +2,7 @@
 using Tools.VisualEffects;
 using UnityEngine;
 using System.Linq;
-using Game.Health;
+using Game.Dmg;
 
 namespace Game.Shooting {
     public class BulletProjectile : Projectile<BulletProjectileData> {

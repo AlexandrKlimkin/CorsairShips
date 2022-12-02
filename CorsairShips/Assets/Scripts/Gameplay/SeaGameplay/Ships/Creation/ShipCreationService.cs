@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using System.Linq;
 using Game.SeaGameplay.AI;
 using Game.SeaGameplay.Data;
@@ -8,25 +6,19 @@ using UnityDI;
 using UnityEngine;
 using UTPLib.Services;
 using UTPLib.Services.ResourceLoader;
-using UTPLib.SignalBus;
 
 namespace Game.SeaGameplay {
-    public class ShipCreationService : ILoadableService, IUnloadableService, ILocalShipProvider {
+    public class ShipCreationService : ILoadableService, IUnloadableService {
         [Dependency]
         private readonly Definitions _Defs;
         [Dependency]
         private readonly IResourceLoaderService _ResourceLoader;
         [Dependency]
-        private readonly SignalBus _SignalBus;
-        [Dependency]
         private readonly AIService _AIService;
         
         private Ship _ShipBasePrefab;
-        
-        public Ship LocalShip { get; private set; }
-        
+
         public void Load() {
-            ContainerHolder.Container.RegisterInstance<ILocalShipProvider>(this);
             _ShipBasePrefab = _ResourceLoader.LoadResource<Ship>(ResourcePath.Ships.ShipBasePrefabPath);
         }
 
@@ -34,13 +26,13 @@ namespace Game.SeaGameplay {
             
         }
 
-        public void CreateShip(ShipCreationData creationData) {
+        public Ship CreateShip(ShipCreationData creationData) {
             var shipData = creationData.ShipData;
             if(shipData == null)
-                return;
-            var shipDef = _Defs.ShipDefs.FirstOrDefault(_ => _.Id == shipData.ShipId);
+                return null;
+            var shipDef = _Defs.ShipDefs.FirstOrDefault(_ => _.Id == shipData.ShipDefId);
             if (shipDef == null) {
-                return;
+                return null;
             }
             var ship = Object.Instantiate(_ShipBasePrefab, creationData.Position, creationData.Rotation);
 
@@ -53,17 +45,13 @@ namespace Game.SeaGameplay {
 
             if (shipData.IsPlayer) {
                 AddPlayerComponents(ship);
-                LocalShip = ship;
-                LocalShip.OnDestroy += OnLocalShipDestroy;
+                // LocalShip = ship;
+                // LocalShip.OnDestroy += OnLocalShipDestroy;
             }
             else {
                 AddBotComponents(ship);
             }
-            
-            _SignalBus.FireSignal(new ShipCreatedSignal(ship));
-            
-            if(shipData.IsPlayer)
-                _SignalBus.FireSignal(new LocalPlayerShipCreatedSignal(ship));
+            return ship;
         }
 
         private void AddPlayerComponents(Ship ship) {
@@ -73,14 +61,6 @@ namespace Game.SeaGameplay {
         private void AddBotComponents(Ship ship) {
             var aiPrefab = _ResourceLoader.LoadResource<BotAIController>(ResourcePath.Ships.GetAIPath("ShipBotAI"));
             _AIService.MakeShipAI(ship, aiPrefab);
-        }
-
-
-        private void OnLocalShipDestroy(Ship ship) {
-            if(LocalShip != ship)
-                return;
-            LocalShip.OnDestroy -= OnLocalShipDestroy;
-            LocalShip = null;
         }
     }
 

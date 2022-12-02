@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Core.Initialization.Base;
+using Game.Dmg;
 using Game.Initialization.Base;
 using Game.Initialization.GameTasks;
 using Game.SeaGameplay;
@@ -7,6 +8,7 @@ using Game.SeaGameplay.Spawn;
 using PestelLib.TaskQueueLib;
 using Game.Quality;
 using Game.SeaGameplay.AI;
+using Game.SeaGameplay.GameModes;
 using UI.Markers;
 using UTPLib.Services.ResourceLoader;
 using UTPLib.Services.SceneManagement;
@@ -16,7 +18,7 @@ using UTPLib.Tasks.ConcreteCommon;
 
 namespace Game.Initialization {
     public static class InitializationParameters {
-        public static List<Task> BaseTasks => new List<Task>() {
+        public static List<Task> BaseTasks => new() {
             new TaskInitMessagePack(),
             new ContainerInitializationTask(),
             new BaseServiceInitializationTask<SignalBus, SignalBus>(),
@@ -32,21 +34,25 @@ namespace Game.Initialization {
             new RegisterAndLoadServiceTask<QualityService>(),
         };
         
-        public static List<Task> LoadingGameTasks => new List<Task>() {
+        public static List<Task> LoadingGameTasks => new() {
             new GameCameraSpawnTask(),
             new RegisterAndLoadServiceTask<AIService>(),
             new RegisterAndLoadServiceTask<ShipCreationService>(),
-            new GUISetupTask(),
+            new RegisterAndLoadServiceTask<DamageService>(),
             
             new WaitForAwakesTask(),
-
+            
             new RegisterAndLoadServiceTask<ShipsSpawnService>(),
+            new RegisterAndLoadServiceTask<DeathMatchService>(),
+            new GUISetupTask(),
         };
 
-        public static List<Task> UnloadingGameTasks => new List<Task>() {
-            new UnregisterAndUnloadServiceTask<AIService>(),
+        public static List<Task> UnloadingGameTasks => new() {
+            new UnregisterAndUnloadServiceTask<DeathMatchService>(),
             new UnregisterAndUnloadServiceTask<ShipsSpawnService>(),
+            new UnregisterAndUnloadServiceTask<DamageService>(),
             new UnregisterAndUnloadServiceTask<ShipCreationService>(),
+            new UnregisterAndUnloadServiceTask<AIService>(),
         };
     }
 }

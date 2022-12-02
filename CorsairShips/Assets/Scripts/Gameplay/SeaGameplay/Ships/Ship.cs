@@ -1,7 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Game.Health;
+using Game.Dmg;
 using Game.SeaGameplay.Data;
 using PestelLib.SharedLogic.Modules;
 using Sirenix.OdinInspector;
@@ -12,9 +12,10 @@ using Random = UnityEngine.Random;
 
 namespace Game.SeaGameplay {
     public class Ship : MonoBehaviour, IDamageable {
-
         [Dependency]
         private readonly SignalBus _SignalBus;
+        [Dependency]
+        private readonly DamageService _DamageService;
         
         [SerializeField]
         private Transform _ModelContainer;
@@ -34,7 +35,10 @@ namespace Game.SeaGameplay {
         public float DestroyTime;
 
         public event Action<Ship> OnDie;
-        public event Action<Ship> OnDestroy; 
+        public event Action<Ship> OnDestroy;
+
+        private static List<Ship> _Ships = new List<Ship>();
+        public static IReadOnlyList<Ship> Ships => _Ships;
 
         private void Awake() {
             ContainerHolder.Container.BuildUp(this);
@@ -54,16 +58,22 @@ namespace Game.SeaGameplay {
             MovementController.Setup();
             WeaponController.Setup();
             ShipModel.BatchView();
+            
+            _Ships.Add(this);
+            
+            _DamageService.RegisterDamageable(this);
         }
         
         #region IDamageable
+
+        public byte DamageableId => ShipData.ShipId;
         public float MaxHealth { get; private set; }
         public float Health { get; private set; }
         public float NormalizedHealth => Health / MaxHealth;
         public bool Dead { get; private set; }
         public Collider Collider { get; private set; }
-        public void ApplyDamage(Damage damage) {
-            Health -= damage.Amount;
+        public void ApplyDamage(ClientDamage damage) {
+            Health -= damage.Damage.Amount;
             Health = Mathf.Clamp(Health, 0, MaxHealth);
             // Debug.LogError("Taking damage");
             if(Health == 0)
@@ -104,11 +114,11 @@ namespace Game.SeaGameplay {
             
             MovementController.Rigidbody.centerOfMass = new Vector3(randX, randY, randZ);
             MovementController.Rigidbody.AddForceAtPosition(Random.onUnitSphere * DieImpulse, transform.position + randInsideBounds, ForceMode.Impulse);
-
         }
 
         private IEnumerator DestroyRoutine() {
             yield return new WaitForSeconds(DestroyTime);
+            _Ships.Remove(this);
             Destroy(gameObject);
             OnDestroy?.Invoke(this);
         }
