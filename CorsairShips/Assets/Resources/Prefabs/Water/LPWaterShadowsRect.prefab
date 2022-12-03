@@ -53,7 +53,7 @@ MonoBehaviour:
   sizeX: 20
   sizeZ: 20
   noise: 0.5
-  enableReflection: 1
+  enableReflection: 0
   enableRefraction: 1
   reflection:
     disablePixelLights: 1

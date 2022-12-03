@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using UTPLib.Tasks;
 using PestelLib.Utils;
 using UnityDI;
@@ -11,9 +10,6 @@ namespace UTPLib.Services.SceneManagement {
 
         [Dependency] private readonly UnityEventsProvider _EventProvider;
 
-        private readonly Dictionary<SceneType, SceneLoadingParameters> _SceneLoadingParametersMap =
-            new Dictionary<SceneType, SceneLoadingParameters>() { };
-
         public SceneType ActiveScene {
             get {
                 Enum.TryParse(SceneManager.GetActiveScene().name, false, out SceneType result);
@@ -21,21 +17,21 @@ namespace UTPLib.Services.SceneManagement {
             }
         }
 
-        public bool IsGameScene {
-            get {
-                var activeScene = ActiveScene;
-                return activeScene == SceneType.CampLocation;
-            }
-        }
-        
+        public bool IsGameScene => _Map.IsGameScene;
+
         public void Load() { }
 
+        private SceneLoadingMap _Map;
+        public void SetupMap(SceneLoadingMap map) {
+            _Map = map;
+        }
+        
         public void LoadScene(SceneType scene, bool enableReboot = false) {
             var activeScene = ActiveScene;
             if (activeScene == scene && !enableReboot)
                 return;
-            var oldSceneParameters = _SceneLoadingParametersMap[activeScene];
-            var newParameters = _SceneLoadingParametersMap[scene];
+            var oldSceneParameters = _Map.LoadingMap[activeScene];
+            var newParameters = _Map.LoadingMap[scene];
             oldSceneParameters.BeforeUnload();
             oldSceneParameters.UnloadingTasks.RunTasksListAsQueue(
                 () => {
@@ -76,12 +72,5 @@ namespace UTPLib.Services.SceneManagement {
         private void OnSceneLoadFail(SceneType scene) {
             Debug.LogError($"{scene} load fail");
         }
-    }
-
-    public enum SceneType {
-        Initialization,
-        CampLocation,
-        Loc2_Ruins,
-        Prototype,
     }
 }

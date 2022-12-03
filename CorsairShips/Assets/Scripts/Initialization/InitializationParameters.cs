@@ -10,6 +10,7 @@ using Game.Quality;
 using Game.SeaGameplay.AI;
 using Game.SeaGameplay.GameModes;
 using Game.SeaGameplay.Statistics;
+using Initialization.BaseTasks;
 using UI.Markers;
 using UTPLib.Services.ResourceLoader;
 using UTPLib.Services.SceneManagement;
@@ -29,14 +30,13 @@ namespace Game.Initialization {
             
             new UnityEventProviderRegisterTask(),
             new RegisterAndLoadServiceTask<SceneManagerService>(),
-            
+            new SceneManagerSetupTask(),
             new RegisterAndLoadServiceTask<MarkerService>(),
             new GUIInitilizationTask(),
             new RegisterAndLoadServiceTask<QualityService>(),
         };
         
-        public static List<Task> LoadingGameTasks => new() {
-            new GameCameraSpawnTask(),
+        public static List<Task> Loading_BaseGame_Tasks => new() {
             new RegisterAndLoadServiceTask<BattleStatisticsService>(),
             new RegisterAndLoadServiceTask<AIService>(),
             new RegisterAndLoadServiceTask<ShipCreationService>(),
@@ -44,18 +44,26 @@ namespace Game.Initialization {
             
             new WaitForAwakesTask(),
             
+            new GameCameraSpawnTask(),
             new RegisterAndLoadServiceTask<ShipsSpawnService>(),
-            new RegisterAndLoadServiceTask<DeathMatchService>(),
             new GUISetupTask(),
         };
 
-        public static List<Task> UnloadingGameTasks => new() {
-            new UnregisterAndUnloadServiceTask<DeathMatchService>(),
+        public static List<Task> Unloading_BaseGame_Tasks => new() {
+            new CloseGUITask(),
             new UnregisterAndUnloadServiceTask<ShipsSpawnService>(),
             new UnregisterAndUnloadServiceTask<DamageService>(),
             new UnregisterAndUnloadServiceTask<ShipCreationService>(),
             new UnregisterAndUnloadServiceTask<AIService>(),
             new UnregisterAndUnloadServiceTask<BattleStatisticsService>(),
+        };
+
+        public static List<Task> Loading_DeathMatch_Tasks => new() {
+            new RegisterAndLoadServiceTask<DeathMatchService>(),
+        };
+
+        public static List<Task> Unloading_DeathMatch_Tasks => new() {
+            new UnregisterAndUnloadServiceTask<DeathMatchService>(),
         };
     }
 }

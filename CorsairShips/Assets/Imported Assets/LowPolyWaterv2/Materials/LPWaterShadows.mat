@@ -12,7 +12,6 @@ Material:
   m_ValidKeywords:
   - LPW_FOAM
   - LPW_SHADOWS
-  - WATER_REFLECTIVE
   - WATER_REFRACTIVE
   - _LIGHTABS_ON
   - _WAVES_HIGHQUALITY

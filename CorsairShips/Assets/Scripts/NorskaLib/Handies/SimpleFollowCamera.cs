@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -27,5 +28,9 @@ public class SimpleFollowCamera : MonoBehaviour
                 target.position + offset,
                 Time.deltaTime * moveSmoothing)
             : target.position + offset;
+    }
+
+    private void OnDestroy() {
+        Debug.LogError("Destroy camera");
     }
 }
