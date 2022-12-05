@@ -45,6 +45,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33ebd109ac8d4e139608f994c33692c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _FindTargetParameters:
+    Radius: 40
+    FindTargetPeriod: 3
+    RefreshTargetPeriod: 3
+    TryFindMissedTargetTime: 3
+    DistanceWeight: 1
+  _AttackTargetParameters:
+    CheckCD: 0
+    ValidDotToTarget: 0.3
+    MaxDistance: 30
+  _PursueTargetParameters:
+    AroundDistance: 20
+    AroundAngle: 30
+    RandomClockWise: 1
+    ClockWise: 0
   _RandomPointDestinationParameters:
     AreaRadius: 100
     AreaCenter: {fileID: 7300937420688636203}

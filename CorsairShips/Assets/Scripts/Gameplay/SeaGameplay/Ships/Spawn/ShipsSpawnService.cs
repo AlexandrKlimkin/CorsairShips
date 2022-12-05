@@ -28,7 +28,7 @@ namespace Game.SeaGameplay.Spawn {
         public void SpawnLocalPlayerShip() {
             var shipData = new ShipData {
                 ShipId = AllocateShipId(),
-                ShipDefId = "Sloop",
+                ShipDefId = "Warship",
                 IsPlayer = true,
             };
             SpawnShipInRandomPoint(shipData);

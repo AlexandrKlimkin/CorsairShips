@@ -43,7 +43,7 @@ namespace UI.Battle {
 
         private void RefreshShipsCount() {
             var aliveShipsCount = Ship.Ships.Count(_ => !_.Dead);
-            _ShipsCountText.text = $"{aliveShipsCount}/{DeathMatchService.PlayersCount}";
+            _ShipsCountText.text = $"{aliveShipsCount}/{DeathMatchConfig.Instance.DeathMatchParameters.PlayersCount}";
         }
         
         private void OnShipCreated(ShipCreatedSignal signal) {

@@ -2,7 +2,7 @@ using Tools.BehaviourTree;
 using UnityEngine;
 
 namespace Game.SeaGameplay.AI.Data {
-    public class BlackboardMovementData : IBlackboardData {
+    public class BBMovementData : IBlackboardData {
         public Vector3? TargetPoint;
         public MovementType? MovementType;
         public float StopDistance;

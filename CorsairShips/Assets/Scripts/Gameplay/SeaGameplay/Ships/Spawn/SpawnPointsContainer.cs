@@ -13,6 +13,7 @@ namespace Game.SeaGameplay.Spawn {
         public IReadOnlyList<SpawnPoint> SpawnPoints => _SpawnPoints;
 
         private void Awake() {
+            GetComponentsInChildren(_SpawnPoints);
             ContainerHolder.Container.RegisterInstance(this);
         }
 

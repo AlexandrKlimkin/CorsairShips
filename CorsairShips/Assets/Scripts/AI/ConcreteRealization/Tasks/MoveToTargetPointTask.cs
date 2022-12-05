@@ -10,7 +10,7 @@ using UTPLib.Core.Utils;
 namespace Game.SeaGameplay.AI.Tasks {
 	public class MoveToTargetPointTask : ShipTask {
 
-		private BlackboardMovementData _MovementData;
+		private BBMovementData _MovementData;
 
 		private Vector3? _LastTargetPoint;
 		private bool _DestinationChanged;
@@ -27,7 +27,7 @@ namespace Game.SeaGameplay.AI.Tasks {
 		
 		public override void Init() {
 			base.Init();
-			_MovementData = Blackboard.Get<BlackboardMovementData>();
+			_MovementData = Blackboard.Get<BBMovementData>();
 			IsUpdated = true;
 			IsGizmosUpdated = true;
 			_MovementData.DestinationReached = true;
@@ -165,7 +165,12 @@ namespace Game.SeaGameplay.AI.Tasks {
 			direction = Vector3.Slerp(direction, separationVector, separationFactor * SeparationIntensity);
 			Debug.DrawLine(Ship.Position + Vector3.up, Ship.Position + Vector3.up + separationVector * separationFactor * 5, Color.cyan);
 		}
-		
+
+		public override void Dispose() {
+			base.Dispose();
+			Ship.MovementController.Gaz = 0;
+		}
+
 		protected override void OnDrawGizmos() {
 #if UNITY_EDITOR
 			base.OnDrawGizmos();

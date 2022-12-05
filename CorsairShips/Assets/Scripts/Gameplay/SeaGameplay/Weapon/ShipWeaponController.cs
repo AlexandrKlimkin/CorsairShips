@@ -6,10 +6,8 @@ using UnityDI;
 using UnityEngine;
 
 namespace Game.SeaGameplay {
-    public class ShipWeaponController : MonoBehaviour, IDamageCaster {
-        [Dependency]
-        private readonly DamageService _DamageService;
-        
+    public class ShipWeaponController : MonoBehaviour {
+
         [SerializeField]
         private float WeaponsAngle;
         [SerializeField]
@@ -36,7 +34,6 @@ namespace Game.SeaGameplay {
                 _.Setup(this);
                 _.transform.localRotation = weaponsRot;
             });
-            _DamageService.RegisterCaster(this);
         }
 
         public void TryFire() {
@@ -48,6 +45,5 @@ namespace Game.SeaGameplay {
             _Weapons.ForEach(_ => _.Fire());
             _LastShotTime = Time.time;
         }
-        public byte DamageCasterId => Ship.ShipData.ShipId;
     }
 }

@@ -1,5 +1,6 @@
 using UnityDI;
 using Tools.BehaviourTree;
+using UnityEngine;
 using UTPLib.SignalBus;
 
 namespace Game.SeaGameplay.AI {
@@ -26,12 +27,20 @@ namespace Game.SeaGameplay.AI {
                 return;
             Ship.OnDie -= OnShipDie;
             _AIService.Unregister(this);
+            DisposeTasks();
         }
 
         protected override void OnDestroy() {
             base.OnDestroy();
             Ship.OnDie -= OnShipDie;
             _AIService?.Unregister(this);
+        }
+        
+        public Vector3 GetNearestPositionAroundTarget(Vector3 targetPosition, float radius, float angle, bool clockWise = true) {
+            var targetDirection = (targetPosition - Ship.Position).normalized;
+            var rotationDirection = Mathf.Sign(Vector3.Dot(targetDirection, Ship.transform.right)) * (clockWise ? 1 : -1);
+            return targetPosition + Quaternion.AngleAxis(rotationDirection * angle, Vector3.up)
+                * targetDirection * radius * -1;
         }
     }
 }

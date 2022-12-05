@@ -23,10 +23,10 @@ namespace Game.SeaGameplay.Statistics {
         }
 
         private void OnShipDieSignal(ShipDieSignal signal) {
-            var instigator = signal.Damage.Caster as ShipWeaponController;
+            var instigator = signal.Damage.Caster as Ship;
             if(instigator == null)
                 return;
-            if(!instigator.Ship.IsLocalPlayerShip)
+            if(!instigator.IsLocalPlayerShip)
                 return;
             Kills++;
             KillsChanged?.Invoke(Kills);

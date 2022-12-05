@@ -2,6 +2,7 @@
 {
 	Properties
 	{
+		_Color ("Main Color", Color) = (1,1,1,1)
 		_MainTex ("Texture", 2D) = "white" {}
 		_Intensity ("Intensity", Range(0, 1)) = 1
 	}
@@ -42,6 +43,7 @@
 			};
 
 			sampler2D _MainTex;
+			fixed4 _Color;
 			half _Intensity;
 
 			v2f vert (appdata v)
@@ -71,7 +73,7 @@
 				//
 				// result.rg = (normal.rb + 1) / 2;
 				result.a *= i.color.a * _Intensity;
-				result.rgb = 1;
+				result.rgb = _Color;
 				return result;
 			}
 			ENDCG

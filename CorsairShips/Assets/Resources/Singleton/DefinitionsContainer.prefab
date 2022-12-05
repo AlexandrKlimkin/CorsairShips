@@ -50,6 +50,10 @@ MonoBehaviour:
       ModelId: Sloop
       Health: 
       Speed: 
+    - Id: Warship
+      ModelId: Warship
+      Health: 
+      Speed: 
   LocalizationDefContainer:
     LocalizationDef:
     - Id: Test

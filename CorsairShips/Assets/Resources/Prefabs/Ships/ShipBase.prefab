@@ -97,9 +97,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _ModelContainer: {fileID: 6501367231581796354}
   MaxHp: 50
-  DieImpulse: 0.05
-  DrownDelay: 0
-  DestroyTime: 5
+  DieImpulse: 0
+  DrownDelay: 2
+  DestroyTime: 10
 --- !u!114 &2428600356516597026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114,7 +114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxSpeed: 7
   Acceleration: 4
-  Deceleration: 3
+  Deceleration: 2.5
   RotateToForwardFactor: 1.5
   MaxRotateYSpeed: 130
   RotateYAcceleration: 30

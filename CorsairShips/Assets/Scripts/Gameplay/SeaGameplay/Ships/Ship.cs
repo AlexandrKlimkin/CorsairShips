@@ -11,7 +11,7 @@ using UTPLib.SignalBus;
 using Random = UnityEngine.Random;
 
 namespace Game.SeaGameplay {
-    public class Ship : MonoBehaviour, IDamageable {
+    public class Ship : MonoBehaviour, IDamageable, IDamageCaster  {
         [Dependency]
         private readonly SignalBus _SignalBus;
         [Dependency]
@@ -31,16 +31,18 @@ namespace Game.SeaGameplay {
         public Vector3 Position => transform.position;
         
         public float MaxHp;
-        public float DieImpulse;
-        public float DrownDelay;
+        // public float DieImpulse;
         public float DestroyTime;
 
         public event Action<Ship> OnDie;
-        public event Action<Ship> OnDestroy;
+        public event Action<Ship> OnShipDestroy;
+        public event Action<Ship, ClientDamage> OnTakeDamage;
+
 
         private static List<Ship> _Ships = new List<Ship>();
         public static IReadOnlyList<Ship> Ships => _Ships;
         public bool IsLocalPlayerShip => this == _LocalShipProvider.LocalShip;
+        public bool IsAlive => !Dead;
         
         private void Awake() {
             ContainerHolder.Container.BuildUp(this);
@@ -64,6 +66,7 @@ namespace Game.SeaGameplay {
             _Ships.Add(this);
             
             _DamageService.RegisterDamageable(this);
+            _DamageService.RegisterCaster(this);
         }
         
         #region IDamageable
@@ -78,11 +81,16 @@ namespace Game.SeaGameplay {
             Health -= damage.Damage.Amount;
             Health = Mathf.Clamp(Health, 0, MaxHealth);
             // Debug.LogError("Taking damage");
+            OnTakeDamage?.Invoke(this, damage);
             if(Health == 0)
                 Die(damage);
         }
         #endregion
 
+        #region IDamageCaster
+        public byte DamageCasterId => ShipData.ShipId;
+        #endregion
+        
         #region Dying
 
         [Button]
@@ -95,6 +103,8 @@ namespace Game.SeaGameplay {
                 return;
             Dead = true;
 
+            MovementController.Gaz = 0;
+            
             StartCoroutine(DrownRoutine());
             ShipModel.PlayDieExplosions();
             StartCoroutine(DestroyRoutine());
@@ -106,30 +116,33 @@ namespace Game.SeaGameplay {
         }
 
         private IEnumerator DrownRoutine() {
-            yield return new WaitForSeconds(DrownDelay);
+            yield return new WaitForSeconds(ShipModel.DrownDelay);
             
             ShipModel.SetTrailsEnabled(false);
             
             MovementController.Rigidbody.constraints = RigidbodyConstraints.None;
-            var boundsMin = Collider.bounds.min;
-            var boundsMax = Collider.bounds.max;
+            // var boundsMin = Collider.bounds.min;
+            // var boundsMax = Collider.bounds.max;
 
-            var randX = Random.Range(boundsMin.x, boundsMax.x);
-            var randZ = Random.Range(boundsMin.z, boundsMax.z);
-            var randY = Random.Range(boundsMin.y, boundsMax.y);
+            // var randX = Random.Range(boundsMin.x, boundsMax.x);
+            // var randZ = Random.Range(boundsMin.z, boundsMax.z);
+            // var randY = Random.Range(boundsMin.y, boundsMax.y);
             
-            var randInsideBounds = new Vector3(randX, randY, randZ);
+            // var randInsideBounds = new Vector3(randX, randY, randZ);
             
-            MovementController.Rigidbody.centerOfMass = new Vector3(randX, randY, randZ);
-            MovementController.Rigidbody.AddForceAtPosition(Random.onUnitSphere * DieImpulse, transform.position + randInsideBounds, ForceMode.Impulse);
+            // MovementController.Rigidbody.centerOfMass = new Vector3(randX, randY, randZ);
+            // MovementController.Rigidbody.AddForceAtPosition(Random.onUnitSphere * DieImpulse, transform.position + randInsideBounds, ForceMode.Impulse);
         }
 
         private IEnumerator DestroyRoutine() {
             yield return new WaitForSeconds(DestroyTime);
-            _Ships.Remove(this);
             Destroy(gameObject);
-            OnDestroy?.Invoke(this);
         }
         #endregion
+
+        private void OnDestroy() {
+            _Ships.Remove(this);
+            OnShipDestroy?.Invoke(this);
+        }
     }
 }

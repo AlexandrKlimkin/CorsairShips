@@ -58,7 +58,7 @@ namespace Game.SeaGameplay {
                 Gravity = _ProjectileGravity,
                 Damage = new Damage {
                     ReceiverId = null,
-                    CasterId = Owner.DamageCasterId,
+                    CasterId = Owner.Ship.DamageCasterId,
                     Amount = _ProjectileDamage, 
                 },
             };

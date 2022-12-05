@@ -22,6 +22,8 @@ namespace Game.SeaGameplay.AI {
         }
 
         protected override void UpdateObject(ShipAIController target) {
+            if(!target)
+                return;
             if(target.Ship.Dead)
                 return;
             target.UpdateBT();

@@ -12,6 +12,7 @@ Material:
   m_ValidKeywords:
   - LPW_FOAM
   - LPW_SHADOWS
+  - WATER_REFLECTIVE
   - WATER_REFRACTIVE
   - _LIGHTABS_ON
   - _WAVES_HIGHQUALITY
@@ -73,14 +74,14 @@ Material:
     - _Height_: 0.35
     - _Length: 4
     - _LightAbs: 1
-    - _NormalOffset: 2
-    - _Opacity: 0.4
+    - _NormalOffset: 0.5
+    - _Opacity: 0.15
     - _PointLights: 0
     - _RHeight: 0.2
     - _RHeight_: 0.2
     - _RSpeed: 1
     - _RSpeed_: 1
-    - _Reflection: 1.5
+    - _Reflection: 1.8
     - _Refraction: 2
     - _Scale: 1
     - _Scale_: 1
@@ -88,7 +89,7 @@ Material:
     - _Shadow: 0.6
     - _ShoreDistance: 0.5
     - _ShoreIntensity: 0.65
-    - _Specular: 77
+    - _Specular: 218
     - _Speed: 1
     - _Speed_: 1
     - _Steepness: 0.25
@@ -100,11 +101,11 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 0, g: 0.6282138, b: 0.7924528, a: 1}
-    - _DeepColor: {r: 0, g: 0.8627451, b: 0.9411765, a: 1}
+    - _DeepColor: {r: 0, g: 0.7791346, b: 0.8490566, a: 1}
     - _Direction_: {r: -0.7071068, g: -0.7071067, b: -0.7071068, a: -0.7071067}
     - _FresColor: {r: 0.36689016, g: 0.52222586, b: 0.5735294, a: 1}
     - _ShoreColor: {r: 1, g: 1, b: 1, a: 1}
-    - _SpecColor: {r: 0.6764706, g: 0.6359274, b: 0.2785467, a: 1}
+    - _SpecColor: {r: 1, g: 0.9009901, b: 0, a: 1}
     - _Sun: {r: -0.76489085, g: 0.6427876, b: 0.04202783, a: 0}
     - _SunColor: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_BuildTextureStacks: []

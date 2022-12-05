@@ -16,7 +16,8 @@ namespace Game.SeaGameplay {
         public float RotateYAcceleration;
         public float RotateYDeceleration;
         public float RotateYSlowAngle;
-
+        // public float MaxZRotation;
+        
         // [Space]
         // public float MaxZAngle;
         // public float MaxRotateZSpeed;
@@ -27,6 +28,7 @@ namespace Game.SeaGameplay {
         public float Speed { get; private set; }
         public float RotateSpeed { get; private set; }
         
+        public Ship Ship { get; private set; }
         public Rigidbody Rigidbody { get; private set; }
 
         public Vector2 Direction { get; set; }
@@ -36,6 +38,7 @@ namespace Game.SeaGameplay {
         // public float VertAxis { get; set; }
         
         private void Awake() {
+            Ship = GetComponent<Ship>();
             Rigidbody = GetComponent<Rigidbody>();
         }
 
@@ -43,32 +46,31 @@ namespace Game.SeaGameplay {
             // var vertAxis = Input.GetAxis("Vertical");
             // var horAxis = Input.GetAxis("Horizontal");
             //
-            ProcessRotate(Direction);
-            ProcessMove(Gaz);
+            ProcessRotate();
+            ProcessMove();
         }
 
         public void Setup() {
             
         }
         
-        private void ProcessMove(float vertAxis) {
+        private void ProcessMove() {
             var currentVelocityDir = Rigidbody.velocity.sqrMagnitude > 0.01 ? Rigidbody.velocity.normalized : transform.forward;
             var speedDelta = 0f;
 
             var targetSpeed = Mathf.Lerp(0, MaxSpeed, Gaz);
             
-            // if (Mathf.Abs(vertAxis) > 0.1) {
-                if (Speed < targetSpeed) {
-                    speedDelta = Acceleration * Time.fixedDeltaTime * vertAxis;
-                }
-            // }
+            if (Speed < targetSpeed) {
+                speedDelta = Acceleration * Time.fixedDeltaTime;
+            }
             else {
                 if (Speed > 0.01f) {
                     speedDelta = -Deceleration * Time.fixedDeltaTime;
                 }
             }
             Speed += speedDelta;
-            Speed = Mathf.Clamp(Speed, -targetSpeed, targetSpeed);
+            if(targetSpeed != 0)
+                Speed = Mathf.Clamp(Speed, 0, MaxSpeed);
 
             var targetVelocity = transform.forward * Speed;
             var velocityDelta = currentVelocityDir * speedDelta;
@@ -78,7 +80,7 @@ namespace Game.SeaGameplay {
  
         }
 
-        private void ProcessRotate(Vector2 targetDir) {
+        private void ProcessRotate() {
 
             var currentDir = transform.forward.ToVector2XZ();
             
@@ -86,7 +88,7 @@ namespace Game.SeaGameplay {
             
             var rotateDelta = 0f;
 
-            var angle = Vector2.SignedAngle(currentDir, targetDir);
+            var angle = Vector2.SignedAngle(currentDir, Direction);
 
             //Debug.LogError(angle);
 
@@ -113,15 +115,17 @@ namespace Game.SeaGameplay {
                 
             var yDeltaDeg = RotateSpeed * Time.fixedDeltaTime;
 
+            var normRotYSpeed = Mathf.InverseLerp(MaxRotateYSpeed, -MaxRotateYSpeed, RotateSpeed);
+            // var zRot = Mathf.Lerp(-MaxZRotation, MaxZRotation, normRotYSpeed);
+            
             var currentRotEuler = Rigidbody.rotation.eulerAngles;
             
             if (Mathf.Abs(yDeltaDeg) > 0.1) {
                 var newRot = Rigidbody.rotation * Quaternion.Euler(-currentRotEuler.x, yDeltaDeg, -currentRotEuler.z);
                 Rigidbody.MoveRotation(newRot);
             }
-            
-            
-            
+            // var rbEulerRot = Rigidbody.rotation.eulerAngles;
+            // Rigidbody.rotation = Quaternion.Euler(rbEulerRot.x, rbEulerRot.y, zRot);
             
             // if (Mathf.Abs(angle) > 0.1) {
             //     if (absRotSpeed < MaxRotateSpeed) {
@@ -145,9 +149,6 @@ namespace Game.SeaGameplay {
             //     var newRot = Rigidbody.rotation * Quaternion.Euler(0, yDeltaDeg, 0);
             //     Rigidbody.MoveRotation(newRot);
             // }
-            
-            
-            
         }
 
         private void OnDrawGizmos() {

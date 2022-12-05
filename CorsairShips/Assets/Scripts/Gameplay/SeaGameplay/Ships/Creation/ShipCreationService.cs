@@ -41,6 +41,8 @@ namespace Game.SeaGameplay {
 
             var modelPath = ResourcePath.Ships.GetModelPath(shipDef.ModelId);
             var model = _ResourceLoader.LoadResourceOnScene<ShipModelController>(modelPath, ship.ModelContainer);
+            model.transform.localPosition = Vector3.zero;
+            model.transform.localRotation = Quaternion.identity;
             
             ship.Setup(shipData, shipDef, model);
 
@@ -49,7 +51,7 @@ namespace Game.SeaGameplay {
             if (shipData.IsPlayer) {
                 AddPlayerComponents(ship);
                 LocalShip = ship;
-                LocalShip.OnDestroy += OnLocalShipDestroy;
+                LocalShip.OnShipDestroy += OnShipLocalShipDestroy;
             }
             else {
                 AddBotComponents(ship);
@@ -66,10 +68,10 @@ namespace Game.SeaGameplay {
             _AIService.MakeShipAI(ship, aiPrefab);
         }
         
-        private void OnLocalShipDestroy(Ship ship) {
+        private void OnShipLocalShipDestroy(Ship ship) {
             if(LocalShip != ship)
                 return;
-            LocalShip.OnDestroy -= OnLocalShipDestroy;
+            LocalShip.OnShipDestroy -= OnShipLocalShipDestroy;
             LocalShip = null;
         }
     }

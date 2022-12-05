@@ -41,8 +41,12 @@ namespace Tools.BehaviourTree {
             BehaviourTree.Init();
         }
 
-        protected virtual void OnDestroy() {
+        protected void DisposeTasks() {
             BehaviourTree?.Tasks?.ForEach(_ => _.Dispose());
+        }
+        
+        protected virtual void OnDestroy() {
+            DisposeTasks();
         }
     }
 }

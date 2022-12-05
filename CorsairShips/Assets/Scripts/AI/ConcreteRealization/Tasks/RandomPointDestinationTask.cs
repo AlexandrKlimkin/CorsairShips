@@ -7,7 +7,7 @@ namespace Game.SeaGameplay.AI.Tasks {
     public class RandomPointDestinationTask : ShipTask {
         
         private RandomPointDestinationParameters _Parameters;
-        private BlackboardMovementData _MovementData;
+        private BBMovementData _MovementData;
 
         private Collider _Collider;
 		
@@ -18,7 +18,7 @@ namespace Game.SeaGameplay.AI.Tasks {
         public override void Init() {
             base.Init();
             _Parameters = Blackboard.Get<RandomPointDestinationParameters>();
-            _MovementData = Blackboard.Get<BlackboardMovementData>();
+            _MovementData = Blackboard.Get<BBMovementData>();
 			
             if(_Parameters.ReleaseAreaCenter)
                 _Parameters.AreaCenter.SetParent(Ship.transform.parent);

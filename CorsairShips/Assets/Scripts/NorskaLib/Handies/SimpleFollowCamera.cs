@@ -29,8 +29,4 @@ public class SimpleFollowCamera : MonoBehaviour
                 Time.deltaTime * moveSmoothing)
             : target.position + offset;
     }
-
-    private void OnDestroy() {
-        Debug.LogError("Destroy camera");
-    }
 }

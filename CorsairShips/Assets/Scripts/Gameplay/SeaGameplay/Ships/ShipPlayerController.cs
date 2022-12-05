@@ -39,13 +39,9 @@ namespace Game.SeaGameplay {
         }
 
         private void Update() {
-
+            if(_MovementController.Ship.Dead)
+                return;
             var moveVector = _MoveAction.ReadValue<Vector2>();
-            
-            //Debug.LogError(moveVector);
-            
-            var vertAxis = moveVector.y;
-            var horAxis = moveVector.x;
             _MovementController.Gaz = moveVector.magnitude;
             _MovementController.Direction = moveVector;
             

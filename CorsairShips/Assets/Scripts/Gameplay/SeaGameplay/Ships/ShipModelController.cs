@@ -23,7 +23,9 @@ namespace Game.SeaGameplay {
         [SerializeField]
         private List<Transform> _DieExplosionTransforms;
         [SerializeField]
-        private Vector2 _RandomDelay;
+        private Vector2 _RandomExplosionDelay;
+        [SerializeField]
+        private float _DrownDelay;
 
         [Space]
 
@@ -31,6 +33,7 @@ namespace Game.SeaGameplay {
         private List<GameObject> _Trails;
         
         public Transform WeaponsContainer => _WeaponsContainer;
+        public float DrownDelay => _DrownDelay;
 
         // private void Awake() {
         //     BatchView();
@@ -49,7 +52,7 @@ namespace Game.SeaGameplay {
             if(_DieExplosionTransforms.Count == 0)
                 return;
             foreach (var t in _DieExplosionTransforms) {
-                var delay = Random.Range(_RandomDelay.x, _RandomDelay.y);
+                var delay = Random.Range(_RandomExplosionDelay.x, _RandomExplosionDelay.y);
                 var randEffectInfo = _DieExplosionEffects[Random.Range(0, effectsCount)];
                 StartCoroutine(PlayExplosionRoutine(randEffectInfo, t, delay));
             }
