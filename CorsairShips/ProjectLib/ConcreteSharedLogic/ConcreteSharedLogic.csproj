@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>PestelLib.ConcreteSharedLogic</AssemblyName>
+    <RootNamespace>PestelLib.ConcreteSharedLogic</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\pestellib\DependencyInjectionCore\DependencyInjectionCore.csproj" />
+    <ProjectReference Include="..\..\pestellib\GoogleSpreadsheet\GoogleSpreadsheet.csproj" />
+    <ProjectReference Include="..\..\pestellib\MessagePack\MessagePack.csproj" />
+    <ProjectReference Include="..\..\pestellib\ServerShared\ServerShared.csproj" />
+    <ProjectReference Include="..\..\pestellib\SharedLogicBase\SharedLogicBase.csproj" />
+  </ItemGroup>
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="rem python ..\..\PestelLib\Tools\BuildTools\generate_mp_serializers.py -i &quot;$(ProjectPath)&quot; -o &quot;$(ProjectDir)Sources\$(TargetName).Serializers.cs&quot; -r=$(ProjectName)Resolver" />
+  </Target>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="rem ..\..\PestelLib\Tools\UpdateSharedConfig\UpdateSharedLogicVersion.exe $(TargetPath) ..\..\Assets\Resources\sharedConfig.json ..\..\ProjectLib\ConcreteServer\App_Data\sharedConfig.json" />
+  </Target>
+
+</Project>

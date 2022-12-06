@@ -11,6 +11,13 @@ mkdir "Assets\Plugins\LibsSymlinks\Editor"
 rem BODY_START
 
 pestellib\Tools\PackageManager\win\PackageManager.exe --UpdateDependencies
+if exist "Assets\Plugins\LibsSymlinks\ConcreteSharedLogic\" (
+rmdir "Assets\Plugins\LibsSymlinks\ConcreteSharedLogic" /s /q
+)
+if exist "Assets\Plugins\LibsSymlinks\ConcreteSharedLogic" (
+del "Assets\Plugins\LibsSymlinks\ConcreteSharedLogic" /f /q
+)
+mklink /d "Assets\Plugins\LibsSymlinks\ConcreteSharedLogic" "..\..\..\ProjectLib\ConcreteSharedLogic\Sources"
 if exist "Assets\Plugins\LibsSymlinks\APKIntegrityVerifier\" (
 rmdir "Assets\Plugins\LibsSymlinks\APKIntegrityVerifier" /s /q
 )
@@ -215,13 +222,6 @@ if exist "Assets\Plugins\LibsSymlinks\DependencyInjectionCore" (
 del "Assets\Plugins\LibsSymlinks\DependencyInjectionCore" /f /q
 )
 mklink /d "Assets\Plugins\LibsSymlinks\DependencyInjectionCore" "..\..\..\PestelLib\DependencyInjectionCore\Sources"
-if exist "Assets\Plugins\LibsSymlinks\DOTween\" (
-rmdir "Assets\Plugins\LibsSymlinks\DOTween" /s /q
-)
-if exist "Assets\Plugins\LibsSymlinks\DOTween" (
-del "Assets\Plugins\LibsSymlinks\DOTween" /f /q
-)
-mklink /d "Assets\Plugins\LibsSymlinks\DOTween" "..\..\..\PestelLib\DOTween\Sources"
 if exist "Assets\Plugins\LibsSymlinks\EditorSharedPrefs\" (
 rmdir "Assets\Plugins\LibsSymlinks\EditorSharedPrefs" /s /q
 )

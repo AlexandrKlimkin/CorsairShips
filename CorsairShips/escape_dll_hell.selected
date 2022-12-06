@@ -3,6 +3,7 @@
     "APKIntegrityVerifier",
     "BestHTTP",
     "ClientConfig",
+    "ConcreteSharedLogic",
     "DebugMenu",
     "DependencyInjection",
     "DependencyInjectionCore",
