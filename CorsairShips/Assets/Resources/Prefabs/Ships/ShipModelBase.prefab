@@ -359,7 +359,8 @@ MonoBehaviour:
   - {fileID: 4304301381866315830}
   - {fileID: 7108900089473489442}
   - {fileID: 7686289888851287732}
-  _RandomDelay: {x: 0, y: 2}
+  _RandomExplosionDelay: {x: 0, y: 3}
+  _DrownDelay: 2.5
   _Trails:
   - {fileID: 4058739925303299540}
 --- !u!1 &4058739925502829711

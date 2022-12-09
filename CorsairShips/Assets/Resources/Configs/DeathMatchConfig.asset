@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: DeathMatchConfig
   m_EditorClassIdentifier: 
   _DeathMatchParameters:
-    PlayersCount: 6
+    PlayersCount: 16
     EndScreenShowDelay: 4

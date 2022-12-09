@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Stats;
 using UnityEngine;
 using UTPLib.Core.Utils;
 
@@ -16,8 +17,7 @@ namespace Game.SeaGameplay {
         public float RotateYAcceleration;
         public float RotateYDeceleration;
         public float RotateYSlowAngle;
-        // public float MaxZRotation;
-        
+
         // [Space]
         // public float MaxZAngle;
         // public float MaxRotateZSpeed;
@@ -36,6 +36,8 @@ namespace Game.SeaGameplay {
         
         // public float HorAxis { get; set; }
         // public float VertAxis { get; set; }
+
+        private StatsController StatsController => Ship.StatsController;
         
         private void Awake() {
             Ship = GetComponent<Ship>();
@@ -57,6 +59,11 @@ namespace Game.SeaGameplay {
         private void ProcessMove() {
             var currentVelocityDir = Rigidbody.velocity.sqrMagnitude > 0.01 ? Rigidbody.velocity.normalized : transform.forward;
             var speedDelta = 0f;
+
+            MaxSpeed = StatsController.GetBuffedStatValue<float>(StatId.MaxSpeed);
+            Acceleration = StatsController.GetBuffedStatValue<float>(StatId.Acceleration);
+            Deceleration = StatsController.GetBuffedStatValue<float>(StatId.Deceleration);
+            RotateToForwardFactor = StatsController.GetBuffedStatValue<float>(StatId.RotateToForwardFactor);
 
             var targetSpeed = Mathf.Lerp(0, MaxSpeed, Gaz);
             
@@ -82,6 +89,11 @@ namespace Game.SeaGameplay {
 
         private void ProcessRotate() {
 
+            MaxRotateYSpeed = StatsController.GetBuffedStatValue<float>(StatId.MaxRotateYSpeed);
+            RotateYAcceleration = StatsController.GetBuffedStatValue<float>(StatId.RotateYAcceleration);
+            RotateYDeceleration = StatsController.GetBuffedStatValue<float>(StatId.RotateYDeceleration);
+            RotateYSlowAngle = StatsController.GetBuffedStatValue<float>(StatId.RotateYSlowAngle);
+            
             var currentDir = transform.forward.ToVector2XZ();
             
             var absRotSpeed = Mathf.Abs(RotateSpeed);

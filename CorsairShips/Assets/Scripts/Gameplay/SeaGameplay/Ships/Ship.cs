@@ -5,6 +5,7 @@ using Game.Dmg;
 using Game.SeaGameplay.Data;
 using PestelLib.SharedLogic.Modules;
 using Sirenix.OdinInspector;
+using Stats;
 using UnityDI;
 using UnityEngine;
 using UTPLib.SignalBus;
@@ -18,6 +19,8 @@ namespace Game.SeaGameplay {
         private readonly DamageService _DamageService;
         [Dependency]
         private readonly ILocalShipProvider _LocalShipProvider;
+        [Dependency]
+        private readonly StatsService _StatsService;
 
         [SerializeField]
         private Transform _ModelContainer;
@@ -25,12 +28,13 @@ namespace Game.SeaGameplay {
         public ShipMovementController MovementController { get; private set; }
         public ShipWeaponController WeaponController { get; private set; }
         public ShipModelController ShipModel { get; private set; }
+        public StatsController StatsController { get; private set; }
+        
         public Transform ModelContainer => _ModelContainer;
         public ShipData ShipData { get; private set; }
         public ShipDef ShipDef { get; private set; }
         public Vector3 Position => transform.position;
         
-        public float MaxHp;
         // public float DieImpulse;
         public float DestroyTime;
 
@@ -54,9 +58,7 @@ namespace Game.SeaGameplay {
             ShipData = shipData;
             ShipDef = shipDef;
             ShipModel = model;
-            MaxHealth = MaxHp;
-            Health = MaxHealth;
-            
+
             Collider = ShipModel.GetComponentInChildren<Collider>();
             
             MovementController.Setup();
@@ -64,6 +66,11 @@ namespace Game.SeaGameplay {
             ShipModel.BatchView();
             
             _Ships.Add(this);
+
+            StatsController = _StatsService.CreateStatsController(new StatsDescriptor(StatsHolderType.Ship, ShipDef.ConfigId, 0));
+            
+            MaxHealth = StatsController.GetRawStatValue<float>(StatId.MaxHealth);
+            Health = MaxHealth;
             
             _DamageService.RegisterDamageable(this);
             _DamageService.RegisterCaster(this);

@@ -1,5 +1,38 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1832010333277549509
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8021370135567143079}
+  m_Layer: 8
+  m_Name: Markers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8021370135567143079
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832010333277549509}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8727488292487270128}
+  - {fileID: 5996612217231578166}
+  m_Father: {fileID: 7200085531011633427}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4313799838268894891
 GameObject:
   m_ObjectHideFlags: 0
@@ -31,6 +64,52 @@ Transform:
   m_Father: {fileID: 7200085531011633427}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6603586332010783266
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8727488292487270128}
+  - component: {fileID: 7023901539904677507}
+  m_Layer: 8
+  m_Name: ShipMarkerProvider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8727488292487270128
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6603586332010783266}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 9, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8021370135567143079}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7023901539904677507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6603586332010783266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 972ee18a4bb21bd4bb5bf79e73908851, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _AllyProgressbarColor: {r: 0.3254902, g: 0.8117647, b: 0.36862746, a: 1}
+  _EnemyProgressbarColor: {r: 0.78431374, g: 0, b: 0, a: 1}
 --- !u!1 &6741497723405367045
 GameObject:
   m_ObjectHideFlags: 0
@@ -64,6 +143,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6501367231581796354}
+  - {fileID: 8021370135567143079}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -96,9 +176,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ModelContainer: {fileID: 6501367231581796354}
-  MaxHp: 50
-  DieImpulse: 0
-  DrownDelay: 2
   DestroyTime: 10
 --- !u!114 &2428600356516597026
 MonoBehaviour:
@@ -112,14 +189,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eac4116cf042d174786b050ed8752a76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxSpeed: 7
-  Acceleration: 4
-  Deceleration: 2.5
-  RotateToForwardFactor: 1.5
-  MaxRotateYSpeed: 130
-  RotateYAcceleration: 30
-  RotateYDeceleration: 20
-  RotateYSlowAngle: 60
+  MaxSpeed: 0
+  Acceleration: 0
+  Deceleration: 0
+  RotateToForwardFactor: 0
+  MaxRotateYSpeed: 0
+  RotateYAcceleration: 0
+  RotateYDeceleration: 0
+  RotateYSlowAngle: 0
 --- !u!114 &8942298989003418226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,3 +212,55 @@ MonoBehaviour:
   WeaponsAngle: 4.5
   Cooldown: 3
   _Weapons: []
+--- !u!1 &7992095596206331277
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5996612217231578166}
+  - component: {fileID: 7247867660826575838}
+  m_Layer: 8
+  m_Name: PointerMarkerProvider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5996612217231578166
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7992095596206331277}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8021370135567143079}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7247867660826575838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7992095596206331277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 959a9b8a70993d644a2dbd714b6f13a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowPreview: 0
+  PreviewSprite: {fileID: 0}
+  UseDistanceFromHero: 0
+  DistanceFromHeroRequired: 20
+  BordersOffset: 20
+  ShowDistance: 0
+  BGColor: {r: 1, g: 0, b: 0, a: 1}
+  DistanceTextColor: {r: 1, g: 1, b: 1, a: 1}

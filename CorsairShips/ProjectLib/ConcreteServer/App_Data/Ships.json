@@ -2,13 +2,11 @@
   {
     "Id": "Sloop",
     "ModelId": "Sloop",
-    "Health": "",
-    "Speed": ""
+    "ConfigId": "Sloop"
   },
   {
-    "Id": "Warship",
-    "ModelId": "Warship",
-    "Health": "",
-    "Speed": ""
+    "Id": "Corvette",
+    "ModelId": "Corvette",
+    "ConfigId": "Corvette"
   }
 ]

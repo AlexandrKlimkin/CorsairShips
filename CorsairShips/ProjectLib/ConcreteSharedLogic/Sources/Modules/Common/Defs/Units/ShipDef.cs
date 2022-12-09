@@ -5,7 +5,6 @@ namespace PestelLib.SharedLogic.Modules {
     public class ShipDef {
         public string Id;
         public string ModelId;
-        public string Health;
-        public string Speed;
+        public string ConfigId;
     }
 }

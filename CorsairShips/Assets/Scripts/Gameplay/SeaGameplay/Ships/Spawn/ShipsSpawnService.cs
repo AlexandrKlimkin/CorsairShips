@@ -4,6 +4,7 @@ using Game.SeaGameplay.Data;
 using UnityDI;
 using UnityEngine;
 using UTPLib.Services;
+using UTPLib.Services.ResourceLoader;
 using UTPLib.SignalBus;
 
 namespace Game.SeaGameplay.Spawn {
@@ -14,10 +15,15 @@ namespace Game.SeaGameplay.Spawn {
         private readonly ShipCreationService _ShipCreationService;
         [Dependency]
         private readonly SignalBus _SignalBus;
+        [Dependency]
+        private readonly IResourceLoaderService _ResourceLoader; 
         
         private List<SpawnPoint> _FreeSpawnPoints;
+        public ShipsSpawnConfig Config { get; private set; }
 
         public void Load() {
+            Config = _ResourceLoader.LoadResource<ShipsSpawnConfig>(ResourcePath.Spawn.ShipsSpawnConfigPath);
+            ContainerHolder.Container.RegisterInstance(Config);
             _FreeSpawnPoints = _SpawnPointsContainer.SpawnPoints.ToList();
         }
 
@@ -28,20 +34,25 @@ namespace Game.SeaGameplay.Spawn {
         public void SpawnLocalPlayerShip() {
             var shipData = new ShipData {
                 ShipId = AllocateShipId(),
-                ShipDefId = "Warship",
+                ShipDefId = Config.DefaultLocalPlayerShipId,
                 IsPlayer = true,
             };
             SpawnShipInRandomPoint(shipData);
         }
 
-        public void SpawnEnemyShip() {
+        public void SpawnEnemyShip(string shipId) {
             var shipData = new ShipData {
                 ShipId = AllocateShipId(),
-                ShipDefId = "Sloop",
+                ShipDefId = shipId,
                 IsPlayer = false,
             };
             SpawnShipInRandomPoint(shipData);
         }
+
+        public void SpawnEnemyShip() {
+            SpawnEnemyShip(Config.DefaultEnemyShipId);
+        }
+
 
         private void SpawnShipInRandomPoint(ShipData shipData) {
             var randIndex = Random.Range(0, _FreeSpawnPoints.Count);

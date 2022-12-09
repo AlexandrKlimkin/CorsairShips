@@ -11,6 +11,7 @@ using Game.SeaGameplay.AI;
 using Game.SeaGameplay.GameModes;
 using Game.SeaGameplay.Statistics;
 using Initialization.BaseTasks;
+using Stats;
 using UI.Markers;
 using UTPLib.Services.ResourceLoader;
 using UTPLib.Services.SceneManagement;
@@ -37,8 +38,10 @@ namespace Game.Initialization {
         };
         
         public static List<Task> Loading_BaseGame_Tasks => new() {
+            new GuiSystemsLoadTask(),
             new RegisterAndLoadServiceTask<BattleStatisticsService>(),
             new RegisterAndLoadServiceTask<AIService>(),
+            new RegisterAndLoadServiceTask<StatsService>(),
             new RegisterAndLoadServiceTask<ShipCreationService>(),
             new RegisterAndLoadServiceTask<DamageService>(),
             
@@ -54,6 +57,7 @@ namespace Game.Initialization {
             new UnregisterAndUnloadServiceTask<ShipsSpawnService>(),
             new UnregisterAndUnloadServiceTask<DamageService>(),
             new UnregisterAndUnloadServiceTask<ShipCreationService>(),
+            new UnregisterAndUnloadServiceTask<StatsService>(),
             new UnregisterAndUnloadServiceTask<AIService>(),
             new UnregisterAndUnloadServiceTask<BattleStatisticsService>(),
         };

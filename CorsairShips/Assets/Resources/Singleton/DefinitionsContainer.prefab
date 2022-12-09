@@ -48,12 +48,13 @@ MonoBehaviour:
     ShipDefs:
     - Id: Sloop
       ModelId: Sloop
-      Health: 
-      Speed: 
-    - Id: Warship
-      ModelId: Warship
-      Health: 
-      Speed: 
+      ConfigId: Sloop
+    - Id: Corvette
+      ModelId: Corvette
+      ConfigId: Corvette
+    BankCardsDefs: []
+    MyTestModuleDefs: []
+    PropertyDefs: []
   LocalizationDefContainer:
     LocalizationDef:
     - Id: Test
