@@ -49,17 +49,101 @@ MonoBehaviour:
     - Id: Sloop
       ModelId: Sloop
       ConfigId: Sloop
+      NameLocKey: Ships/Sloop/Name
+      DescriptionLocKey: Ships/Sloop/Description
+    - Id: Lugger
+      ModelId: Lugger
+      ConfigId: Lugger
+      NameLocKey: Ships/Lugger/Name
+      DescriptionLocKey: Ships/Lugger/Description
     - Id: Corvette
       ModelId: Corvette
       ConfigId: Corvette
+      NameLocKey: Ships/Corvette/Name
+      DescriptionLocKey: Ships/Corvette/Description
     BankCardsDefs: []
     MyTestModuleDefs: []
     PropertyDefs: []
   LocalizationDefContainer:
     LocalizationDef:
-    - Id: Test
-      en_US: egr
-      ru_RU: "\u044B\u0432\u0436\u0434\u0430"
+    - Id: Ships/Sloop/Name
+      en_US: Sloop
+      ru_RU: "\u0428\u043B\u044E\u043F"
+      fr_FR: 
+      it_IT: 
+      de_DE: 
+      es_ES: 
+      es_MX: 
+      ja_JP: 
+      ko_KR: 
+      pt_PT: 
+      pt_BR: 
+      zh_CN: 
+      zh_TW: 
+      id_ID: 
+    - Id: Ships/Sloop/Description
+      en_US: 
+      ru_RU: 
+      fr_FR: 
+      it_IT: 
+      de_DE: 
+      es_ES: 
+      es_MX: 
+      ja_JP: 
+      ko_KR: 
+      pt_PT: 
+      pt_BR: 
+      zh_CN: 
+      zh_TW: 
+      id_ID: 
+    - Id: Ships/Lugger/Name
+      en_US: Lugger
+      ru_RU: "\u041B\u044E\u0433\u0433\u0435\u0440"
+      fr_FR: 
+      it_IT: 
+      de_DE: 
+      es_ES: 
+      es_MX: 
+      ja_JP: 
+      ko_KR: 
+      pt_PT: 
+      pt_BR: 
+      zh_CN: 
+      zh_TW: 
+      id_ID: 
+    - Id: Ships/Lugger/Description
+      en_US: 
+      ru_RU: 
+      fr_FR: 
+      it_IT: 
+      de_DE: 
+      es_ES: 
+      es_MX: 
+      ja_JP: 
+      ko_KR: 
+      pt_PT: 
+      pt_BR: 
+      zh_CN: 
+      zh_TW: 
+      id_ID: 
+    - Id: Ships/Corvette/Name
+      en_US: Corvette
+      ru_RU: "\u041A\u043E\u0440\u0432\u0435\u0442"
+      fr_FR: 
+      it_IT: 
+      de_DE: 
+      es_ES: 
+      es_MX: 
+      ja_JP: 
+      ko_KR: 
+      pt_PT: 
+      pt_BR: 
+      zh_CN: 
+      zh_TW: 
+      id_ID: 
+    - Id: Ships/Corvette/Description
+      en_US: 
+      ru_RU: 
       fr_FR: 
       it_IT: 
       de_DE: 

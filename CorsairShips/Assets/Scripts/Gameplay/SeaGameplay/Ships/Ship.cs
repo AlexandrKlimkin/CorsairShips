@@ -60,6 +60,7 @@ namespace Game.SeaGameplay {
             ShipModel = model;
 
             Collider = ShipModel.GetComponentInChildren<Collider>();
+            StatsController = _StatsService.CreateStatsController(new StatsDescriptor(StatsHolderType.Ship, ShipDef.ConfigId, 0));
             
             MovementController.Setup();
             WeaponController.Setup();
@@ -67,8 +68,6 @@ namespace Game.SeaGameplay {
             
             _Ships.Add(this);
 
-            StatsController = _StatsService.CreateStatsController(new StatsDescriptor(StatsHolderType.Ship, ShipDef.ConfigId, 0));
-            
             MaxHealth = StatsController.GetRawStatValue<float>(StatId.MaxHealth);
             Health = MaxHealth;
             

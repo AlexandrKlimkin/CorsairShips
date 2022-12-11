@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Game.SeaGameplay.Data;
+using NorskaLib.Utilities;
 using UnityDI;
 using UnityEngine;
 using UTPLib.Services;
@@ -24,6 +25,7 @@ namespace Game.SeaGameplay.Spawn {
         public void Load() {
             Config = _ResourceLoader.LoadResource<ShipsSpawnConfig>(ResourcePath.Spawn.ShipsSpawnConfigPath);
             ContainerHolder.Container.RegisterInstance(Config);
+            LocalPlayerShipId = Config.DefaultShipId;
             _FreeSpawnPoints = _SpawnPointsContainer.SpawnPoints.ToList();
         }
 
@@ -31,10 +33,12 @@ namespace Game.SeaGameplay.Spawn {
             
         }
 
+        public string LocalPlayerShipId { get; set; }
+        
         public void SpawnLocalPlayerShip() {
             var shipData = new ShipData {
                 ShipId = AllocateShipId(),
-                ShipDefId = Config.DefaultLocalPlayerShipId,
+                ShipDefId = LocalPlayerShipId,
                 IsPlayer = true,
             };
             SpawnShipInRandomPoint(shipData);
@@ -50,7 +54,8 @@ namespace Game.SeaGameplay.Spawn {
         }
 
         public void SpawnEnemyShip() {
-            SpawnEnemyShip(Config.DefaultEnemyShipId);
+            var index = RandomUtils.GetRandomIndex(Config.SpawnShips.Select(_=>_.Weight).ToArray());
+            SpawnEnemyShip(Config.SpawnShips[index].ShipId);
         }
 
 

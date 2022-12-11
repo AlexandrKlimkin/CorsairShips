@@ -6,5 +6,7 @@ namespace PestelLib.SharedLogic.Modules {
         public string Id;
         public string ModelId;
         public string ConfigId;
+        public string NameLocKey;
+        public string DescriptionLocKey;
     }
 }

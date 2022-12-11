@@ -12,6 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 678e213f13e84e189cea5fab1f3093d0, type: 3}
   m_Name: ShipsSpawnConfig
   m_EditorClassIdentifier: 
-  _DefaultShipId: Corvette
+  _DefaultShipId: Sloop
   _DefaultEnemyShipId: Sloop
+  _SpawnShips:
+  - ShipId: Sloop
+    Weight: 5
+  - ShipId: Lugger
+    Weight: 3
+  - ShipId: Corvette
+    Weight: 1
   _DefaultLocalPlayerShipId: Corvette

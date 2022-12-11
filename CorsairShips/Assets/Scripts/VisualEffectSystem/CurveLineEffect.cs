@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine;
 
 namespace Tools.VisualEffects {
-	public class CurveLineEffect : VisualEffect {
+	public class CurveLineEffect : ParticleEffect {
 		[SerializeField]
 		private LineRenderer Line;
 		[SerializeField]

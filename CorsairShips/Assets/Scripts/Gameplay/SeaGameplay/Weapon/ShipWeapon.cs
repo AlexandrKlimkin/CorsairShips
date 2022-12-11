@@ -29,6 +29,8 @@ namespace Game.SeaGameplay {
         private Vector2 _RandomShotDelay;
 
         public ShipWeaponController Owner { get; private set; }
+
+        public Transform FirePoint => _FirePoint;
         
         public void Setup(ShipWeaponController owner) {
             Owner = owner;

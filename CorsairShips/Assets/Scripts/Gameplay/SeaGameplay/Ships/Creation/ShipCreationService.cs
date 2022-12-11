@@ -61,6 +61,7 @@ namespace Game.SeaGameplay {
 
         private void AddPlayerComponents(Ship ship) {
             ship.gameObject.AddComponent<ShipPlayerController>();
+            // var aimController = ship.WeaponController.gameObject.AddComponent<AimController>();
         }
         
         private void AddBotComponents(Ship ship) {

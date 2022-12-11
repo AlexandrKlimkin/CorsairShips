@@ -8,6 +8,7 @@ public static partial class ResourcePath {
         public const string ShipBasePrefabPath = "Prefabs/Ships/ShipBase";
         private const string ShipModelFolder = "Prefabs/Ships/";
         private const string ShipAIFolder = "Prefabs/AI/";
+        private const string ShipPreviewsFolder = "Previews/Ships/";
         
         public static string GetModelPath(string modelId) {
             return $"{ShipModelFolder}{modelId}/{modelId}";
@@ -19,6 +20,10 @@ public static partial class ResourcePath {
 
         public static string GetShipConfigPath(string shipId, int lvl) {
             return $"{ShipsPath}{shipId}/Configs/{shipId}_{lvl}";
+        }
+
+        public static string GetPreviewPath(string shipId) {
+            return $"{ShipPreviewsFolder}{shipId}_Preview";
         }
     }
     

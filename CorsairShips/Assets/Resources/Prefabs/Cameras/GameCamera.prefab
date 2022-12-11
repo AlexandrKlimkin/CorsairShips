@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  offset: {x: 0, y: 50, z: -30}
+  offset: {x: 0, y: 45, z: -28}
   smoothing: 1
   moveSmoothing: 20
   turnSmoothing: 20

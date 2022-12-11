@@ -10,5 +10,8 @@ namespace Stats {
         RotateYSlowAngle,
         
         MaxHealth,
+        
+        WeaponsAngle,
+        WeaponsCooldown
     }
 }

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Game.Dmg;
+using Stats;
 using UnityDI;
 using UnityEngine;
 
@@ -20,6 +21,10 @@ namespace Game.SeaGameplay {
         private float _LastShotTime = float.NegativeInfinity;
 
         public float NormilizedCD => Mathf.Clamp01((Time.time - _LastShotTime) / Cooldown);
+
+        public IReadOnlyList<ShipWeapon> Weapons => _Weapons;
+
+        private StatsController StatsController => Ship.StatsController;
         
         private void Awake() {
             ContainerHolder.Container.BuildUp(this);
@@ -28,6 +33,9 @@ namespace Game.SeaGameplay {
 
         public void Setup() {
             Ship.ShipModel.WeaponsContainer.GetComponentsInChildren(_Weapons);
+
+            WeaponsAngle = StatsController.GetBuffedStatValue<float>(StatId.WeaponsAngle);
+            Cooldown = StatsController.GetBuffedStatValue<float>(StatId.WeaponsCooldown);
             
             var weaponsRot = Quaternion.Euler(0, 0, WeaponsAngle);
             _Weapons.ForEach(_ => {

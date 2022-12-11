@@ -4,6 +4,8 @@ using Game.SeaGameplay.Spawn;
 using PestelLib.UI;
 using PestelLib.Utils;
 using UI.Battle;
+using UI.Screens;
+using UI.Screens.ShipSelection;
 using UnityDI;
 using UnityEngine;
 using UTPLib.Services;
@@ -31,32 +33,36 @@ namespace Game.SeaGameplay.GameModes {
         private readonly Gui _Gui;
         [Dependency]
         private readonly SignalBus _SignalBus;
-        //
-        // public const int PlayersCount = 6;
-        
+
         public MatchState CurrentState { get; private set; }
 
         private DeathMatchParameters Parameters => DeathMatchConfig.Instance.DeathMatchParameters;
         
         public void Load() {
             _SignalBus.Subscribe<ShipDieSignal>(OnShipDieSignal, this);
-            _ShipsSpawnService.SpawnLocalPlayerShip();
-            for(var i = 1; i < Parameters.PlayersCount; i++)
-                _ShipsSpawnService.SpawnEnemyShip();
-            CurrentState = MatchState.InProgress;
-            
-            _Gui.Show<DeathMatchOverlay>(GuiScreenType.Overlay);
+            _SignalBus.Subscribe<ShipSelectedSignal>(OnShipSelectedSignal, this);
+            _Gui.Show<ShipSelectionScreen>();
         }
 
         public void Unload() {
             _SignalBus.UnSubscribeFromAll(this);
         }
 
+        private void StartMatch() {
+            _Gui.Show<ControlsOverlay>(GuiScreenType.Overlay);
+            _ShipsSpawnService.SpawnLocalPlayerShip();
+            for(var i = 1; i < Parameters.PlayersCount; i++)
+                _ShipsSpawnService.SpawnEnemyShip();
+            CurrentState = MatchState.InProgress;
+            _Gui.Show<DeathMatchOverlay>(GuiScreenType.Overlay);
+        }
+        
         private void FinishMatch(MatchResult result) {
             if(CurrentState != MatchState.InProgress)
                 return;
             CurrentState = MatchState.Finished;
-            _Gui.CloseAllWindows();
+            _Gui.Close<ControlsOverlay>();
+            _Gui.Close<DeathMatchOverlay>();
             _EventsProvider.StartCoroutine(ShowResultRoutine(result));
         }
 
@@ -76,6 +82,10 @@ namespace Game.SeaGameplay.GameModes {
                     return;
                 FinishMatch(MatchResult.Victory);
             }
+        }
+
+        private void OnShipSelectedSignal(ShipSelectedSignal signal) {
+            StartMatch();
         }
     }
 }

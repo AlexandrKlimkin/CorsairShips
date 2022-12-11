@@ -7,6 +7,12 @@ namespace Game.SeaGameplay {
         [Header("Health")]
         [Stat(Id = StatId.MaxHealth, StatType = typeof(FloatStat))]
         public float MaxHealth;
+
+        [Header("Weapon")]
+        [Stat(Id = StatId.WeaponsAngle, StatType = typeof(FloatStat))]
+        public float WeaponsAngle;
+        [Stat(Id = StatId.WeaponsCooldown, StatType = typeof(FloatStat))]
+        public float WeaponsCooldown;
         
         [Header("Movement")]
         [Stat(Id = StatId.MaxSpeed, StatType = typeof(FloatStat))]

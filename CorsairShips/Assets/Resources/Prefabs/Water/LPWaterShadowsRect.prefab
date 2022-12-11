@@ -61,7 +61,7 @@ MonoBehaviour:
     clipPlaneOffset: -0.3
     reflectLayers:
       serializedVersion: 2
-      m_Bits: 4294967295
+      m_Bits: 1015
     refractLayers:
       serializedVersion: 2
       m_Bits: 4294967295

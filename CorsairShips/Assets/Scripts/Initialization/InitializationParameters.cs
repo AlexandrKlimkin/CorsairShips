@@ -49,7 +49,7 @@ namespace Game.Initialization {
             
             new GameCameraSpawnTask(),
             new RegisterAndLoadServiceTask<ShipsSpawnService>(),
-            new GUISetupTask(),
+            // new GUISetupTask(),
         };
 
         public static List<Task> Unloading_BaseGame_Tasks => new() {

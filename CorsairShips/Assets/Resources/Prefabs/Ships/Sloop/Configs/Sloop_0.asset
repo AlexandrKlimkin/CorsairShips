@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33f7bed941484f9088a9915c4c516f88, type: 3}
   m_Name: Sloop_0
   m_EditorClassIdentifier: 
-  MaxHealth: 80
-  MaxSpeed: 7
+  MaxHealth: 60
+  WeaponsAngle: 4.5
+  WeaponsCooldown: 3.5
+  MaxSpeed: 6.5
   Acceleration: 4
   Deceleration: 2.5
   RotateToForwardFactor: 1.5
