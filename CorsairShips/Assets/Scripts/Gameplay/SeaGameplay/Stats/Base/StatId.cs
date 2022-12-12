@@ -12,6 +12,15 @@ namespace Stats {
         MaxHealth,
         
         WeaponsAngle,
-        WeaponsCooldown
+        WeaponsCooldown,
+        ProjectileDamage,
+        ProjectileScaleFactor,
+        ProjectileSpeed,
+        ProjectileLifetime,
+        ProjectileGravity,
+        ProjectileXDispersionAngle,
+        ProjectileYDispersionAngle,
+        RandomShotDelayMin,
+        RandomShoDelayMax,
     }
 }

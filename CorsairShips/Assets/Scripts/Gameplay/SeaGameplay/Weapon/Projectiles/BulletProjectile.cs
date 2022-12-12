@@ -52,6 +52,7 @@ namespace Game.Shooting {
                 return;
             _Trail = GetEffect<TrailEffect>(TrailName);
             _Trail.gameObject.SetActive(true);
+            _Trail.ScaleWidthMult(transform.localScale.x);
             var target = TrailTransformOverride ?? this.transform;
             _Trail.Attach(target);
             _Trail.Play();

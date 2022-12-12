@@ -160,6 +160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e046c689948a3c4db62c119cc0a2184, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ScaleEffects: 1
   HitEffects:
   - LayerName: Environment
     EffectInfos:

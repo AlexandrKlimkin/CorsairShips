@@ -13,8 +13,17 @@ MonoBehaviour:
   m_Name: Lugger_0
   m_EditorClassIdentifier: 
   MaxHealth: 120
-  WeaponsAngle: 6.5
+  WeaponsAngle: 6
   WeaponsCooldown: 4
+  ProjectileDamage: 10
+  ProjectileScaleFactor: 1
+  ProjectileSpeed: 40
+  ProjectileLifetime: 10
+  ProjectileGravity: 9
+  ProjectileXDispersionAngle: 2
+  ProjectileYDispersionAngle: 15
+  RandomShotDelayMin: 0
+  RandomShoDelayMax: 0.6
   MaxSpeed: 8
   Acceleration: 3
   Deceleration: 2

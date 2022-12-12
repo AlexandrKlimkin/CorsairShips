@@ -13,8 +13,17 @@ MonoBehaviour:
   m_Name: Corvette_0
   m_EditorClassIdentifier: 
   MaxHealth: 200
-  WeaponsAngle: 7.5
+  WeaponsAngle: 6
   WeaponsCooldown: 4.5
+  ProjectileDamage: 8
+  ProjectileScaleFactor: 1
+  ProjectileSpeed: 45
+  ProjectileLifetime: 10
+  ProjectileGravity: 7.5
+  ProjectileXDispersionAngle: 2
+  ProjectileYDispersionAngle: 15
+  RandomShotDelayMin: 0
+  RandomShoDelayMax: 0.8
   MaxSpeed: 10
   Acceleration: 3
   Deceleration: 1.5

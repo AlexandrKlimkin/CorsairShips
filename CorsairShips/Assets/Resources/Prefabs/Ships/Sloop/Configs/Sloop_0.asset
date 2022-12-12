@@ -15,6 +15,15 @@ MonoBehaviour:
   MaxHealth: 60
   WeaponsAngle: 4.5
   WeaponsCooldown: 3.5
+  ProjectileDamage: 10
+  ProjectileScaleFactor: 0.85
+  ProjectileSpeed: 40
+  ProjectileLifetime: 10
+  ProjectileGravity: 9
+  ProjectileXDispersionAngle: 2
+  ProjectileYDispersionAngle: 15
+  RandomShotDelayMin: 0
+  RandomShoDelayMax: 0.5
   MaxSpeed: 6.5
   Acceleration: 4
   Deceleration: 2.5

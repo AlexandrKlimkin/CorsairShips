@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Game.Dmg;
 using Game.Shooting;
+using Stats;
 using Tools.VisualEffects;
 using UnityEngine;
 
@@ -13,6 +14,9 @@ namespace Game.SeaGameplay {
         private string _ProjectileName;
         [SerializeField]
         private string _FireEffectName;
+        
+        
+        [Header("Stats from configs")]
         [SerializeField]
         private float _ProjectileDamage;
         [SerializeField]
@@ -31,6 +35,8 @@ namespace Game.SeaGameplay {
         public ShipWeaponController Owner { get; private set; }
 
         public Transform FirePoint => _FirePoint;
+
+        private StatsController StatsController => Owner.Ship.StatsController;
         
         public void Setup(ShipWeaponController owner) {
             Owner = owner;
@@ -44,16 +50,31 @@ namespace Game.SeaGameplay {
             var delay = Random.Range(_RandomShotDelay.x, _RandomShotDelay.y);
             if (delay > 0)
                 yield return new WaitForSeconds(delay);
-            
+
             var projectile = VisualEffect.GetEffect<BulletProjectile>(_ProjectileName);
 
             var rotationEuler = _FirePoint.rotation.eulerAngles;
             rotationEuler = new Vector3(rotationEuler.x + GetDispersionAngle(_ProjectileXDispersionAngle),
                 rotationEuler.y + GetDispersionAngle(_ProjectileYDispersionAngle), rotationEuler.z);
+
+            _ProjectileDamage = StatsController.GetBuffedStatValue<float>(StatId.ProjectileDamage);
+            _ProjectileSpeed = StatsController.GetBuffedStatValue<float>(StatId.ProjectileSpeed);
+            _ProjectileLifetime = StatsController.GetBuffedStatValue<float>(StatId.ProjectileLifetime);
+            _ProjectileGravity = StatsController.GetBuffedStatValue<float>(StatId.ProjectileGravity);
+            _ProjectileXDispersionAngle = StatsController.GetBuffedStatValue<float>(StatId.ProjectileXDispersionAngle);
+            _ProjectileYDispersionAngle = StatsController.GetBuffedStatValue<float>(StatId.ProjectileYDispersionAngle);
             
+            var delayMin = StatsController.GetBuffedStatValue<float>(StatId.RandomShotDelayMin);
+            var delayMax = StatsController.GetBuffedStatValue<float>(StatId.RandomShoDelayMax);
+            _RandomShotDelay = new Vector2(delayMin, delayMax);
+
+            var scaleFactor = StatsController.GetBuffedStatValue<float>(StatId.ProjectileScaleFactor);
+
+
             var data = new BulletProjectileData {
                 Position = _FirePoint.position,
                 Rotation = Quaternion.Euler(rotationEuler),
+                Scale = Vector3.one * scaleFactor,
                 LifeTime = _ProjectileLifetime,
                 BirthTime = Time.time,
                 Speed = _ProjectileSpeed,
@@ -61,7 +82,7 @@ namespace Game.SeaGameplay {
                 Damage = new Damage {
                     ReceiverId = null,
                     CasterId = Owner.Ship.DamageCasterId,
-                    Amount = _ProjectileDamage, 
+                    Amount = _ProjectileDamage,
                 },
             };
             projectile.Setup(data);

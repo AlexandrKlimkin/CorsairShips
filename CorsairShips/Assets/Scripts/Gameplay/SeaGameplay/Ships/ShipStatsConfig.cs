@@ -13,6 +13,25 @@ namespace Game.SeaGameplay {
         public float WeaponsAngle;
         [Stat(Id = StatId.WeaponsCooldown, StatType = typeof(FloatStat))]
         public float WeaponsCooldown;
+        [Stat(Id = StatId.ProjectileDamage, StatType = typeof(FloatStat))]
+        public float ProjectileDamage;
+        [Stat(Id = StatId.ProjectileScaleFactor, StatType = typeof(FloatStat))]
+        public float ProjectileScaleFactor;
+        [Stat(Id = StatId.ProjectileSpeed, StatType = typeof(FloatStat))]
+        public float ProjectileSpeed;
+        [Stat(Id = StatId.ProjectileLifetime, StatType = typeof(FloatStat))]
+        public float ProjectileLifetime;
+        [Stat(Id = StatId.ProjectileGravity, StatType = typeof(FloatStat))]
+        public float ProjectileGravity;
+        [Stat(Id = StatId.ProjectileXDispersionAngle, StatType = typeof(FloatStat))]
+        public float ProjectileXDispersionAngle;
+        [Stat(Id = StatId.ProjectileYDispersionAngle, StatType = typeof(FloatStat))]
+        public float ProjectileYDispersionAngle;
+        [Stat(Id = StatId.RandomShotDelayMin, StatType = typeof(FloatStat))]
+        public float RandomShotDelayMin;
+        [Stat(Id = StatId.RandomShoDelayMax, StatType = typeof(FloatStat))]
+        public float RandomShoDelayMax;
+        
         
         [Header("Movement")]
         [Stat(Id = StatId.MaxSpeed, StatType = typeof(FloatStat))]

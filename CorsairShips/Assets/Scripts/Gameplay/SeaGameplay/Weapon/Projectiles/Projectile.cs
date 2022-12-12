@@ -18,7 +18,7 @@ namespace Game.Shooting {
             public string LayerName;
             public List<VisualEffectInfo> EffectInfos;
         }
-        
+        public bool ScaleEffects;
         public List<LayerEffectsPair> HitEffects;
         public D Data { get; private set; }
         public bool Initialized { get; private set; }
@@ -33,6 +33,7 @@ namespace Game.Shooting {
             Data = data;
             transform.position = data.Position;
             transform.rotation = data.Rotation;
+            transform.localScale = data.Scale;
             _Hit = false;
             Initialize();
         }
@@ -78,7 +79,12 @@ namespace Game.Shooting {
             var randIndex = Random.Range(0, pair.EffectInfos.Count);
             var effect = GetEffect<ParticleEffect>(pair.EffectInfos[randIndex]);
             effect.transform.position = pos;
-            effect.transform.up = upwards;// Quaternion.Euler(0, 0, Random.Range(0, 360f));
+            effect.transform.up = upwards;
+            if (ScaleEffects) {
+                var e_scale = effect.transform.localScale;
+                var p_scale = transform.localScale;
+                effect.transform.localScale = new Vector3(e_scale.x * p_scale.x, e_scale.y * p_scale.y, e_scale.z * p_scale.z);
+            }
             effect.Play();
         }
 

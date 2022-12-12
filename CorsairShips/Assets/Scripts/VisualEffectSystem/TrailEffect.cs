@@ -7,6 +7,8 @@ namespace Tools.VisualEffects {
     public class TrailEffect : VisualEffect {
 
         private List<TrailRenderer> _Trails;
+        private Dictionary<TrailRenderer, float> _TrailsStartWidthDict;
+
         private Transform _Target;
         private Vector3 _LastTargetPosition;
         private Quaternion _LastTargetRotation;
@@ -18,7 +20,11 @@ namespace Tools.VisualEffects {
 
         void Awake() {
             _Trails = new List<TrailRenderer>();
-            this.GetComponentsInChildren(_Trails);
+            GetComponentsInChildren(_Trails);
+            _TrailsStartWidthDict = new Dictionary<TrailRenderer, float>();
+            foreach (var trail in _Trails) {
+                _TrailsStartWidthDict.Add(trail, trail.widthMultiplier);
+            }
             _Trails.ForEach(_ => DisableTrail(_));
             _Lifetime = _Trails.Max(_ => _.time);
         }
@@ -42,6 +48,14 @@ namespace Tools.VisualEffects {
             _Attached = false;
         }
 
+        public void ScaleWidthMult(float widthMult) {
+            _Trails.ForEach(_ => _.widthMultiplier *= widthMult);
+        }
+        
+        private void ResetWidthMult() {
+            _TrailsStartWidthDict.ForEach(_ => _.Key.widthMultiplier = _.Value);
+        }
+
         protected override IEnumerator PlayTask() {
             UpdatePosition();
             yield return null;
@@ -61,6 +75,7 @@ namespace Tools.VisualEffects {
 
         private void DisableTrail(TrailRenderer trail) {
             trail.emitting = false;
+            trail.widthMultiplier = _TrailsStartWidthDict[trail];
         }
 
         private void EnableTrail(TrailRenderer trail) {
