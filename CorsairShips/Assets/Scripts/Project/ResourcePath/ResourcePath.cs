@@ -33,5 +33,6 @@ public static partial class ResourcePath {
     
     public static class Camera {
         public const string GameCameraPath = "Prefabs/Cameras/GameCamera";
+        public const string GameCameraOffsetConfigPath = "Configs/CameraOffsetConfig";
     }
 }
