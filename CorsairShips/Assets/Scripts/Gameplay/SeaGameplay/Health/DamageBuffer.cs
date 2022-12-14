@@ -39,7 +39,7 @@ namespace Game.Dmg {
         }
 
         private void OnDestroy() {
-            _Damageable.OnTakeDamage += DmgblOnTakeDamage;
+            _Damageable.OnTakeDamage -= DmgblOnTakeDamage;
         }
 
         private void AddToBuffer(DamageBufferData damageBufferData) {
