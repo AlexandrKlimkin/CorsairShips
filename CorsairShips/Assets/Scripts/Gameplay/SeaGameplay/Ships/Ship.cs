@@ -29,6 +29,7 @@ namespace Game.SeaGameplay {
         public ShipWeaponController WeaponController { get; private set; }
         public ShipModelController ShipModel { get; private set; }
         public StatsController StatsController { get; private set; }
+        public DamageBuffer DamageBuffer { get; private set; }
         
         public Transform ModelContainer => _ModelContainer;
         public ShipData ShipData { get; private set; }
@@ -40,9 +41,8 @@ namespace Game.SeaGameplay {
 
         public event Action<Ship> OnDie;
         public event Action<Ship> OnShipDestroy;
-        public event Action<Ship, ClientDamage> OnTakeDamage;
-
-
+        public event Action<ClientDamage> OnTakeDamage;
+        
         private static List<Ship> _Ships = new List<Ship>();
         public static IReadOnlyList<Ship> Ships => _Ships;
         public bool IsLocalPlayerShip => this == _LocalShipProvider.LocalShip;
@@ -52,6 +52,7 @@ namespace Game.SeaGameplay {
             ContainerHolder.Container.BuildUp(this);
             MovementController = GetComponent<ShipMovementController>();
             WeaponController = GetComponent<ShipWeaponController>();
+            DamageBuffer = GetComponent<DamageBuffer>();
         }
 
         public void Setup(ShipData shipData, ShipDef shipDef, ShipModelController model) {
@@ -71,6 +72,8 @@ namespace Game.SeaGameplay {
             MaxHealth = StatsController.GetRawStatValue<float>(StatId.MaxHealth);
             Health = MaxHealth;
             
+            DamageBuffer.Initialize(this, 5f);
+            
             _DamageService.RegisterDamageable(this);
             _DamageService.RegisterCaster(this);
         }
@@ -87,7 +90,7 @@ namespace Game.SeaGameplay {
             Health -= damage.Damage.Amount;
             Health = Mathf.Clamp(Health, 0, MaxHealth);
             // Debug.LogError("Taking damage");
-            OnTakeDamage?.Invoke(this, damage);
+            OnTakeDamage?.Invoke(damage);
             if(Health == 0)
                 Die(damage);
         }
@@ -149,6 +152,8 @@ namespace Game.SeaGameplay {
         private void OnDestroy() {
             _Ships.Remove(this);
             OnShipDestroy?.Invoke(this);
+            _DamageService?.UnregisterCaster(this);
+            _DamageService?.UnregisterDamageable(this);
         }
     }
 }

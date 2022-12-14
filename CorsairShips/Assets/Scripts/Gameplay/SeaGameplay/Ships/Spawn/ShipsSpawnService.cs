@@ -70,7 +70,7 @@ namespace Game.SeaGameplay.Spawn {
             };
             var ship = _ShipCreationService.CreateShip(creationData);
             
-            _SignalBus.FireSignal(new ShipCreatedSignal(ship));
+            _SignalBus.FireSignal(new ShipCreatedSignal(ship, Time.time));
             
             if(shipData.IsPlayer)
                 _SignalBus.FireSignal(new LocalPlayerShipCreatedSignal(ship));

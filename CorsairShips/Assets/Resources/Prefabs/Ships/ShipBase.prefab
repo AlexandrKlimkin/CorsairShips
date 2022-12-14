@@ -123,6 +123,7 @@ GameObject:
   - component: {fileID: 4702410015736258025}
   - component: {fileID: 2428600356516597026}
   - component: {fileID: 8942298989003418226}
+  - component: {fileID: 4282752537831776794}
   m_Layer: 8
   m_Name: ShipBase
   m_TagString: Untagged
@@ -212,6 +213,18 @@ MonoBehaviour:
   WeaponsAngle: 4.5
   Cooldown: 3
   _Weapons: []
+--- !u!114 &4282752537831776794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6741497723405367045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1abc41f3f00d4999a1b9a2ea07d12e03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7992095596206331277
 GameObject:
   m_ObjectHideFlags: 0
