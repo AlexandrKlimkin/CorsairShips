@@ -3,6 +3,7 @@ using Game.Dmg;
 using Game.SeaGameplay.AI.Data;
 using Game.SeaGameplay.AI.Tasks;
 using Tools.BehaviourTree;
+using UnityEditor;
 using UnityEngine;
 
 namespace Game.SeaGameplay.AI.Tasks {
@@ -144,7 +145,7 @@ namespace Game.SeaGameplay.AI.Tasks {
 				Gizmos.color = Color.yellow;
 			else
 				Gizmos.color = Color.red;
-			Gizmos.DrawWireSphere(Ship.Position, _Parameters.Radius);
+			Handles.DrawWireDisc(Ship.Position, Vector3.up, _Parameters.Radius);
 			if (_AttackTargetData.Target != null) {
 				Gizmos.DrawLine(Ship.Position + Vector3.up, _AttackTargetData.Target.Position + Vector3.up);
 			}
