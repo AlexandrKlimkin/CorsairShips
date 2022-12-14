@@ -1,5 +1,3 @@
 namespace Game.SeaGameplay.GameModes {
-    public class MatchFinishSignal {
-        
-    }
+    public class MatchFinishSignal { }
 }

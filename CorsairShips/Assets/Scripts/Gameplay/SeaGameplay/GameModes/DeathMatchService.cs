@@ -55,6 +55,7 @@ namespace Game.SeaGameplay.GameModes {
                 _ShipsSpawnService.SpawnEnemyShip();
             CurrentState = MatchState.InProgress;
             _Gui.Show<DeathMatchOverlay>(GuiScreenType.Overlay);
+            _SignalBus.FireSignal(new MatchStartSignal());
         }
         
         private void FinishMatch(MatchResult result) {
@@ -64,6 +65,7 @@ namespace Game.SeaGameplay.GameModes {
             _Gui.Close<ControlsOverlay>();
             _Gui.Close<DeathMatchOverlay>();
             _EventsProvider.StartCoroutine(ShowResultRoutine(result));
+            _SignalBus.FireSignal(new MatchFinishSignal());
         }
 
         private IEnumerator ShowResultRoutine(MatchResult result) {
