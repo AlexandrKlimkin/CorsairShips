@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.4
       objectReference: {fileID: 0}
+    - target: {fileID: 4058739925303299541, guid: dd534e82fbe54374da0167f4ce053c4a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.39
+      objectReference: {fileID: 0}
     - target: {fileID: 4058739925410486611, guid: dd534e82fbe54374da0167f4ce053c4a, type: 3}
       propertyPath: m_Name
       value: Sloop
