@@ -12,19 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33f7bed941484f9088a9915c4c516f88, type: 3}
   m_Name: Corvette_0
   m_EditorClassIdentifier: 
-  MaxHealth: 200
+  MaxHealth: 170
   WeaponsAngle: 6
-  WeaponsCooldown: 4.5
-  ProjectileDamage: 8
-  ProjectileScaleFactor: 1
-  ProjectileSpeed: 45
+  WeaponsCooldown: 9
+  ProjectileDamage: 10
+  ProjectileScaleFactor: 1.1
+  ProjectileSpeed: 55
   ProjectileLifetime: 10
-  ProjectileGravity: 7.5
+  ProjectileGravity: 8.5
   ProjectileXDispersionAngle: 2
   ProjectileYDispersionAngle: 15
   RandomShotDelayMin: 0
   RandomShoDelayMax: 0.8
-  MaxSpeed: 10
+  MaxSpeed: 7
   Acceleration: 3
   Deceleration: 1.5
   RotateToForwardFactor: 1.2

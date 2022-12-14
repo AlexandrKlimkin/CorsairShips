@@ -12,23 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33f7bed941484f9088a9915c4c516f88, type: 3}
   m_Name: Lugger_0
   m_EditorClassIdentifier: 
-  MaxHealth: 120
-  WeaponsAngle: 6
+  MaxHealth: 130
+  WeaponsAngle: 5
   WeaponsCooldown: 4
-  ProjectileDamage: 10
-  ProjectileScaleFactor: 1
+  ProjectileDamage: 12
+  ProjectileScaleFactor: 1.3
   ProjectileSpeed: 40
   ProjectileLifetime: 10
-  ProjectileGravity: 9
+  ProjectileGravity: 8
   ProjectileXDispersionAngle: 2
   ProjectileYDispersionAngle: 15
   RandomShotDelayMin: 0
   RandomShoDelayMax: 0.6
-  MaxSpeed: 8
-  Acceleration: 3
-  Deceleration: 2
-  RotateToForwardFactor: 1.25
-  MaxRotateYSpeed: 75
-  RotateYAcceleration: 22
-  RotateYDeceleration: 15
+  MaxSpeed: 12
+  Acceleration: 5
+  Deceleration: 4
+  RotateToForwardFactor: 3.15
+  MaxRotateYSpeed: 120
+  RotateYAcceleration: 40
+  RotateYDeceleration: 35
   RotateYSlowAngle: 60

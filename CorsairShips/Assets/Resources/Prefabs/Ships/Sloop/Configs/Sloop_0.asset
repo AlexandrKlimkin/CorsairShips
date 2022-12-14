@@ -24,7 +24,7 @@ MonoBehaviour:
   ProjectileYDispersionAngle: 15
   RandomShotDelayMin: 0
   RandomShoDelayMax: 0.5
-  MaxSpeed: 6.5
+  MaxSpeed: 9
   Acceleration: 4
   Deceleration: 2.5
   RotateToForwardFactor: 1.5
