@@ -8,6 +8,7 @@ using Game.SeaGameplay.Spawn;
 using PestelLib.TaskQueueLib;
 using Game.Quality;
 using Game.SeaGameplay.AI;
+using Game.SeaGameplay.Bounds;
 using Game.SeaGameplay.GameModes;
 using Game.SeaGameplay.Statistics;
 using Initialization.BaseTasks;
@@ -48,13 +49,14 @@ namespace Game.Initialization {
             new WaitForAwakesTask(),
             
             new GameCameraSpawnTask(),
+            new RegisterAndLoadServiceTask<LevelBoundsService>(),
             new RegisterAndLoadServiceTask<ShipsSpawnService>(),
-            // new GUISetupTask(),
         };
 
         public static List<Task> Unloading_BaseGame_Tasks => new() {
             new CloseGUITask(),
             new UnregisterAndUnloadServiceTask<ShipsSpawnService>(),
+            new UnregisterAndUnloadServiceTask<LevelBoundsService>(),
             new UnregisterAndUnloadServiceTask<DamageService>(),
             new UnregisterAndUnloadServiceTask<ShipCreationService>(),
             new UnregisterAndUnloadServiceTask<StatsService>(),

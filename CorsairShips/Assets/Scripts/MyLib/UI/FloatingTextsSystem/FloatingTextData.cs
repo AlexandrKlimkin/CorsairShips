@@ -1,4 +1,5 @@
 ﻿using System;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace UI.FloatingTexts {
@@ -14,6 +15,7 @@ namespace UI.FloatingTexts {
 		public Vector3 FromPos;
 		[HideInInspector]
 		public Vector3 ToPos;
+		[ShowIf(@"DistanceType")]
 		public float FlyDistance;
 		public float FlyTime;
 		public AnimationCurve FlyCurve;
@@ -22,6 +24,8 @@ namespace UI.FloatingTexts {
 		public float FadeTime;
 		[Space]
 		public Vector2 Size;
+
+		private bool DistanceType => MovementType == FloatingWidgetMovementType.Distance;
 	}
 
 	public enum FloatingWidgetMovementType {

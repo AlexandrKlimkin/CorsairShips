@@ -48,8 +48,15 @@ namespace Game.Dmg {
                 _SummaryBufferedDamageDict[damageBufferData.Damage.Caster] += damageBufferData.Damage.Damage.Amount;
             else
                 _SummaryBufferedDamageDict.Add(damageBufferData.Damage.Caster, damageBufferData.Damage.Damage.Amount);
+            // Debug.LogError("Add to buffer");
         }
 
+        private void Update() {
+            //ToDo: scheduler
+            UpdateBuffer();
+            
+        }
+        
         private void UpdateBuffer() {
             while (_Buffer.Count > 0 && _Buffer.Peek().Time + _SafeTime < Time.time) {
                 var damageData = _Buffer.Dequeue();
@@ -78,7 +85,7 @@ namespace Game.Dmg {
 
         public IEnumerable<IDamageCaster> GetCastersForLastTime(float time) {
             var now = Time.time;
-            return _Buffer.Where(_ => now - _.Time > time).Select(_=>_.Damage.Caster);
+            return _Buffer.Where(_ => now - _.Time <= time).Select(_=>_.Damage.Caster);
         }
     }
 }

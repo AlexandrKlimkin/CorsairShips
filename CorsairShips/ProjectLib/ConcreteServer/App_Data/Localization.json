@@ -100,5 +100,22 @@
     "zh_CN": null,
     "zh_TW": null,
     "id_ID": null
+  },
+  {
+    "Id": "Warnings/OutOfBounds",
+    "en_US": "Come back to battle area!",
+    "ru_RU": "Вернитесь на поле боя!",
+    "fr_FR": null,
+    "it_IT": null,
+    "de_DE": null,
+    "es_ES": null,
+    "es_MX": null,
+    "ja_JP": "",
+    "ko_KR": "",
+    "pt_PT": null,
+    "pt_BR": "",
+    "zh_CN": null,
+    "zh_TW": null,
+    "id_ID": null
   }
 ]

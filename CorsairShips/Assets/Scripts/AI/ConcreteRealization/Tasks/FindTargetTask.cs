@@ -75,10 +75,6 @@ namespace Game.SeaGameplay.AI.Tasks {
 			return _AttackTargetData.Target == null ? TaskStatus.Failure : TaskStatus.Success;
 		}
 
-		protected virtual bool ClearTargetCondition() {
-			return false;
-		}
-		
 		protected virtual void ClearTarget() {
 			// if(_AttackTargetData.Target != null)
 			// 	UnitAIEvents.OnUnitLostTarget?.Invoke(Unit, _AttackTargetData.Target);
