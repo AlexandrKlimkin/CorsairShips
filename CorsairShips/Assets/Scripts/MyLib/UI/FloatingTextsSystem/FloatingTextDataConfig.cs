@@ -13,7 +13,6 @@ namespace UI.FloatingTexts {
 		public FloatingTextData FloatingDmg;
 		public FloatingTextData FloatingHeal;
 
-		[FormerlySerializedAs("QueueDatas")]
 		[Header("Queues")]
 		[SerializeField]
 		private List<FloatingTextQueueData> _QueueDatas;

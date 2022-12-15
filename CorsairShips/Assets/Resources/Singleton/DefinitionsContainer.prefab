@@ -156,3 +156,19 @@ MonoBehaviour:
       zh_CN: 
       zh_TW: 
       id_ID: 
+    - Id: Warnings/OutOfBounds
+      en_US: Come back to battle area!
+      ru_RU: "\u0412\u0435\u0440\u043D\u0438\u0442\u0435\u0441\u044C \u043D\u0430
+        \u043F\u043E\u043B\u0435 \u0431\u043E\u044F!"
+      fr_FR: 
+      it_IT: 
+      de_DE: 
+      es_ES: 
+      es_MX: 
+      ja_JP: 
+      ko_KR: 
+      pt_PT: 
+      pt_BR: 
+      zh_CN: 
+      zh_TW: 
+      id_ID: 

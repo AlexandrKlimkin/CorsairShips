@@ -6,37 +6,43 @@ using PestelLib.SharedLogic.Extentions;
 using UnityDI;
 using UnityEngine;
 
-namespace UI.FloatingTexts
-{
-    public class FloatingTextsSystem : MonoBehaviour 
-    {
+namespace UI.FloatingTexts {
+    public class FloatingTextsSystem : MonoBehaviour {
         [Dependency]
         private readonly ILocalization _Localization;
-        
+
         [SerializeField]
         private FloatingTextWidget _FloatingTextWidgetPrefab;
+
         [SerializeField]
         private RectTransform _WidgetsRoot;
+
         [SerializeField]
         private Transform _NotificationsFromPoint;
+
         [SerializeField]
         private Transform _NotificationsToPoint;
-        
+
         private MonoBehaviourPool<FloatingTextWidget> _WidgetsPool;
 
-        private Dictionary<QueueType, Queue<FloatingTextData>> _TextsQueuesDict = new Dictionary<QueueType, Queue<FloatingTextData>>();
+        private Dictionary<QueueType, Queue<FloatingTextData>> _TextsQueuesDict =
+            new Dictionary<QueueType, Queue<FloatingTextData>>();
+
         private Dictionary<QueueType, float> _QueueTimers = new Dictionary<QueueType, float>();
 
+        public Transform NotificationsFromPoint => _NotificationsFromPoint;
+        public Transform NotificationsToPoint => _NotificationsToPoint;
+        
         private Camera Camera {
             get {
-                if(!_Camera)
+                if (!_Camera)
                     _Camera = Camera.main;
                 return _Camera;
             }
         }
 
         private Camera _Camera;
-        
+
         private void Awake() {
             ContainerHolder.Container.BuildUp(this);
             ContainerHolder.Container.RegisterInstance(this);
@@ -45,7 +51,7 @@ namespace UI.FloatingTexts
             var values = Enum.GetValues(typeof(QueueType));
             foreach (var val in values) {
                 var enumVal = (QueueType)val;
-                if(enumVal == QueueType.None)
+                if (enumVal == QueueType.None)
                     continue;
                 _TextsQueuesDict.Add(enumVal, new Queue<FloatingTextData>());
                 _QueueTimers.Add(enumVal, float.NegativeInfinity);
@@ -58,12 +64,12 @@ namespace UI.FloatingTexts
             // }
 
             var time = Time.time;
-            
+
             foreach (var pair in _TextsQueuesDict) {
-                if(pair.Value.Count == 0)
+                if (pair.Value.Count == 0)
                     continue;
                 var delay = FloatingTextDataConfig.Instance.QueueDict[pair.Key].Delay;
-                if(time - _QueueTimers[pair.Key] < delay)
+                if (time - _QueueTimers[pair.Key] < delay)
                     continue;
                 var widget = pair.Value.Dequeue();
                 PlayWidget(widget);
@@ -78,7 +84,7 @@ namespace UI.FloatingTexts
         // private FloatingTextData GetFromQueue(QueueType queueType) {
         //     return _TextsQueuesDict[queueType].Dequeue();
         // }
-        
+
         public void PlayNotification(string text, QueueType queueType = QueueType.Notifications) {
             var data = FloatingTextDataConfig.Instance.NotificationUsual;
             data.Text = text;
@@ -90,9 +96,9 @@ namespace UI.FloatingTexts
         public void PlayWorldPos(FloatingTextData data, QueueType queueType = QueueType.None) {
             var viewportPos = Camera.WorldToViewportPoint(data.FromPos);
 
-            if(viewportPos.x < 0 || viewportPos.x > 1 || viewportPos.y < 0 || viewportPos.y > 1)
+            if (viewportPos.x < 0 || viewportPos.x > 1 || viewportPos.y < 0 || viewportPos.y > 1)
                 return;
-            
+
             var rect = _WidgetsRoot.rect;
             var screenPosition = new Vector2(
                 (viewportPos.x * rect.width),
@@ -117,7 +123,7 @@ namespace UI.FloatingTexts
             widget.OnComplete += OnComplete;
             widget.Play(data);
         }
-        
+
         private void OnComplete(FloatingTextWidget widget) {
             widget.OnComplete -= OnComplete;
             _WidgetsPool.ReturnObjectToPool(widget);
