@@ -36,10 +36,10 @@ namespace Game.Initialization {
             new RegisterAndLoadServiceTask<MarkerService>(),
             new GUIInitilizationTask(),
             new RegisterAndLoadServiceTask<QualityService>(),
+            new GuiSystemsLoadTask(),
         };
         
         public static List<Task> Loading_BaseGame_Tasks => new() {
-            new GuiSystemsLoadTask(),
             new RegisterAndLoadServiceTask<BattleStatisticsService>(),
             new RegisterAndLoadServiceTask<AIService>(),
             new RegisterAndLoadServiceTask<StatsService>(),
@@ -70,6 +70,14 @@ namespace Game.Initialization {
 
         public static List<Task> Unloading_DeathMatch_Tasks => new() {
             new UnregisterAndUnloadServiceTask<DeathMatchService>(),
+        };
+
+        public static List<Task> Loading_Menu_Tasks => new() {
+            new MenuGuiLoadTask(),
+        };
+        
+        public static List<Task> Unloading_Menu_Tasks => new() {
+            new CloseGUITask(),
         };
     }
 }
