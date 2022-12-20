@@ -752,7 +752,7 @@ namespace PestelLib.UI
 
         public void CloseAllWindows()
         {
-            var screensCopy = _screens.ToList();
+            var screensCopy = _screens.Where(_=>_.Type != GuiScreenType.Permanent).ToList();
             screensCopy.ForEach(_ => Close(_.GameObject));
         }
     }

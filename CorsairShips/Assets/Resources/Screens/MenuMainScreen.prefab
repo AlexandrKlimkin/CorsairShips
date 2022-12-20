@@ -237,6 +237,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NavigateMenuButtons
       objectReference: {fileID: 0}
+    - target: {fileID: 4348083273830430248, guid: f7e2dee60058e6044b992327c5646370, type: 3}
+      propertyPath: m_fontSize
+      value: 17.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7e2dee60058e6044b992327c5646370, type: 3}
 --- !u!224 &2286736593618455966 stripped
@@ -671,102 +675,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2286736592414109140}
     m_Modifications:
-    - target: {fileID: 1497654626434299388, guid: b9127b4210bbcaa4293280b26d2d0214, type: 3}
-      propertyPath: m_fontSize
-      value: 22.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1497654627886648234, guid: b9127b4210bbcaa4293280b26d2d0214, type: 3}
-      propertyPath: m_fontSize
-      value: 52.55
-      objectReference: {fileID: 0}
-    - target: {fileID: 2383457295566120654, guid: b9127b4210bbcaa4293280b26d2d0214, type: 3}
-      propertyPath: m_Color.a
-      value: 0.70980394
-      objectReference: {fileID: 0}
-    - target: {fileID: 2383457295566120654, guid: b9127b4210bbcaa4293280b26d2d0214, type: 3}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2383457295566120654, guid: b9127b4210bbcaa4293280b26d2d0214, type: 3}
-      propertyPath: m_Color.g
-      value: 0.5943396
-      objectReference: {fileID: 0}
-    - target: {fileID: 2383457295566120654, guid: b9127b4210bbcaa4293280b26d2d0214, type: 3}
-      propertyPath: m_Color.r
-      value: 0.26150945
-      objectReference: {fileID: 0}
-    - target: {fileID: 2383457295566120654, guid: b9127b4210bbcaa4293280b26d2d0214, type: 3}
-      propertyPath: m_PixelsPerUnitMultiplier
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2383457296114604184, guid: b9127b4210bbcaa4293280b26d2d0214, type: 3}
-      propertyPath: m_Color.a
-      value: 0.78431374
-      objectReference: {fileID: 0}
-    - target: {fileID: 2383457296114604184, guid: b9127b4210bbcaa4293280b26d2d0214, type: 3}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2383457296114604184, guid: b9127b4210bbcaa4293280b26d2d0214, type: 3}
-      propertyPath: m_Color.g
-      value: 0.8867924
-      objectReference: {fileID: 0}
-    - target: {fileID: 2383457296114604184, guid: b9127b4210bbcaa4293280b26d2d0214, type: 3}
-      propertyPath: m_Color.r
-      value: 0.11677928
-      objectReference: {fileID: 0}
-    - target: {fileID: 2383457296114604184, guid: b9127b4210bbcaa4293280b26d2d0214, type: 3}
-      propertyPath: m_PixelsPerUnitMultiplier
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2582687923308236772, guid: b9127b4210bbcaa4293280b26d2d0214, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2582687923308236772, guid: b9127b4210bbcaa4293280b26d2d0214, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2582687923308236772, guid: b9127b4210bbcaa4293280b26d2d0214, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2582687923308236772, guid: b9127b4210bbcaa4293280b26d2d0214, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2582687923308236772, guid: b9127b4210bbcaa4293280b26d2d0214, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 334.5924
-      objectReference: {fileID: 0}
-    - target: {fileID: 2582687923308236772, guid: b9127b4210bbcaa4293280b26d2d0214, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -157.7445
-      objectReference: {fileID: 0}
-    - target: {fileID: 2582687924571861426, guid: b9127b4210bbcaa4293280b26d2d0214, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2582687924571861426, guid: b9127b4210bbcaa4293280b26d2d0214, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2582687924571861426, guid: b9127b4210bbcaa4293280b26d2d0214, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2582687924571861426, guid: b9127b4210bbcaa4293280b26d2d0214, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2582687924571861426, guid: b9127b4210bbcaa4293280b26d2d0214, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 131.49231
-      objectReference: {fileID: 0}
-    - target: {fileID: 2582687924571861426, guid: b9127b4210bbcaa4293280b26d2d0214, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -157.7445
-      objectReference: {fileID: 0}
     - target: {fileID: 3898804000622450158, guid: b9127b4210bbcaa4293280b26d2d0214, type: 3}
       propertyPath: m_Name
       value: BattlePanel
@@ -869,26 +777,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2286736592414109140}
     m_Modifications:
-    - target: {fileID: 736314503901502979, guid: 17fe88b89ffc1c642950adc3cca04c5c, type: 3}
-      propertyPath: m_Color.a
-      value: 0.78431374
-      objectReference: {fileID: 0}
-    - target: {fileID: 736314503901502979, guid: 17fe88b89ffc1c642950adc3cca04c5c, type: 3}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 736314503901502979, guid: 17fe88b89ffc1c642950adc3cca04c5c, type: 3}
-      propertyPath: m_Color.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 736314503901502979, guid: 17fe88b89ffc1c642950adc3cca04c5c, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 736314503901502979, guid: 17fe88b89ffc1c642950adc3cca04c5c, type: 3}
-      propertyPath: m_PixelsPerUnitMultiplier
-      value: 5.78
-      objectReference: {fileID: 0}
     - target: {fileID: 3049039516352253418, guid: 17fe88b89ffc1c642950adc3cca04c5c, type: 3}
       propertyPath: m_Name
       value: Offer
@@ -1192,10 +1080,6 @@ PrefabInstance:
     - target: {fileID: 6472345298971841014, guid: f553d3d111582044ab15c53ecbcf2490, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6472345299321121822, guid: f553d3d111582044ab15c53ecbcf2490, type: 3}
-      propertyPath: m_Color.a
-      value: 0.5882353
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f553d3d111582044ab15c53ecbcf2490, type: 3}

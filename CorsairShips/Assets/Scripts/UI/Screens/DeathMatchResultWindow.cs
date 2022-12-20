@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Game.Initialization.Parameters;
 using Game.SeaGameplay.GameModes;
 using Game.SeaGameplay.Statistics;
 using TMPro;
@@ -41,7 +42,7 @@ namespace UI.Battle {
         }
 
         private void OnRestartButtonClick() {
-            _SceneManager.LoadScene(SceneType.BattleArena, true);
+            _SceneManager.LoadScene(_SceneManager.ActiveGameModeScene, true);
         }
     }
 }

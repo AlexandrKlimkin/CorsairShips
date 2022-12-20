@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Water_Menu
+  m_Shader: {fileID: 4800000, guid: 8165be4dd0b12774d80426d906df9c38, type: 3}
+  m_ValidKeywords:
+  - LPW_FOAM
+  - LPW_SHADOWS
+  - WATER_REFLECTIVE
+  - WATER_REFRACTIVE
+  - _CUSTOM_SHAPE
+  - _LIGHTABS_ON
+  - _WAVES_HIGHQUALITY
+  m_InvalidKeywords:
+  - _EDGEBLEND_ON
+  - _EMISSION
+  - _SHADING_FLAT
+  - _ZWRITE_ON
+  m_LightmapFlags: 1
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2500
+  stringTagMap:
+    QUEUE: AlphaTest+50
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpTex:
+        m_Texture: {fileID: 2800000, guid: 5172883f19560c34db24c164f824d406, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FresnelTex:
+        m_Texture: {fileID: 2800000, guid: bbe71c065be7eca47b24d1e03bf041b3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTex:
+        m_Texture: {fileID: 2800000, guid: 6a1c221a7d11eaa4e875ae74a888d906, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ReflectionTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RefractionTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Absorption: 3.5
+    - _BumpScale: 100
+    - _BumpScale_: 150
+    - _BumpSpeed: 0.2
+    - _Cull: 0
+    - _Cull_: 2
+    - _Diffuse: 0.5
+    - _Direction: 140
+    - _Distort: 0
+    - _Distortion: 1
+    - _EdgeBlend: 1
+    - _EnableShadows: 1
+    - _FoamScale: 60
+    - _FoamSpeed: 0.1
+    - _FoamSpread: 0.4
+    - _FresPower: 2
+    - _HQFoam: 0
+    - _Height: 0.25
+    - _Height_: 0.375
+    - _Length: 4
+    - _LightAbs: 1
+    - _NormalOffset: 1.3
+    - _Opacity: 0.08
+    - _PointLights: 0
+    - _RHeight: 0.2
+    - _RHeight_: 0.3
+    - _RSpeed: 0.7
+    - _RSpeed_: 1.05
+    - _Reflection: 1.2
+    - _Refraction: 2
+    - _Scale: 1
+    - _Scale_: 1.5
+    - _Shading: 0
+    - _Shadow: 0.6
+    - _ShoreDistance: 0.8
+    - _ShoreIntensity: 0.4
+    - _Specular: 218
+    - _Speed: 0.8
+    - _Speed_: 1.2
+    - _Steepness: 0.35
+    - _Stretch: 10
+    - _TexSize_: 96
+    - _Time_: 0
+    - _TransformScale_: 1.5
+    - _Waves: 2
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 0, g: 0.6282138, b: 0.7924528, a: 1}
+    - _DeepColor: {r: 0.39215684, g: 0.88031703, b: 1, a: 1}
+    - _Direction_: {r: -0.76604444, g: 0.64278764, b: -1.6086932, a: 1.349854}
+    - _FresColor: {r: 0.36689016, g: 0.52222586, b: 0.5735294, a: 1}
+    - _ShoreColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 1, g: 0.9009901, b: 0, a: 1}
+    - _Sun: {r: -0.07610886, g: 0.7660444, b: -0.63826597, a: 0}
+    - _SunColor: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_BuildTextureStacks: []

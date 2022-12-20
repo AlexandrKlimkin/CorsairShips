@@ -14,7 +14,6 @@ Material:
   - LPW_SHADOWS
   - WATER_REFLECTIVE
   - WATER_REFRACTIVE
-  - _CUSTOM_SHAPE
   - _LIGHTABS_ON
   - _WAVES_HIGHQUALITY
   m_InvalidKeywords:
@@ -82,7 +81,7 @@ Material:
     - _RHeight_: 0.3
     - _RSpeed: 0.7
     - _RSpeed_: 1.05
-    - _Reflection: 1.15
+    - _Reflection: 1.5
     - _Refraction: 2
     - _Scale: 1
     - _Scale_: 1.5
@@ -107,6 +106,6 @@ Material:
     - _FresColor: {r: 0.36689016, g: 0.52222586, b: 0.5735294, a: 1}
     - _ShoreColor: {r: 1, g: 1, b: 1, a: 1}
     - _SpecColor: {r: 1, g: 0.9009901, b: 0, a: 1}
-    - _Sun: {r: -0.07610886, g: 0.7660444, b: -0.63826597, a: 0}
-    - _SunColor: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+    - _Sun: {r: 0.7029322, g: 0.32011703, b: 0.6351471, a: 0}
+    - _SunColor: {r: 1, g: 0.9689686, b: 0.7882353, a: 1}
   m_BuildTextureStacks: []

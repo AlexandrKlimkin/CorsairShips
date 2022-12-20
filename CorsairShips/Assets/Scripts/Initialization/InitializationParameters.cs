@@ -3,6 +3,7 @@ using Core.Initialization.Base;
 using Game.Dmg;
 using Game.Initialization.Base;
 using Game.Initialization.GameTasks;
+using Game.Meta.BattleLoading;
 using Game.SeaGameplay;
 using Game.SeaGameplay.Spawn;
 using PestelLib.TaskQueueLib;
@@ -32,7 +33,8 @@ namespace Game.Initialization {
             
             new UnityEventProviderRegisterTask(),
             new RegisterAndLoadServiceTask<SceneManagerService>(),
-            new SceneManagerSetupTask(),
+            new RegisterAndLoadServiceTask<GameStateLoadingService>(),
+            //new SceneManagerSetupTask(),
             new RegisterAndLoadServiceTask<MarkerService>(),
             new GUIInitilizationTask(),
             new RegisterAndLoadServiceTask<QualityService>(),

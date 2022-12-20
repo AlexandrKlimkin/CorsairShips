@@ -7,7 +7,7 @@ namespace Initialization.BaseTasks {
     public class MenuGuiLoadTask : AutoCompletedTask {
         protected override void AutoCompletedRun() {
             var gui = ContainerHolder.Container.Resolve<Gui>();
-            gui.Show<MenuMainScreen>(GuiScreenType.Permanent);
+            gui.Show<MenuMainScreen>(GuiScreenType.Screen);
         }
     }
 }
