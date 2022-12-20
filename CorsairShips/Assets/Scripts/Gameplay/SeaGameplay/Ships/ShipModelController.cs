@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Game.Rails;
+using Menu.Camera;
 using Sirenix.OdinInspector;
 using Tools.VisualEffects;
 using UnityEngine;
@@ -14,10 +16,11 @@ namespace Game.SeaGameplay {
         public Vector2 RandomScale;
     }
     
-    public class ShipModelController : MonoBehaviour {
+    public class ShipModelController : MonoBehaviour, ICameraTarget {
         [SerializeField]
         private Transform _WeaponsContainer;
-        
+        [SerializeField]
+        private Rail _ViewRail;
         [SerializeField]
         private List<RandomEffectInfo> _DieExplosionEffects;
         [SerializeField]
@@ -26,13 +29,12 @@ namespace Game.SeaGameplay {
         private Vector2 _RandomExplosionDelay;
         [SerializeField]
         private float _DrownDelay;
-
         [Space]
-
         [SerializeField]
         private List<GameObject> _Trails;
         
         public Transform WeaponsContainer => _WeaponsContainer;
+        public Rail ViewRail => _ViewRail;
         public float DrownDelay => _DrownDelay;
 
         // private void Awake() {
@@ -81,5 +83,11 @@ namespace Game.SeaGameplay {
         }
 
         #endregion
+
+        Transform ICameraTarget.Transform { get; }
+        Vector3 ICameraTarget.ViewPoint => ViewRail.MidPoint;
+        Vector3 ICameraTarget.GetProjectPoint(Vector3 forward) {
+            return ViewRail.Project(forward);
+        }
     }
 }
