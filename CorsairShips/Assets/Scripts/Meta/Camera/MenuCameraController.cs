@@ -8,13 +8,11 @@ using UTPLib.Core.Utils;
 
 namespace Menu.Camera {
     public class MenuCameraController : MonoBehaviour {
-
-        [SerializeField]
+        
         private Transform _BaseArm;
-        [SerializeField]
         private Transform _OffsetArm;
-        [SerializeField]
         private Transform _ElevationArm;
+        
         [SerializeField]
         private float _MinDistance;
         [SerializeField]
@@ -65,6 +63,9 @@ namespace Menu.Camera {
         }
 
         private void Awake() {
+            _BaseArm = this.transform;
+            _ElevationArm = _BaseArm.GetChild(0);
+            _OffsetArm = _ElevationArm.GetChild(0);
             _PlaneForward = new Vector3(transform.forward.x, 0, transform.forward.z).normalized;
             ContainerHolder.Container.RegisterInstance(this);
         }

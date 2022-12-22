@@ -1241,7 +1241,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2906295165917263041, guid: a84a97f525b620e4f8761fc5d96f6a5d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2906295165917263046, guid: a84a97f525b620e4f8761fc5d96f6a5d, type: 3}
       propertyPath: m_RootOrder
@@ -2595,7 +2595,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1751793044931759083, guid: d35f3f1e1026e9a4a995b151d1bbe6cc, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1751793044931759084, guid: d35f3f1e1026e9a4a995b151d1bbe6cc, type: 3}
       propertyPath: m_RootOrder
@@ -2689,16 +2689,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3f603f54b1f1e24bb0ac0bff65b6a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _BaseArm: {fileID: 1286350011}
-  _OffsetArm: {fileID: 75906515}
-  _ElevationArm: {fileID: 191840743}
   _MinDistance: 10
   _MaxDistance: 30
   TargetPoint:
     RotationAngle: 2.77
     ElevationAngle: 20
-    Distance: 20
-    Offset: {x: 0, y: 0, z: 0}
+    Distance: 30
+    Offset: {x: 0, y: 2, z: 0}
 --- !u!4 &1286350011
 Transform:
   m_ObjectHideFlags: 0
