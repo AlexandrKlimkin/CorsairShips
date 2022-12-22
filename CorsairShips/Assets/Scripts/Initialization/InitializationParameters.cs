@@ -13,6 +13,7 @@ using Game.SeaGameplay.Bounds;
 using Game.SeaGameplay.GameModes;
 using Game.SeaGameplay.Statistics;
 using Initialization.BaseTasks;
+using Menu.Hagar;
 using Stats;
 using UI.Markers;
 using UTPLib.Services.ResourceLoader;
@@ -75,10 +76,16 @@ namespace Game.Initialization {
         };
 
         public static List<Task> Loading_Menu_Tasks => new() {
+            new RegisterAndLoadServiceTask<ShipCreationService>(),
+            new RegisterSceneObjectTask<HangarSceneDataContainer>(),
+            new RegisterAndLoadServiceTask<HangarService>(),
             new MenuGuiLoadTask(),
         };
         
         public static List<Task> Unloading_Menu_Tasks => new() {
+            new UnregisterAndUnloadServiceTask<HangarService>(),
+            new UnregisterObjectTask<HangarSceneDataContainer>(),
+            new UnregisterAndUnloadServiceTask<ShipCreationService>(),
             new CloseGUITask(),
         };
     }

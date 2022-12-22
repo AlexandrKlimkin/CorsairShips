@@ -57,7 +57,7 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 0
+  m_ChildAlignment: 6
   m_Spacing: 20
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 1
@@ -306,6 +306,10 @@ PrefabInstance:
     - target: {fileID: 1570869442740849151, guid: 86aa8aa813b67774497e6c39bc2aa6a4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2509606041705532849, guid: 86aa8aa813b67774497e6c39bc2aa6a4, type: 3}
+      propertyPath: m_fontSize
+      value: 17.1
       objectReference: {fileID: 0}
     - target: {fileID: 3245311970464419571, guid: 86aa8aa813b67774497e6c39bc2aa6a4, type: 3}
       propertyPath: m_Name
