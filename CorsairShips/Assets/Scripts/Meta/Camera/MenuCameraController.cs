@@ -71,10 +71,11 @@ namespace Menu.Camera {
         }
 
         private void Start() {
-            _CameraTarget = FindObjectOfType<ShipModelController>(false);
+            
         }
 
         private void Update() {
+            _CameraTarget ??= FindObjectOfType<ShipModelController>(false);
             if(_CameraTarget == null)
                 return;
             ProcessInput();
@@ -132,7 +133,7 @@ namespace Menu.Camera {
         private void ProcessInput() {
             if (_ControlledByInput) {
                 TargetPoint.RotationAngle += _TouchDelta.x * InputHSens;
-                TargetPoint.ElevationAngle += _TouchDelta.y * InputVSens;
+                TargetPoint.ElevationAngle += -_TouchDelta.y * InputVSens;
                 TargetPoint.Distance += _ZoomDelta * InputDSens;
 
                 TargetPoint.ElevationAngle = Mathf.Clamp(TargetPoint.ElevationAngle, _CurrentMinVAngle, _CurrentMaxVAngle);

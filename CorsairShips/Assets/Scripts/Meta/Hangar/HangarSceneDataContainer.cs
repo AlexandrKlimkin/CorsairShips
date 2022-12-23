@@ -7,5 +7,6 @@ namespace Menu.Hagar {
         private Transform _ShipSpawnPoint;
 
         public Transform ShipSpawnPoint => _ShipSpawnPoint;
+        
     }
 }

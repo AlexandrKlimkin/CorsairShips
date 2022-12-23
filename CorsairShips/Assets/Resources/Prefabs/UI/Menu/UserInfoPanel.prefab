@@ -970,6 +970,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5505912735833665960}
+  - component: {fileID: 6815351128694055562}
   m_Layer: 5
   m_Name: UserInfoPanel
   m_TagString: Untagged
@@ -1001,6 +1002,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 280, y: 120}
   m_Pivot: {x: 0.000000040978193, y: 1}
+--- !u!114 &6815351128694055562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5505912735833665961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e617d31906dc1014f9ac892fb042c5c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _NicknameText: {fileID: 5505912735637682254}
+  _NicknameButton: {fileID: 1763859118425931431}
 --- !u!1 &5505912735885058834
 GameObject:
   m_ObjectHideFlags: 0

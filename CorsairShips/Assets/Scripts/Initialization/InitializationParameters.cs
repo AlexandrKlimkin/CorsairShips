@@ -31,6 +31,8 @@ namespace Game.Initialization {
             new BaseServiceInitializationTask<IResourceLoaderService, ResourceLoaderService>(),
             
             new DataInitializationTask(),
+            new BackendInitializationTask(),
+            new TaskInitUserProfile(),
             
             new UnityEventProviderRegisterTask(),
             new RegisterAndLoadServiceTask<SceneManagerService>(),
@@ -76,8 +78,9 @@ namespace Game.Initialization {
         };
 
         public static List<Task> Loading_Menu_Tasks => new() {
-            new RegisterAndLoadServiceTask<ShipCreationService>(),
+            new WaitForAwakesTask(),
             new RegisterSceneObjectTask<HangarSceneDataContainer>(),
+            new RegisterAndLoadServiceTask<ShipCreationService>(),
             new RegisterAndLoadServiceTask<HangarService>(),
             new MenuGuiLoadTask(),
         };
