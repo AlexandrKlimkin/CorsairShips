@@ -27,7 +27,7 @@ namespace Menu.Camera {
         private void Update() {
             ProcessTouches();
             _CameraController.SetTouchDelta(_TargetTouchDelta);
-            // _CameraController.SetZoomDelta(_TargetScaleDelta);
+            _CameraController.SetZoomDelta(_TargetScaleDelta);
         }
 
         private void ProcessTouches() {
@@ -85,6 +85,7 @@ namespace Menu.Camera {
 
 #if UNITY_EDITOR || UNITY_STANDALONE
             _LastMousePos = Input.mousePosition;
+            _TargetScaleDelta -= Input.mouseScrollDelta.y;
 #endif
         }
 

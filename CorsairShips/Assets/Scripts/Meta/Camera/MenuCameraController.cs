@@ -46,7 +46,7 @@ namespace Menu.Camera {
         
         public const float InputHSens = 0.125f;
         public const float InputVSens = 0.075f;
-        public const float InputDSens = 0.001f;
+        public const float InputDSens = 1f;
         
         public const float PositionDampingSpeed = 1f;
         public const float MinPositionDamping = 0f;
@@ -169,6 +169,21 @@ namespace Menu.Camera {
             _BaseArm.localRotation = cameraPos.BaseRotation;
             _OffsetArm.localPosition = cameraPos.OffsetArmPosition;
             _ElevationArm.localRotation = cameraPos.ElevationArmRotation;
+        }
+        
+        public MenuCameraPoint _TargetPoint;
+        public void SetZoomDelta(float delta) {
+            if (_ZoomDelta != delta) {
+                _ZoomDelta = delta;            
+                OnInputRecieved();
+            }
+        }
+        
+        private void OnInputRecieved() {
+            if (!_ControlledByInput) {
+                _ControlledByInput = true;
+                _TargetPoint = _CurrentPoint;
+            }
         }
         
         private struct MenuCameraPosition {

@@ -61,6 +61,7 @@ namespace Game.SeaGameplay {
             var model = _ResourceLoader.LoadResourceOnScene<ShipModelController>(modelPath, parent);
             model.transform.localPosition = Vector3.zero;
             model.transform.localRotation = Quaternion.identity;
+            model.transform.localScale = parent.localScale;
             return model;
         }
 
