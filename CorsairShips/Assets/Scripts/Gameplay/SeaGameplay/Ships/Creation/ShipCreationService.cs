@@ -39,11 +39,8 @@ namespace Game.SeaGameplay {
             }
             var ship = Object.Instantiate(_ShipBasePrefab, creationData.Position, creationData.Rotation);
 
-            var modelPath = ResourcePath.Ships.GetModelPath(shipDef.ModelId);
-            var model = _ResourceLoader.LoadResourceOnScene<ShipModelController>(modelPath, ship.ModelContainer);
-            model.transform.localPosition = Vector3.zero;
-            model.transform.localRotation = Quaternion.identity;
-            
+            var model = CreateShipModel(shipDef.ModelId, ship.ModelContainer);
+
             ship.Setup(shipData, shipDef, model);
 
             ship.gameObject.name = $"ship_{shipDef.Id}";
@@ -57,6 +54,15 @@ namespace Game.SeaGameplay {
                 AddBotComponents(ship);
             }
             return ship;
+        }
+
+        public ShipModelController CreateShipModel(string modelId, Transform parent) {
+            var modelPath = ResourcePath.Ships.GetModelPath(modelId);
+            var model = _ResourceLoader.LoadResourceOnScene<ShipModelController>(modelPath, parent);
+            model.transform.localPosition = Vector3.zero;
+            model.transform.localRotation = Quaternion.identity;
+            model.transform.localScale = parent.localScale;
+            return model;
         }
 
         private void AddPlayerComponents(Ship ship) {

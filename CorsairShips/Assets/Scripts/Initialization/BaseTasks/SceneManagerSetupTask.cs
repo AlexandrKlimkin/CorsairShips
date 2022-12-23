@@ -8,7 +8,7 @@ namespace Initialization.BaseTasks {
         protected override void AutoCompletedRun() {
             var sceneManager = ContainerHolder.Container.Resolve<SceneManagerService>();
             var map = new SceneLoadingMapConcrete();
-            sceneManager.SetupMap(map);
+            //sceneManager.SetupMap(map);
         }
     }
 }

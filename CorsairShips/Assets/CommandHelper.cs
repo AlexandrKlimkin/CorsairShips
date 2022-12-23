@@ -190,5 +190,26 @@ public partial class PropertyModule
 }
 
 
+public partial class UserProfileModule
+{
+    [SharedCommand("")]
+    public static void ChangeNickname(string nickName)
+    {
+        var cmd = new S.CommandContainer
+        {
+            CommandId = -1438990908,
+            CommandData = Serializer.Serialize(new UserProfileModule_ChangeNickname
+            {
+                nickName = nickName
+
+            })
+        };
+
+        var cmdBytes = Serializer.Serialize(cmd);
+        CommandProcessor.ExecuteCommand<object>(cmdBytes);
+    }
+}
+
+
     }
 }

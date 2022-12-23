@@ -3,6 +3,7 @@ using Core.Initialization.Base;
 using Game.Dmg;
 using Game.Initialization.Base;
 using Game.Initialization.GameTasks;
+using Game.Meta.BattleLoading;
 using Game.SeaGameplay;
 using Game.SeaGameplay.Spawn;
 using PestelLib.TaskQueueLib;
@@ -12,6 +13,7 @@ using Game.SeaGameplay.Bounds;
 using Game.SeaGameplay.GameModes;
 using Game.SeaGameplay.Statistics;
 using Initialization.BaseTasks;
+using Menu.Hagar;
 using Stats;
 using UI.Markers;
 using UTPLib.Services.ResourceLoader;
@@ -29,17 +31,20 @@ namespace Game.Initialization {
             new BaseServiceInitializationTask<IResourceLoaderService, ResourceLoaderService>(),
             
             new DataInitializationTask(),
+            new BackendInitializationTask(),
+            new TaskInitUserProfile(),
             
             new UnityEventProviderRegisterTask(),
             new RegisterAndLoadServiceTask<SceneManagerService>(),
-            new SceneManagerSetupTask(),
+            new RegisterAndLoadServiceTask<GameStateLoadingService>(),
+            //new SceneManagerSetupTask(),
             new RegisterAndLoadServiceTask<MarkerService>(),
             new GUIInitilizationTask(),
             new RegisterAndLoadServiceTask<QualityService>(),
+            new GuiSystemsLoadTask(),
         };
         
         public static List<Task> Loading_BaseGame_Tasks => new() {
-            new GuiSystemsLoadTask(),
             new RegisterAndLoadServiceTask<BattleStatisticsService>(),
             new RegisterAndLoadServiceTask<AIService>(),
             new RegisterAndLoadServiceTask<StatsService>(),
@@ -70,6 +75,21 @@ namespace Game.Initialization {
 
         public static List<Task> Unloading_DeathMatch_Tasks => new() {
             new UnregisterAndUnloadServiceTask<DeathMatchService>(),
+        };
+
+        public static List<Task> Loading_Menu_Tasks => new() {
+            new WaitForAwakesTask(),
+            new RegisterSceneObjectTask<HangarSceneDataContainer>(),
+            new RegisterAndLoadServiceTask<ShipCreationService>(),
+            new RegisterAndLoadServiceTask<HangarService>(),
+            new MenuGuiLoadTask(),
+        };
+        
+        public static List<Task> Unloading_Menu_Tasks => new() {
+            new UnregisterAndUnloadServiceTask<HangarService>(),
+            new UnregisterObjectTask<HangarSceneDataContainer>(),
+            new UnregisterAndUnloadServiceTask<ShipCreationService>(),
+            new CloseGUITask(),
         };
     }
 }

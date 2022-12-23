@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using Game.SeaGameplay.Data;
+using Initialization.SceneLoading;
 using UTPLib.Tasks;
 using PestelLib.Utils;
 using UnityDI;
@@ -16,60 +19,74 @@ namespace UTPLib.Services.SceneManagement {
                 return result;
             }
         }
+        
+        public GameMode? ActiveGameMode { get; private set; }
 
-        public bool IsGameScene => _Map.IsGameScene;
+        public GameModeScene ActiveGameModeScene => new() {
+            GameMode = ActiveGameMode,
+            SceneType = ActiveScene,
+        };
 
-        public void Load() { }
+        public bool IsGameScene => Map.GameScenes.Contains(ActiveScene);
 
-        private SceneLoadingMap _Map;
-        public void SetupMap(SceneLoadingMap map) {
-            _Map = map;
+        public void Load() {
+            SetupMap(new SceneLoadingMapConcrete());
+            if (IsGameScene) {
+                ActiveGameMode = GameMode.DeathMatch;
+            }
+        }
+        public SceneLoadingMap Map { get; private set; }
+        
+        private void SetupMap(SceneLoadingMap map) {
+            Map = map;
         }
         
-        public void LoadScene(SceneType scene, bool enableReboot = false) {
+        public void LoadScene(GameModeScene gameModeScene, bool enableReboot = false) {
             var activeScene = ActiveScene;
+            var scene = gameModeScene.SceneType;
             if (activeScene == scene && !enableReboot)
                 return;
-            var oldSceneParameters = _Map.LoadingMap[activeScene];
-            var newParameters = _Map.LoadingMap[scene];
+            var oldSceneParameters = Map.LoadingMap[new GameModeScene{GameMode = ActiveGameMode, SceneType = ActiveScene}];
+            var newParameters = Map.LoadingMap[gameModeScene];
             oldSceneParameters.BeforeUnload();
             oldSceneParameters.UnloadingTasks.RunTasksListAsQueue(
                 () => {
-                    OnSceneUnloadSuccess(activeScene);
+                    OnSceneUnloadSuccess(gameModeScene);
                     oldSceneParameters.AfterUnload();
                     newParameters.BeforeLoad();
                     SceneManager.LoadScene(scene.ToString());
                     newParameters.LoadingTasks.RunTasksListAsQueue(
                         () => {
-                            OnSceneLoadSuccess(scene);
+                            OnSceneLoadSuccess(gameModeScene);
                             newParameters.AfterLoad();
                         },
                         (task, e) => {
-                            OnSceneLoadFail(scene);
+                            OnSceneLoadFail(gameModeScene);
                             Debug.LogError($"{task} task failed with {e}");
                         },
                         null);
                 },
                 (task, e) => {
-                    OnSceneUnloadFail(scene);
+                    OnSceneUnloadFail(gameModeScene);
                     Debug.LogError($"{task} task failed with {e}");
                 },
                 null);
         }
 
-        private void OnSceneUnloadSuccess(SceneType scene) {
+        private void OnSceneUnloadSuccess(GameModeScene scene) {
             Debug.Log($"{scene} successfully unloaded");
         }
 
-        private void OnSceneUnloadFail(SceneType scene) {
+        private void OnSceneUnloadFail(GameModeScene scene) {
             Debug.LogError($"{scene} unload fail");
         }
 
-        private void OnSceneLoadSuccess(SceneType scene) {
+        private void OnSceneLoadSuccess(GameModeScene scene) {
+            ActiveGameMode = scene.GameMode;
             Debug.Log($"{scene} successfully loaded");
         }
 
-        private void OnSceneLoadFail(SceneType scene) {
+        private void OnSceneLoadFail(GameModeScene scene) {
             Debug.LogError($"{scene} load fail");
         }
     }

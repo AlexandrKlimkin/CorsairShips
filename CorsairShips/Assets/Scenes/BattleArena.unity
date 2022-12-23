@@ -23,17 +23,17 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0, g: 0.68650985, b: 1, a: 1}
   m_AmbientGroundColor: {r: 0.2216981, g: 0.796332, b: 1, a: 1}
-  m_AmbientIntensity: 1.14
+  m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 6abe918ee1229b34f8557fc2a5a39825, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
   m_HaloTexture: {fileID: 0}
   m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
   m_DefaultReflectionMode: 0
-  m_DefaultReflectionResolution: 128
+  m_DefaultReflectionResolution: 1024
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
@@ -97,8 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: 1e0e3a8e83bb34648a15e4eac533633a, type: 2}
+  m_LightingDataAsset: {fileID: 112000000, guid: add0d685ebed1154684748284afc9e78, type: 2}
+  m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -254,6 +254,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -340,6 +344,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -418,6 +426,10 @@ PrefabInstance:
     - target: {fileID: 112458, guid: b8b36e4f2ff31af4183050ce0e686696, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 112458, guid: b8b36e4f2ff31af4183050ce0e686696, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 481990, guid: b8b36e4f2ff31af4183050ce0e686696, type: 3}
       propertyPath: m_RootOrder
@@ -648,6 +660,10 @@ PrefabInstance:
     - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_Name
       value: LPWaterShadowsRect (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_RootOrder
@@ -984,6 +1000,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -1069,6 +1089,10 @@ PrefabInstance:
     - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_Name
       value: LPWaterShadows (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
@@ -1234,6 +1258,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadowsRect (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -1315,6 +1343,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -1384,6 +1416,10 @@ PrefabInstance:
     - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_Name
       value: LPWaterShadowsRect (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_RootOrder
@@ -1470,6 +1506,10 @@ PrefabInstance:
     - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_Name
       value: LPWaterShadows (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
@@ -1692,6 +1732,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 21
@@ -1761,6 +1805,10 @@ PrefabInstance:
     - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_Name
       value: LPWaterShadowsRect (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_RootOrder
@@ -1900,7 +1948,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 0
 --- !u!4 &331409898
 Transform:
@@ -2038,6 +2086,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -2112,7 +2164,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!108 &367429676
 Light:
@@ -2201,6 +2253,10 @@ PrefabInstance:
     - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_Name
       value: LPWaterShadows (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
@@ -2497,6 +2553,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -2566,6 +2626,10 @@ PrefabInstance:
     - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_Name
       value: LPWaterShadows (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
@@ -2715,6 +2779,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadowsRect (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -2800,6 +2868,10 @@ PrefabInstance:
     - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_Name
       value: LPWaterShadowsRect (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_RootOrder
@@ -2887,6 +2959,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 32
@@ -2956,6 +3032,10 @@ PrefabInstance:
     - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_Name
       value: LPWaterShadowsRect (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_RootOrder
@@ -3037,6 +3117,10 @@ PrefabInstance:
     - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_Name
       value: LPWaterShadows (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
@@ -3205,7 +3289,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &528841598
 Transform:
@@ -3272,6 +3356,10 @@ PrefabInstance:
     - target: {fileID: 1000010242649756, guid: 7a8a5bb6f2e71b143aff5818ec77dbcd, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010242649756, guid: 7a8a5bb6f2e71b143aff5818ec77dbcd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4000010708501322, guid: 7a8a5bb6f2e71b143aff5818ec77dbcd, type: 3}
       propertyPath: m_RootOrder
@@ -3635,6 +3723,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadowsRect (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_RootOrder
       value: 35
@@ -3720,6 +3812,10 @@ PrefabInstance:
     - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_Name
       value: LPWaterShadowsRect (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_RootOrder
@@ -3889,6 +3985,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadowsRect (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -3974,6 +4074,10 @@ PrefabInstance:
     - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_Name
       value: LPWaterShadowsRect (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_RootOrder
@@ -4227,6 +4331,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -4296,6 +4404,10 @@ PrefabInstance:
     - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_Name
       value: LPWaterShadows (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
@@ -4611,6 +4723,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -4872,6 +4988,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_RootOrder
       value: 21
@@ -5079,6 +5199,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -5164,6 +5288,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -5244,6 +5372,10 @@ PrefabInstance:
     - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_Name
       value: LPWaterShadows (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
@@ -5367,8 +5499,8 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
 --- !u!4 &870503195
 Transform:
   m_ObjectHideFlags: 0
@@ -5404,6 +5536,10 @@ PrefabInstance:
     - target: {fileID: 198478, guid: e97ffd2840ec39549b04e1672b07f75f, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198478, guid: e97ffd2840ec39549b04e1672b07f75f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 497546, guid: e97ffd2840ec39549b04e1672b07f75f, type: 3}
       propertyPath: m_RootOrder
@@ -5482,7 +5618,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &890630180
 Transform:
@@ -5613,6 +5749,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadowsRect (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -5713,6 +5853,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: c1f03fd4e96302841adf5646cd8a98cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: c1f03fd4e96302841adf5646cd8a98cd, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -5796,7 +5940,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &952742454
 Transform:
@@ -10703,6 +10847,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -10772,6 +10920,10 @@ PrefabInstance:
     - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_Name
       value: LPWaterShadows
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
@@ -10845,6 +10997,10 @@ PrefabInstance:
     - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_Name
       value: LPWaterShadows (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
@@ -11055,6 +11211,10 @@ PrefabInstance:
     - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_Name
       value: LPWaterShadowsRect (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_RootOrder
@@ -11379,6 +11539,10 @@ PrefabInstance:
     - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_Name
       value: LPWaterShadows (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
@@ -11785,6 +11949,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 27
@@ -11854,6 +12022,10 @@ PrefabInstance:
     - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_Name
       value: LPWaterShadows (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
@@ -11928,6 +12100,10 @@ PrefabInstance:
     - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_RootOrder
@@ -12014,6 +12190,10 @@ PrefabInstance:
     - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_Name
       value: LPWaterShadows (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
@@ -12311,7 +12491,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1330460305
 Transform:
@@ -12443,6 +12623,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadowsRect (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -12524,6 +12708,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -12600,7 +12788,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 0
 --- !u!4 &1368539505
 Transform:
@@ -17424,6 +17612,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: d241da266d3f50543b0e08c26ccd7a6f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: d241da266d3f50543b0e08c26ccd7a6f, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -17506,6 +17698,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_RootOrder
       value: 32
@@ -17587,6 +17783,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -17656,6 +17856,10 @@ PrefabInstance:
     - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_Name
       value: LPWaterShadows (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
@@ -17891,6 +18095,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadowsRect (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -18022,7 +18230,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1480346387
 Transform:
@@ -18055,6 +18263,10 @@ PrefabInstance:
     - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_Name
       value: LPWaterShadowsRect (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_RootOrder
@@ -18136,6 +18348,10 @@ PrefabInstance:
     - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_Name
       value: LPWaterShadowsRect (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_RootOrder
@@ -18246,6 +18462,10 @@ PrefabInstance:
     - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_RootOrder
@@ -18430,6 +18650,10 @@ PrefabInstance:
     - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_RootOrder
@@ -18771,6 +18995,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadowsRect (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_RootOrder
       value: 25
@@ -18851,6 +19079,10 @@ PrefabInstance:
     - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_Name
       value: LPWaterShadowsRect (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_RootOrder
@@ -19114,6 +19346,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_RootOrder
       value: 30
@@ -19239,6 +19475,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -19313,6 +19553,10 @@ PrefabInstance:
     - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_Name
       value: LPWaterShadowsRect (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_RootOrder
@@ -19473,6 +19717,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -19542,6 +19790,10 @@ PrefabInstance:
     - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_Name
       value: LPWaterShadows (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
@@ -19712,6 +19964,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -19782,6 +20038,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -19851,6 +20111,10 @@ PrefabInstance:
     - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_Name
       value: LPWaterShadows (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
@@ -20077,6 +20341,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 33
@@ -20146,6 +20414,10 @@ PrefabInstance:
     - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_Name
       value: LPWaterShadowsRect (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_RootOrder
@@ -20322,6 +20594,10 @@ PrefabInstance:
     - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_Name
       value: LPWaterShadows (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
@@ -20588,6 +20864,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -20701,6 +20981,10 @@ PrefabInstance:
     - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_Name
       value: LPWaterShadows (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
@@ -20865,6 +21149,10 @@ PrefabInstance:
     - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_Name
       value: LPWaterShadowsRect (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_RootOrder
@@ -21067,6 +21355,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadowsRect (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_RootOrder
       value: 33
@@ -21230,6 +21522,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_RootOrder
       value: 28
@@ -21319,6 +21615,10 @@ PrefabInstance:
     - target: {fileID: 117634, guid: 51bb7a40181ecd7458c3c5718fca2b88, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 117634, guid: 51bb7a40181ecd7458c3c5718fca2b88, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 438068, guid: 51bb7a40181ecd7458c3c5718fca2b88, type: 3}
       propertyPath: m_RootOrder
@@ -21478,7 +21778,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2072002309
 Transform:
@@ -26298,6 +26598,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -26412,6 +26716,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadows (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
       value: 36
@@ -26486,6 +26794,10 @@ PrefabInstance:
     - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_Name
       value: LPWaterShadows (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: 3e4fd7390bec8a04bb850c2663870903, type: 3}
       propertyPath: m_RootOrder
@@ -26656,11 +26968,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1810923027676899124, guid: a24a0735173121e4ca0f17fbf2d0841e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 50
+      value: 90.4
       objectReference: {fileID: 0}
     - target: {fileID: 1810923027676899124, guid: a24a0735173121e4ca0f17fbf2d0841e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -30
+      value: -53.3
       objectReference: {fileID: 0}
     - target: {fileID: 1810923027676899124, guid: a24a0735173121e4ca0f17fbf2d0841e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -26884,17 +27196,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPWaterShadowsRect
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011664512690, guid: b40682192aad4474badda5fd95158e6c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013665620186, guid: b40682192aad4474badda5fd95158e6c, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013665620186, guid: b40682192aad4474badda5fd95158e6c, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4000013665620186, guid: b40682192aad4474badda5fd95158e6c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26940,18 +27248,6 @@ PrefabInstance:
       propertyPath: sun
       value: 
       objectReference: {fileID: 367429676}
-    - target: {fileID: 114000012341209002, guid: b40682192aad4474badda5fd95158e6c, type: 3}
-      propertyPath: sizeX
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: b40682192aad4474badda5fd95158e6c, type: 3}
-      propertyPath: sizeZ
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012341209002, guid: b40682192aad4474badda5fd95158e6c, type: 3}
-      propertyPath: enableReflection
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b40682192aad4474badda5fd95158e6c, type: 3}
 --- !u!4 &4470449307348625246 stripped

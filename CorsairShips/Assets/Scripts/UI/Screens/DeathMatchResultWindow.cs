@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Game.Initialization.Parameters;
+using Game.SeaGameplay.Data;
 using Game.SeaGameplay.GameModes;
 using Game.SeaGameplay.Statistics;
 using TMPro;
@@ -22,6 +24,8 @@ namespace UI.Battle {
         private TextMeshProUGUI _KillsCountText;
         [SerializeField]
         private Button _RestartButton;
+        [SerializeField]
+        private Button _GoToMenuButton;
         
         private void Awake() {
             ContainerHolder.Container.BuildUp(this);
@@ -29,6 +33,7 @@ namespace UI.Battle {
 
         private void Start() {
             _RestartButton.onClick.AddListener(OnRestartButtonClick);
+            _GoToMenuButton.onClick.AddListener(GoToMenu);
         }
 
         private void OnDestroy() {
@@ -41,7 +46,13 @@ namespace UI.Battle {
         }
 
         private void OnRestartButtonClick() {
-            _SceneManager.LoadScene(SceneType.BattleArena, true);
+            _SceneManager.LoadScene(_SceneManager.ActiveGameModeScene, true);
+        }
+
+        private void GoToMenu() {
+            _SceneManager.LoadScene(new GameModeScene() {
+                SceneType = SceneType.Menu,
+            });
         }
     }
 }
