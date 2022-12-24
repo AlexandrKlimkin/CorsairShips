@@ -1,0 +1,10 @@
+[
+  {
+    "CurrencyType": 0,
+    "ItemId": "Currency_Soft"
+  },
+  {
+    "CurrencyType": 1,
+    "ItemId": "Currency_Hard"
+  }
+]

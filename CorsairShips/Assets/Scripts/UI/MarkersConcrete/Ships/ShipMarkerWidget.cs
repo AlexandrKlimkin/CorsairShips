@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using UI.Widgets;
 using UnityEngine;
 
@@ -6,6 +7,8 @@ namespace UI.Markers.Units {
 	public class ShipMarkerWidget : MarkerWidget<ShipMarkerData> {
 		[SerializeField]
 		private BarWidget _BarWidget;
+		[SerializeField]
+		private TextMeshProUGUI _Nickname;
 
 		private float _LastHealthValue;
 
@@ -15,6 +18,7 @@ namespace UI.Markers.Units {
 				_BarWidget.Display(data.NormalizedHealth);
 			}
 			_LastHealthValue = data.NormalizedHealth;
+			_Nickname.text = data.Nickname;
 		}
 	}
 }

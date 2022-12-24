@@ -26,6 +26,7 @@ namespace UI.Markers.Units {
 			data.NormalizedHealth = _Ship.NormalizedHealth;
 			data.IsEnemy = !_Ship.IsLocalPlayerShip;
 			data.ProgressbarColor = data.IsEnemy ? _EnemyProgressbarColor : _AllyProgressbarColor;
+			data.Nickname = _Ship.ShipData.Nickname;
 		}
 		
 	}

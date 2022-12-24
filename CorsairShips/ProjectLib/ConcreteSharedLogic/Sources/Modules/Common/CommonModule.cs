@@ -1,10 +1,5 @@
 ﻿using PestelLib.Serialization;
-using PestelLib.SharedLogicBase;
-using System;
 using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-// using PestelLib.SharedLogic.Modules.Defs;
 using UnityDI;
 
 
@@ -18,7 +13,18 @@ namespace PestelLib.SharedLogic.Modules
         [Dependency]
         protected List<ShipDef> Ships;
         
+        [GooglePageRef("Items")]
+        [Dependency]
+        protected List<ItemDef> Items;
 
+        [GooglePageRef("Currency")]
+        [Dependency]
+        protected List<CurrencyDef> Currencies;
+        
+        [GooglePageRef("Nicknames")]
+        [Dependency]
+        protected List<NicknameDef> Nicknames;
+        
         #endregion
 
     }

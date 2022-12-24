@@ -8,5 +8,6 @@ namespace UI.Markers.Units {
 		public float NormalizedHealth;
 		public bool IsEnemy;
 		public Color ProgressbarColor;
+		public string Nickname;
 	}
 }

@@ -14,6 +14,14 @@ namespace PestelLib.SharedLogic
         public List<ShipDef> ShipDefs = new List<ShipDef>();
         [GooglePageRef("Ships")]
         public Dictionary<string, ShipDef> ShipDefDict = new Dictionary<string, ShipDef>();
+        [GooglePageRef("Items")]
+        public List<ItemDef> ItemDefs = new List<ItemDef>();
+        [GooglePageRef("Items")]
+        public Dictionary<string, ItemDef> ItemDefDict = new Dictionary<string, ItemDef>();
+        [GooglePageRef("Currency")]
+        public List<CurrencyDef> CurrencyDefs = new List<CurrencyDef>();
+        [GooglePageRef("Nicknames")]
+        public List<NicknameDef> NicknameDefs = new List<NicknameDef>();
         [GooglePageRef("BankCardsDefs")]
         public List<BankCardsDef> BankCardsDefs = new List<BankCardsDef>();
         [GooglePageRef("BankCardsDefs")]
@@ -36,6 +44,12 @@ namespace PestelLib.SharedLogic
             {
                 var def = ShipDefs[i];
                 ShipDefDict.Add(def.Id, def);
+            }
+            ItemDefDict.Clear();
+            for (int i = 0; i < ItemDefs.Count; i++)
+            {
+                var def = ItemDefs[i];
+                ItemDefDict.Add(def.Id, def);
             }
             BankCardsDefDict.Clear();
             for (int i = 0; i < BankCardsDefs.Count; i++)

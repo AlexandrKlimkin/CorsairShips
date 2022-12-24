@@ -3,5 +3,6 @@ namespace Game.SeaGameplay.Data {
         public byte ShipId;
         public string ShipDefId;
         public bool IsPlayer = false;
+        public string Nickname;
     }
 }

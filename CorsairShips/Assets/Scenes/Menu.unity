@@ -4675,8 +4675,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3f603f54b1f1e24bb0ac0bff65b6a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _MinDistance: 15
-  _MaxDistance: 40
+  _MinDistance: 18
+  _MaxDistance: 45
   TargetPoint:
     RotationAngle: 2.77
     ElevationAngle: 20

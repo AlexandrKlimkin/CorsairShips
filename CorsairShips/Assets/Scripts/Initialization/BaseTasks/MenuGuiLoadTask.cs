@@ -10,6 +10,7 @@ namespace Initialization.BaseTasks {
             var gui = ContainerHolder.Container.Resolve<Gui>();
             gui.Show<MenuCameraInputPanel>(GuiScreenType.Background);
             gui.Show<MenuMainScreen>(GuiScreenType.Screen);
+            gui.Show<CurrencyOverlay>(GuiScreenType.Overlay);
         }
     }
 }

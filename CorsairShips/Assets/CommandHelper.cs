@@ -25,6 +25,94 @@ namespace PestelLib.SharedLogicClient {
         }
 
         
+public partial class CurrencyModule
+{
+    [SharedCommand("")]
+    public static void AddCurrency(CurrencyType currencyType,int count)
+    {
+        var cmd = new S.CommandContainer
+        {
+            CommandId = 240269443,
+            CommandData = Serializer.Serialize(new CurrencyModule_AddCurrency
+            {
+                currencyType = currencyType
+,count = count
+
+            })
+        };
+
+        var cmdBytes = Serializer.Serialize(cmd);
+        CommandProcessor.ExecuteCommand<object>(cmdBytes);
+    }
+}
+
+
+public partial class CurrencyModule
+{
+    [SharedCommand("")]
+    public static void SpendCurrency(CurrencyType currencyType,int count)
+    {
+        var cmd = new S.CommandContainer
+        {
+            CommandId = 949613451,
+            CommandData = Serializer.Serialize(new CurrencyModule_SpendCurrency
+            {
+                currencyType = currencyType
+,count = count
+
+            })
+        };
+
+        var cmdBytes = Serializer.Serialize(cmd);
+        CommandProcessor.ExecuteCommand<object>(cmdBytes);
+    }
+}
+
+
+public partial class ItemsModule
+{
+    [SharedCommand("")]
+    public static void AddItem(string itemId,int count)
+    {
+        var cmd = new S.CommandContainer
+        {
+            CommandId = 1020634962,
+            CommandData = Serializer.Serialize(new ItemsModule_AddItem
+            {
+                itemId = itemId
+,count = count
+
+            })
+        };
+
+        var cmdBytes = Serializer.Serialize(cmd);
+        CommandProcessor.ExecuteCommand<object>(cmdBytes);
+    }
+}
+
+
+public partial class ItemsModule
+{
+    [SharedCommand("")]
+    public static void SpendItem(string itemId,int count)
+    {
+        var cmd = new S.CommandContainer
+        {
+            CommandId = -694861833,
+            CommandData = Serializer.Serialize(new ItemsModule_SpendItem
+            {
+                itemId = itemId
+,count = count
+
+            })
+        };
+
+        var cmdBytes = Serializer.Serialize(cmd);
+        CommandProcessor.ExecuteCommand<object>(cmdBytes);
+    }
+}
+
+
 public partial class MoneyModule
 {
     [SharedCommand("")]

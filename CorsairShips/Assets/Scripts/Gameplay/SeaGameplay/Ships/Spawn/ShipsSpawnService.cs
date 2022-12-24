@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Game.SeaGameplay.Data;
 using NorskaLib.Utilities;
+using PestelLib.SharedLogic.Modules;
 using UnityDI;
 using UnityEngine;
 using UTPLib.Services;
@@ -17,8 +18,10 @@ namespace Game.SeaGameplay.Spawn {
         [Dependency]
         private readonly SignalBus _SignalBus;
         [Dependency]
-        private readonly IResourceLoaderService _ResourceLoader; 
-        
+        private readonly IResourceLoaderService _ResourceLoader;
+        [Dependency]
+        private readonly UserProfileModule _UserProfileModule;
+
         private List<SpawnPoint> _FreeSpawnPoints;
         public ShipsSpawnConfig Config { get; private set; }
 
@@ -40,6 +43,7 @@ namespace Game.SeaGameplay.Spawn {
                 ShipId = AllocateShipId(),
                 ShipDefId = LocalPlayerShipId,
                 IsPlayer = true,
+                Nickname = _UserProfileModule.Nickname,
             };
             SpawnShipInRandomPoint(shipData);
         }
@@ -49,6 +53,7 @@ namespace Game.SeaGameplay.Spawn {
                 ShipId = AllocateShipId(),
                 ShipDefId = shipId,
                 IsPlayer = false,
+                Nickname = _UserProfileModule.GenerateBotNickname(Random.value, Random.value),
             };
             SpawnShipInRandomPoint(shipData);
         }

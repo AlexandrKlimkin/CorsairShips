@@ -1,0 +1,14 @@
+[
+  {
+    "Id": "Currency_Soft",
+    "PreviewName": "Gold_preview",
+    "NameLocKey": "Currency/Soft/Name",
+    "DescriptionLocKey": "Currency/Soft/Description"
+  },
+  {
+    "Id": "Currency_Hard",
+    "PreviewName": "Dimond_preview",
+    "NameLocKey": "Currency/Hard/Name",
+    "DescriptionLocKey": "Currency/Hard/Description"
+  }
+]

@@ -16,7 +16,27 @@ namespace PestelLib.SharedLogic
             object result = null;
 
 #region AUTO_GENERATED_COMMAND_WRAPPER
-                if (autoCommand.CommandId == 1439172566) {
+                if (autoCommand.CommandId == 240269443) {
+                    var cmd = Serializer.Deserialize<CurrencyModule_AddCurrency>(autoCommand.CommandData);
+                       GetModule<CurrencyModule>().AddCurrency(cmd.currencyType, cmd.count);
+                }
+
+                else if (autoCommand.CommandId == 949613451) {
+                    var cmd = Serializer.Deserialize<CurrencyModule_SpendCurrency>(autoCommand.CommandData);
+                       GetModule<CurrencyModule>().SpendCurrency(cmd.currencyType, cmd.count);
+                }
+
+                else if (autoCommand.CommandId == 1020634962) {
+                    var cmd = Serializer.Deserialize<ItemsModule_AddItem>(autoCommand.CommandData);
+                       GetModule<ItemsModule>().AddItem(cmd.itemId, cmd.count);
+                }
+
+                else if (autoCommand.CommandId == -694861833) {
+                    var cmd = Serializer.Deserialize<ItemsModule_SpendItem>(autoCommand.CommandData);
+                       GetModule<ItemsModule>().SpendItem(cmd.itemId, cmd.count);
+                }
+
+                else if (autoCommand.CommandId == 1439172566) {
                     var cmd = Serializer.Deserialize<MoneyModule_CheckBalance>(autoCommand.CommandData);
                        GetModule<MoneyModule>().CheckBalance();
                 }
