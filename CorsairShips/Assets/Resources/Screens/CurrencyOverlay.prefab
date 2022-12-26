@@ -187,7 +187,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2264930474030693906}
-  - component: {fileID: 2140795916713278300}
+  - component: {fileID: 3528340891346114979}
   m_Layer: 5
   m_Name: CurrencyOverlay
   m_TagString: Untagged
@@ -216,7 +216,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2140795916713278300
+--- !u!114 &3528340891346114979
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -228,7 +228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4f5a2115572c3f428d17b9f679ea106, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _CurrencyWidgets:
+  _CurrencyList:
   - {fileID: 4992762188285541649}
   - {fileID: 5622198530958208787}
 --- !u!1001 &7064924436334652623

@@ -7,9 +7,7 @@ using UnityEngine.UI;
 
 namespace UI.Screens.MenuMain {
     public class CurrencyWidget : MonoBehaviour {
-        [Dependency]
-        private readonly CurrencyModule _CurrencyModule;
-        
+
         [SerializeField]
         private CurrencyType _CurrencyType;
         [SerializeField]
@@ -17,30 +15,29 @@ namespace UI.Screens.MenuMain {
         [SerializeField]
         private Button _Button;
 
+        public Action<CurrencyWidget> OnButtonClick;
+
+        public CurrencyType CurrencyType => _CurrencyType;
+        
         private void Awake() {
             ContainerHolder.Container.BuildUp(this);
         }
 
         private void Start() {
-            _CurrencyModule.OnCurrencyChanged.Subscribe(OnCurrencyChanged);
             _Button.onClick.AddListener(OnAddButtonClick);
-            var count = _CurrencyModule.GetCurrencyCount(_CurrencyType);
-            _IconLabel.SetLabel(count.ToString());
         }
 
         private void OnDestroy() {
-            _CurrencyModule.OnCurrencyChanged.Unsubscribe(OnCurrencyChanged);
             _Button.onClick.RemoveAllListeners();
         }
 
-        private void OnCurrencyChanged(CurrencyType currencyType, int count) {
-            if(currencyType != _CurrencyType)
-                return;
+
+        public void SetCount(int count) {
             _IconLabel.SetLabel(count.ToString());
         }
 
         private void OnAddButtonClick() {
-            SharedLogicCommand.CurrencyModule.AddCurrency(_CurrencyType, 100);
+            OnButtonClick?.Invoke(this);
         }
     }
 }
