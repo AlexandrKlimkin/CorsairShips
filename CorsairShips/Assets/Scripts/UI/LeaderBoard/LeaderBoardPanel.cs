@@ -62,6 +62,7 @@ namespace UI.Battle.LeaderBoard {
             for (var i = 0; i < widgets.Length; i++) {
                 var place = i + 1;
                 widgets[i].RefreshPlace(place);
+                widgets[i].transform.SetSiblingIndex(i);
             }
         }
     }

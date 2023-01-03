@@ -35,8 +35,8 @@ namespace Game.SeaGameplay.Points {
             var shipCaster = signal.Damage.Caster as Ship;
             if (shipCaster == null)
                 return;
-            if (shipCaster != _LocalShipProvider.LocalShip)
-                return;
+            // if (shipCaster != _LocalShipProvider.LocalShip)
+            //     return;
             var killedShip = signal.Damage.Receiver as Ship;
             if (killedShip == null)
                 return;
