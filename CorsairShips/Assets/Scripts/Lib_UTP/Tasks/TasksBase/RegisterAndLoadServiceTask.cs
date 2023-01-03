@@ -12,4 +12,14 @@ namespace UTPLib.Tasks.Base {
             (serviceInstance as ILoadableService)?.Load();
         }
     }
+    
+    public class RegisterAndLoadServiceTask<TBase, TDerived> : AutoCompletedTask where TDerived : class, TBase, new() {
+        protected override void AutoCompletedRun() {
+            var container = ContainerHolder.Container;
+            var serviceInstance = new TDerived();
+            ContainerHolder.Container.RegisterInstance<TBase, TDerived>(serviceInstance);
+            container.BuildUp(serviceInstance);
+            (serviceInstance as ILoadableService)?.Load();
+        }
+    }
 }

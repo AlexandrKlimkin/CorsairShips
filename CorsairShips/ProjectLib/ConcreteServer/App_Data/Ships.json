@@ -4,20 +4,23 @@
     "ModelId": "Sloop",
     "ConfigId": "Sloop",
     "NameLocKey": "Ships/Sloop/Name",
-    "DescriptionLocKey": "Ships/Sloop/Description"
+    "DescriptionLocKey": "Ships/Sloop/Description",
+    "KillPoints": 30
   },
   {
     "Id": "Lugger",
     "ModelId": "Lugger",
     "ConfigId": "Lugger",
     "NameLocKey": "Ships/Lugger/Name",
-    "DescriptionLocKey": "Ships/Lugger/Description"
+    "DescriptionLocKey": "Ships/Lugger/Description",
+    "KillPoints": 50
   },
   {
     "Id": "Corvette",
     "ModelId": "Corvette",
     "ConfigId": "Corvette",
     "NameLocKey": "Ships/Corvette/Name",
-    "DescriptionLocKey": "Ships/Corvette/Description"
+    "DescriptionLocKey": "Ships/Corvette/Description",
+    "KillPoints": 80
   }
 ]

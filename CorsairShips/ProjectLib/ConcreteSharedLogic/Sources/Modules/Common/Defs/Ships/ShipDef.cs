@@ -8,5 +8,6 @@ namespace PestelLib.SharedLogic.Modules {
         public string ConfigId;
         public string NameLocKey;
         public string DescriptionLocKey;
+        public int KillPoints;
     }
 }

@@ -76,6 +76,11 @@ namespace PestelLib.SharedLogic
                        GetModule<PropertyModule>().SetSpotted(cmd.id);
                 }
 
+                else if (autoCommand.CommandId == -505993302) {
+                    var cmd = Serializer.Deserialize<RewardsModule_ClaimRewards>(autoCommand.CommandData);
+                       GetModule<RewardsModule>().ClaimRewards(cmd.matchResult, cmd.points);
+                }
+
                 else if (autoCommand.CommandId == -1438990908) {
                     var cmd = Serializer.Deserialize<UserProfileModule_ChangeNickname>(autoCommand.CommandData);
                        GetModule<UserProfileModule>().ChangeNickname(cmd.nickName);

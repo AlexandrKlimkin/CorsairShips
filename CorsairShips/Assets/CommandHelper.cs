@@ -278,6 +278,28 @@ public partial class PropertyModule
 }
 
 
+public partial class RewardsModule
+{
+    [SharedCommand("")]
+    public static void ClaimRewards(Match_Result matchResult,int points)
+    {
+        var cmd = new S.CommandContainer
+        {
+            CommandId = -505993302,
+            CommandData = Serializer.Serialize(new RewardsModule_ClaimRewards
+            {
+                matchResult = matchResult
+,points = points
+
+            })
+        };
+
+        var cmdBytes = Serializer.Serialize(cmd);
+        CommandProcessor.ExecuteCommand<object>(cmdBytes);
+    }
+}
+
+
 public partial class UserProfileModule
 {
     [SharedCommand("")]

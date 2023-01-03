@@ -5,6 +5,7 @@ using Game.Initialization.Parameters;
 using Game.SeaGameplay.Data;
 using Game.SeaGameplay.GameModes;
 using Game.SeaGameplay.Statistics;
+using PestelLib.SharedLogic.Modules;
 using TMPro;
 using UnityDI;
 using UnityEngine;
@@ -23,9 +24,13 @@ namespace UI.Battle {
         [SerializeField]
         private TextMeshProUGUI _KillsCountText;
         [SerializeField]
+        private TextMeshProUGUI _PointsCountText;
+        [SerializeField]
         private Button _RestartButton;
         [SerializeField]
         private Button _GoToMenuButton;
+        [SerializeField]
+        private RewardsPanel _RewardsPanel;
         
         private void Awake() {
             ContainerHolder.Container.BuildUp(this);
@@ -40,7 +45,7 @@ namespace UI.Battle {
             
         }
 
-        public void Setup(DeathMatchService.MatchResult result) {
+        public void Setup(Match_Result result) {
             _ResultText.text = result.ToString();
             _KillsCountText.text = _Statistics.Kills.ToString();
         }

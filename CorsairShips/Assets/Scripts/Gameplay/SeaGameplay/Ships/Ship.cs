@@ -32,6 +32,8 @@ namespace Game.SeaGameplay {
         public DamageBuffer DamageBuffer { get; private set; }
         
         public Transform ModelContainer => _ModelContainer;
+        
+        //ToDo: make PlayerData
         public ShipData ShipData { get; private set; }
         public ShipDef ShipDef { get; private set; }
         public Vector3 Position => transform.position;

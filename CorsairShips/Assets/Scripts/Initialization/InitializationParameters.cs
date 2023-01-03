@@ -11,6 +11,7 @@ using Game.Quality;
 using Game.SeaGameplay.AI;
 using Game.SeaGameplay.Bounds;
 using Game.SeaGameplay.GameModes;
+using Game.SeaGameplay.Points;
 using Game.SeaGameplay.Statistics;
 using Initialization.BaseTasks;
 using Menu.Hagar;
@@ -50,6 +51,7 @@ namespace Game.Initialization {
             new RegisterAndLoadServiceTask<StatsService>(),
             new RegisterAndLoadServiceTask<ShipCreationService>(),
             new RegisterAndLoadServiceTask<DamageService>(),
+            new RegisterAndLoadServiceTask<IPointsCounter, PointsCounterService>(),
             
             new WaitForAwakesTask(),
             
@@ -62,11 +64,13 @@ namespace Game.Initialization {
             new CloseGUITask(),
             new UnregisterAndUnloadServiceTask<ShipsSpawnService>(),
             new UnregisterAndUnloadServiceTask<LevelBoundsService>(),
+            new UnregisterAndUnloadServiceTask<IPointsCounter>(),
             new UnregisterAndUnloadServiceTask<DamageService>(),
             new UnregisterAndUnloadServiceTask<ShipCreationService>(),
             new UnregisterAndUnloadServiceTask<StatsService>(),
             new UnregisterAndUnloadServiceTask<AIService>(),
             new UnregisterAndUnloadServiceTask<BattleStatisticsService>(),
+            
         };
 
         public static List<Task> Loading_DeathMatch_Tasks => new() {

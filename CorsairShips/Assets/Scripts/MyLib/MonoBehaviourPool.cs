@@ -12,12 +12,17 @@ namespace Game
 
         protected List<T> objects;
 
+        protected List<T> activeObjects;
+        public IReadOnlyList<T> ActiveObjects => activeObjects;
+
+
         public MonoBehaviourPool(T template, Transform parent)
         {
             objects = new List<T>();
             this.template = template;
             this.parent = parent;
             parent.GetComponentsInChildren(objects);
+            activeObjects = objects.Where(_=>_.gameObject.activeSelf).ToList();
         }
 
         public T GetObject()
@@ -30,12 +35,15 @@ namespace Game
             }
 
             obj.gameObject.SetActive(true);
+            activeObjects.Add(obj);
+            
             return obj;
         }
 
         public void ReturnObjectToPool(T obj)
         {
             obj.gameObject.SetActive(false);
+            activeObjects.Remove(obj);
         }
 
         public void ReturnAllToPool() {

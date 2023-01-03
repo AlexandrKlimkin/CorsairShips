@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Linq;
 using Game.SeaGameplay.Spawn;
+using PestelLib.SharedLogic.Modules;
 using PestelLib.UI;
 using PestelLib.Utils;
 using UI.Battle;
@@ -12,7 +13,7 @@ using UTPLib.Services;
 using UTPLib.SignalBus;
 
 namespace Game.SeaGameplay.GameModes {
-    public class DeathMatchService : ILoadableService, IUnloadableService {
+    public partial class DeathMatchService : ILoadableService, IUnloadableService {
         [Dependency]
         private readonly UnityEventsProvider _EventsProvider;
         
@@ -22,11 +23,6 @@ namespace Game.SeaGameplay.GameModes {
             Finished,
         }
 
-        public enum MatchResult {
-            Victory,
-            Defeat,
-        }
-        
         [Dependency]
         private readonly ShipsSpawnService _ShipsSpawnService;
         [Dependency]
@@ -58,7 +54,7 @@ namespace Game.SeaGameplay.GameModes {
             _SignalBus.FireSignal(new MatchStartSignal());
         }
         
-        private void FinishMatch(MatchResult result) {
+        private void FinishMatch(Match_Result result) {
             if(CurrentState != MatchState.InProgress)
                 return;
             CurrentState = MatchState.Finished;
@@ -68,7 +64,7 @@ namespace Game.SeaGameplay.GameModes {
             _SignalBus.FireSignal(new MatchFinishSignal());
         }
 
-        private IEnumerator ShowResultRoutine(MatchResult result) {
+        private IEnumerator ShowResultRoutine(Match_Result result) {
             yield return new WaitForSeconds(Parameters.EndScreenShowDelay);
             var endWindow = _Gui.Show<DeathMatchResultWindow>(GuiScreenType.Dialog);
             endWindow.Setup(result);
@@ -76,13 +72,13 @@ namespace Game.SeaGameplay.GameModes {
         
         private void OnShipDieSignal(ShipDieSignal signal) {
             if (signal.Ship.IsLocalPlayerShip) {
-                FinishMatch(MatchResult.Defeat);
+                FinishMatch(Match_Result.Defeat);
             }
             else {
                 var enemiesAlive = Ship.Ships.Any(_ => !_.Dead && !_.IsLocalPlayerShip);
                 if(enemiesAlive)
                     return;
-                FinishMatch(MatchResult.Victory);
+                FinishMatch(Match_Result.Victory);
             }
         }
 
