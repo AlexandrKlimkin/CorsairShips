@@ -10,8 +10,10 @@ namespace PestelLib.SharedLogic.Modules {
         private readonly ItemsModule _ItemsModule;
 
         public ScheduledAction<List<RewardData>> OnRewardsClaimed;
-        
-        public RewardsModule() { }
+
+        public RewardsModule() {
+            OnRewardsClaimed = new ScheduledAction<List<RewardData>>(ScheduledActionCaller);
+        }
 
         // public MatchResultData CalculateMatchResultData(MatchResult matchResult, int points) {
         //     var matchResultData = new MatchResultData {
@@ -34,14 +36,14 @@ namespace PestelLib.SharedLogic.Modules {
                 rewards.Add(softReward);
             }
 
-            var hardCount = (int)(points * 0.01f);
-            if (hardCount > 0) {
-                var hardReward = new RewardData() {
-                    ItemId = ItemsConstants.CurrencyHard,
-                    Count = hardCount,
-                };
-                rewards.Add(hardReward);
-            }
+            // var hardCount = (int)(points * 0.01f);
+            // if (hardCount > 0) {
+            //     var hardReward = new RewardData() {
+            //         ItemId = ItemsConstants.CurrencyHard,
+            //         Count = hardCount,
+            //     };
+            //     rewards.Add(hardReward);
+            // }
             return rewards;
         }
 

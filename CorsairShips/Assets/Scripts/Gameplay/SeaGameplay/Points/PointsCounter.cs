@@ -5,7 +5,7 @@ using UTPLib.Services;
 using UTPLib.SignalBus;
 
 namespace Game.SeaGameplay.Points {
-    public class PointsCounterService : ILoadableService, IUnloadableService, IPointsCounter {
+    public class PointsCounter : ILoadableService, IUnloadableService, IPointsCounter {
         [Dependency]
         private readonly SignalBus _SignalBus;
 

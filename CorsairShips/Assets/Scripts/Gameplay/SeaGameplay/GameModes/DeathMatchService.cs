@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Linq;
+using Game.SeaGameplay.Points;
 using Game.SeaGameplay.Spawn;
 using PestelLib.SharedLogic.Modules;
+using PestelLib.SharedLogicClient;
 using PestelLib.UI;
 using PestelLib.Utils;
 using UI.Battle;
@@ -14,9 +16,7 @@ using UTPLib.SignalBus;
 
 namespace Game.SeaGameplay.GameModes {
     public partial class DeathMatchService : ILoadableService, IUnloadableService {
-        [Dependency]
-        private readonly UnityEventsProvider _EventsProvider;
-        
+
         public enum MatchState {
             Loading,
             InProgress,
@@ -24,12 +24,18 @@ namespace Game.SeaGameplay.GameModes {
         }
 
         [Dependency]
+        private readonly UnityEventsProvider _EventsProvider;
+        [Dependency]
         private readonly ShipsSpawnService _ShipsSpawnService;
         [Dependency]
         private readonly Gui _Gui;
         [Dependency]
         private readonly SignalBus _SignalBus;
-
+        [Dependency]
+        private readonly PointsService _PointsService;
+        [Dependency]
+        private readonly ILocalShipProvider _LocalShipProvider;
+        
         public MatchState CurrentState { get; private set; }
 
         private DeathMatchParameters Parameters => DeathMatchConfig.Instance.DeathMatchParameters;
@@ -61,6 +67,7 @@ namespace Game.SeaGameplay.GameModes {
             _Gui.Close<ControlsOverlay>();
             _Gui.Close<DeathMatchOverlay>();
             _EventsProvider.StartCoroutine(ShowResultRoutine(result));
+            SharedLogicCommand.RewardsModule.ClaimRewards(result, _PointsService.GetLocalPlayerPointsCount());
             _SignalBus.FireSignal(new MatchFinishSignal());
         }
 

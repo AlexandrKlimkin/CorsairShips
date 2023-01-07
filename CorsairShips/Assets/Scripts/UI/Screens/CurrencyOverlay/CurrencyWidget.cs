@@ -31,6 +31,9 @@ namespace UI.Screens.MenuMain {
             _Button.onClick.RemoveAllListeners();
         }
 
+        public void Setup(CurrencyType currencyType, int count) {
+            SetCount(count);
+        }
 
         public void SetCount(int count) {
             _IconLabel.SetLabel(count.ToString());

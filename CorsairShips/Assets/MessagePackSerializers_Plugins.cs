@@ -43,7 +43,7 @@ namespace MessagePack.Resolvers
 
         static GeneratedResolverPluginsGetFormatterHelper()
         {
-            lookup = new global::System.Collections.Generic.Dictionary<Type, int>(141)
+            lookup = new global::System.Collections.Generic.Dictionary<Type, int>(144)
             {
                 {typeof(global::System.Collections.Generic.Dictionary<string, byte[]>), 0 },
                 {typeof(global::System.Collections.Generic.List<string>), 1 },
@@ -69,123 +69,126 @@ namespace MessagePack.Resolvers
                 {typeof(global::ServerShared.GlobalConflict.TeamState[]), 21 },
                 {typeof(global::System.Collections.Generic.List<global::PestelLib.SharedLogicBase.Command>), 22 },
                 {typeof(global::System.Collections.Generic.List<global::PestelLib.SharedLogic.Modules.ItemState>), 23 },
-                {typeof(global::S.NetworkType), 24 },
-                {typeof(global::S.PromoCodeResponseCode), 25 },
-                {typeof(global::S.ResponseCode), 26 },
-                {typeof(global::S.GetProfileByFacebookIdCode), 27 },
-                {typeof(global::S.MatchResult), 28 },
-                {typeof(global::ServerShared.GlobalConflict.DonationBonusType), 29 },
-                {typeof(global::ServerShared.GlobalConflict.NodeStatus), 30 },
-                {typeof(global::ServerShared.GlobalConflict.StageType), 31 },
-                {typeof(global::ServerShared.GlobalConflict.PointOfInterestServerLogic), 32 },
-                {typeof(global::ServerShared.GlobalConflict.TeamAssignType), 33 },
-                {typeof(global::PestelLib.SharedLogic.Modules.CurrencyType), 34 },
-                {typeof(global::S.PropertyModule_BuyProperty), 35 },
-                {typeof(global::S.PropertyModule_SetPropertyAsOwned), 36 },
-                {typeof(global::S.PropertyModule_SetSpotted), 37 },
-                {typeof(global::ServerShared.PlayerProfile.Achievement), 38 },
-                {typeof(global::S.RandomModule_Random), 39 },
-                {typeof(global::S.UnityPurchaseReceipt), 40 },
-                {typeof(global::PestelLib.SharedLogic.Modules.UserProfileModuleState), 41 },
-                {typeof(global::PestelLib.SharedLogic.Modules.CompositeModuleState), 42 },
-                {typeof(global::PestelLib.SharedLogic.Modules.MoneyModuleState), 43 },
-                {typeof(global::S.InitRequest), 44 },
-                {typeof(global::S.ProcessCommandsBatchRequest), 45 },
-                {typeof(global::S.ResetRequest), 46 },
-                {typeof(global::S.SetFacebookIdRequest), 47 },
-                {typeof(global::S.GetProfileByFacebookIdRequest), 48 },
-                {typeof(global::S.GetRandomUserIds), 49 },
-                {typeof(global::S.SyncTime), 50 },
-                {typeof(global::S.ReplaceStateRequest), 51 },
-                {typeof(global::S.RegisterPayment), 52 },
-                {typeof(global::S.SendFeedback), 53 },
-                {typeof(global::S.LeaderboardRegisterRecord), 54 },
-                {typeof(global::S.LeaderboardGetRank), 55 },
-                {typeof(global::S.LeaderboardGetRankTop), 56 },
-                {typeof(global::S.LeaderboardGetRankTopChunk), 57 },
-                {typeof(global::S.LeaderboardGetFacebookFriendsTop), 58 },
-                {typeof(global::S.UsePromo), 59 },
-                {typeof(global::S.ServerMessage), 60 },
-                {typeof(global::S.SendServerMessage), 61 },
-                {typeof(global::S.ClearServerMessagesInbox), 62 },
-                {typeof(global::S.GetServerMessagesInbox), 63 },
-                {typeof(global::S.LeagueRegisterRequest), 64 },
-                {typeof(global::S.LeaguePlayerGlobalRankRequest), 65 },
-                {typeof(global::S.LeaguePlayerLeagueRankRequest), 66 },
-                {typeof(global::S.LeagueDivisionRanksRequest), 67 },
-                {typeof(global::S.LeagueTopRequest), 68 },
-                {typeof(global::S.LeagueGlobalTopRequest), 69 },
-                {typeof(global::S.DefsRequest), 70 },
-                {typeof(global::S.DeleteUserRequest), 71 },
-                {typeof(global::S.TypedApiCall), 72 },
-                {typeof(global::S.ValidateSessionRequest), 73 },
-                {typeof(global::S.LeaderboardGetSeasonInfoRequest), 74 },
-                {typeof(global::S.ExtensionModuleRequest), 75 },
-                {typeof(global::S.Request), 76 },
-                {typeof(global::PestelLib.ServerShared.ServerRequest), 77 },
-                {typeof(global::S.BenchmarkRequest), 78 },
-                {typeof(global::S.DataCollection), 79 },
-                {typeof(global::S.UsePromoResponse), 80 },
-                {typeof(global::S.SendMessageResponse), 81 },
-                {typeof(global::S.SendServerMessageResponse), 82 },
-                {typeof(global::S.ServerMessagesInbox), 83 },
-                {typeof(global::S.DefsData), 84 },
-                {typeof(global::S.Response), 85 },
-                {typeof(global::S.SetFacebookIdResponse), 86 },
-                {typeof(global::S.GetRandomUserIdsResponse), 87 },
-                {typeof(global::S.GetProfileByFacebookIdResponse), 88 },
-                {typeof(global::S.LeaderboardGetRankResponse), 89 },
-                {typeof(global::S.LeaderboardGetSeasonInfoResponse), 90 },
-                {typeof(global::S.LeaderboardRecord), 91 },
-                {typeof(global::S.LeaderboardGetRankTopResponse), 92 },
-                {typeof(global::S.LeaderboardGetRankTopChunkResponse), 93 },
-                {typeof(global::S.MatchEnd), 94 },
-                {typeof(global::S.SeasonEndInfo), 95 },
-                {typeof(global::S.LeaguePlayerInfo), 96 },
-                {typeof(global::S.DivisionInfo), 97 },
-                {typeof(global::S.LeagueRegisterResponse), 98 },
-                {typeof(global::S.LeagueTopResponse), 99 },
-                {typeof(global::ServerShared.PlayerProfile.PlayerTitle), 100 },
-                {typeof(global::PestelLib.SharedLogic.Modules.RandomModuleState), 101 },
-                {typeof(global::S.UserProfileModule_ChangeNickname), 102 },
-                {typeof(global::PestelLib.SharedLogic.Modules.EmptyState), 103 },
-                {typeof(global::S.ModuleData), 104 },
-                {typeof(global::PestelLib.SharedLogic.Modules.MyTestModuleState), 105 },
-                {typeof(global::S.MoneyModule_CheckBalance), 106 },
-                {typeof(global::S.MoneyModule_BuyMoneyPacket), 107 },
-                {typeof(global::S.MadId), 108 },
-                {typeof(global::S.CommandContainer), 109 },
-                {typeof(global::PestelLib.SharedLogic.Modules.PropertyModuleState), 110 },
-                {typeof(global::ServerShared.PlayerProfile.ProfileDTO), 111 },
-                {typeof(global::ServerShared.PlayerProfile.ProfileDTOArray), 112 },
-                {typeof(global::PestelLib.ServerShared.ServerResponse), 113 },
-                {typeof(global::S.ConflictResultPoints), 114 },
-                {typeof(global::S.ConflictResult), 115 },
-                {typeof(global::ServerShared.GlobalConflict.TeamPlayersStat), 116 },
-                {typeof(global::ServerShared.GlobalConflict.DonationBonusLevels), 117 },
-                {typeof(global::ServerShared.GlobalConflict.DonationBonus), 118 },
-                {typeof(global::ServerShared.GlobalConflict.NodeState), 119 },
-                {typeof(global::ServerShared.GlobalConflict.MapState), 120 },
-                {typeof(global::ServerShared.GlobalConflict.StageDef), 121 },
-                {typeof(global::ServerShared.GlobalConflict.PointOfInterestBonus), 122 },
-                {typeof(global::ServerShared.GlobalConflict.PointOfInterest), 123 },
-                {typeof(global::ServerShared.GlobalConflict.NodeQuest), 124 },
-                {typeof(global::ServerShared.GlobalConflict.PlayerState), 125 },
-                {typeof(global::ServerShared.GlobalConflict.TeamState), 126 },
-                {typeof(global::ServerShared.GlobalConflict.GlobalConflictState), 127 },
-                {typeof(global::S.MyTestModuleLogic_IncrementMoney), 128 },
-                {typeof(global::S.MyTestModuleLogic_AnotherTestCommand), 129 },
-                {typeof(global::S.MyTestModuleLogic_AddByDefinition), 130 },
-                {typeof(global::PestelLib.SharedLogicBase.Command), 131 },
-                {typeof(global::PestelLib.SharedLogicBase.CommandBatch), 132 },
-                {typeof(global::S.UserProfile), 133 },
-                {typeof(global::PestelLib.SharedLogic.Modules.ItemState), 134 },
-                {typeof(global::PestelLib.SharedLogic.Modules.ItemsModuleState), 135 },
-                {typeof(global::S.ItemsModule_AddItem), 136 },
-                {typeof(global::S.ItemsModule_SpendItem), 137 },
-                {typeof(global::PestelLib.SharedLogic.Modules.CurrencyModuleState), 138 },
-                {typeof(global::S.CurrencyModule_AddCurrency), 139 },
-                {typeof(global::S.CurrencyModule_SpendCurrency), 140 },
+                {typeof(global::PestelLib.SharedLogic.Modules.CurrencyType), 24 },
+                {typeof(global::S.NetworkType), 25 },
+                {typeof(global::S.PromoCodeResponseCode), 26 },
+                {typeof(global::S.ResponseCode), 27 },
+                {typeof(global::S.GetProfileByFacebookIdCode), 28 },
+                {typeof(global::S.MatchResult), 29 },
+                {typeof(global::PestelLib.SharedLogic.Modules.Match_Result), 30 },
+                {typeof(global::ServerShared.GlobalConflict.DonationBonusType), 31 },
+                {typeof(global::ServerShared.GlobalConflict.NodeStatus), 32 },
+                {typeof(global::ServerShared.GlobalConflict.StageType), 33 },
+                {typeof(global::ServerShared.GlobalConflict.PointOfInterestServerLogic), 34 },
+                {typeof(global::ServerShared.GlobalConflict.TeamAssignType), 35 },
+                {typeof(global::S.PropertyModule_BuyProperty), 36 },
+                {typeof(global::S.PropertyModule_SetPropertyAsOwned), 37 },
+                {typeof(global::S.PropertyModule_SetSpotted), 38 },
+                {typeof(global::ServerShared.PlayerProfile.Achievement), 39 },
+                {typeof(global::S.RandomModule_Random), 40 },
+                {typeof(global::S.UnityPurchaseReceipt), 41 },
+                {typeof(global::PestelLib.SharedLogic.Modules.UserProfileModuleState), 42 },
+                {typeof(global::S.CurrencyModule_AddCurrency), 43 },
+                {typeof(global::S.CurrencyModule_SpendCurrency), 44 },
+                {typeof(global::PestelLib.SharedLogic.Modules.CompositeModuleState), 45 },
+                {typeof(global::PestelLib.SharedLogic.Modules.MoneyModuleState), 46 },
+                {typeof(global::S.InitRequest), 47 },
+                {typeof(global::S.ProcessCommandsBatchRequest), 48 },
+                {typeof(global::S.ResetRequest), 49 },
+                {typeof(global::S.SetFacebookIdRequest), 50 },
+                {typeof(global::S.GetProfileByFacebookIdRequest), 51 },
+                {typeof(global::S.GetRandomUserIds), 52 },
+                {typeof(global::S.SyncTime), 53 },
+                {typeof(global::S.ReplaceStateRequest), 54 },
+                {typeof(global::S.RegisterPayment), 55 },
+                {typeof(global::S.SendFeedback), 56 },
+                {typeof(global::S.LeaderboardRegisterRecord), 57 },
+                {typeof(global::S.LeaderboardGetRank), 58 },
+                {typeof(global::S.LeaderboardGetRankTop), 59 },
+                {typeof(global::S.LeaderboardGetRankTopChunk), 60 },
+                {typeof(global::S.LeaderboardGetFacebookFriendsTop), 61 },
+                {typeof(global::S.UsePromo), 62 },
+                {typeof(global::S.ServerMessage), 63 },
+                {typeof(global::S.SendServerMessage), 64 },
+                {typeof(global::S.ClearServerMessagesInbox), 65 },
+                {typeof(global::S.GetServerMessagesInbox), 66 },
+                {typeof(global::S.LeagueRegisterRequest), 67 },
+                {typeof(global::S.LeaguePlayerGlobalRankRequest), 68 },
+                {typeof(global::S.LeaguePlayerLeagueRankRequest), 69 },
+                {typeof(global::S.LeagueDivisionRanksRequest), 70 },
+                {typeof(global::S.LeagueTopRequest), 71 },
+                {typeof(global::S.LeagueGlobalTopRequest), 72 },
+                {typeof(global::S.DefsRequest), 73 },
+                {typeof(global::S.DeleteUserRequest), 74 },
+                {typeof(global::S.TypedApiCall), 75 },
+                {typeof(global::S.ValidateSessionRequest), 76 },
+                {typeof(global::S.LeaderboardGetSeasonInfoRequest), 77 },
+                {typeof(global::S.ExtensionModuleRequest), 78 },
+                {typeof(global::S.Request), 79 },
+                {typeof(global::PestelLib.ServerShared.ServerRequest), 80 },
+                {typeof(global::S.BenchmarkRequest), 81 },
+                {typeof(global::S.DataCollection), 82 },
+                {typeof(global::S.UsePromoResponse), 83 },
+                {typeof(global::S.SendMessageResponse), 84 },
+                {typeof(global::S.SendServerMessageResponse), 85 },
+                {typeof(global::S.ServerMessagesInbox), 86 },
+                {typeof(global::S.DefsData), 87 },
+                {typeof(global::S.Response), 88 },
+                {typeof(global::S.SetFacebookIdResponse), 89 },
+                {typeof(global::S.GetRandomUserIdsResponse), 90 },
+                {typeof(global::S.GetProfileByFacebookIdResponse), 91 },
+                {typeof(global::S.LeaderboardGetRankResponse), 92 },
+                {typeof(global::S.LeaderboardGetSeasonInfoResponse), 93 },
+                {typeof(global::S.LeaderboardRecord), 94 },
+                {typeof(global::S.LeaderboardGetRankTopResponse), 95 },
+                {typeof(global::S.LeaderboardGetRankTopChunkResponse), 96 },
+                {typeof(global::S.MatchEnd), 97 },
+                {typeof(global::S.SeasonEndInfo), 98 },
+                {typeof(global::S.LeaguePlayerInfo), 99 },
+                {typeof(global::S.DivisionInfo), 100 },
+                {typeof(global::S.LeagueRegisterResponse), 101 },
+                {typeof(global::S.LeagueTopResponse), 102 },
+                {typeof(global::ServerShared.PlayerProfile.PlayerTitle), 103 },
+                {typeof(global::PestelLib.SharedLogic.Modules.RandomModuleState), 104 },
+                {typeof(global::S.ItemsModule_AddItem), 105 },
+                {typeof(global::S.ItemsModule_SpendItem), 106 },
+                {typeof(global::S.UserProfileModule_ChangeNickname), 107 },
+                {typeof(global::PestelLib.SharedLogic.Modules.EmptyState), 108 },
+                {typeof(global::S.ModuleData), 109 },
+                {typeof(global::S.RewardsModule_ClaimRewards), 110 },
+                {typeof(global::PestelLib.SharedLogic.Modules.RewardsModuleState), 111 },
+                {typeof(global::PestelLib.SharedLogic.Modules.CurrencyModuleState), 112 },
+                {typeof(global::PestelLib.SharedLogic.Modules.MyTestModuleState), 113 },
+                {typeof(global::S.MoneyModule_CheckBalance), 114 },
+                {typeof(global::S.MoneyModule_BuyMoneyPacket), 115 },
+                {typeof(global::S.MadId), 116 },
+                {typeof(global::S.CommandContainer), 117 },
+                {typeof(global::PestelLib.SharedLogic.Modules.PropertyModuleState), 118 },
+                {typeof(global::ServerShared.PlayerProfile.ProfileDTO), 119 },
+                {typeof(global::ServerShared.PlayerProfile.ProfileDTOArray), 120 },
+                {typeof(global::PestelLib.ServerShared.ServerResponse), 121 },
+                {typeof(global::S.ConflictResultPoints), 122 },
+                {typeof(global::S.ConflictResult), 123 },
+                {typeof(global::ServerShared.GlobalConflict.TeamPlayersStat), 124 },
+                {typeof(global::ServerShared.GlobalConflict.DonationBonusLevels), 125 },
+                {typeof(global::ServerShared.GlobalConflict.DonationBonus), 126 },
+                {typeof(global::ServerShared.GlobalConflict.NodeState), 127 },
+                {typeof(global::ServerShared.GlobalConflict.MapState), 128 },
+                {typeof(global::ServerShared.GlobalConflict.StageDef), 129 },
+                {typeof(global::ServerShared.GlobalConflict.PointOfInterestBonus), 130 },
+                {typeof(global::ServerShared.GlobalConflict.PointOfInterest), 131 },
+                {typeof(global::ServerShared.GlobalConflict.NodeQuest), 132 },
+                {typeof(global::ServerShared.GlobalConflict.PlayerState), 133 },
+                {typeof(global::ServerShared.GlobalConflict.TeamState), 134 },
+                {typeof(global::ServerShared.GlobalConflict.GlobalConflictState), 135 },
+                {typeof(global::S.MyTestModuleLogic_IncrementMoney), 136 },
+                {typeof(global::S.MyTestModuleLogic_AnotherTestCommand), 137 },
+                {typeof(global::S.MyTestModuleLogic_AddByDefinition), 138 },
+                {typeof(global::PestelLib.SharedLogicBase.Command), 139 },
+                {typeof(global::PestelLib.SharedLogicBase.CommandBatch), 140 },
+                {typeof(global::PestelLib.SharedLogic.Modules.ItemState), 141 },
+                {typeof(global::PestelLib.SharedLogic.Modules.ItemsModuleState), 142 },
+                {typeof(global::S.UserProfile), 143 },
             };
         }
 
@@ -220,123 +223,126 @@ namespace MessagePack.Resolvers
                 case 21: return new global::MessagePack.Formatters.ArrayFormatter<global::ServerShared.GlobalConflict.TeamState>();
                 case 22: return new global::MessagePack.Formatters.ListFormatter<global::PestelLib.SharedLogicBase.Command>();
                 case 23: return new global::MessagePack.Formatters.ListFormatter<global::PestelLib.SharedLogic.Modules.ItemState>();
-                case 24: return new MessagePack.Formatters.S.NetworkTypeFormatter();
-                case 25: return new MessagePack.Formatters.S.PromoCodeResponseCodeFormatter();
-                case 26: return new MessagePack.Formatters.S.ResponseCodeFormatter();
-                case 27: return new MessagePack.Formatters.S.GetProfileByFacebookIdCodeFormatter();
-                case 28: return new MessagePack.Formatters.S.MatchResultFormatter();
-                case 29: return new MessagePack.Formatters.ServerShared.GlobalConflict.DonationBonusTypeFormatter();
-                case 30: return new MessagePack.Formatters.ServerShared.GlobalConflict.NodeStatusFormatter();
-                case 31: return new MessagePack.Formatters.ServerShared.GlobalConflict.StageTypeFormatter();
-                case 32: return new MessagePack.Formatters.ServerShared.GlobalConflict.PointOfInterestServerLogicFormatter();
-                case 33: return new MessagePack.Formatters.ServerShared.GlobalConflict.TeamAssignTypeFormatter();
-                case 34: return new MessagePack.Formatters.PestelLib.SharedLogic.Modules.CurrencyTypeFormatter();
-                case 35: return new MessagePack.Formatters.S.PropertyModule_BuyPropertyFormatter();
-                case 36: return new MessagePack.Formatters.S.PropertyModule_SetPropertyAsOwnedFormatter();
-                case 37: return new MessagePack.Formatters.S.PropertyModule_SetSpottedFormatter();
-                case 38: return new MessagePack.Formatters.ServerShared.PlayerProfile.AchievementFormatter();
-                case 39: return new MessagePack.Formatters.S.RandomModule_RandomFormatter();
-                case 40: return new MessagePack.Formatters.S.UnityPurchaseReceiptFormatter();
-                case 41: return new MessagePack.Formatters.PestelLib.SharedLogic.Modules.UserProfileModuleStateFormatter();
-                case 42: return new MessagePack.Formatters.PestelLib.SharedLogic.Modules.CompositeModuleStateFormatter();
-                case 43: return new MessagePack.Formatters.PestelLib.SharedLogic.Modules.MoneyModuleStateFormatter();
-                case 44: return new MessagePack.Formatters.S.InitRequestFormatter();
-                case 45: return new MessagePack.Formatters.S.ProcessCommandsBatchRequestFormatter();
-                case 46: return new MessagePack.Formatters.S.ResetRequestFormatter();
-                case 47: return new MessagePack.Formatters.S.SetFacebookIdRequestFormatter();
-                case 48: return new MessagePack.Formatters.S.GetProfileByFacebookIdRequestFormatter();
-                case 49: return new MessagePack.Formatters.S.GetRandomUserIdsFormatter();
-                case 50: return new MessagePack.Formatters.S.SyncTimeFormatter();
-                case 51: return new MessagePack.Formatters.S.ReplaceStateRequestFormatter();
-                case 52: return new MessagePack.Formatters.S.RegisterPaymentFormatter();
-                case 53: return new MessagePack.Formatters.S.SendFeedbackFormatter();
-                case 54: return new MessagePack.Formatters.S.LeaderboardRegisterRecordFormatter();
-                case 55: return new MessagePack.Formatters.S.LeaderboardGetRankFormatter();
-                case 56: return new MessagePack.Formatters.S.LeaderboardGetRankTopFormatter();
-                case 57: return new MessagePack.Formatters.S.LeaderboardGetRankTopChunkFormatter();
-                case 58: return new MessagePack.Formatters.S.LeaderboardGetFacebookFriendsTopFormatter();
-                case 59: return new MessagePack.Formatters.S.UsePromoFormatter();
-                case 60: return new MessagePack.Formatters.S.ServerMessageFormatter();
-                case 61: return new MessagePack.Formatters.S.SendServerMessageFormatter();
-                case 62: return new MessagePack.Formatters.S.ClearServerMessagesInboxFormatter();
-                case 63: return new MessagePack.Formatters.S.GetServerMessagesInboxFormatter();
-                case 64: return new MessagePack.Formatters.S.LeagueRegisterRequestFormatter();
-                case 65: return new MessagePack.Formatters.S.LeaguePlayerGlobalRankRequestFormatter();
-                case 66: return new MessagePack.Formatters.S.LeaguePlayerLeagueRankRequestFormatter();
-                case 67: return new MessagePack.Formatters.S.LeagueDivisionRanksRequestFormatter();
-                case 68: return new MessagePack.Formatters.S.LeagueTopRequestFormatter();
-                case 69: return new MessagePack.Formatters.S.LeagueGlobalTopRequestFormatter();
-                case 70: return new MessagePack.Formatters.S.DefsRequestFormatter();
-                case 71: return new MessagePack.Formatters.S.DeleteUserRequestFormatter();
-                case 72: return new MessagePack.Formatters.S.TypedApiCallFormatter();
-                case 73: return new MessagePack.Formatters.S.ValidateSessionRequestFormatter();
-                case 74: return new MessagePack.Formatters.S.LeaderboardGetSeasonInfoRequestFormatter();
-                case 75: return new MessagePack.Formatters.S.ExtensionModuleRequestFormatter();
-                case 76: return new MessagePack.Formatters.S.RequestFormatter();
-                case 77: return new MessagePack.Formatters.PestelLib.ServerShared.ServerRequestFormatter();
-                case 78: return new MessagePack.Formatters.S.BenchmarkRequestFormatter();
-                case 79: return new MessagePack.Formatters.S.DataCollectionFormatter();
-                case 80: return new MessagePack.Formatters.S.UsePromoResponseFormatter();
-                case 81: return new MessagePack.Formatters.S.SendMessageResponseFormatter();
-                case 82: return new MessagePack.Formatters.S.SendServerMessageResponseFormatter();
-                case 83: return new MessagePack.Formatters.S.ServerMessagesInboxFormatter();
-                case 84: return new MessagePack.Formatters.S.DefsDataFormatter();
-                case 85: return new MessagePack.Formatters.S.ResponseFormatter();
-                case 86: return new MessagePack.Formatters.S.SetFacebookIdResponseFormatter();
-                case 87: return new MessagePack.Formatters.S.GetRandomUserIdsResponseFormatter();
-                case 88: return new MessagePack.Formatters.S.GetProfileByFacebookIdResponseFormatter();
-                case 89: return new MessagePack.Formatters.S.LeaderboardGetRankResponseFormatter();
-                case 90: return new MessagePack.Formatters.S.LeaderboardGetSeasonInfoResponseFormatter();
-                case 91: return new MessagePack.Formatters.S.LeaderboardRecordFormatter();
-                case 92: return new MessagePack.Formatters.S.LeaderboardGetRankTopResponseFormatter();
-                case 93: return new MessagePack.Formatters.S.LeaderboardGetRankTopChunkResponseFormatter();
-                case 94: return new MessagePack.Formatters.S.MatchEndFormatter();
-                case 95: return new MessagePack.Formatters.S.SeasonEndInfoFormatter();
-                case 96: return new MessagePack.Formatters.S.LeaguePlayerInfoFormatter();
-                case 97: return new MessagePack.Formatters.S.DivisionInfoFormatter();
-                case 98: return new MessagePack.Formatters.S.LeagueRegisterResponseFormatter();
-                case 99: return new MessagePack.Formatters.S.LeagueTopResponseFormatter();
-                case 100: return new MessagePack.Formatters.ServerShared.PlayerProfile.PlayerTitleFormatter();
-                case 101: return new MessagePack.Formatters.PestelLib.SharedLogic.Modules.RandomModuleStateFormatter();
-                case 102: return new MessagePack.Formatters.S.UserProfileModule_ChangeNicknameFormatter();
-                case 103: return new MessagePack.Formatters.PestelLib.SharedLogic.Modules.EmptyStateFormatter();
-                case 104: return new MessagePack.Formatters.S.ModuleDataFormatter();
-                case 105: return new MessagePack.Formatters.PestelLib.SharedLogic.Modules.MyTestModuleStateFormatter();
-                case 106: return new MessagePack.Formatters.S.MoneyModule_CheckBalanceFormatter();
-                case 107: return new MessagePack.Formatters.S.MoneyModule_BuyMoneyPacketFormatter();
-                case 108: return new MessagePack.Formatters.S.MadIdFormatter();
-                case 109: return new MessagePack.Formatters.S.CommandContainerFormatter();
-                case 110: return new MessagePack.Formatters.PestelLib.SharedLogic.Modules.PropertyModuleStateFormatter();
-                case 111: return new MessagePack.Formatters.ServerShared.PlayerProfile.ProfileDTOFormatter();
-                case 112: return new MessagePack.Formatters.ServerShared.PlayerProfile.ProfileDTOArrayFormatter();
-                case 113: return new MessagePack.Formatters.PestelLib.ServerShared.ServerResponseFormatter();
-                case 114: return new MessagePack.Formatters.S.ConflictResultPointsFormatter();
-                case 115: return new MessagePack.Formatters.S.ConflictResultFormatter();
-                case 116: return new MessagePack.Formatters.ServerShared.GlobalConflict.TeamPlayersStatFormatter();
-                case 117: return new MessagePack.Formatters.ServerShared.GlobalConflict.DonationBonusLevelsFormatter();
-                case 118: return new MessagePack.Formatters.ServerShared.GlobalConflict.DonationBonusFormatter();
-                case 119: return new MessagePack.Formatters.ServerShared.GlobalConflict.NodeStateFormatter();
-                case 120: return new MessagePack.Formatters.ServerShared.GlobalConflict.MapStateFormatter();
-                case 121: return new MessagePack.Formatters.ServerShared.GlobalConflict.StageDefFormatter();
-                case 122: return new MessagePack.Formatters.ServerShared.GlobalConflict.PointOfInterestBonusFormatter();
-                case 123: return new MessagePack.Formatters.ServerShared.GlobalConflict.PointOfInterestFormatter();
-                case 124: return new MessagePack.Formatters.ServerShared.GlobalConflict.NodeQuestFormatter();
-                case 125: return new MessagePack.Formatters.ServerShared.GlobalConflict.PlayerStateFormatter();
-                case 126: return new MessagePack.Formatters.ServerShared.GlobalConflict.TeamStateFormatter();
-                case 127: return new MessagePack.Formatters.ServerShared.GlobalConflict.GlobalConflictStateFormatter();
-                case 128: return new MessagePack.Formatters.S.MyTestModuleLogic_IncrementMoneyFormatter();
-                case 129: return new MessagePack.Formatters.S.MyTestModuleLogic_AnotherTestCommandFormatter();
-                case 130: return new MessagePack.Formatters.S.MyTestModuleLogic_AddByDefinitionFormatter();
-                case 131: return new MessagePack.Formatters.PestelLib.SharedLogicBase.CommandFormatter();
-                case 132: return new MessagePack.Formatters.PestelLib.SharedLogicBase.CommandBatchFormatter();
-                case 133: return new MessagePack.Formatters.S.UserProfileFormatter();
-                case 134: return new MessagePack.Formatters.PestelLib.SharedLogic.Modules.ItemStateFormatter();
-                case 135: return new MessagePack.Formatters.PestelLib.SharedLogic.Modules.ItemsModuleStateFormatter();
-                case 136: return new MessagePack.Formatters.S.ItemsModule_AddItemFormatter();
-                case 137: return new MessagePack.Formatters.S.ItemsModule_SpendItemFormatter();
-                case 138: return new MessagePack.Formatters.PestelLib.SharedLogic.Modules.CurrencyModuleStateFormatter();
-                case 139: return new MessagePack.Formatters.S.CurrencyModule_AddCurrencyFormatter();
-                case 140: return new MessagePack.Formatters.S.CurrencyModule_SpendCurrencyFormatter();
+                case 24: return new MessagePack.Formatters.PestelLib.SharedLogic.Modules.CurrencyTypeFormatter();
+                case 25: return new MessagePack.Formatters.S.NetworkTypeFormatter();
+                case 26: return new MessagePack.Formatters.S.PromoCodeResponseCodeFormatter();
+                case 27: return new MessagePack.Formatters.S.ResponseCodeFormatter();
+                case 28: return new MessagePack.Formatters.S.GetProfileByFacebookIdCodeFormatter();
+                case 29: return new MessagePack.Formatters.S.MatchResultFormatter();
+                case 30: return new MessagePack.Formatters.PestelLib.SharedLogic.Modules.Match_ResultFormatter();
+                case 31: return new MessagePack.Formatters.ServerShared.GlobalConflict.DonationBonusTypeFormatter();
+                case 32: return new MessagePack.Formatters.ServerShared.GlobalConflict.NodeStatusFormatter();
+                case 33: return new MessagePack.Formatters.ServerShared.GlobalConflict.StageTypeFormatter();
+                case 34: return new MessagePack.Formatters.ServerShared.GlobalConflict.PointOfInterestServerLogicFormatter();
+                case 35: return new MessagePack.Formatters.ServerShared.GlobalConflict.TeamAssignTypeFormatter();
+                case 36: return new MessagePack.Formatters.S.PropertyModule_BuyPropertyFormatter();
+                case 37: return new MessagePack.Formatters.S.PropertyModule_SetPropertyAsOwnedFormatter();
+                case 38: return new MessagePack.Formatters.S.PropertyModule_SetSpottedFormatter();
+                case 39: return new MessagePack.Formatters.ServerShared.PlayerProfile.AchievementFormatter();
+                case 40: return new MessagePack.Formatters.S.RandomModule_RandomFormatter();
+                case 41: return new MessagePack.Formatters.S.UnityPurchaseReceiptFormatter();
+                case 42: return new MessagePack.Formatters.PestelLib.SharedLogic.Modules.UserProfileModuleStateFormatter();
+                case 43: return new MessagePack.Formatters.S.CurrencyModule_AddCurrencyFormatter();
+                case 44: return new MessagePack.Formatters.S.CurrencyModule_SpendCurrencyFormatter();
+                case 45: return new MessagePack.Formatters.PestelLib.SharedLogic.Modules.CompositeModuleStateFormatter();
+                case 46: return new MessagePack.Formatters.PestelLib.SharedLogic.Modules.MoneyModuleStateFormatter();
+                case 47: return new MessagePack.Formatters.S.InitRequestFormatter();
+                case 48: return new MessagePack.Formatters.S.ProcessCommandsBatchRequestFormatter();
+                case 49: return new MessagePack.Formatters.S.ResetRequestFormatter();
+                case 50: return new MessagePack.Formatters.S.SetFacebookIdRequestFormatter();
+                case 51: return new MessagePack.Formatters.S.GetProfileByFacebookIdRequestFormatter();
+                case 52: return new MessagePack.Formatters.S.GetRandomUserIdsFormatter();
+                case 53: return new MessagePack.Formatters.S.SyncTimeFormatter();
+                case 54: return new MessagePack.Formatters.S.ReplaceStateRequestFormatter();
+                case 55: return new MessagePack.Formatters.S.RegisterPaymentFormatter();
+                case 56: return new MessagePack.Formatters.S.SendFeedbackFormatter();
+                case 57: return new MessagePack.Formatters.S.LeaderboardRegisterRecordFormatter();
+                case 58: return new MessagePack.Formatters.S.LeaderboardGetRankFormatter();
+                case 59: return new MessagePack.Formatters.S.LeaderboardGetRankTopFormatter();
+                case 60: return new MessagePack.Formatters.S.LeaderboardGetRankTopChunkFormatter();
+                case 61: return new MessagePack.Formatters.S.LeaderboardGetFacebookFriendsTopFormatter();
+                case 62: return new MessagePack.Formatters.S.UsePromoFormatter();
+                case 63: return new MessagePack.Formatters.S.ServerMessageFormatter();
+                case 64: return new MessagePack.Formatters.S.SendServerMessageFormatter();
+                case 65: return new MessagePack.Formatters.S.ClearServerMessagesInboxFormatter();
+                case 66: return new MessagePack.Formatters.S.GetServerMessagesInboxFormatter();
+                case 67: return new MessagePack.Formatters.S.LeagueRegisterRequestFormatter();
+                case 68: return new MessagePack.Formatters.S.LeaguePlayerGlobalRankRequestFormatter();
+                case 69: return new MessagePack.Formatters.S.LeaguePlayerLeagueRankRequestFormatter();
+                case 70: return new MessagePack.Formatters.S.LeagueDivisionRanksRequestFormatter();
+                case 71: return new MessagePack.Formatters.S.LeagueTopRequestFormatter();
+                case 72: return new MessagePack.Formatters.S.LeagueGlobalTopRequestFormatter();
+                case 73: return new MessagePack.Formatters.S.DefsRequestFormatter();
+                case 74: return new MessagePack.Formatters.S.DeleteUserRequestFormatter();
+                case 75: return new MessagePack.Formatters.S.TypedApiCallFormatter();
+                case 76: return new MessagePack.Formatters.S.ValidateSessionRequestFormatter();
+                case 77: return new MessagePack.Formatters.S.LeaderboardGetSeasonInfoRequestFormatter();
+                case 78: return new MessagePack.Formatters.S.ExtensionModuleRequestFormatter();
+                case 79: return new MessagePack.Formatters.S.RequestFormatter();
+                case 80: return new MessagePack.Formatters.PestelLib.ServerShared.ServerRequestFormatter();
+                case 81: return new MessagePack.Formatters.S.BenchmarkRequestFormatter();
+                case 82: return new MessagePack.Formatters.S.DataCollectionFormatter();
+                case 83: return new MessagePack.Formatters.S.UsePromoResponseFormatter();
+                case 84: return new MessagePack.Formatters.S.SendMessageResponseFormatter();
+                case 85: return new MessagePack.Formatters.S.SendServerMessageResponseFormatter();
+                case 86: return new MessagePack.Formatters.S.ServerMessagesInboxFormatter();
+                case 87: return new MessagePack.Formatters.S.DefsDataFormatter();
+                case 88: return new MessagePack.Formatters.S.ResponseFormatter();
+                case 89: return new MessagePack.Formatters.S.SetFacebookIdResponseFormatter();
+                case 90: return new MessagePack.Formatters.S.GetRandomUserIdsResponseFormatter();
+                case 91: return new MessagePack.Formatters.S.GetProfileByFacebookIdResponseFormatter();
+                case 92: return new MessagePack.Formatters.S.LeaderboardGetRankResponseFormatter();
+                case 93: return new MessagePack.Formatters.S.LeaderboardGetSeasonInfoResponseFormatter();
+                case 94: return new MessagePack.Formatters.S.LeaderboardRecordFormatter();
+                case 95: return new MessagePack.Formatters.S.LeaderboardGetRankTopResponseFormatter();
+                case 96: return new MessagePack.Formatters.S.LeaderboardGetRankTopChunkResponseFormatter();
+                case 97: return new MessagePack.Formatters.S.MatchEndFormatter();
+                case 98: return new MessagePack.Formatters.S.SeasonEndInfoFormatter();
+                case 99: return new MessagePack.Formatters.S.LeaguePlayerInfoFormatter();
+                case 100: return new MessagePack.Formatters.S.DivisionInfoFormatter();
+                case 101: return new MessagePack.Formatters.S.LeagueRegisterResponseFormatter();
+                case 102: return new MessagePack.Formatters.S.LeagueTopResponseFormatter();
+                case 103: return new MessagePack.Formatters.ServerShared.PlayerProfile.PlayerTitleFormatter();
+                case 104: return new MessagePack.Formatters.PestelLib.SharedLogic.Modules.RandomModuleStateFormatter();
+                case 105: return new MessagePack.Formatters.S.ItemsModule_AddItemFormatter();
+                case 106: return new MessagePack.Formatters.S.ItemsModule_SpendItemFormatter();
+                case 107: return new MessagePack.Formatters.S.UserProfileModule_ChangeNicknameFormatter();
+                case 108: return new MessagePack.Formatters.PestelLib.SharedLogic.Modules.EmptyStateFormatter();
+                case 109: return new MessagePack.Formatters.S.ModuleDataFormatter();
+                case 110: return new MessagePack.Formatters.S.RewardsModule_ClaimRewardsFormatter();
+                case 111: return new MessagePack.Formatters.PestelLib.SharedLogic.Modules.RewardsModuleStateFormatter();
+                case 112: return new MessagePack.Formatters.PestelLib.SharedLogic.Modules.CurrencyModuleStateFormatter();
+                case 113: return new MessagePack.Formatters.PestelLib.SharedLogic.Modules.MyTestModuleStateFormatter();
+                case 114: return new MessagePack.Formatters.S.MoneyModule_CheckBalanceFormatter();
+                case 115: return new MessagePack.Formatters.S.MoneyModule_BuyMoneyPacketFormatter();
+                case 116: return new MessagePack.Formatters.S.MadIdFormatter();
+                case 117: return new MessagePack.Formatters.S.CommandContainerFormatter();
+                case 118: return new MessagePack.Formatters.PestelLib.SharedLogic.Modules.PropertyModuleStateFormatter();
+                case 119: return new MessagePack.Formatters.ServerShared.PlayerProfile.ProfileDTOFormatter();
+                case 120: return new MessagePack.Formatters.ServerShared.PlayerProfile.ProfileDTOArrayFormatter();
+                case 121: return new MessagePack.Formatters.PestelLib.ServerShared.ServerResponseFormatter();
+                case 122: return new MessagePack.Formatters.S.ConflictResultPointsFormatter();
+                case 123: return new MessagePack.Formatters.S.ConflictResultFormatter();
+                case 124: return new MessagePack.Formatters.ServerShared.GlobalConflict.TeamPlayersStatFormatter();
+                case 125: return new MessagePack.Formatters.ServerShared.GlobalConflict.DonationBonusLevelsFormatter();
+                case 126: return new MessagePack.Formatters.ServerShared.GlobalConflict.DonationBonusFormatter();
+                case 127: return new MessagePack.Formatters.ServerShared.GlobalConflict.NodeStateFormatter();
+                case 128: return new MessagePack.Formatters.ServerShared.GlobalConflict.MapStateFormatter();
+                case 129: return new MessagePack.Formatters.ServerShared.GlobalConflict.StageDefFormatter();
+                case 130: return new MessagePack.Formatters.ServerShared.GlobalConflict.PointOfInterestBonusFormatter();
+                case 131: return new MessagePack.Formatters.ServerShared.GlobalConflict.PointOfInterestFormatter();
+                case 132: return new MessagePack.Formatters.ServerShared.GlobalConflict.NodeQuestFormatter();
+                case 133: return new MessagePack.Formatters.ServerShared.GlobalConflict.PlayerStateFormatter();
+                case 134: return new MessagePack.Formatters.ServerShared.GlobalConflict.TeamStateFormatter();
+                case 135: return new MessagePack.Formatters.ServerShared.GlobalConflict.GlobalConflictStateFormatter();
+                case 136: return new MessagePack.Formatters.S.MyTestModuleLogic_IncrementMoneyFormatter();
+                case 137: return new MessagePack.Formatters.S.MyTestModuleLogic_AnotherTestCommandFormatter();
+                case 138: return new MessagePack.Formatters.S.MyTestModuleLogic_AddByDefinitionFormatter();
+                case 139: return new MessagePack.Formatters.PestelLib.SharedLogicBase.CommandFormatter();
+                case 140: return new MessagePack.Formatters.PestelLib.SharedLogicBase.CommandBatchFormatter();
+                case 141: return new MessagePack.Formatters.PestelLib.SharedLogic.Modules.ItemStateFormatter();
+                case 142: return new MessagePack.Formatters.PestelLib.SharedLogic.Modules.ItemsModuleStateFormatter();
+                case 143: return new MessagePack.Formatters.S.UserProfileFormatter();
                 default: return null;
             }
         }
@@ -348,6 +354,49 @@ namespace MessagePack.Resolvers
 #pragma warning restore 618
 #pragma warning restore 612
 
+#pragma warning disable 618
+#pragma warning disable 612
+#pragma warning disable 414
+#pragma warning disable 168
+
+namespace MessagePack.Formatters.PestelLib.SharedLogic.Modules
+{
+    using System;
+    using MessagePack;
+
+    public sealed class CurrencyTypeFormatter : global::MessagePack.Formatters.IMessagePackFormatter<global::PestelLib.SharedLogic.Modules.CurrencyType>
+    {
+        public int Serialize(ref byte[] bytes, int offset, global::PestelLib.SharedLogic.Modules.CurrencyType value, global::MessagePack.IFormatterResolver formatterResolver)
+        {
+            return MessagePackBinary.WriteInt32(ref bytes, offset, (Int32)value);
+        }
+        
+        public global::PestelLib.SharedLogic.Modules.CurrencyType Deserialize(byte[] bytes, int offset, global::MessagePack.IFormatterResolver formatterResolver, out int readSize)
+        {
+            return (global::PestelLib.SharedLogic.Modules.CurrencyType)MessagePackBinary.ReadInt32(bytes, offset, out readSize);
+        }
+    }
+
+    public sealed class Match_ResultFormatter : global::MessagePack.Formatters.IMessagePackFormatter<global::PestelLib.SharedLogic.Modules.Match_Result>
+    {
+        public int Serialize(ref byte[] bytes, int offset, global::PestelLib.SharedLogic.Modules.Match_Result value, global::MessagePack.IFormatterResolver formatterResolver)
+        {
+            return MessagePackBinary.WriteInt32(ref bytes, offset, (Int32)value);
+        }
+        
+        public global::PestelLib.SharedLogic.Modules.Match_Result Deserialize(byte[] bytes, int offset, global::MessagePack.IFormatterResolver formatterResolver, out int readSize)
+        {
+            return (global::PestelLib.SharedLogic.Modules.Match_Result)MessagePackBinary.ReadInt32(bytes, offset, out readSize);
+        }
+    }
+
+
+}
+
+#pragma warning restore 168
+#pragma warning restore 414
+#pragma warning restore 618
+#pragma warning restore 612
 #pragma warning disable 618
 #pragma warning disable 612
 #pragma warning disable 414
@@ -502,36 +551,6 @@ namespace MessagePack.Formatters.ServerShared.GlobalConflict
         public global::ServerShared.GlobalConflict.TeamAssignType Deserialize(byte[] bytes, int offset, global::MessagePack.IFormatterResolver formatterResolver, out int readSize)
         {
             return (global::ServerShared.GlobalConflict.TeamAssignType)MessagePackBinary.ReadInt32(bytes, offset, out readSize);
-        }
-    }
-
-
-}
-
-#pragma warning restore 168
-#pragma warning restore 414
-#pragma warning restore 618
-#pragma warning restore 612
-#pragma warning disable 618
-#pragma warning disable 612
-#pragma warning disable 414
-#pragma warning disable 168
-
-namespace MessagePack.Formatters.PestelLib.SharedLogic.Modules
-{
-    using System;
-    using MessagePack;
-
-    public sealed class CurrencyTypeFormatter : global::MessagePack.Formatters.IMessagePackFormatter<global::PestelLib.SharedLogic.Modules.CurrencyType>
-    {
-        public int Serialize(ref byte[] bytes, int offset, global::PestelLib.SharedLogic.Modules.CurrencyType value, global::MessagePack.IFormatterResolver formatterResolver)
-        {
-            return MessagePackBinary.WriteInt32(ref bytes, offset, (Int32)value);
-        }
-        
-        public global::PestelLib.SharedLogic.Modules.CurrencyType Deserialize(byte[] bytes, int offset, global::MessagePack.IFormatterResolver formatterResolver, out int readSize)
-        {
-            return (global::PestelLib.SharedLogic.Modules.CurrencyType)MessagePackBinary.ReadInt32(bytes, offset, out readSize);
         }
     }
 
@@ -840,6 +859,130 @@ namespace MessagePack.Formatters.S
             ____result.TransactionID = __TransactionID__;
             ____result.Payload = __Payload__;
             ____result.DeveloperPayload = __DeveloperPayload__;
+            return ____result;
+        }
+    }
+
+
+    public sealed class CurrencyModule_AddCurrencyFormatter : global::MessagePack.Formatters.IMessagePackFormatter<global::S.CurrencyModule_AddCurrency>
+    {
+
+        public int Serialize(ref byte[] bytes, int offset, global::S.CurrencyModule_AddCurrency value, global::MessagePack.IFormatterResolver formatterResolver)
+        {
+            if (value == null)
+            {
+                return global::MessagePack.MessagePackBinary.WriteNil(ref bytes, offset);
+            }
+            
+            var startOffset = offset;
+            offset += global::MessagePack.MessagePackBinary.WriteFixedArrayHeaderUnsafe(ref bytes, offset, 3);
+            offset += global::MessagePack.MessagePackBinary.WriteNil(ref bytes, offset);
+            offset += formatterResolver.GetFormatterWithVerify<global::PestelLib.SharedLogic.Modules.CurrencyType>().Serialize(ref bytes, offset, value.currencyType, formatterResolver);
+            offset += MessagePackBinary.WriteInt32(ref bytes, offset, value.count);
+            return offset - startOffset;
+        }
+
+        public global::S.CurrencyModule_AddCurrency Deserialize(byte[] bytes, int offset, global::MessagePack.IFormatterResolver formatterResolver, out int readSize)
+        {
+            if (global::MessagePack.MessagePackBinary.IsNil(bytes, offset))
+            {
+                readSize = 1;
+                return null;
+            }
+
+            var startOffset = offset;
+            var length = global::MessagePack.MessagePackBinary.ReadArrayHeader(bytes, offset, out readSize);
+            offset += readSize;
+
+            var __currencyType__ = default(global::PestelLib.SharedLogic.Modules.CurrencyType);
+            var __count__ = default(int);
+
+            for (int i = 0; i < length; i++)
+            {
+                var key = i;
+
+                switch (key)
+                {
+                    case 1:
+                        __currencyType__ = formatterResolver.GetFormatterWithVerify<global::PestelLib.SharedLogic.Modules.CurrencyType>().Deserialize(bytes, offset, formatterResolver, out readSize);
+                        break;
+                    case 2:
+                        __count__ = MessagePackBinary.ReadInt32(bytes, offset, out readSize);
+                        break;
+                    default:
+                        readSize = global::MessagePack.MessagePackBinary.ReadNextBlock(bytes, offset);
+                        break;
+                }
+                offset += readSize;
+            }
+
+            readSize = offset - startOffset;
+
+            var ____result = new global::S.CurrencyModule_AddCurrency();
+            ____result.currencyType = __currencyType__;
+            ____result.count = __count__;
+            return ____result;
+        }
+    }
+
+
+    public sealed class CurrencyModule_SpendCurrencyFormatter : global::MessagePack.Formatters.IMessagePackFormatter<global::S.CurrencyModule_SpendCurrency>
+    {
+
+        public int Serialize(ref byte[] bytes, int offset, global::S.CurrencyModule_SpendCurrency value, global::MessagePack.IFormatterResolver formatterResolver)
+        {
+            if (value == null)
+            {
+                return global::MessagePack.MessagePackBinary.WriteNil(ref bytes, offset);
+            }
+            
+            var startOffset = offset;
+            offset += global::MessagePack.MessagePackBinary.WriteFixedArrayHeaderUnsafe(ref bytes, offset, 3);
+            offset += global::MessagePack.MessagePackBinary.WriteNil(ref bytes, offset);
+            offset += formatterResolver.GetFormatterWithVerify<global::PestelLib.SharedLogic.Modules.CurrencyType>().Serialize(ref bytes, offset, value.currencyType, formatterResolver);
+            offset += MessagePackBinary.WriteInt32(ref bytes, offset, value.count);
+            return offset - startOffset;
+        }
+
+        public global::S.CurrencyModule_SpendCurrency Deserialize(byte[] bytes, int offset, global::MessagePack.IFormatterResolver formatterResolver, out int readSize)
+        {
+            if (global::MessagePack.MessagePackBinary.IsNil(bytes, offset))
+            {
+                readSize = 1;
+                return null;
+            }
+
+            var startOffset = offset;
+            var length = global::MessagePack.MessagePackBinary.ReadArrayHeader(bytes, offset, out readSize);
+            offset += readSize;
+
+            var __currencyType__ = default(global::PestelLib.SharedLogic.Modules.CurrencyType);
+            var __count__ = default(int);
+
+            for (int i = 0; i < length; i++)
+            {
+                var key = i;
+
+                switch (key)
+                {
+                    case 1:
+                        __currencyType__ = formatterResolver.GetFormatterWithVerify<global::PestelLib.SharedLogic.Modules.CurrencyType>().Deserialize(bytes, offset, formatterResolver, out readSize);
+                        break;
+                    case 2:
+                        __count__ = MessagePackBinary.ReadInt32(bytes, offset, out readSize);
+                        break;
+                    default:
+                        readSize = global::MessagePack.MessagePackBinary.ReadNextBlock(bytes, offset);
+                        break;
+                }
+                offset += readSize;
+            }
+
+            readSize = offset - startOffset;
+
+            var ____result = new global::S.CurrencyModule_SpendCurrency();
+            ____result.currencyType = __currencyType__;
+            ____result.count = __count__;
             return ____result;
         }
     }
@@ -4633,6 +4776,130 @@ namespace MessagePack.Formatters.S
     }
 
 
+    public sealed class ItemsModule_AddItemFormatter : global::MessagePack.Formatters.IMessagePackFormatter<global::S.ItemsModule_AddItem>
+    {
+
+        public int Serialize(ref byte[] bytes, int offset, global::S.ItemsModule_AddItem value, global::MessagePack.IFormatterResolver formatterResolver)
+        {
+            if (value == null)
+            {
+                return global::MessagePack.MessagePackBinary.WriteNil(ref bytes, offset);
+            }
+            
+            var startOffset = offset;
+            offset += global::MessagePack.MessagePackBinary.WriteFixedArrayHeaderUnsafe(ref bytes, offset, 3);
+            offset += global::MessagePack.MessagePackBinary.WriteNil(ref bytes, offset);
+            offset += formatterResolver.GetFormatterWithVerify<string>().Serialize(ref bytes, offset, value.itemId, formatterResolver);
+            offset += MessagePackBinary.WriteInt32(ref bytes, offset, value.count);
+            return offset - startOffset;
+        }
+
+        public global::S.ItemsModule_AddItem Deserialize(byte[] bytes, int offset, global::MessagePack.IFormatterResolver formatterResolver, out int readSize)
+        {
+            if (global::MessagePack.MessagePackBinary.IsNil(bytes, offset))
+            {
+                readSize = 1;
+                return null;
+            }
+
+            var startOffset = offset;
+            var length = global::MessagePack.MessagePackBinary.ReadArrayHeader(bytes, offset, out readSize);
+            offset += readSize;
+
+            var __itemId__ = default(string);
+            var __count__ = default(int);
+
+            for (int i = 0; i < length; i++)
+            {
+                var key = i;
+
+                switch (key)
+                {
+                    case 1:
+                        __itemId__ = formatterResolver.GetFormatterWithVerify<string>().Deserialize(bytes, offset, formatterResolver, out readSize);
+                        break;
+                    case 2:
+                        __count__ = MessagePackBinary.ReadInt32(bytes, offset, out readSize);
+                        break;
+                    default:
+                        readSize = global::MessagePack.MessagePackBinary.ReadNextBlock(bytes, offset);
+                        break;
+                }
+                offset += readSize;
+            }
+
+            readSize = offset - startOffset;
+
+            var ____result = new global::S.ItemsModule_AddItem();
+            ____result.itemId = __itemId__;
+            ____result.count = __count__;
+            return ____result;
+        }
+    }
+
+
+    public sealed class ItemsModule_SpendItemFormatter : global::MessagePack.Formatters.IMessagePackFormatter<global::S.ItemsModule_SpendItem>
+    {
+
+        public int Serialize(ref byte[] bytes, int offset, global::S.ItemsModule_SpendItem value, global::MessagePack.IFormatterResolver formatterResolver)
+        {
+            if (value == null)
+            {
+                return global::MessagePack.MessagePackBinary.WriteNil(ref bytes, offset);
+            }
+            
+            var startOffset = offset;
+            offset += global::MessagePack.MessagePackBinary.WriteFixedArrayHeaderUnsafe(ref bytes, offset, 3);
+            offset += global::MessagePack.MessagePackBinary.WriteNil(ref bytes, offset);
+            offset += formatterResolver.GetFormatterWithVerify<string>().Serialize(ref bytes, offset, value.itemId, formatterResolver);
+            offset += MessagePackBinary.WriteInt32(ref bytes, offset, value.count);
+            return offset - startOffset;
+        }
+
+        public global::S.ItemsModule_SpendItem Deserialize(byte[] bytes, int offset, global::MessagePack.IFormatterResolver formatterResolver, out int readSize)
+        {
+            if (global::MessagePack.MessagePackBinary.IsNil(bytes, offset))
+            {
+                readSize = 1;
+                return null;
+            }
+
+            var startOffset = offset;
+            var length = global::MessagePack.MessagePackBinary.ReadArrayHeader(bytes, offset, out readSize);
+            offset += readSize;
+
+            var __itemId__ = default(string);
+            var __count__ = default(int);
+
+            for (int i = 0; i < length; i++)
+            {
+                var key = i;
+
+                switch (key)
+                {
+                    case 1:
+                        __itemId__ = formatterResolver.GetFormatterWithVerify<string>().Deserialize(bytes, offset, formatterResolver, out readSize);
+                        break;
+                    case 2:
+                        __count__ = MessagePackBinary.ReadInt32(bytes, offset, out readSize);
+                        break;
+                    default:
+                        readSize = global::MessagePack.MessagePackBinary.ReadNextBlock(bytes, offset);
+                        break;
+                }
+                offset += readSize;
+            }
+
+            readSize = offset - startOffset;
+
+            var ____result = new global::S.ItemsModule_SpendItem();
+            ____result.itemId = __itemId__;
+            ____result.count = __count__;
+            return ____result;
+        }
+    }
+
+
     public sealed class UserProfileModule_ChangeNicknameFormatter : global::MessagePack.Formatters.IMessagePackFormatter<global::S.UserProfileModule_ChangeNickname>
     {
 
@@ -4745,6 +5012,68 @@ namespace MessagePack.Formatters.S
             var ____result = new global::S.ModuleData();
             ____result.ModuleName = __ModuleName__;
             ____result.Data = __Data__;
+            return ____result;
+        }
+    }
+
+
+    public sealed class RewardsModule_ClaimRewardsFormatter : global::MessagePack.Formatters.IMessagePackFormatter<global::S.RewardsModule_ClaimRewards>
+    {
+
+        public int Serialize(ref byte[] bytes, int offset, global::S.RewardsModule_ClaimRewards value, global::MessagePack.IFormatterResolver formatterResolver)
+        {
+            if (value == null)
+            {
+                return global::MessagePack.MessagePackBinary.WriteNil(ref bytes, offset);
+            }
+            
+            var startOffset = offset;
+            offset += global::MessagePack.MessagePackBinary.WriteFixedArrayHeaderUnsafe(ref bytes, offset, 3);
+            offset += global::MessagePack.MessagePackBinary.WriteNil(ref bytes, offset);
+            offset += formatterResolver.GetFormatterWithVerify<global::PestelLib.SharedLogic.Modules.Match_Result>().Serialize(ref bytes, offset, value.matchResult, formatterResolver);
+            offset += MessagePackBinary.WriteInt32(ref bytes, offset, value.points);
+            return offset - startOffset;
+        }
+
+        public global::S.RewardsModule_ClaimRewards Deserialize(byte[] bytes, int offset, global::MessagePack.IFormatterResolver formatterResolver, out int readSize)
+        {
+            if (global::MessagePack.MessagePackBinary.IsNil(bytes, offset))
+            {
+                readSize = 1;
+                return null;
+            }
+
+            var startOffset = offset;
+            var length = global::MessagePack.MessagePackBinary.ReadArrayHeader(bytes, offset, out readSize);
+            offset += readSize;
+
+            var __matchResult__ = default(global::PestelLib.SharedLogic.Modules.Match_Result);
+            var __points__ = default(int);
+
+            for (int i = 0; i < length; i++)
+            {
+                var key = i;
+
+                switch (key)
+                {
+                    case 1:
+                        __matchResult__ = formatterResolver.GetFormatterWithVerify<global::PestelLib.SharedLogic.Modules.Match_Result>().Deserialize(bytes, offset, formatterResolver, out readSize);
+                        break;
+                    case 2:
+                        __points__ = MessagePackBinary.ReadInt32(bytes, offset, out readSize);
+                        break;
+                    default:
+                        readSize = global::MessagePack.MessagePackBinary.ReadNextBlock(bytes, offset);
+                        break;
+                }
+                offset += readSize;
+            }
+
+            readSize = offset - startOffset;
+
+            var ____result = new global::S.RewardsModule_ClaimRewards();
+            ____result.matchResult = __matchResult__;
+            ____result.points = __points__;
             return ____result;
         }
     }
@@ -5360,254 +5689,6 @@ namespace MessagePack.Formatters.S
             ____result.Version = __Version__;
             ____result.SerializationVersion = __SerializationVersion__;
             ____result.SharedLogicVersion = __SharedLogicVersion__;
-            return ____result;
-        }
-    }
-
-
-    public sealed class ItemsModule_AddItemFormatter : global::MessagePack.Formatters.IMessagePackFormatter<global::S.ItemsModule_AddItem>
-    {
-
-        public int Serialize(ref byte[] bytes, int offset, global::S.ItemsModule_AddItem value, global::MessagePack.IFormatterResolver formatterResolver)
-        {
-            if (value == null)
-            {
-                return global::MessagePack.MessagePackBinary.WriteNil(ref bytes, offset);
-            }
-            
-            var startOffset = offset;
-            offset += global::MessagePack.MessagePackBinary.WriteFixedArrayHeaderUnsafe(ref bytes, offset, 3);
-            offset += global::MessagePack.MessagePackBinary.WriteNil(ref bytes, offset);
-            offset += formatterResolver.GetFormatterWithVerify<string>().Serialize(ref bytes, offset, value.itemId, formatterResolver);
-            offset += MessagePackBinary.WriteInt32(ref bytes, offset, value.count);
-            return offset - startOffset;
-        }
-
-        public global::S.ItemsModule_AddItem Deserialize(byte[] bytes, int offset, global::MessagePack.IFormatterResolver formatterResolver, out int readSize)
-        {
-            if (global::MessagePack.MessagePackBinary.IsNil(bytes, offset))
-            {
-                readSize = 1;
-                return null;
-            }
-
-            var startOffset = offset;
-            var length = global::MessagePack.MessagePackBinary.ReadArrayHeader(bytes, offset, out readSize);
-            offset += readSize;
-
-            var __itemId__ = default(string);
-            var __count__ = default(int);
-
-            for (int i = 0; i < length; i++)
-            {
-                var key = i;
-
-                switch (key)
-                {
-                    case 1:
-                        __itemId__ = formatterResolver.GetFormatterWithVerify<string>().Deserialize(bytes, offset, formatterResolver, out readSize);
-                        break;
-                    case 2:
-                        __count__ = MessagePackBinary.ReadInt32(bytes, offset, out readSize);
-                        break;
-                    default:
-                        readSize = global::MessagePack.MessagePackBinary.ReadNextBlock(bytes, offset);
-                        break;
-                }
-                offset += readSize;
-            }
-
-            readSize = offset - startOffset;
-
-            var ____result = new global::S.ItemsModule_AddItem();
-            ____result.itemId = __itemId__;
-            ____result.count = __count__;
-            return ____result;
-        }
-    }
-
-
-    public sealed class ItemsModule_SpendItemFormatter : global::MessagePack.Formatters.IMessagePackFormatter<global::S.ItemsModule_SpendItem>
-    {
-
-        public int Serialize(ref byte[] bytes, int offset, global::S.ItemsModule_SpendItem value, global::MessagePack.IFormatterResolver formatterResolver)
-        {
-            if (value == null)
-            {
-                return global::MessagePack.MessagePackBinary.WriteNil(ref bytes, offset);
-            }
-            
-            var startOffset = offset;
-            offset += global::MessagePack.MessagePackBinary.WriteFixedArrayHeaderUnsafe(ref bytes, offset, 3);
-            offset += global::MessagePack.MessagePackBinary.WriteNil(ref bytes, offset);
-            offset += formatterResolver.GetFormatterWithVerify<string>().Serialize(ref bytes, offset, value.itemId, formatterResolver);
-            offset += MessagePackBinary.WriteInt32(ref bytes, offset, value.count);
-            return offset - startOffset;
-        }
-
-        public global::S.ItemsModule_SpendItem Deserialize(byte[] bytes, int offset, global::MessagePack.IFormatterResolver formatterResolver, out int readSize)
-        {
-            if (global::MessagePack.MessagePackBinary.IsNil(bytes, offset))
-            {
-                readSize = 1;
-                return null;
-            }
-
-            var startOffset = offset;
-            var length = global::MessagePack.MessagePackBinary.ReadArrayHeader(bytes, offset, out readSize);
-            offset += readSize;
-
-            var __itemId__ = default(string);
-            var __count__ = default(int);
-
-            for (int i = 0; i < length; i++)
-            {
-                var key = i;
-
-                switch (key)
-                {
-                    case 1:
-                        __itemId__ = formatterResolver.GetFormatterWithVerify<string>().Deserialize(bytes, offset, formatterResolver, out readSize);
-                        break;
-                    case 2:
-                        __count__ = MessagePackBinary.ReadInt32(bytes, offset, out readSize);
-                        break;
-                    default:
-                        readSize = global::MessagePack.MessagePackBinary.ReadNextBlock(bytes, offset);
-                        break;
-                }
-                offset += readSize;
-            }
-
-            readSize = offset - startOffset;
-
-            var ____result = new global::S.ItemsModule_SpendItem();
-            ____result.itemId = __itemId__;
-            ____result.count = __count__;
-            return ____result;
-        }
-    }
-
-
-    public sealed class CurrencyModule_AddCurrencyFormatter : global::MessagePack.Formatters.IMessagePackFormatter<global::S.CurrencyModule_AddCurrency>
-    {
-
-        public int Serialize(ref byte[] bytes, int offset, global::S.CurrencyModule_AddCurrency value, global::MessagePack.IFormatterResolver formatterResolver)
-        {
-            if (value == null)
-            {
-                return global::MessagePack.MessagePackBinary.WriteNil(ref bytes, offset);
-            }
-            
-            var startOffset = offset;
-            offset += global::MessagePack.MessagePackBinary.WriteFixedArrayHeaderUnsafe(ref bytes, offset, 3);
-            offset += global::MessagePack.MessagePackBinary.WriteNil(ref bytes, offset);
-            offset += formatterResolver.GetFormatterWithVerify<global::PestelLib.SharedLogic.Modules.CurrencyType>().Serialize(ref bytes, offset, value.currencyType, formatterResolver);
-            offset += MessagePackBinary.WriteInt32(ref bytes, offset, value.count);
-            return offset - startOffset;
-        }
-
-        public global::S.CurrencyModule_AddCurrency Deserialize(byte[] bytes, int offset, global::MessagePack.IFormatterResolver formatterResolver, out int readSize)
-        {
-            if (global::MessagePack.MessagePackBinary.IsNil(bytes, offset))
-            {
-                readSize = 1;
-                return null;
-            }
-
-            var startOffset = offset;
-            var length = global::MessagePack.MessagePackBinary.ReadArrayHeader(bytes, offset, out readSize);
-            offset += readSize;
-
-            var __currencyType__ = default(global::PestelLib.SharedLogic.Modules.CurrencyType);
-            var __count__ = default(int);
-
-            for (int i = 0; i < length; i++)
-            {
-                var key = i;
-
-                switch (key)
-                {
-                    case 1:
-                        __currencyType__ = formatterResolver.GetFormatterWithVerify<global::PestelLib.SharedLogic.Modules.CurrencyType>().Deserialize(bytes, offset, formatterResolver, out readSize);
-                        break;
-                    case 2:
-                        __count__ = MessagePackBinary.ReadInt32(bytes, offset, out readSize);
-                        break;
-                    default:
-                        readSize = global::MessagePack.MessagePackBinary.ReadNextBlock(bytes, offset);
-                        break;
-                }
-                offset += readSize;
-            }
-
-            readSize = offset - startOffset;
-
-            var ____result = new global::S.CurrencyModule_AddCurrency();
-            ____result.currencyType = __currencyType__;
-            ____result.count = __count__;
-            return ____result;
-        }
-    }
-
-
-    public sealed class CurrencyModule_SpendCurrencyFormatter : global::MessagePack.Formatters.IMessagePackFormatter<global::S.CurrencyModule_SpendCurrency>
-    {
-
-        public int Serialize(ref byte[] bytes, int offset, global::S.CurrencyModule_SpendCurrency value, global::MessagePack.IFormatterResolver formatterResolver)
-        {
-            if (value == null)
-            {
-                return global::MessagePack.MessagePackBinary.WriteNil(ref bytes, offset);
-            }
-            
-            var startOffset = offset;
-            offset += global::MessagePack.MessagePackBinary.WriteFixedArrayHeaderUnsafe(ref bytes, offset, 3);
-            offset += global::MessagePack.MessagePackBinary.WriteNil(ref bytes, offset);
-            offset += formatterResolver.GetFormatterWithVerify<global::PestelLib.SharedLogic.Modules.CurrencyType>().Serialize(ref bytes, offset, value.currencyType, formatterResolver);
-            offset += MessagePackBinary.WriteInt32(ref bytes, offset, value.count);
-            return offset - startOffset;
-        }
-
-        public global::S.CurrencyModule_SpendCurrency Deserialize(byte[] bytes, int offset, global::MessagePack.IFormatterResolver formatterResolver, out int readSize)
-        {
-            if (global::MessagePack.MessagePackBinary.IsNil(bytes, offset))
-            {
-                readSize = 1;
-                return null;
-            }
-
-            var startOffset = offset;
-            var length = global::MessagePack.MessagePackBinary.ReadArrayHeader(bytes, offset, out readSize);
-            offset += readSize;
-
-            var __currencyType__ = default(global::PestelLib.SharedLogic.Modules.CurrencyType);
-            var __count__ = default(int);
-
-            for (int i = 0; i < length; i++)
-            {
-                var key = i;
-
-                switch (key)
-                {
-                    case 1:
-                        __currencyType__ = formatterResolver.GetFormatterWithVerify<global::PestelLib.SharedLogic.Modules.CurrencyType>().Deserialize(bytes, offset, formatterResolver, out readSize);
-                        break;
-                    case 2:
-                        __count__ = MessagePackBinary.ReadInt32(bytes, offset, out readSize);
-                        break;
-                    default:
-                        readSize = global::MessagePack.MessagePackBinary.ReadNextBlock(bytes, offset);
-                        break;
-                }
-                offset += readSize;
-            }
-
-            readSize = offset - startOffset;
-
-            var ____result = new global::S.CurrencyModule_SpendCurrency();
-            ____result.currencyType = __currencyType__;
-            ____result.count = __count__;
             return ____result;
         }
     }
@@ -6254,6 +6335,104 @@ namespace MessagePack.Formatters.PestelLib.SharedLogic.Modules
     }
 
 
+    public sealed class RewardsModuleStateFormatter : global::MessagePack.Formatters.IMessagePackFormatter<global::PestelLib.SharedLogic.Modules.RewardsModuleState>
+    {
+
+        public int Serialize(ref byte[] bytes, int offset, global::PestelLib.SharedLogic.Modules.RewardsModuleState value, global::MessagePack.IFormatterResolver formatterResolver)
+        {
+            if (value == null)
+            {
+                return global::MessagePack.MessagePackBinary.WriteNil(ref bytes, offset);
+            }
+            
+            var startOffset = offset;
+            offset += global::MessagePack.MessagePackBinary.WriteFixedArrayHeaderUnsafe(ref bytes, offset, 0);
+            return offset - startOffset;
+        }
+
+        public global::PestelLib.SharedLogic.Modules.RewardsModuleState Deserialize(byte[] bytes, int offset, global::MessagePack.IFormatterResolver formatterResolver, out int readSize)
+        {
+            if (global::MessagePack.MessagePackBinary.IsNil(bytes, offset))
+            {
+                readSize = 1;
+                return null;
+            }
+
+            var startOffset = offset;
+            var length = global::MessagePack.MessagePackBinary.ReadArrayHeader(bytes, offset, out readSize);
+            offset += readSize;
+
+
+            for (int i = 0; i < length; i++)
+            {
+                var key = i;
+
+                switch (key)
+                {
+                    default:
+                        readSize = global::MessagePack.MessagePackBinary.ReadNextBlock(bytes, offset);
+                        break;
+                }
+                offset += readSize;
+            }
+
+            readSize = offset - startOffset;
+
+            var ____result = new global::PestelLib.SharedLogic.Modules.RewardsModuleState();
+            return ____result;
+        }
+    }
+
+
+    public sealed class CurrencyModuleStateFormatter : global::MessagePack.Formatters.IMessagePackFormatter<global::PestelLib.SharedLogic.Modules.CurrencyModuleState>
+    {
+
+        public int Serialize(ref byte[] bytes, int offset, global::PestelLib.SharedLogic.Modules.CurrencyModuleState value, global::MessagePack.IFormatterResolver formatterResolver)
+        {
+            if (value == null)
+            {
+                return global::MessagePack.MessagePackBinary.WriteNil(ref bytes, offset);
+            }
+            
+            var startOffset = offset;
+            offset += global::MessagePack.MessagePackBinary.WriteFixedArrayHeaderUnsafe(ref bytes, offset, 0);
+            return offset - startOffset;
+        }
+
+        public global::PestelLib.SharedLogic.Modules.CurrencyModuleState Deserialize(byte[] bytes, int offset, global::MessagePack.IFormatterResolver formatterResolver, out int readSize)
+        {
+            if (global::MessagePack.MessagePackBinary.IsNil(bytes, offset))
+            {
+                readSize = 1;
+                return null;
+            }
+
+            var startOffset = offset;
+            var length = global::MessagePack.MessagePackBinary.ReadArrayHeader(bytes, offset, out readSize);
+            offset += readSize;
+
+
+            for (int i = 0; i < length; i++)
+            {
+                var key = i;
+
+                switch (key)
+                {
+                    default:
+                        readSize = global::MessagePack.MessagePackBinary.ReadNextBlock(bytes, offset);
+                        break;
+                }
+                offset += readSize;
+            }
+
+            readSize = offset - startOffset;
+
+            var ____result = new global::PestelLib.SharedLogic.Modules.CurrencyModuleState();
+            return ____result;
+        }
+    }
+
+
     public sealed class MyTestModuleStateFormatter : global::MessagePack.Formatters.IMessagePackFormatter<global::PestelLib.SharedLogic.Modules.MyTestModuleState>
     {
 
@@ -6493,55 +6672,6 @@ namespace MessagePack.Formatters.PestelLib.SharedLogic.Modules
 
             var ____result = new global::PestelLib.SharedLogic.Modules.ItemsModuleState();
             ____result.Items = __Items__;
-            return ____result;
-        }
-    }
-
-
-    public sealed class CurrencyModuleStateFormatter : global::MessagePack.Formatters.IMessagePackFormatter<global::PestelLib.SharedLogic.Modules.CurrencyModuleState>
-    {
-
-        public int Serialize(ref byte[] bytes, int offset, global::PestelLib.SharedLogic.Modules.CurrencyModuleState value, global::MessagePack.IFormatterResolver formatterResolver)
-        {
-            if (value == null)
-            {
-                return global::MessagePack.MessagePackBinary.WriteNil(ref bytes, offset);
-            }
-            
-            var startOffset = offset;
-            offset += global::MessagePack.MessagePackBinary.WriteFixedArrayHeaderUnsafe(ref bytes, offset, 0);
-            return offset - startOffset;
-        }
-
-        public global::PestelLib.SharedLogic.Modules.CurrencyModuleState Deserialize(byte[] bytes, int offset, global::MessagePack.IFormatterResolver formatterResolver, out int readSize)
-        {
-            if (global::MessagePack.MessagePackBinary.IsNil(bytes, offset))
-            {
-                readSize = 1;
-                return null;
-            }
-
-            var startOffset = offset;
-            var length = global::MessagePack.MessagePackBinary.ReadArrayHeader(bytes, offset, out readSize);
-            offset += readSize;
-
-
-            for (int i = 0; i < length; i++)
-            {
-                var key = i;
-
-                switch (key)
-                {
-                    default:
-                        readSize = global::MessagePack.MessagePackBinary.ReadNextBlock(bytes, offset);
-                        break;
-                }
-                offset += readSize;
-            }
-
-            readSize = offset - startOffset;
-
-            var ____result = new global::PestelLib.SharedLogic.Modules.CurrencyModuleState();
             return ____result;
         }
     }

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Game.Initialization.Parameters;
 using Game.SeaGameplay.Data;
 using Game.SeaGameplay.GameModes;
+using Game.SeaGameplay.Points;
 using Game.SeaGameplay.Statistics;
 using PestelLib.SharedLogic.Modules;
 using TMPro;
@@ -18,6 +19,10 @@ namespace UI.Battle {
         private readonly BattleStatisticsService _Statistics;
         [Dependency]
         private readonly SceneManagerService _SceneManager;
+        [Dependency]
+        private readonly RewardsModule _RewardsModule;
+        [Dependency]
+        private readonly PointsService _PointsService;
 
         [SerializeField]
         private TextMeshProUGUI _ResultText;
@@ -30,6 +35,8 @@ namespace UI.Battle {
         [SerializeField]
         private Button _GoToMenuButton;
         [SerializeField]
+        private Button _IncreaseRewardsButton;
+        [SerializeField]
         private RewardsPanel _RewardsPanel;
         
         private void Awake() {
@@ -41,13 +48,11 @@ namespace UI.Battle {
             _GoToMenuButton.onClick.AddListener(GoToMenu);
         }
 
-        private void OnDestroy() {
-            
-        }
-
         public void Setup(Match_Result result) {
             _ResultText.text = result.ToString();
             _KillsCountText.text = _Statistics.Kills.ToString();
+            var rewards = _RewardsModule.CalculateRewardsData(result, _PointsService.GetLocalPlayerPointsCount());
+            _RewardsPanel.Setup(rewards);
         }
 
         private void OnRestartButtonClick() {

@@ -52,7 +52,15 @@ namespace PestelLib.SharedLogic.Modules {
             }
         }
 
-        private string GetItemIdByCurrencyType(CurrencyType currencyType) {
+        public bool TryGetCurrencyTypeByItemId(string itemId, out CurrencyType? currencyType) {
+            currencyType = null;
+            var firstCurrency = _CurrencyDefs.FirstOrDefault(_ => _.ItemId == itemId);
+            if (firstCurrency != null)
+                currencyType = firstCurrency.CurrencyType;
+            return firstCurrency != null;
+        }
+        
+        public string GetItemIdByCurrencyType(CurrencyType currencyType) {
             var def = _CurrencyDefs.FirstOrDefault(_ => _.CurrencyType == currencyType);
             return def?.ItemId;
         }

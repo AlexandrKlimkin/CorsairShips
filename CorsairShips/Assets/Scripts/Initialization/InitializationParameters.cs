@@ -51,7 +51,8 @@ namespace Game.Initialization {
             new RegisterAndLoadServiceTask<StatsService>(),
             new RegisterAndLoadServiceTask<ShipCreationService>(),
             new RegisterAndLoadServiceTask<DamageService>(),
-            new RegisterAndLoadServiceTask<IPointsCounter, PointsCounterService>(),
+            new RegisterAndLoadServiceTask<IPointsCounter, PointsCounter>(),
+            new RegisterAndLoadServiceTask<PointsService>(),
             
             new WaitForAwakesTask(),
             
@@ -64,6 +65,7 @@ namespace Game.Initialization {
             new CloseGUITask(),
             new UnregisterAndUnloadServiceTask<ShipsSpawnService>(),
             new UnregisterAndUnloadServiceTask<LevelBoundsService>(),
+            new UnregisterAndUnloadServiceTask<PointsService>(),
             new UnregisterAndUnloadServiceTask<IPointsCounter>(),
             new UnregisterAndUnloadServiceTask<DamageService>(),
             new UnregisterAndUnloadServiceTask<ShipCreationService>(),
